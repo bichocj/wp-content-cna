@@ -7,7 +7,7 @@ Header style 6
     <div class="td-banner-wrap-full">
         <div class="td-container-header td-header-row td-header-header">
             <div class="td-header-sp-recs">
-                <?php locate_template('parts/header/ads.php', true); ?>
+                <!-- <?php locate_template('parts/header/ads.php', true); ?> -->
             </div>
         </div>
     </div>

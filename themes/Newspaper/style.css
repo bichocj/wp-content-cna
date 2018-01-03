@@ -29169,6 +29169,12 @@ td-md-is-safari
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
+.td-social-icon-wrap i.td-icon-instagram:hover {
+  color: #e1306e !important;
+}
+.td_social_instagram {
+  background-color: #e1306e !important;
+}
 .fullimageSize-458798 img {
   margin-bottom: 10px;
   width: 100%;
@@ -30693,3 +30699,6 @@ body .td-big-grid-post .td-meta-info-container {
     padding-top: 20px;
   }
 }
+/******************************************************
+*             END - CUSTOM STYLE - CNA
+******************************************************/
