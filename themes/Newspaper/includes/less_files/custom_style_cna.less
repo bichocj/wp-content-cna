@@ -75,16 +75,29 @@ p {
 	font-family: @font1;
 }
 
-
+.td-page-content,
+.td-post-content,
+.wpb_text_column,
+.td_block_text_with_title,
+.bbpress,
+.woocommerce #tab-description,
+.mce-content-body,
+.comment-content {
+	blockquote p {
+		font-size: 21px;
+		line-height: 1.4;
+		text-transform: none;
+	}
+}
 
 
 /* TEMPLATES */
-//
 // Category Template CNA
 .td_category_template_cna .td-category-header {
     padding-bottom: 18px;
 }
-// Post content
+
+/* POST STYLE */
 .td-post-content p,
 .td-page-content p, 
 // .wpb_text_column p, 
@@ -100,6 +113,21 @@ p {
 	font-size: 18px;
 	line-height: 1.625;
 }
+
+.td-post-source-tags {
+	.td-post-small-box {
+		a[href="#"]{
+			cursor: default;
+			pointer-events: none;
+			&:hover {
+				color: initial;
+				background-color: initial;
+				border-color: #ededed;
+			}
+		}
+	}
+}
+
 // Post template CNA 
 div[class*="post-template-cna"] {
 	.td-crumb-container {
