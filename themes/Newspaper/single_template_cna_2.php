@@ -1,6 +1,6 @@
 <?php
-// Template CNA 1
-// Template for CNA news
+// Template CNA 2 
+// Template for Magazine category
 
 locate_template('includes/wp_booster/td_single_template_vars.php', true);
 
@@ -13,24 +13,32 @@ $td_mod_single = new td_module_single($post);
 ?>
 <div class="td-main-content-wrap">
 
-    <div class="td-container td-post-template-2 post-template-cna-1">
+    <div class="td-container td-post-template-2 post-template-cna-2">
         <article id="post-<?php echo $td_mod_single->post->ID;?>" class="<?php echo join(' ', get_post_class());?>" <?php echo $td_mod_single->get_item_scope();?>>
+            <div class="td-crumb-container"><?php echo td_page_generator::get_single_breadcrumbs($td_mod_single->title); ?></div>
             <div class="td-pb-row">
                 <div class="td-pb-span12">
                     <div class="td-post-header">
-                        <div class="td-crumb-container"><?php echo td_page_generator::get_single_breadcrumbs($td_mod_single->title); ?></div>
-
                         <?php echo $td_mod_single->get_category(); ?>
-
                         <header class="td-post-title">
                             <?php echo $td_mod_single->get_title();?>
-
-
                             <?php if (!empty($td_mod_single->td_post_theme_settings['td_subtitle'])) { ?>
                                 <p class="td-post-sub-title"><?php echo $td_mod_single->td_post_theme_settings['td_subtitle'];?></p>
                             <?php } ?>
-
                         </header>
+                        <div class="wrapper-feature">
+                                <?php
+                                // override the default featured image by the templates (single.php and home.php/index.php - blog loop)
+                                if (!empty(td_global::$load_featured_img_from_template)) {
+                                    echo $td_mod_single->get_image(td_global::$load_featured_img_from_template);
+                                } else {
+                                    echo $td_mod_single->get_image('td_696x0');
+                                }
+                                ?>
+
+                        </div>
+                        <!-- Sharing Top -->
+                        <?php echo $td_mod_single->get_social_sharing_top();?>
                     </div>
                 </div>
             </div> <!-- /.td-pb-row -->
@@ -45,7 +53,7 @@ $td_mod_single = new td_module_single($post);
                             <div class="td-pb-span8 td-main-content" role="main">
                                 <div class="td-ss-main-content">
                                     <?php
-                                    locate_template('loop-single-cna-1.php', true);
+                                    locate_template('loop-single-cna-2.php', true);
                                     comments_template('', true);
                                     ?>
                                 </div>

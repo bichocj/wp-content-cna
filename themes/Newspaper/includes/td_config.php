@@ -361,6 +361,17 @@ class td_config {
                 'bg_use_featured_image_as_background' => false   // uses the featured image as a background
             )
         );
+        td_api_single_template::add('single_template_cna_2',
+            array(
+                'file' => td_global::$get_template_directory . '/single_template_cna_2.php',
+                'text' => 'Single template CNA 2',
+                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/single_template_3.png',
+                'show_featured_image_on_all_pages' => true, //shows the featured image on all the pages
+                'bg_disable_background' => false,          // disable the featured image
+                'bg_box_layout_config' => 'auto',                // auto | td-boxed-layout | td-full-layout
+                'bg_use_featured_image_as_background' => false   // uses the featured image as a background
+            )
+        );
 
 
 
