@@ -29252,10 +29252,13 @@ p {
   margin-top: 0px;
 }
 .wp-polls > p {
-  font-size: 16px;
+  font-size: 16px !important;
+}
+.wp-polls .pollTitle {
+  line-height: 1.425;
 }
 .wrapper_app_cna {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: justify;
 }
