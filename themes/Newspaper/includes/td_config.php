@@ -2462,6 +2462,15 @@ class td_config {
             )
         );
 
+        // Adición de style para CNA
+        td_api_category_template::add('td_category_template_cna',
+            array (
+                'file' => td_global::$get_template_directory . '/includes/category_templates/td_category_template_cna.php',
+                'img' => td_global::$get_template_directory_uri . '/images/panel/category_templates/icon-category-1.png',
+                'text' => 'Style CNA'
+            )
+        );
+
 
 
 
