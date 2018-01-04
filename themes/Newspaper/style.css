@@ -29275,9 +29275,10 @@ div[class*="post-template-cna"] .td-post-featured-image img {
   margin-top: 25px;
 }
 .post-template-cna-2 .td-post-header .td-post-sharing {
-  text-align: center;
+  text-align: left;
 }
 .post-template-cna-2 .td-post-header .td-post-sharing-top {
+  margin-top: 26px;
   margin-bottom: 0 !important;
 }
 .post-template-cna-2 .wrapper-feature {

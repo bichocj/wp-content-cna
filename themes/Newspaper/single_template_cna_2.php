@@ -25,6 +25,8 @@ $td_mod_single = new td_module_single($post);
                             <?php if (!empty($td_mod_single->td_post_theme_settings['td_subtitle'])) { ?>
                                 <p class="td-post-sub-title"><?php echo $td_mod_single->td_post_theme_settings['td_subtitle'];?></p>
                             <?php } ?>
+                            <!-- Sharing Top -->
+                            <?php echo $td_mod_single->get_social_sharing_top();?>
                         </header>
                         <div class="wrapper-feature">
                                 <?php
@@ -37,8 +39,6 @@ $td_mod_single = new td_module_single($post);
                                 ?>
 
                         </div>
-                        <!-- Sharing Top -->
-                        <?php echo $td_mod_single->get_social_sharing_top();?>
                     </div>
                 </div>
             </div> <!-- /.td-pb-row -->
