@@ -33,7 +33,9 @@ class td_block_related_posts extends td_block {
 
         //get the filter for this block
         $buffy .= '<h4 class="td-related-title">';
-            $buffy .= '<span id="' . td_global::td_generate_unique_id() . '" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="' . $this->block_uid . '">' . __td('RELATED ARTICLES', TD_THEME_NAME) . '</span>';
+            $buffy .= '<span id="' . td_global::td_generate_unique_id() . '" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="' . $this->block_uid . '">' . 'Noticias Vinculadas' . '</span>';
+            
+            // $buffy .= '<span id="' . td_global::td_generate_unique_id() . '" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="' . $this->block_uid . '">' . __td('RELATED ARTICLES', TD_THEME_NAME) . '</span>'; // INITIAL 
             //$buffy .= '<a id="' . td_global::td_generate_unique_id() . '" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="' . $this->block_uid . '" href="#">' . __td('RELATED ARTICLES', TD_THEME_NAME) . '</a>';
             //$buffy .= '<a id="' . td_global::td_generate_unique_id() . '" class="td-related-right" data-td_filter_value="td_related_more_from_author" data-td_block_id="' . $this->block_uid . '" href="#">' . __td('MORE FROM AUTHOR', TD_THEME_NAME) . '</a>';
         $buffy .= '</h4>';
