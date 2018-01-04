@@ -83,6 +83,42 @@ p {
 .td_category_template_cna .td-category-header {
     padding-bottom: 18px;
 }
+// Post content
+.td-post-content p {
+	font-size: 18px;
+	line-height: 1.625;
+}
+// Single template CNA 1
+.post-template-cna-1 {
+	.td-post-title {
+		margin-bottom: 30px;
+	}
+	.sidebar-post-cna  {
+		margin-top: 70px;
+	}
+	.td-module-meta-info {
+		margin: -7px 0 26px;
+		font-size: 13px;
+		> [class^="td"] {
+			display: block;
+			margin-bottom: 2px;
+		}
+		.td-post-author-name {
+			font-size: 16px;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+			> a {
+				color: @color_6;
+			}
+		}
+	}
+	.td-post-featured-image {
+		img {
+			width: 100%;
+		}
+	}
+}
 
 
 /* WIDGETS */
@@ -100,6 +136,9 @@ p {
 	margin-top: 10px;
 	&:first-child {
 		margin-top: 0px;
+	}
+	> p {
+		font-size: 16px;
 	}
 }
 // APP CNA
@@ -2079,7 +2118,7 @@ body {
 		padding-top: 20px;
 	}
 }
-* { outline: 1px solid rgba(0, 250, 0, 0.35)}
+// * { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
 *             END - CUSTOM STYLE - CNA
 ******************************************************/

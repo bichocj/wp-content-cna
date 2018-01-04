@@ -77,6 +77,17 @@ class td_module_single_base extends td_module {
         return $buffy;
     }
 
+     //$show_stars_on_review - not used
+     function get_author_1() {
+        $buffy = '';
+        if (td_util::get_option('tds_p_show_author_name') != 'hide') {
+            $buffy .= '<div class="td-post-author-name">' . __td('', TD_THEME_NAME) . ' ';
+            $buffy .= '<a href="' . get_author_posts_url($this->post->post_author) . '">' . get_the_author_meta('display_name', $this->post->post_author) . '</a>' ;
+            $buffy .= '</div>';
+        }
+        return $buffy;
+    }
+
 
     /**
      * v3 23 ian 2015
