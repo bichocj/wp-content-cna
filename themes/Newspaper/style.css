@@ -29169,11 +29169,50 @@ td-md-is-safari
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
+/* WIDGETS */
 .td-social-icon-wrap i.td-icon-instagram:hover {
   color: #e1306e !important;
 }
 .td_social_instagram {
   background-color: #e1306e !important;
+}
+.wp-polls {
+  margin-top: 10px;
+}
+.wp-polls:first-child {
+  margin-top: 0px;
+}
+.wrapper_app_cna {
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.wrapper_app_cna .app_info {
+  padding: 0 5px;
+  margin-bottom: 13px;
+}
+.wrapper_app_cna .wrapper_app_img {
+  display: inline-block;
+  transition: all ease-in-out 300ms;
+}
+.wrapper_app_cna .wrapper_app_img.in-construction:hover {
+  position: relative;
+}
+.wrapper_app_cna .wrapper_app_img.in-construction:hover::after {
+  content: "EN CONSTRUCCIÓN";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 22px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  opacity: 0.9;
 }
 .fullimageSize-458798 img {
   margin-bottom: 10px;
