@@ -29,9 +29,62 @@
 @background_color_18: #dd3333;
 @background_color_19: #CDCDCD;
 
+@font1:'Open Sans', arial, sans-serif;
+@font2: Verdana, Geneva, sans-serif;
+@font3:'Roboto', sans-serif;
+@font4:'newspaper', sans-serif;
+
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
+
+/* TYPOGRAPHY */
+body,
+p {
+  font-family: @font1;
+}
+.wp-caption-text,
+.wp-caption-dd {
+  font-family: @font1;
+}
+.td-page-content .dropcap,
+.td-post-content .dropcap,
+.wpb_text_column .dropcap,
+.td_block_text_with_title .dropcap,
+.bbpress .dropcap,
+.woocommerce #tab-description .dropcap,
+.mce-content-body .dropcap,
+.comment-content .dropcap {
+  font-family: @font1;
+}
+.td_top_authors .td-authors-url a {
+	font-family: @font1;
+}
+/* theme style customizer */
+#td-theme-settings {
+	font-family: @font1;
+}
+.td_wrapper_video_playlist .td_video_title_playing {
+	font-family: @font1;
+}  
+.td-sml-caption {
+	font-family: @font1;
+}
+#bbpress-forums .bbp-topic-header .bbp-meta .bbp-topic-permalink {
+	font-family: @font1;
+}
+
+
+
+
+/* TEMPLATES */
+//
+// Category Template CNA
+.td_category_template_cna .td-category-header {
+    padding-bottom: 18px;
+}
+
+
 /* WIDGETS */
 //
 // SOCIAL NETWORK
@@ -51,7 +104,7 @@
 }
 // APP CNA
 .wrapper_app_cna {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 1.5;
 	text-align: justify;
 	.app_info {
@@ -2022,6 +2075,7 @@ body {
 		padding-top: 20px;
 	}
 }
+* { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
 *             END - CUSTOM STYLE - CNA
 ******************************************************/

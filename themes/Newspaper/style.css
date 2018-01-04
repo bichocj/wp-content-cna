@@ -29169,6 +29169,45 @@ td-md-is-safari
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
+/* TYPOGRAPHY */
+body,
+p {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.wp-caption-text,
+.wp-caption-dd {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.td-page-content .dropcap,
+.td-post-content .dropcap,
+.wpb_text_column .dropcap,
+.td_block_text_with_title .dropcap,
+.bbpress .dropcap,
+.woocommerce #tab-description .dropcap,
+.mce-content-body .dropcap,
+.comment-content .dropcap {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.td_top_authors .td-authors-url a {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+/* theme style customizer */
+#td-theme-settings {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.td_wrapper_video_playlist .td_video_title_playing {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.td-sml-caption {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+#bbpress-forums .bbp-topic-header .bbp-meta .bbp-topic-permalink {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+/* TEMPLATES */
+.td_category_template_cna .td-category-header {
+  padding-bottom: 18px;
+}
 /* WIDGETS */
 .td-social-icon-wrap i.td-icon-instagram:hover {
   color: #e1306e !important;
@@ -30737,6 +30776,9 @@ body .td-big-grid-post .td-meta-info-container {
   .title-cna {
     padding-top: 20px;
   }
+}
+* {
+  outline: 1px solid rgba(0, 250, 0, 0.35);
 }
 /******************************************************
 *             END - CUSTOM STYLE - CNA
