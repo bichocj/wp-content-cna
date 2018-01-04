@@ -29191,7 +29191,6 @@ p {
 .td_top_authors .td-authors-url a {
   font-family: 'Open Sans', arial, sans-serif;
 }
-/* theme style customizer */
 #td-theme-settings {
   font-family: 'Open Sans', arial, sans-serif;
 }
@@ -29337,6 +29336,37 @@ div[class*="post-template-cna"] .td-post-featured-image img {
   top: 0;
   text-align: center;
   opacity: 0.9;
+}
+/* DIV BLOCKS */
+.td-trending-now-wrapper {
+  margin: 0 24px;
+  padding: 0px;
+  height: 40px;
+  background-color: #F3F0F0;
+  overflow: hidden;
+}
+.td-trending-now-wrapper .td-trending-now-title {
+  width: 35%;
+  height: 40px;
+  line-height: 39px;
+  font-size: 20px;
+  text-align: right;
+}
+.td-trending-now-wrapper .td-trending-now-post {
+  width: 60%;
+  height: 40px;
+  padding-top: 6px;
+  padding-right: 0;
+}
+.td-trending-now-wrapper .td-trending-now-post .entry-title {
+  text-transform: none;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.td-trending-now-wrapper .td-next-prev-wrap {
+  display: none;
 }
 .fullimageSize-458798 img {
   margin-bottom: 10px;
@@ -29597,9 +29627,6 @@ div.td-footer-template-4 .td-footer-info {
 }
 .td_block_text_with_title .wp-polls .wp-polls-ans.wp-polls-stad li {
   width: 84%;
-}
-div.td-trending-now-title {
-  font-size: 14px;
 }
 .td-customField22324345454.td-pb-row {
   margin-left: -10px;
@@ -30294,9 +30321,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
 }
 .cNewslist h3 > a:hover {
   color: #111111;
-}
-.newsContainer-154231 .td-trending-now-display-area .entry-title {
-  font-size: 17px;
 }
 .wrapSocial {
   width: 100%;
