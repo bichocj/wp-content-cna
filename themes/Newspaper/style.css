@@ -29222,7 +29222,7 @@ p {
   margin-top: 0px;
 }
 .wrapper_app_cna {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: justify;
 }
@@ -29232,6 +29232,8 @@ p {
 }
 .wrapper_app_cna .wrapper_app_img {
   display: inline-block;
+}
+.wrapper_app_cna .wrapper_app_img::after {
   transition: all ease-in-out 300ms;
 }
 .wrapper_app_cna .wrapper_app_img.in-construction:hover {
@@ -29679,6 +29681,7 @@ div.td-header-sp-top-widget {
 }
 .contID-126726137213 .subtitle {
   background-color: #d33;
+  font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -29687,7 +29690,7 @@ div.td-header-sp-top-widget {
 .contID-126726137213 .text {
   color: #d33;
   background-color: #ffffff;
-  font-size: 19px;
+  font-size: 20.5px;
   padding: 5px 15px;
   text-align: center;
 }

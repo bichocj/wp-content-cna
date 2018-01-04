@@ -114,6 +114,9 @@ p {
 	.wrapper_app_img {
 		display: inline-block;
 		transition: all ease-in-out 300ms;
+		&::after  {
+			transition: all ease-in-out 300ms;
+		}
 		&.in-construction:hover {
 			position: relative;
 			&::after {
@@ -647,6 +650,7 @@ div.td-header-sp-top-widget {
 .contID-126726137213 {
 	.subtitle {
 		background-color: @background_color_10;
+		font-size: 16px;
 		color: @color_1;
 		text-transform: uppercase;
 		text-align: center;
@@ -655,7 +659,7 @@ div.td-header-sp-top-widget {
 	.text {
 		color: @color_7;
 		background-color: @background_color_1;
-		font-size: 19px;
+		font-size: 20.5px;
 		padding: 5px 15px;
 		text-align: center;
 		&:last-child {
