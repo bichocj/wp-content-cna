@@ -91,7 +91,98 @@ p {
 }
 
 
-/* TEMPLATES */
+/*
+* TEMPLATES 
+*/
+
+/* Header */
+.td-header-wrap {
+	.top-bar-style-2 {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url(images/custom/nuevologocna-header.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 17px;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 16%;
+			padding-bottom: 16.21%;
+			margin: auto;
+		}
+		.thisCNATVWrap {
+			margin-top: 10px;
+		}
+		.thisCNATV {
+			background-image: url(images/custom/cna-envivonuevo.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 70%;
+			padding-bottom: 73.5%;
+			margin-left: 17%;
+		}
+	}
+	div.td-header-top-menu-full {
+		border-top: 2px solid #232121;
+		border-bottom: 2px solid #232121;
+		margin-bottom: 10px;
+	}
+}
+.td-details-weather {
+	.thisCNATVWrap {
+		margin-top: 10px;
+		.thisCNATV {
+			background-image: url(images/custom/cna-envivonuevo.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 70%;
+			padding-bottom: 73.5%;
+			margin-left: 17%;
+		}
+	}
+}
+.top-bar-style-2 {
+	.td-header-sp-top-menu {
+		text-align: right;
+	}
+}
+div.td-header-top-menu-full {
+	.td-header-row {
+		[class="td-header-sp-top-widget"] {
+			text-align: left;
+			margin-top: 25px;
+			margin-left: 15px;
+		}
+	}
+}
+.td-header-row {
+	[class="td-header-sp-top-widget"] {
+		.textSub {
+			padding-left: 10px;
+		}
+	}
+}
+.td-header-top-menu-full {
+	.td-header-row {
+		[class*="td-header-sp"] {
+			margin: 26px 0 24px;
+			margin-right: 20px;
+		}
+	}
+}
+// Separator of Menu
+.menu-separator {
+	margin: 11px 0 0;
+    border-top: 2px solid #232121;
+}
+
+
 // Category Template CNA
 .td_category_template_cna .td-category-header {
     padding-bottom: 18px;
@@ -888,86 +979,7 @@ div.td-header-sp-top-widget {
 		font-size: .625em;
 	}
 }
-.td-header-wrap {
-	.top-bar-style-2 {
-		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			background-image: url(images/custom/nuevologocna-header.png);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			top: 17px;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 16%;
-			padding-bottom: 16.21%;
-			margin: auto;
-		}
-		.thisCNATVWrap {
-			margin-top: 10px;
-		}
-		.thisCNATV {
-			background-image: url(images/custom/cna-envivonuevo.png);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			width: 70%;
-			padding-bottom: 73.5%;
-			margin-left: 17%;
-		}
-	}
-	div.td-header-top-menu-full {
-		border-top: 2px solid #232121;
-		border-bottom: 2px solid #232121;
-		margin-bottom: 10px;
-	}
-}
-.td-details-weather {
-	.thisCNATVWrap {
-		margin-top: 10px;
-		.thisCNATV {
-			background-image: url(images/custom/cna-envivonuevo.png);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			width: 70%;
-			padding-bottom: 73.5%;
-			margin-left: 17%;
-		}
-	}
-}
-.top-bar-style-2 {
-	.td-header-sp-top-menu {
-		text-align: right;
-	}
-}
-div.td-header-top-menu-full {
-	.td-header-row {
-		[class="td-header-sp-top-widget"] {
-			text-align: left;
-			margin-top: 25px;
-			margin-left: 15px;
-		}
-	}
-}
-.td-header-row {
-	[class="td-header-sp-top-widget"] {
-		.textSub {
-			padding-left: 10px;
-		}
-	}
-}
-.td-header-top-menu-full {
-	.td-header-row {
-		[class*="td-header-sp"] {
-			margin: 26px 0 24px;
-			margin-right: 20px;
-		}
-	}
-}
+
 .td_block_big_grid_3 {
 	.td-big-thumb.bigCustomBlock {
 		padding: 0;

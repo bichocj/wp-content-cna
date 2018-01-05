@@ -25,6 +25,7 @@ Header style 6
             </div>
         </div>
     </div>
+    <hr class="menu-separator">
 
     <div class="td-banner-wrap-full">
         <div class="td-container-header td-header-row td-header-header">
