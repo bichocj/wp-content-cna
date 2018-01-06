@@ -1,11 +1,7 @@
 <!--
 Header style 6
 -->
-<?php 
-if (is_home() || is_front_page()) {
-    // echo 'Aqui va trending y last post';
-}
-?>
+
 <div class="td-header-wrap td-header-style-6">
 
     <div class="td-banner-wrap-full">
