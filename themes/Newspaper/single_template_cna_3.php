@@ -33,7 +33,8 @@ $td_mod_single = new td_module_single($post);
                                 // override the default featured image by the templates (single.php and home.php/index.php - blog loop)
                                 $value = get_field( "name" );
                                 if (!empty($value)) {
-                                    echo do_shortcode('[rev_slider '.$value.']');
+                                    // echo do_shortcode('[rev_slider '.$value.']');         
+                                    echo do_shortcode('[bxslider id="598"]');
                                 } else {
                                     echo 'Coloque el nombre del slider para mostrar las imágenes';
                                 }
