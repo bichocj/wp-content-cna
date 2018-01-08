@@ -122,6 +122,15 @@ if(!empty($post->post_content)) { //show this only when we have content
                 ?>
                     <div class="td-pb-span8 td-main-content" role="main">
                         <div class="td-ss-main-content">
+                            <!-- CNA TV -->
+                            <div class="cnaTV">
+                                <h4 class="block-title"><span>CNA TV</span></h4>                                
+                                <div
+                                    style="height: 450px"> Aquí CNA TV
+                                </div>
+                            </div>
+                            <!-- End CNA TV -->
+                            <!-- Noticias -->
                             <?php if ((empty($paged) or $paged < 2) and $list_custom_title_show === true) { ?>
                                 <h4 class="block-title"><span><?php echo $td_list_custom_title?></span></h4>
                             <?php }
@@ -133,6 +142,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                             td_page_generator::get_pagination();
                             wp_reset_query();
                             ?>
+                            <!-- end Noticias -->
                         </div>
                     </div>
                     <div class="td-pb-span4 td-main-sidebar" role="complementary">
