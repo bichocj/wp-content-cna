@@ -404,7 +404,7 @@ div[class*="post-template-cna"] {
 			text-align: left; 
 		}
 		.td-post-sharing-top  {
-			margin-top: 26px;
+			margin-top: 32px;
 			margin-bottom: 0 !important;
 		}
 	}
@@ -2349,6 +2349,38 @@ body {
 		padding-top: 20px;
 	}
 }
+/*****************************************************/
+/*				BxSlider WP - Custom				 */
+/*****************************************************/
+.bx-wrapper {
+	margin-bottom: 10px;
+	.bx-viewport {
+		box-shadow: none;
+		border: none;
+		left: 0;
+	}
+	.bxslider {
+		img { // slide img
+			width: 100%;
+			height: auto;
+		}
+		.bx-caption {
+			background: @background_color_9;
+			padding: 15px 35px;
+			span {
+				font-family: inherit;
+				font-size: 13px;	
+				font-weight: 600;
+				color: @color_5; 	
+				padding-left: 45px;
+			}
+		}
+	}
+	.bx-pager {
+		visibility: hidden;
+	}
+}
+
 // * { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
 *             END - CUSTOM STYLE - CNA

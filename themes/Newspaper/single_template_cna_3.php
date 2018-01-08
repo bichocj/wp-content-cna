@@ -34,7 +34,7 @@ $td_mod_single = new td_module_single($post);
                                 $value = get_field( "name" );
                                 if (!empty($value)) {
                                     // echo do_shortcode('[rev_slider '.$value.']');         
-                                    echo do_shortcode('[bxslider id="598"]');
+                                    echo do_shortcode('[bxslider id="'.$value.'"]');
                                 } else {
                                     echo 'Coloque el nombre del slider para mostrar las imágenes';
                                 }

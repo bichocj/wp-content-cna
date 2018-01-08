@@ -29461,7 +29461,7 @@ div[class*="post-template-cna"] .td-post-featured-image img {
   text-align: left;
 }
 .post-template-cna-2 .td-post-header .td-post-sharing-top {
-  margin-top: 26px;
+  margin-top: 32px;
   margin-bottom: 0 !important;
 }
 .post-template-cna-2 .wrapper-feature {
@@ -31009,6 +31009,35 @@ body .td-big-grid-post .td-meta-info-container {
   .title-cna {
     padding-top: 20px;
   }
+}
+/*****************************************************/
+/*				BxSlider WP - Custom				 */
+/*****************************************************/
+.bx-wrapper {
+  margin-bottom: 10px;
+}
+.bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: none;
+  left: 0;
+}
+.bx-wrapper .bxslider img {
+  width: 100%;
+  height: auto;
+}
+.bx-wrapper .bxslider .bx-caption {
+  background: #dadada;
+  padding: 15px 35px;
+}
+.bx-wrapper .bxslider .bx-caption span {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a4949;
+  padding-left: 45px;
+}
+.bx-wrapper .bx-pager {
+  visibility: hidden;
 }
 /******************************************************
 *             END - CUSTOM STYLE - CNA
