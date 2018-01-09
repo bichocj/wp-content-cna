@@ -29528,6 +29528,22 @@ div[class*="post-template-cna"] .td-post-featured-image img {
   opacity: 0.9;
 }
 /* DIV BLOCKS */
+/* Trending bar */
+@media (min-width: 768px) {
+  .td-block-row > .td-trending-now-wrapper {
+    margin: 0 14px;
+  }
+}
+@media (min-width: 1019px) {
+  .td-block-row > .td-trending-now-wrapper {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1141px) {
+  .td-block-row > .td-trending-now-wrapper {
+    margin: 0 24px;
+  }
+}
 .td-trending-now-wrapper {
   padding: 0px;
   height: 40px;
@@ -29537,21 +29553,6 @@ div[class*="post-template-cna"] .td-post-featured-image img {
 @media screen and (max-width: 767px) {
   .td-trending-now-wrapper {
     height: 90px;
-  }
-}
-@media (min-width: 768px) {
-  .td-trending-now-wrapper {
-    margin: 0 14px;
-  }
-}
-@media (min-width: 1019px) {
-  .td-trending-now-wrapper {
-    margin: 0 20px;
-  }
-}
-@media (min-width: 1141px) {
-  .td-trending-now-wrapper {
-    margin: 0 24px;
   }
 }
 .td-trending-now-wrapper .td-trending-now-title {

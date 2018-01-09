@@ -478,19 +478,24 @@ div[class*="post-template-cna"] {
 
 /* DIV BLOCKS */
 //
-// Trending bar
+/* Trending bar */
+.td-block-row {
+	> .td-trending-now-wrapper {
+		@media (min-width: 768px) {
+			margin: 0 14px;
+		}
+		@media (min-width: 1019px) {
+			margin: 0 20px;
+		}
+		@media (min-width: 1141px) {
+			margin: 0 24px;
+		}
+	}
+	
+}
 .td-trending-now-wrapper {
 	@media screen and (max-width: 767px) {
 		height: 90px;
-	}
-	@media (min-width: 768px) {
-		margin: 0 14px;
-	}
-	@media (min-width: 1019px) {
-		margin: 0 20px;
-	}
-	@media (min-width: 1141px) {
-		margin: 0 24px;
 	}
 	padding: 0px;
 	height: 40px;
