@@ -507,7 +507,6 @@ div[class*="post-template-cna"] {
 					border-color: @color_8;
 				}
 			}
-			
 			.td-module-thumb {
 				height: 334px;
 				overflow: hidden;
@@ -533,8 +532,14 @@ div[class*="post-template-cna"] {
 				
 				a {
 					display: inline-block;
+					position: relative;
 					height: 44px;
 					overflow: hidden;
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;  
+					text-overflow: ellipsis;
+
 				}
 			}
 		} 

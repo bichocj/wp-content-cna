@@ -29573,8 +29573,13 @@ div[class*="post-template-cna"] .td-post-featured-image img {
 }
 .headerBlockTop .td_block_15 .td-column-3 .entry-title a {
   display: inline-block;
+  position: relative;
   height: 44px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 /* Trending bar */
 @media (min-width: 768px) {
