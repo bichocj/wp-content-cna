@@ -1,6 +1,6 @@
 <?php
-// Template CNA 2 
-// Template for Magazine category
+// Template CNA 3
+// Template for BXSlider
 
 locate_template('includes/wp_booster/td_single_template_vars.php', true);
 
@@ -31,7 +31,7 @@ $td_mod_single = new td_module_single($post);
                         <div class="wrapper-feature">
                             <?php
                                 // override the default featured image by the templates (single.php and home.php/index.php - blog loop)
-                                $value = get_field( "name" );
+                                $value = get_field( "Bxslider_name" );
                                 if (!empty($value)) {
                                     // echo do_shortcode('[rev_slider '.$value.']');         
                                     echo do_shortcode('[bxslider id="'.$value.'"]');

@@ -31030,18 +31030,69 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   height: auto;
 }
 .bx-wrapper .bxslider .bx-caption {
-  background: #dadada;
+  background: #e6e2e2;
   padding: 15px 35px;
 }
 .bx-wrapper .bxslider .bx-caption span {
   font-family: inherit;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #4a4949;
-  padding-left: 45px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  top: 0;
+  margin-top: 0;
+  height: 100%;
+  width: 50px;
+  text-indent: initial;
+  color: transparent;
+}
+.bx-wrapper .bx-controls-direction a::before {
+  font-family: 'newspaper';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: white;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 40%;
+  opacity: 0.75;
+  transition: all ease 300ms;
+}
+.bx-wrapper .bx-controls-direction a:hover::before {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.bx-wrapper .bx-controls-direction .bx-prev {
+  background: none;
+  left: 0;
+}
+.bx-wrapper .bx-controls-direction .bx-prev::before {
+  content: '\e802';
+  left: 15px;
+}
+.bx-wrapper .bx-controls-direction .bx-next {
+  background: none;
+  right: 0;
+}
+.bx-wrapper .bx-controls-direction .bx-next::before {
+  content: '\e803';
+  right: 15px;
+  left: auto;
 }
 .bx-wrapper .bx-pager {
-  visibility: hidden;
+  bottom: -40px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background-color: #999999;
 }
 /******************************************************
 *             END - CUSTOM STYLE - CNA
