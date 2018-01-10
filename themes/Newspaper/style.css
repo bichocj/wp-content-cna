@@ -12568,9 +12568,6 @@ blockquote.pull-right:after {
     margin-left: 0;
   }
 }
-.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-module-thumb {
-  /* responsive portrait phone */
-}
 @media (max-width: 767px) {
   .td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-module-thumb {
     width: 100%;
@@ -29747,6 +29744,20 @@ div[class*="post-template-cna"] .td-post-featured-image img {
   width: 37%;
   float: right;
 }
+.td-grid-style-1.td_block_big_grid_3 .smallCustomBlock.td-big-grid-post {
+  margin-top: 10px;
+  background-color: #DD3333;
+  padding-top: 5px;
+}
+.td-grid-style-1.td_block_big_grid_3 .smallCustomBlock.td-big-grid-post .td-meta-info-container {
+  position: relative;
+}
+.td-grid-style-1.td_block_big_grid_3 .smallCustomBlock.td-big-grid-post:last-child {
+  float: right;
+}
+.td-grid-style-1.td_block_big_grid_3 .smallCustomBlock.td-big-grid-post .entry-title a {
+  color: #ffffff;
+}
 .fullimageSize-458798 img {
   margin-bottom: 10px;
   width: 100%;
@@ -30218,20 +30229,6 @@ div.td-header-sp-top-widget {
 }
 .whatsappBlock-2343242642 .subtext {
   font-size: .625em;
-}
-.smallCustomBlock.td-big-grid-post {
-  margin-top: 10px;
-  background-color: #DD3333;
-  padding-top: 5px;
-}
-.smallCustomBlock.td-big-grid-post .td-meta-info-container {
-  position: relative;
-}
-.smallCustomBlock.td-big-grid-post:last-child {
-  float: right;
-}
-.smallCustomBlock.td-big-grid-post .entry-title a {
-  color: #ffffff;
 }
 /* MAGAZINE - Custom Grid2 Gallery  */
 .customGrid2Gallery .td_block_text_with_title {

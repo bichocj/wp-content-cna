@@ -18,6 +18,9 @@ class td_module_mx6 extends td_module {
 
         <div class="<?php echo $this->get_module_classes(array("td-big-grid-post-$order_no", "td-big-grid-post", "td-small-thumb")); ?> smallCustomBlock">
             
+            <?php
+                echo $this->get_image('td_265x198');
+            ?>
             <div class="td-meta-info-container">
                 <div class="td-meta-align">
                     <div class="td-big-grid-meta">
@@ -26,9 +29,7 @@ class td_module_mx6 extends td_module {
                     </div>
                 </div>
             </div>
-            <?php
-                echo $this->get_image('td_265x198');
-            ?>
+            
             <?php echo '<div class="td-default-sharing share_module_block share_module_mx6">
 
                 <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=' . $this->href . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-facebook"></i></a>
