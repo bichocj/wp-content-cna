@@ -26,9 +26,9 @@ class td_module_mx5 extends td_module {
                     <div class="td-big-grid-meta">
                         <?php if (td_util::get_option('tds_category_module_mx5') == 'yes') { echo $this->get_category(); }?>
                         <?php echo $this->get_title();?>
-                    </div>
-                    <div class="mycExcerpt">
-                        <?php echo $this->get_excerpt(); ?>
+                        <div class="myExcerpt">
+                            <?php echo $this->get_excerpt(); ?>
+                        </div>
                     </div>
                     <div class="td-module-meta-info">
                         <?php if (td_util::get_option('tds_category_module_13') == 'yes') { echo $this->get_category(); }?>
