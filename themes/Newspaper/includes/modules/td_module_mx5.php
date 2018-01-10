@@ -18,6 +18,9 @@ class td_module_mx5 extends td_module {
 
         <div class="<?php echo $this->get_module_classes(array("td-big-grid-post-$order_no", "td-big-grid-post", "td-big-thumb")); ?> bigCustomBlock">
             
+            <?php
+                echo $this->get_image('td_534x462');
+            ?>
             <div class="td-meta-info-container">
                 <div class="td-meta-align">
                     <div class="td-big-grid-meta">
@@ -27,12 +30,15 @@ class td_module_mx5 extends td_module {
                     <div class="mycExcerpt">
                         <?php echo $this->get_excerpt(); ?>
                     </div>
+                    <div class="td-module-meta-info">
+                        <?php if (td_util::get_option('tds_category_module_13') == 'yes') { echo $this->get_category(); }?>
+                        <?php echo $this->get_author();?>
+                        <?php echo $this->get_date();?>
+                        <?php echo $this->get_comments();?>
+                    </div>
                 </div>
             </div>
 
-            <?php
-                echo $this->get_image('td_534x462');
-            ?>
 
             <?php echo '<div class="td-default-sharing share_module_block share_module_mx5">
 
