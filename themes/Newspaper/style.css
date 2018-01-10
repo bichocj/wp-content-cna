@@ -12577,10 +12577,6 @@ blockquote.pull-right:after {
     height: 170px;
   }
 }
-.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-big-grid-post {
-  /* responsive portrait phone */
-  background-color: #DD3333;
-}
 @media (max-width: 767px) {
   .td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-big-grid-post {
     display: inline-block;
