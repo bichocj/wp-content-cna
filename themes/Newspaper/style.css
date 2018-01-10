@@ -29159,7 +29159,9 @@ td-md-is-safari
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
-/* TYPOGRAPHY */
+/********************************** 
+* 		TYPOGRAPHY 
+**********************************/
 body,
 p {
   font-family: 'Open Sans', arial, sans-serif;
@@ -29221,9 +29223,9 @@ p {
     float: none;
   }
 }
-/*
-* TEMPLATES 
-*/
+/********************************** 
+* 			TEMPLATES 
+***********************************/
 /* Header */
 .td-header-wrap .top-bar-style-2 {
   position: relative;
@@ -29275,7 +29277,7 @@ p {
 .top-bar-style-2 .td-header-sp-top-menu {
   text-align: right;
 }
-div.td-header-top-menu-full .td-header-row [class="td-header-sp-top-widget"] {
+.td-header-top-menu-full .td-header-row [class="td-header-sp-top-widget"] {
   text-align: left;
   margin-top: 25px;
   margin-left: 15px;
@@ -29290,6 +29292,35 @@ div.td-header-top-menu-full .td-header-row [class="td-header-sp-top-widget"] {
 .menu-separator {
   margin: 11px 0 0;
   border-top: 2px solid #232121;
+}
+/* Footer */
+.td-footer-wrapper {
+  padding: 5px 0 0;
+  max-width: 1068px;
+  margin: 0 auto;
+}
+.td-footer-wrapper a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.td-footer-wrapper a:hover {
+  text-decoration: underline;
+}
+.td-footer-wrapper img {
+  display: block;
+  margin: 0 auto;
+  width: 12%;
+  height: auto;
+}
+.footer-logo-wrap {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.footer-email-wrap {
+  padding-top: 5px;
+}
+.td-footer-template-4 .td-footer-info {
+  margin-bottom: 26px;
 }
 /* Category Template CNA */
 .td_category_template_cna .td-category-header {
@@ -30026,34 +30057,6 @@ div.td_block_it837003251 > .vc_column-inner {
 .td_block_id_2828365501 .td_mod_wrap > div:first-of-type {
   font-size: 12px;
   margin-bottom: 5px;
-}
-div.td-footer-wrapper {
-  padding: 5px 0 0;
-  max-width: 1068px;
-  margin: 0 auto;
-}
-div.td-footer-wrapper a {
-  color: #ffffff;
-  text-decoration: none;
-}
-div.td-footer-wrapper a:hover {
-  text-decoration: underline;
-}
-div.td-footer-wrapper img {
-  display: block;
-  margin: 0 auto;
-  width: 12%;
-  height: auto;
-}
-div.footer-logo-wrap {
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
-div.footer-email-wrap {
-  padding-top: 5px;
-}
-div.td-footer-template-4 .td-footer-info {
-  margin-bottom: 26px;
 }
 .wpcna-sidebar-poll {
   padding: 10px 10px 10px;
@@ -31035,7 +31038,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   font-size: 14px;
   font-weight: 600;
   color: #4a4949;
-<<<<<<< HEAD
   line-height: 1.5;
   padding-left: 0;
   padding-right: 0;
@@ -31047,16 +31049,10 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
     line-height: 1.3;
   }
 }
-=======
-  padding-left: 0;
-  padding-right: 0;
-}
->>>>>>> a2dbe05eee84b7b15ec3c29bd832bb0cc9548591
 .bx-wrapper .bx-controls-direction a {
   top: 0;
   margin-top: 0;
   height: 100%;
-<<<<<<< HEAD
   width: 60px;
   text-indent: initial;
   color: transparent;
@@ -31066,12 +31062,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
     width: 40px;
   }
 }
-=======
-  width: 50px;
-  text-indent: initial;
-  color: transparent;
-}
->>>>>>> a2dbe05eee84b7b15ec3c29bd832bb0cc9548591
 .bx-wrapper .bx-controls-direction a::before {
   font-family: 'newspaper';
   speak: none;
@@ -31090,14 +31080,11 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   opacity: 0.75;
   transition: all ease 300ms;
 }
-<<<<<<< HEAD
 @media (max-width: 640px) {
   .bx-wrapper .bx-controls-direction a::before {
     font-size: 40px;
   }
 }
-=======
->>>>>>> a2dbe05eee84b7b15ec3c29bd832bb0cc9548591
 .bx-wrapper .bx-controls-direction a:hover::before {
   opacity: 1;
   transform: scale(1.2);
@@ -31109,7 +31096,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
 .bx-wrapper .bx-controls-direction .bx-prev::before {
   content: '\e802';
   left: 15px;
-<<<<<<< HEAD
   padding: 0px 15px 0px 5px;
   border-right: 3px solid;
 }
@@ -31117,8 +31103,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   .bx-wrapper .bx-controls-direction .bx-prev::before {
     border: none;
   }
-=======
->>>>>>> a2dbe05eee84b7b15ec3c29bd832bb0cc9548591
 }
 .bx-wrapper .bx-controls-direction .bx-next {
   background: none;
