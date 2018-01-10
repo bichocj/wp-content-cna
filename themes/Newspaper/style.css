@@ -29479,6 +29479,16 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   padding: 30px;
   margin-bottom: 40px;
 }
+@media (max-width: 640px) {
+  .post-template-cna-2 .td-post-header {
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .post-template-cna-2 .td-post-header {
+    padding: 10px;
+  }
+}
 .post-template-cna-2 .td-post-header .td-post-title {
   margin-bottom: 20px;
 }
@@ -31033,13 +31043,27 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   background: #e6e2e2;
   padding: 15px 35px;
 }
+@media (max-width: 640px) {
+  .bx-wrapper .bxslider .bx-caption {
+    position: static;
+    padding: 15px;
+  }
+}
 .bx-wrapper .bxslider .bx-caption span {
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   color: #4a4949;
+  line-height: 1.5;
   padding-left: 0;
   padding-right: 0;
+}
+@media (max-width: 640px) {
+  .bx-wrapper .bxslider .bx-caption span {
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.3;
+  }
 }
 .bx-wrapper .bx-controls-direction a {
   top: 0;
@@ -31048,6 +31072,11 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   width: 60px;
   text-indent: initial;
   color: transparent;
+}
+@media (max-width: 640px) {
+  .bx-wrapper .bx-controls-direction a {
+    width: 40px;
+  }
 }
 .bx-wrapper .bx-controls-direction a::before {
   font-family: 'newspaper';
@@ -31067,6 +31096,11 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   opacity: 0.75;
   transition: all ease 300ms;
 }
+@media (max-width: 640px) {
+  .bx-wrapper .bx-controls-direction a::before {
+    font-size: 40px;
+  }
+}
 .bx-wrapper .bx-controls-direction a:hover::before {
   opacity: 1;
   transform: scale(1.2);
@@ -31081,6 +31115,11 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   padding: 0px 15px 0px 5px;
   border-right: 3px solid;
 }
+@media (max-width: 640px) {
+  .bx-wrapper .bx-controls-direction .bx-prev::before {
+    border: none;
+  }
+}
 .bx-wrapper .bx-controls-direction .bx-next {
   background: none;
   right: 0;
@@ -31091,6 +31130,11 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
   left: auto;
   padding: 0px 5px 0px 15px;
   border-left: 3px solid;
+}
+@media (max-width: 640px) {
+  .bx-wrapper .bx-controls-direction .bx-next::before {
+    border: none;
+  }
 }
 .bx-wrapper .bx-pager {
   bottom: -40px;

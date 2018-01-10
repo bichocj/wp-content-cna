@@ -451,6 +451,12 @@ div[class*="post-template-cna"] {
 		background-color: @background_color_6;
 		padding: 30px;
 		margin-bottom: 40px;
+		@media (max-width: 640px) {
+			padding: 15px;
+		}
+		@media (max-width: 480px) {
+			padding: 10px;			
+		}
 		.td-post-title {
 			margin-bottom: 20px;
 		}
@@ -2329,18 +2335,30 @@ div.td-default-sharing.share_module_mx6 {
 		left: 0;
 	}
 	.bxslider {
+		@media (max-width: 640px) {
+		}
 		img { // slide img
 			width: 100%;
 			height: auto;
 		}
 		.bx-caption {
+			@media (max-width: 640px) {
+				position: static;
+				padding: 15px;			
+			}
 			background: #e6e2e2;
 			padding: 15px 35px;
 			span {
+				@media (max-width: 640px) {
+					padding:0;
+					font-size: 13px;
+					line-height: 1.3;
+				}			
 				font-family: inherit;
 				font-size: 14px;	
 				font-weight: 600;
 				color: @color_5; 
+				line-height: 1.5;
 				padding-left: 0;
 				padding-right: 0;	
 			}
@@ -2354,6 +2372,9 @@ div.td-default-sharing.share_module_mx6 {
 			width: 60px;
 			text-indent: initial;
 			color: transparent;
+			@media (max-width: 640px) {
+				width: 40px;
+			}
 			// Icon 
 			&::before {
 				font-family: 'newspaper';
@@ -2372,6 +2393,9 @@ div.td-default-sharing.share_module_mx6 {
 				top: 40%;
 				opacity: 0.75;
 				transition: all ease 300ms;
+				@media (max-width: 640px) {
+					font-size: 40px;
+				}				
 			}
 			&:hover {
 				&::before {
@@ -2387,7 +2411,10 @@ div.td-default-sharing.share_module_mx6 {
 				content: '\e802';
 				left: 15px;
 				padding: 0px 15px 0px 5px;
-    			border-right: 3px solid;
+				border-right: 3px solid;
+				@media (max-width: 640px) {
+					border: none;
+				}
 			}
 			
 		}
@@ -2400,6 +2427,9 @@ div.td-default-sharing.share_module_mx6 {
 				left: auto;
 				padding: 0px 5px 0px 15px;
 				border-left: 3px solid;
+				@media (max-width: 640px) {
+					border: none;
+				}
 			}
 		} 
 
