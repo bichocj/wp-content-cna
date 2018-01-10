@@ -75,21 +75,6 @@ p {
 	font-family: @font1;
 }
 
-.td-page-content,
-.td-post-content,
-.wpb_text_column,
-.td_block_text_with_title,
-.bbpress,
-.woocommerce #tab-description,
-.mce-content-body,
-.comment-content {
-	blockquote p {
-		font-size: 21px;
-		line-height: 1.4;
-		text-transform: none;
-	}
-}
-
 
 
 /********************************** 
@@ -327,6 +312,9 @@ div.td-header-top-menu-full {
 // Title
 .td-post-title {
 	margin-bottom: 40px;
+	@media (max-width: 767px) {
+		margin-bottom: 26px;
+	}
 	.entry-title {
 		font-weight: 600;
 	}
@@ -360,6 +348,25 @@ div.td-header-top-menu-full {
 .mce-content-body li{
 	font-size: 18px;
 	line-height: 1.625;
+
+	@media (max-width: 767px) {
+		font-size: 20px;
+		line-height: 1.25;
+	}
+}
+.td-page-content,
+.td-post-content,
+.wpb_text_column,
+.td_block_text_with_title,
+.bbpress,
+.woocommerce #tab-description,
+.mce-content-body,
+.comment-content {
+	blockquote p {
+		font-size: 21px;
+		line-height: 1.4;
+		text-transform: none;
+	}
 }
 // Featured Image
 .td-post-featured-image {
@@ -1916,58 +1923,6 @@ div.td-default-sharing.share_module_mx6 {
 			line-height: 26px;
 		}
 	}
-	.td-post-content {
-		p {
-			font-size: 18px;
-			line-height: 26px;
-		}
-		li {
-			font-size: 18px;
-			line-height: 26px;
-		}
-	}
-	.wpb_text_column {
-		p {
-			font-size: 18px;
-			line-height: 26px;
-		}
-		li {
-			font-size: 18px;
-			line-height: 26px;
-		}
-	}
-	.td_block_text_with_title {
-		p {
-			font-size: 18px;
-			line-height: 26px;
-		}
-		li {
-			font-size: 18px;
-			line-height: 26px;
-		}
-	}
-	.woocommerce {
-		#tab-description {
-			p {
-				font-size: 18px;
-				line-height: 26px;
-			}
-			li {
-				font-size: 18px;
-				line-height: 26px;
-			}
-		}
-	}
-	.mce-content-body {
-		p {
-			font-size: 18px;
-			line-height: 26px;
-		}
-		li {
-			font-size: 18px;
-			line-height: 26px;
-		}
-	}
 }
 @media (max-width: 767px) {
 	.smallGrid2Gallery.td_module_mx10.td-small-thumb {
@@ -2281,14 +2236,6 @@ div.td-default-sharing.share_module_mx6 {
 @media (min-width: 601px) {
 	.remove-thisImp-25151 {
 		display: none;
-	}
-}
-@media (max-width:400px) {
-	.td-post-content {
-		p {
-			font-size: 20px;
-			line-height: 25px;
-		}
 	}
 }
 @media (max-width:600px) {

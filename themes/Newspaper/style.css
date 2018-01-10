@@ -29193,18 +29193,6 @@ p {
 #bbpress-forums .bbp-topic-header .bbp-meta .bbp-topic-permalink {
   font-family: 'Open Sans', arial, sans-serif;
 }
-.td-page-content blockquote p,
-.td-post-content blockquote p,
-.wpb_text_column blockquote p,
-.td_block_text_with_title blockquote p,
-.bbpress blockquote p,
-.woocommerce #tab-description blockquote p,
-.mce-content-body blockquote p,
-.comment-content blockquote p {
-  font-size: 21px;
-  line-height: 1.4;
-  text-transform: none;
-}
 /********************************** 
 *		VC CLASES
 ***********************************/
@@ -29378,6 +29366,11 @@ div.td-header-top-menu-full .td-header-row [class="td-header-sp-top-widget"] {
 .td-post-title {
   margin-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .td-post-title {
+    margin-bottom: 26px;
+  }
+}
 .td-post-title .entry-title {
   font-weight: 600;
 }
@@ -29408,6 +29401,40 @@ div.td-header-top-menu-full .td-header-row [class="td-header-sp-top-widget"] {
 .mce-content-body li {
   font-size: 18px;
   line-height: 1.625;
+}
+@media (max-width: 767px) {
+  .td-post-content,
+  .td-page-content,
+  .wpb_text_column,
+  .td_block_text_with_title,
+  .woocommerce #tab-description,
+  .td-post-content p,
+  .td-page-content p,
+  .wpb_text_column p,
+  .td_block_text_with_title p,
+  .woocommerce #tab-description p,
+  .mce-content-body p,
+  .td-page-content li,
+  .td-post-content li,
+  .wpb_text_column li,
+  .td_block_text_with_title li,
+  .woocommerce #tab-description li,
+  .mce-content-body li {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+}
+.td-page-content blockquote p,
+.td-post-content blockquote p,
+.wpb_text_column blockquote p,
+.td_block_text_with_title blockquote p,
+.bbpress blockquote p,
+.woocommerce #tab-description blockquote p,
+.mce-content-body blockquote p,
+.comment-content blockquote p {
+  font-size: 21px;
+  line-height: 1.4;
+  text-transform: none;
 }
 .td-post-featured-image img {
   width: 100% !important;
@@ -30727,46 +30754,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
     font-size: 18px;
     line-height: 26px;
   }
-  .td-post-content p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .td-post-content li {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .wpb_text_column p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .wpb_text_column li {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .td_block_text_with_title p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .td_block_text_with_title li {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .woocommerce #tab-description p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .woocommerce #tab-description li {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .mce-content-body p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .mce-content-body li {
-    font-size: 18px;
-    line-height: 26px;
-  }
 }
 @media (max-width: 767px) {
   .smallGrid2Gallery.td_module_mx10.td-small-thumb:first-child .td-module-thumb {
@@ -30987,12 +30974,6 @@ div.td-default-sharing.share_module_mx6 .td-social-sharing-buttons {
 @media (min-width: 601px) {
   .remove-thisImp-25151 {
     display: none;
-  }
-}
-@media (max-width: 400px) {
-  .td-post-content p {
-    font-size: 20px;
-    line-height: 25px;
   }
 }
 @media (max-width: 600px) {
