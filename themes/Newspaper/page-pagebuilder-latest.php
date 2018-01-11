@@ -124,9 +124,9 @@ if(!empty($post->post_content)) { //show this only when we have content
                         <div class="td-ss-main-content">
                             <!-- CNA TV -->
                             <div class="cnaTV">
-                                <h4 class="block-title"><span>CNA TV</span></h4>                                
+                                <h4 class="block-title"><span>Video de CNA</span></h4>                                
                                 <div
-                                    style="height: 450px"> Aquí CNA TV
+                                    style="height: 450px"> Aquí video de CNA
                                 </div>
                             </div>
                             <!-- End CNA TV -->
