@@ -80,11 +80,9 @@ Header style 6 - CNA
             </div>
 
             <!-- Last News -->
-            <div class="td_block_wrap td_block_15 ">
+            <div id="last-news-bar" class="td_block_wrap td_block_15 ">
                 <div id="" class=" td-column-3">
-
                     <div class="td-block-row">
-                        
                     <?php $newsQuery = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 4) );?>
                     <?php if($newsQuery->have_posts()) : ?>
                         <?php while($newsQuery->have_posts()) : $newsQuery->the_post(); ?>
@@ -127,7 +125,6 @@ Header style 6 - CNA
                         // Restore original post data
                         wp_reset_postdata();
                     ?>
-
                     </div>
                 </div>
             </div>
