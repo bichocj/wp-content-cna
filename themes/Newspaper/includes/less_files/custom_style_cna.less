@@ -619,7 +619,17 @@ div[class*="post-template-cna"] {
 				@media screen and (max-width: 992px) {				
 					padding-bottom: 0;
 					margin-bottom: 0;
-				}					
+				}		
+				&:hover {
+					a[rel="bookmark"] {
+						&::before {						
+							background-color:rgba(136, 80, 80, 0.2); //  rgba(221, 51, 51, 0.1);
+						}
+					}
+					.entry-thumb {
+						height: 110%;
+					}
+				}			
 			}
 		}
 		//Para efecto hover
@@ -631,6 +641,9 @@ div[class*="post-template-cna"] {
 		.td-module-image{
 			width: 100%; // Responsive
 			position: relative; // Responsive
+			.td-post-category{
+				z-index: 1;
+			}			
 		}
 		.td-module-thumb {		
 			@media (min-width:768px) and (max-width: 1018px) {
@@ -646,6 +659,26 @@ div[class*="post-template-cna"] {
 			margin-bottom: 10px;
 			overflow: hidden;
 			position: relative;
+			a[rel="bookmark"] {
+				&::before {
+					bottom: 0;
+					content: "";
+					display: block;
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					z-index: 1;					
+					background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.4) 100%);
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+					background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.4) 100%);
+					background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.4) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+					-webkit-transition: background-color 0.3s ease;
+					-moz-transition: background-color 0.3s ease;
+					-o-transition: background-color 0.3s ease;
+					transition: background-color 0.3s ease;
+				}
+			}
 		} 
 		.entry-thumb {
 			height: 100%;
@@ -657,6 +690,8 @@ div[class*="post-template-cna"] {
 			position: absolute;
 			left: 50%;
 			top: 50%;
+			transition: height 0.3s ease, opacity 0.3s;
+    		-webkit-transition: height 0.3s ease, opacity 0.3s;
 		}
 		.entry-title {
 			@media screen and (max-width: 767px) {
