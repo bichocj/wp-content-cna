@@ -93,7 +93,8 @@ if(!empty($post->post_content)) { //show this only when we have content
 ?>
 
 <?php if (is_home() || is_front_page()) { ?>
-<div class="lastNews td-main-content-wrap">
+<!-- Lo Más visto -->
+<div class="most_viewed_news td-main-content-wrap">
     <div class="td-container">
         <div class="block-title">
             <span>Lo más visto en CNA</span>
@@ -109,6 +110,7 @@ if(!empty($post->post_content)) { //show this only when we have content
         <?php endif ?>
     </div>
 </div>
+<!-- end Lo Más Visto -->
 <?php } ?>
 
 <div class="td-container td-pb-article-list">
