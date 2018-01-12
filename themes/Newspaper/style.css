@@ -29419,6 +29419,12 @@ p {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
+@media (max-width: 767px) {
+  .most_viewed_news a {
+    height: 66px;
+    -webkit-line-clamp: 3;
+  }
+}
 @media (max-width: 500px) {
   .most_viewed_news a {
     min-height: 90px;
