@@ -552,8 +552,13 @@ div[class*="post-template-cna"] {
 	color: @color_instagram !important;
 }
 /* SOCIAL COUNTER */
-.td_social_instagram {
-	background-color: @color_instagram !important;
+.td_social_type{
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.td_social_instagram {
+		background-color: @color_instagram !important;
+	}
 }
 /* WP-POLLS */
 .wp-polls  {
@@ -605,6 +610,22 @@ div[class*="post-template-cna"] {
 		}
 	}
 
+}
+/* WPC WEATHER */
+// Weather in Sidebar
+[class*="sidebar"] {
+	#wpc-weather {
+		margin: 0 0 10px;
+		
+	}
+	.wpc-weather-id {
+		&:last-child {
+			#wpc-weather {
+				margin-bottom: 0;
+			}
+		}
+	}
+	
 }
 
 /********************************** 

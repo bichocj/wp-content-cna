@@ -29631,7 +29631,10 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   color: #e1306e !important;
 }
 /* SOCIAL COUNTER */
-.td_social_instagram {
+.td_social_type:last-child {
+  margin-bottom: 0;
+}
+.td_social_type.td_social_instagram {
   background-color: #e1306e !important;
 }
 /* WP-POLLS */
@@ -29683,6 +29686,13 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   padding-top: 22px;
   text-align: center;
   opacity: 0.9;
+}
+/* WPC WEATHER */
+[class*="sidebar"] #wpc-weather {
+  margin: 0 0 10px;
+}
+[class*="sidebar"] .wpc-weather-id:last-child #wpc-weather {
+  margin-bottom: 0;
 }
 /********************************** 
 *			DIV BLOCKS 
