@@ -166,7 +166,7 @@ p {
 		.thisCNATVWrap {
 			margin-top: 10px;
 		}
-		.thisCNATV {
+		.thisCNATV { // a
 			display: block;
 			background-image: url(images/custom/cna-envivonuevo-white.png);
 			background-position: center;
@@ -175,6 +175,12 @@ p {
 			width: 60%;
 			padding-bottom: 73.5%;
 			margin-left: 5px;
+			transition: transform ease 300ms;
+			&:hover {
+				-webkit-transform: scale(1.1);
+				        transform: scale(1.1);
+				// opacity: 0.9;
+			}
 		}
 	}
 	.td-header-top-menu-full {
@@ -184,9 +190,9 @@ p {
 		margin-bottom: 10px;
 		a {
 			color: white;
-			.td-icon-font {
-				color: white;
-			}
+		}
+		.td-icon-font {
+			color: white;
 		}
 		[class*="td-header-sp"] {
 			margin: 10px 5px;

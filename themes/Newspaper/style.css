@@ -29271,6 +29271,11 @@ p {
   width: 60%;
   padding-bottom: 73.5%;
   margin-left: 5px;
+  transition: transform ease 300ms;
+}
+.td-header-cna .top-bar-style-2 .thisCNATV:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .td-header-cna .td-header-top-menu-full {
   background-color: #d33;
@@ -29279,7 +29284,7 @@ p {
 .td-header-cna .td-header-top-menu-full a {
   color: white;
 }
-.td-header-cna .td-header-top-menu-full a .td-icon-font {
+.td-header-cna .td-header-top-menu-full .td-icon-font {
   color: white;
 }
 .td-header-cna .td-header-top-menu-full [class*="td-header-sp"] {
