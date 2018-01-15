@@ -29271,14 +29271,10 @@ p {
   width: 60%;
   padding-bottom: 73.5%;
   margin-left: 5px;
-<<<<<<< HEAD
   -webkit-transition: -webkit-transform ease 300ms;
   transition: -webkit-transform ease 300ms;
   transition: transform ease 300ms;
   transition: transform ease 300ms, -webkit-transform ease 300ms;
-=======
-  transition: transform ease 300ms;
->>>>>>> 3c4f283513ef63a37ade765995d9ee84669821dd
 }
 .td-header-cna .top-bar-style-2 .thisCNATV:hover {
   -webkit-transform: scale(1.1);
