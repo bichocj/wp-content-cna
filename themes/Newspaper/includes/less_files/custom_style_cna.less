@@ -166,7 +166,7 @@ p {
 		.thisCNATVWrap {
 			margin-top: 10px;
 		}
-		.thisCNATV {
+		.thisCNATV { // a
 			display: block;
 			background-image: url(images/custom/cna-envivonuevo-white.png);
 			background-position: center;
@@ -175,6 +175,15 @@ p {
 			width: 60%;
 			padding-bottom: 73.5%;
 			margin-left: 5px;
+			-webkit-transition: -webkit-transform ease 300ms;
+			transition: -webkit-transform ease 300ms;
+			transition: transform ease 300ms;
+			transition: transform ease 300ms, -webkit-transform ease 300ms;
+			&:hover {
+				-webkit-transform: scale(1.1);
+				        transform: scale(1.1);
+				// opacity: 0.9;
+			}
 		}
 	}
 	.td-header-top-menu-full {
@@ -184,13 +193,14 @@ p {
 		margin-bottom: 10px;
 		a {
 			color: white;
-			.td-icon-font {
-				color: white;
-			}
+		}
+		.td-icon-font {
+			color: white;
 		}
 		[class*="td-header-sp"] {
 			margin: 10px 5px;
 			color: white;
+			font-weight: 600;
 		}
 		.td-header-sp-top-widget {
 			text-align: left;
@@ -231,6 +241,9 @@ p {
 				margin: 0 0 -5px;
 				padding: 2px 10px;
 				width: auto;
+				.time_temperature {
+					font-weight: normal;
+				}
 			}
 			.wpc-weather-id {
 				display: inline-block;
@@ -405,22 +418,22 @@ p {
 	.nTitle {
 		display: block;
 		width: 100%;
-		height: 88px;
+		// height: 88px;
+		height: 66px;
 		color: @color_1;
 		font-size: 17px;
 		line-height: 1.3;
 		overflow: hidden;
 		//Truncate
 		display: -webkit-box;
-		-webkit-line-clamp: 4;
+		// -webkit-line-clamp: 4;
+		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;  
 		text-overflow: ellipsis;
 		a {
 			color: @color_1;			
-		}
+		}	
 		@media (max-width: 767px) {
-			/*height: 66px;
-			-webkit-line-clamp: 3;*/
 			-webkit-line-clamp: unset;
 			display: block;
 			height: auto;
