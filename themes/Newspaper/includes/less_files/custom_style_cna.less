@@ -79,9 +79,9 @@ p {
 
 /* CONTENEDOR */
 .td-container {
-	max-width: 1274px;
-	@media (min-width: 1019px){
-		width: 100%
+	@media (min-width: 1360px){
+		width: 100%;
+		max-width: 1274px;
 	}
 }
 
@@ -145,7 +145,7 @@ p {
 ***********************************/
 
 /* Header */
-.td-header-wrap {
+.td-header-cna {
 	.top-bar-style-2 {
 		position: relative;
 		&::before {
@@ -154,38 +154,47 @@ p {
 			background-image: url(images/custom/nuevologocna-header.png);
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
-			top: 17px;
+			background-size: contain;
+			top: 8px;
 			right: 0;
 			bottom: 0;
 			left: 0;
-			width: 16%;
-			padding-bottom: 16.21%;
+			width: 13%;
+			padding-bottom: 13.21%;
 			margin: auto;
 		}
 		.thisCNATVWrap {
 			margin-top: 10px;
 		}
 		.thisCNATV {
+			display: block;
 			background-image: url(images/custom/cna-envivonuevo.png);
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
-			width: 70%;
+			background-size: contain;
+			width: 60%;
 			padding-bottom: 73.5%;
 			margin-left: 5px;
 		}
 	}
 	.td-header-top-menu-full {
-		border-top: 2px solid #232121;
-		border-bottom: 2px solid #232121;
+		// border-top: 2px solid #232121;
+		// border-bottom: 2px solid #232121;
+		background-color: #d33;
 		margin-bottom: 10px;
+		a {
+			color: white;
+			.td-icon-font {
+				color: white;
+			}
+		}
 		[class*="td-header-sp"] {
-			margin: 26px 0 24px;
+			margin: 10px 5px;
+			color: white;
 		}
 		.td-header-sp-top-widget {
 			text-align: left;
-			margin-top: 25px;
+			// margin-top: 25px;
 			.textSub {
 				padding-left: 5px;
 			}
@@ -197,8 +206,70 @@ p {
 		}
 		.td-header-sp-top-menu {
 			text-align: right;
+			#wpc-weather.small {
+				.now {
+					>.location_name {
+						display: block;
+					}
+					>div {
+						display: block;
+						font-size: 11px;
+					}
+					.time_temperature {
+						margin-top: -10px;
+					}
+					.time_symbol {
+						svg {
+							margin-bottom: 0;
+							width: 30px;
+							height: 30px;
+						}
+					}
+				}
+			}
+			#wpc-weather {
+				margin: 0 0 -5px;
+				padding: 2px 10px;
+				width: auto;
+			}
+			.wpc-weather-id {
+				display: inline-block;
+				margin: 10px 0 10px 5px;
+				border-right: 1px solid #ffffff;
+				&:first-child {
+					border-left: 1px solid #ffffff;
+				}
+			}
+			.td_data_time {
+				display: block;
+				color: white;
+				margin-bottom: 0;
+				margin-top: 5px;
+				line-height: 18px;
+			}
 		}
 	}
+	// Barra de Navegacion
+	#td-header-menu {
+		min-height: 60px;	
+	}
+	.td-main-menu-logo{
+		height: 60px;
+		a {
+			line-height: 58px;
+		}
+		img {
+			max-height: 60px;
+		}
+	}  
+	.sf-menu {
+		> li {
+			> a {
+				line-height: 60px;
+			}
+		} 
+	}
+
 	// Separator of Menu
 	.menu-separator {
 		margin: 11px 0 0;
@@ -1905,48 +1976,7 @@ div.td_block_it837003251 {
 		}
 	}
 }
-.td-header-sp-top-menu {
-	#wpc-weather.small {
-		.now {
-			>.location_name {
-				display: block;
-			}
-			>div {
-				display: block;
-				font-size: 11px;
-			}
-			.time_temperature {
-				margin-top: -10px;
-			}
-			.time_symbol {
-				svg {
-					margin-bottom: 0;
-					width: 30px;
-					height: 30px;
-				}
-			}
-		}
-	}
-	#wpc-weather {
-		margin: 0 0 -5px;
-		padding: 2px 10px;
-		width: auto;
-	}
-	.wpc-weather-id {
-		display: inline-block;
-		margin: 10px 0 10px 5px;
-		border-right: 1px solid #808080;
-		&:first-child {
-			border-left: 1px solid #808080;
-		}
-	}
-	.td_data_time {
-		display: block;
-		margin-bottom: 0;
-		margin-top: 5px;
-		line-height: 18px;
-	}
-}
+
 
 
 #tdw-2732633243 {

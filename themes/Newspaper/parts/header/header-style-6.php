@@ -26,7 +26,7 @@ Header style 6 - CNA
             </div>
         </div>
     </div>
-    <hr class="menu-separator">
+    <!-- <hr class="menu-separator"> -->
 
     <div class="td-banner-wrap-full">
         <div class="td-container td-container-header td-header-row td-header-header">

@@ -27,8 +27,8 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
     </div>
     <div class="thisCNATVWrap">
         <div class="textSub">Televisión en vivo</div>
-        <div class="thisCNATV">
-        </div>
+        <a href="#" class="thisCNATV" title="CNA TV en Vivo">
+        </a>
     </div>
 </div>
 <?php
