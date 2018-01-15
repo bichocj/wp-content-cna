@@ -29233,6 +29233,44 @@ p {
 .section-cna-vivo .td_block_text_with_title {
   padding-bottom: 0;
 }
+.section-cna-vivo .container-tv-vivo {
+  background-color: #1e1641;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.section-cna-vivo .container-tv-vivo .container-reproductor {
+  padding-left: 0;
+  padding-right: 0;
+}
+.section-cna-vivo .container-tv-vivo [class*="banner-tv"] {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal {
+  color: #5ddfdf;
+  font-size: 26px;
+  letter-spacing: -1.5px;
+  margin-bottom: 30px;
+}
+.section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal:last-child {
+  margin-bottom: 20px;
+}
+.section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal > span {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 3px 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal > span.localidad {
+  background-color: #7a69fa;
+}
+.section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal > span.ciudad {
+  background-color: #bb4c8f;
+}
 .section-magazine .td_block_text_with_title {
   padding-bottom: 0;
 }

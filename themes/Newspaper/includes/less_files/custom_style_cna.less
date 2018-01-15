@@ -130,6 +130,45 @@ p {
 	.td_block_text_with_title {
 		padding-bottom: 0;
 	}
+	// Espacio de background
+	.container-tv-vivo { //row
+		background-color: #1e1641;
+		margin: auto;
+		padding-top: 50px;
+		padding-bottom: 30px;
+		.container-reproductor { //contenedor de reproductor
+			padding-left: 0;
+			padding-right: 0;
+		}
+		[class*="banner-tv"] {
+			text-align: center;
+			font-family: @font3;
+			.canal {
+				color: #5ddfdf; 
+				font-size: 26px;
+				letter-spacing: -1.5px;
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 20px;
+				}
+				> span {
+					display: inline-block;
+					color: white;
+					font-size: 18px;
+					letter-spacing: -1px;					
+					padding: 3px 10px;
+					margin-top: 5px;
+					text-transform: uppercase;
+					&.localidad {
+						background-color: #7a69fa;
+					}
+					&.ciudad {
+						background-color: #bb4c8f;
+					}
+				}
+			}
+		}
+	}
 }
 .section-magazine {
 	.td_block_text_with_title {
