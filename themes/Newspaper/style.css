@@ -29565,6 +29565,47 @@ p {
   float: left;
   padding-left: 15px;
 }
+/* CNA Videos*/
+#CNA_videos {
+  margin-bottom: 26px;
+}
+#CNA_videos .video-grid-scroll {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#CNA_videos .video-grid-scroll .video_module_small {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+#CNA_videos .video-grid-scroll .video_module_small .video-module-thumb {
+  margin-bottom: 5px;
+}
+#CNA_videos .video-grid-scroll .video_module_small .video-module-thumb a[rel="bookmark"] {
+  display: block;
+}
+#CNA_videos .video-grid-scroll .video_module_small .entry-title {
+  margin: 7px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+#CNA_videos .video_module_big .video-module-thumb {
+  margin-bottom: 5px;
+  text-align: center;
+}
+#CNA_videos .video_module_big .video-module-thumb a[rel="bookmark"] {
+  display: block;
+}
+#CNA_videos .video_module_big .entry-thumb {
+  display: inline-block;
+  width: 100%;
+  max-width: 640px;
+}
+#CNA_videos .video_module_big .entry-title {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 7px 0;
+}
 /*  PopUp Maker*/
 /* .pum-container {
 	.iframe {
@@ -29985,26 +30026,26 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
     margin: 0 24px;
   }
 }
-.td-trending-now-wrapper {
+s .td-trending-now-wrapper {
   padding: 0px;
   height: 40px;
   background-color: #e9e9e9;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .td-trending-now-wrapper {
+  s .td-trending-now-wrapper {
     height: 90px;
   }
 }
 @media screen and (max-width: 767px) {
-  .td-trending-now-wrapper {
+  s .td-trending-now-wrapper {
     height: 100px;
   }
 }
-.td-trending-now-wrapper.trending-now-header {
+s .td-trending-now-wrapper.trending-now-header {
   margin-bottom: 24px;
 }
-.td-trending-now-wrapper .td-trending-now-title {
+s .td-trending-now-wrapper .td-trending-now-title {
   width: 35%;
   height: 40px;
   line-height: 39px;
@@ -30012,34 +30053,34 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  .td-trending-now-wrapper .td-trending-now-title {
+  s .td-trending-now-wrapper .td-trending-now-title {
     width: 100%;
     text-align: center;
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
-  .td-trending-now-wrapper .td-trending-now-display-area {
+  s .td-trending-now-wrapper .td-trending-now-display-area {
     display: block;
     height: 26px;
     position: relative;
     top: 10px;
   }
 }
-.td-trending-now-wrapper .td-trending-now-post {
+s .td-trending-now-wrapper .td-trending-now-post {
   width: 60%;
   height: 40px;
   padding-top: 8px;
   padding-right: 0;
 }
 @media screen and (max-width: 767px) {
-  .td-trending-now-wrapper .td-trending-now-post {
+  s .td-trending-now-wrapper .td-trending-now-post {
     width: 100%;
     padding: 0 15px;
     text-align: center;
   }
 }
-.td-trending-now-wrapper .td-trending-now-post .entry-title {
+s .td-trending-now-wrapper .td-trending-now-post .entry-title {
   text-transform: none;
   font-size: 16px;
   white-space: nowrap;
@@ -30047,12 +30088,12 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   text-overflow: ellipsis;
 }
 @media screen and (max-width: 767px) {
-  .td-trending-now-wrapper .td-trending-now-post .entry-title {
+  s .td-trending-now-wrapper .td-trending-now-post .entry-title {
     font-size: 14px;
     white-space: normal;
   }
 }
-.td-trending-now-wrapper .td-next-prev-wrap {
+s .td-trending-now-wrapper .td-next-prev-wrap {
   display: none;
 }
 /********************************** 

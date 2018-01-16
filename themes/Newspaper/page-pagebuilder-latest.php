@@ -137,11 +137,92 @@ if(!empty($post->post_content)) { //show this only when we have content
                     <div class="td-pb-span8 td-main-content" role="main">
                         <div class="td-ss-main-content">
                             <!-- CNA TV -->
-                            <div class="cnaTV">
-                                <h4 class="block-title"><span>Video de CNA</span></h4>                                
-                                <div
-                                    style="height: 450px"> Aquí video de CNA
-                                </div>
+                            <div class="section-cna-videos">
+                                <h4 class="block-title"><span>Videos de CNA</span></h4>                                
+                                <!-- Videos -->
+                                <div id="CNA_videos" class="">
+                                    <!-- Ultimos videos -->
+                                    <section class="video-grid-wrapper">
+                                        <h3>Últimos Videos</h3>
+                                        <div class="video-grid-scroll clearfix">
+                                            <div class="video_module_small">
+                                                <div class="video-module-thumb">
+                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
+                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                    </a>
+                                                </div>
+                                                <div class="video-meta-container">
+                                                    <h3 class="entry-title">
+                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="video_module_small">
+                                                <div class="video-module-thumb">
+                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
+                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                    </a>
+                                                </div>
+                                                <div class="video-meta-container">
+                                                    <h3 class="entry-title">
+                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="video_module_small">
+                                                <div class="video-module-thumb">
+                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
+                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                    </a>
+                                                </div>
+                                                <div class="video-meta-container">
+                                                    <h3 class="entry-title">
+                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="video_module_small">
+                                                <div class="video-module-thumb">
+                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
+                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                    </a>
+                                                </div>
+                                                <div class="video-meta-container">
+                                                    <h3 class="entry-title">
+                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Video Destacado -->
+                                    <section class="video-grid-wrapper">        
+                                        <h3>Video Destacado</h3>            
+                                        <div class="video_module_big">
+                                                <div class="video-module-thumb">
+                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
+                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
+                                                    </a>
+                                                </div>
+                                                <div class="video-meta-container">
+                                                    <h2 class="entry-title">
+                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                    </section>
+                                        
+                                    <div class="clearfix"></div>
+                                
+                            </div>
+                                <!-- end Videos -->
+
+
                             </div>
                             <!-- End CNA TV -->
                             <!-- Noticias -->

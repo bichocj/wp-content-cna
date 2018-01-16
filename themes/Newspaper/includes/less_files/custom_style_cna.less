@@ -334,7 +334,6 @@ p {
 	}
 }
 
-
 /* Footer */
 .td-footer-wrapper {
 	padding: 5px 0 0;
@@ -496,6 +495,52 @@ p {
 		padding-left: 15px;
 	}
 }
+
+/* CNA Videos*/
+#CNA_videos {
+	margin-bottom: 26px;
+	.video-grid-scroll {
+		margin-left: -10px;
+		margin-right: -10px;
+		.video_module_small {
+			float: left;
+			width: 25%;
+			padding: 0 10px;
+			.video-module-thumb {
+				margin-bottom: 5px;
+				a[rel="bookmark"] {
+					display: block;
+				}
+			}
+			.entry-title {
+				margin: 7px 0;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+		}
+	}
+	.video_module_big {
+		.video-module-thumb {
+			margin-bottom: 5px;
+			text-align: center;
+			a[rel="bookmark"] {
+				display: block;
+			}
+		}
+		.entry-thumb {
+			display: inline-block;
+			width: 100%;
+			max-width: 640px;
+		}
+		.entry-title {
+			font-size: 24px;
+			line-height: 1.3;
+			margin:  7px 0;
+		}
+	}
+}
+
+
 
 /*  PopUp Maker*/
 /* .pum-container {
@@ -925,7 +970,10 @@ div[class*="post-template-cna"] {
 		}
 	} 
 }
+
 /* Trending bar */
+//
+// Correccion de apariencia al estar dentro de un .row
 .td-block-row {
 	> .td-trending-now-wrapper {
 		@media (min-width: 768px) {
@@ -939,7 +987,8 @@ div[class*="post-template-cna"] {
 		}
 	}
 	
-}
+}s
+//Estilo general
 .td-trending-now-wrapper {
 	@media screen and (max-width: 767px) {
 		height: 90px;
