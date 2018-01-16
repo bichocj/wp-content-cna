@@ -29234,10 +29234,13 @@ p {
   padding-bottom: 0;
 }
 .section-cna-vivo .container-tv-vivo {
-  background-color: #1e1641;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 30px;
+  background: url(../../uploads/2018/01/mundo-bg-3.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #1e1641;
 }
 .section-cna-vivo .container-tv-vivo .container-reproductor {
   padding-left: 0;
@@ -29248,9 +29251,11 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal {
-  color: #5ddfdf;
+  /* color: #5ddfdf; */
+  color: #c3ffff;
+  text-shadow: 1px 1px 5px #212121;
   font-size: 26px;
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
   margin-bottom: 30px;
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal:last-child {
@@ -29560,6 +29565,18 @@ p {
   float: left;
   padding-left: 15px;
 }
+/*  PopUp Maker*/
+/* .pum-container {
+	.iframe {
+		border: 1px solid pink;
+		body {
+			.player {
+				max-width: 100%;
+				min-height: 80vh;
+			}
+		}
+	}
+} */
 /********************************** 
 * 			POST STYLE 
 **********************************/
