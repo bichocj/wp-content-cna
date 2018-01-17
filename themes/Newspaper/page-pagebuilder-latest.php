@@ -119,7 +119,7 @@ if(!empty($post->post_content)) { //show this only when we have content
             </li>
             <?php endwhile; ?>
         </ul>
-        <?php endif ?>
+<?php endif; wp_reset_postdata(); ?>
     </div>
 </div>
 <!-- end Lo Más Visto -->
@@ -145,77 +145,82 @@ if(!empty($post->post_content)) { //show this only when we have content
                                     <section class="video-grid-wrapper">
                                         <h3>Últimos Videos</h3>
                                         <div class="video-grid-scroll clearfix">
-                                            <div class="video_module_small">
-                                                <div class="video-module-thumb">
-                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
-                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                    </a>
-                                                </div>
-                                                <div class="video-meta-container">
-                                                    <h3 class="entry-title">
-                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            <div class="video_module_small">
-                                                <div class="video-module-thumb">
-                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
-                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                    </a>
-                                                </div>
-                                                <div class="video-meta-container">
-                                                    <h3 class="entry-title">
-                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            <div class="video_module_small">
-                                                <div class="video-module-thumb">
-                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
-                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                    </a>
-                                                </div>
-                                                <div class="video-meta-container">
-                                                    <h3 class="entry-title">
-                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            <div class="video_module_small">
-                                                <div class="video-module-thumb">
-                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
-                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                    </a>
-                                                </div>
-                                                <div class="video-meta-container">
-                                                    <h3 class="entry-title">
-                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
+                                            <!-- video module -->
+                                            <?php   $args_video = array(
+                                                        'post_type' => 'post',
+                                                        'post_status' => 'publish',
+                                                        'posts_per_page' => 4,
+                                                        'category' => 26, // Cat : Videos CNA
+                                                        'tag__not_in' => array( 27 ) // No Tag : Video Destacado
+                                                    );
+                                                $queryVideo = new WP_Query($args_video); 
+                                            ?>
+                                            <?php if($queryVideo->have_posts()) : ?>
+                                                <?php while($queryVideo->have_posts()) : $queryVideo->the_post(); ?>
+                                                    <div class="video_module_small">
+                                                        <div class="video-module-thumb">
+                                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                                                                <?php 
+                                                                    $thumbID = get_post_thumbnail_id( $post->ID );
+                                                                    $imgDestacada = wp_get_attachment_image_src( $thumbID, array(218,150) ); 
+                                                                    $imgTitle = get_the_title();
+                                                                    echo '<img width="218" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
+                                                                    alt="'.$imgTitle.'">'
+                                                                ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="video-meta-container">
+                                                            <h3 class="entry-title">
+                                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end video module -->
+                                                <?php endwhile; ?>
+                                            <?php else: ?>
+                                                <p> En este momento no hay videos para mostrar. </p>
+                                            <?php endif; wp_reset_postdata(); ?>
                                         </div>
                                     </section>
+
                                     <!-- Video Destacado -->
                                     <section class="video-grid-wrapper">        
-                                        <h3>Video Destacado</h3>            
-                                        <div class="video_module_big">
-                                                <div class="video-module-thumb">
-                                                    <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                        <img width="265" height="198" class="entry-thumb" src="http://localhost/wordpress/wp-content/uploads/2016/08/164777-265x198.jpg"
-                                                            alt="" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">
-                                                    </a>
+                                        <!-- video module -->
+                                        <?php   $args_video_destacado = array(
+                                                'post_type' => 'post',
+                                                'post_status' => 'publish',
+                                                'posts_per_page' => 1,
+                                                'category' => 26, // Cat : Videos CNA
+                                                'tag_id' => 27  // Tag : Video Destacado
+                                            );
+                                            $queryVideoDestacado = new WP_Query($args_video_destacado); 
+                                        ?>
+                                        <?php if($queryVideoDestacado->have_posts()) : ?>
+                                                <h3>Video Destacado</h3>                                                        
+                                            <?php while($queryVideoDestacado->have_posts()) : $queryVideoDestacado->the_post(); ?>
+                                                <div class="video_module_big">
+                                                    <div class="video-module-thumb">
+                                                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                                                            <?php 
+                                                                $thumbID = get_post_thumbnail_id( $post->ID );
+                                                                $imgDestacada = wp_get_attachment_image_src( $thumbID, 'large' ); 
+                                                                $imgTitle = get_the_title();
+                                                                echo '<img class="entry-thumb" src="'.$imgDestacada[0].'"
+                                                                alt="'.$imgTitle.'">'
+                                                            ?>
+                                                        </a>
+                                                    </div>
+                                                    <div class="video-meta-container">
+                                                        <h3 class="entry-title">
+                                                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                                        </h3>
+                                                    </div>
                                                 </div>
-                                                <div class="video-meta-container">
-                                                    <h2 class="entry-title">
-                                                        <a href="http://localhost/wordpress/?p=535" rel="bookmark" title="Así amaneció playa de Máncora tras fiestas de Año Nuevo">Así amaneció playa de Máncora tras fiestas de Año Nuevo</a>
-                                                    </h2>
-                                                </div>
-                                            </div>
+                                                <!-- end video module -->
+                                            <?php endwhile; ?>
+                                        <?php endif; wp_reset_postdata(); ?>
                                     </section>
+                                    <!-- end Video Destacado -->
                                         
                                     <div class="clearfix"></div>
                                 

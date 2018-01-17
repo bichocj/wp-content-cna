@@ -68,12 +68,7 @@ Header style 6 - CNA
                         echo 'No hay nada para mostrar en este momentos';
                     ?> 
                         
-                    <?php endif; ?> 
-                    
-                    <?php 
-                        // Restore original post data.
-                        wp_reset_postdata();
-                    ?>
+                    <?php endif; wp_reset_postdata(); ?>
                         
                     </div>
                 </div>
@@ -91,15 +86,15 @@ Header style 6 - CNA
                             <div class="td_module_mx4 td_module_wrap td-animation-stack">
                                 <div class="td-module-image">
                                     <div class="td-module-thumb">
-                                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
-                                    <?php 
-                                            $thumbID = get_post_thumbnail_id( $post->ID );
-                                            $imgDestacada = wp_get_attachment_image_src( $thumbID, 'large' ); // Thumbnail, medium, large, full
-                                            $imgTitle = get_the_title();
-                                            echo '<img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacada[0].'"
-                                            alt="" title="'.$imgTitle.'">'
-                                    ?>
-                                    </a>
+                                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                                        <?php 
+                                                $thumbID = get_post_thumbnail_id( $post->ID );
+                                                $imgDestacada = wp_get_attachment_image_src( $thumbID, 'large' ); // Thumbnail, medium, large, full
+                                                $imgTitle = get_the_title();
+                                                echo '<img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacada[0].'"
+                                                alt="" title="'.$imgTitle.'">'
+                                        ?>
+                                        </a>
                                     </div>
                                     <?php 
                                         foreach((get_the_category()) as $key => $category){
@@ -120,11 +115,7 @@ Header style 6 - CNA
                         </div> 
                         <!-- ./td-block-span4 -->
                         <?php endwhile; ?>
-                    <?php endif; ?>
-                    <?php 
-                        // Restore original post data
-                        wp_reset_postdata();
-                    ?>
+                    <?php endif; wp_reset_postdata(); ?>
                     </div>
                 </div>
             </div>
