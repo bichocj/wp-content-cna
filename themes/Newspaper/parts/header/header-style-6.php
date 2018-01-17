@@ -40,9 +40,9 @@ Header style 6 - CNA
         if (is_home() || is_front_page()) { ?>
         <div class="headerBlockTop"
             <!-- Trending News -->
-            <div class="td_block_trending_now">
+            <div id="trendingNews" class="td_block_trending_now">
                 <div class="td-trending-now-wrapper trending-now-header" id="td_uid_2_5a543d4bd7620" data-start="">
-                    <div class="td-trending-now-title">Últimas Noticias</div>
+                    <div class="td-trending-now-title"><span>Últimas Noticias</span></div>
                     <div class="td-trending-now-display-area">
 
                     <?php   $args = array(
