@@ -29267,6 +29267,7 @@ p {
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal {
   /* color: #5ddfdf; */
