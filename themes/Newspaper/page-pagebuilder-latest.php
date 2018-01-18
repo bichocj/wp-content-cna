@@ -143,7 +143,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                 <div id="CNA_videos" class="">
                                     <!-- Ultimos videos -->
                                     <section class="video-grid-wrapper">
-                                        <h2 class="vTitle"><span><span></span>Últimos Videos</span></h2>
+                                        <!-- <h2 class="vTitle"><span><span></span>Últimos Videos</span></h2> -->
                                         <div class="video-grid-scroll clearfix">
                                             <!-- video module -->
                                             <?php   $args_video = array(
@@ -197,7 +197,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                             $queryVideoDestacado = new WP_Query($args_video_destacado); 
                                         ?>
                                         <?php if($queryVideoDestacado->have_posts()) : ?>
-                                                <h2 class="vTitle"><span><span></span>Video Destacado</span></h2>                                                        
+                                                <!-- <h2 class="vTitle"><span><span></span>Video Destacado</span></h2>                                                         -->
                                             <?php while($queryVideoDestacado->have_posts()) : $queryVideoDestacado->the_post(); ?>
                                                 <div class="video_module_big">
                                                     <div class="video-module-thumb">
