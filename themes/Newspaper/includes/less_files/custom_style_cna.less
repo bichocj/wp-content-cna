@@ -533,43 +533,145 @@ p {
 /* CNA Videos*/
 #CNA_videos {
 	margin-bottom: 26px;
+	padding: 24px;
+	background-color: #dbdbdb;
+	// color: white;
+	.video-grid-wrapper {
+		h2  {
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-size: 17px;
+			border-bottom: 1px dotted #454556;
+			text-transform: uppercase;
+			line-height: 1.6;
+			> span {
+				background-color: #2E2E3A;
+				color: white;
+				padding: 5px 10px 5px 30px;
+				position: relative;
+				> span {
+					display: inline-block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 20px;
+					height: 30px;
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+			}
+			@media screen and (max-width: 767px) {		
+				font-size: 14px;
+			}			
+		}
+	}
+	
+	//
 	.video-grid-scroll {
-		margin-left: -10px;
-		margin-right: -10px;
+		margin: auto -10px;
+		padding: 15px 0 35px;
+		@media screen and (max-width: 992px) {		
+			white-space: nowrap;
+			overflow-y: hidden;
+			overflow-x: scroll;
+			margin: 0;
+			padding-bottom: 35px;
+		}	
+		
 		.video_module_small {
 			float: left;
 			width: 25%;
 			padding: 0 10px;
+			@media screen and (max-width: 992px) {				
+				float: none;
+				display: inline-block;
+				vertical-align: top;
+				width: 40%;
+				padding: 0 5px 0 1px;
+				white-space: normal;
+			}
+			
 			.video-module-thumb {
 				margin-bottom: 5px;
-				a[rel="bookmark"] {
-					display: block;
-				}
+			}
+			.entry-thumb {
+				display: block;
+				width: 100%;
 			}
 			.entry-title {
-				margin: 7px 0;
+				margin: 0;
 				font-size: 16px;
 				line-height: 1.2;
+				@media screen and (max-width: 767px) {				
+					font-size: 12px;
+				}				
 			}
 		}
 	}
 	.video_module_big {
+		margin-top: 25px;
 		.video-module-thumb {
 			margin-bottom: 5px;
 			text-align: center;
-			a[rel="bookmark"] {
-				display: block;
+			a.wrap-thumb {
+				display: inline-block;
 			}
 		}
 		.entry-thumb {
-			display: inline-block;
+			display: block;
 			width: 100%;
 			max-width: 640px;
 		}
 		.entry-title {
-			font-size: 24px;
+			margin:  10px 0 7px;
+			font-size: 20px;
 			line-height: 1.3;
-			margin:  7px 0;
+			text-align: center;
+			> a {
+				display: block;
+			}
+			@media screen and (max-width: 767px) {				
+				font-size: 16px;
+				line-height: 1.15;
+			}	
+		}
+		
+	}
+	// Efectos Hover
+	[class*="video_module_"] {	
+		a.wrap-thumb {
+			display: block;
+			position: relative;
+			&::before {
+				bottom: 0;
+				content: "";
+				display: block;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				z-index: 1;
+				background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+				-webkit-transition: background-color 0.3s ease;
+				transition: background-color 0.3s ease;
+			}
+		}	
+		.entry-title {
+			> a {
+				color: #333;
+				-webkit-transition: color 0s ease;
+				transition: color 0s ease;
+			}
+		}	
+		// Hover sobre video_module
+		&:hover {
+			a.wrap-thumb::before {
+				background-color: rgba(18, 99, 171, 0.3);
+			}
+			.entry-title {
+				> a {
+					color: #000;
+				}
+			}
 		}
 	}
 }

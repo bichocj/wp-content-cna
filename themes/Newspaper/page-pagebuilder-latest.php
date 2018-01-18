@@ -143,14 +143,14 @@ if(!empty($post->post_content)) { //show this only when we have content
                                 <div id="CNA_videos" class="">
                                     <!-- Ultimos videos -->
                                     <section class="video-grid-wrapper">
-                                        <h3>Últimos Videos</h3>
+                                        <h2 class="vTitle"><span><span></span>Últimos Videos</span></h2>
                                         <div class="video-grid-scroll clearfix">
                                             <!-- video module -->
                                             <?php   $args_video = array(
                                                         'post_type' => 'post',
                                                         'post_status' => 'publish',
                                                         'posts_per_page' => 4,
-                                                        'category' => 26, // Cat : Videos CNA
+                                                        'cat' => 26, // Cat : Videos CNA
                                                         'tag__not_in' => array( 27 ) // No Tag : Video Destacado
                                                     );
                                                 $queryVideo = new WP_Query($args_video); 
@@ -159,7 +159,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                 <?php while($queryVideo->have_posts()) : $queryVideo->the_post(); ?>
                                                     <div class="video_module_small">
                                                         <div class="video-module-thumb">
-                                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                                                            <a href="<?php the_permalink(); ?>" rel="bookmark" class ="wrap-thumb" title="<?php the_title(); ?>">
                                                                 <?php 
                                                                     $thumbID = get_post_thumbnail_id( $post->ID );
                                                                     $imgDestacada = wp_get_attachment_image_src( $thumbID, array(218,150) ); 
@@ -167,6 +167,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                     echo '<img width="218" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
                                                                     alt="'.$imgTitle.'">'
                                                                 ?>
+                                                                <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-large.png" alt="video"></span>                                                                
                                                             </a>
                                                         </div>
                                                         <div class="video-meta-container">
@@ -190,17 +191,17 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                 'post_type' => 'post',
                                                 'post_status' => 'publish',
                                                 'posts_per_page' => 1,
-                                                'category' => 26, // Cat : Videos CNA
+                                                'cat' => 26, // Cat : Videos CNA
                                                 'tag_id' => 27  // Tag : Video Destacado
                                             );
                                             $queryVideoDestacado = new WP_Query($args_video_destacado); 
                                         ?>
                                         <?php if($queryVideoDestacado->have_posts()) : ?>
-                                                <h3>Video Destacado</h3>                                                        
+                                                <h2 class="vTitle"><span><span></span>Video Destacado</span></h2>                                                        
                                             <?php while($queryVideoDestacado->have_posts()) : $queryVideoDestacado->the_post(); ?>
                                                 <div class="video_module_big">
                                                     <div class="video-module-thumb">
-                                                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                                                        <a href="<?php the_permalink(); ?>" rel="bookmark"  class ="wrap-thumb" title="<?php the_title(); ?>">
                                                             <?php 
                                                                 $thumbID = get_post_thumbnail_id( $post->ID );
                                                                 $imgDestacada = wp_get_attachment_image_src( $thumbID, 'large' ); 
@@ -208,6 +209,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                 echo '<img class="entry-thumb" src="'.$imgDestacada[0].'"
                                                                 alt="'.$imgTitle.'">'
                                                             ?>
+                                                            <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-large.png" alt="video"></span>
                                                         </a>
                                                     </div>
                                                     <div class="video-meta-container">
