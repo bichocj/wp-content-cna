@@ -29346,11 +29346,12 @@ p {
 .td-header-cna .td-header-top-menu-full {
   background-color: #d33;
   padding: 20px 0 20px;
+  margin-top: 24px;
   margin-bottom: 1px;
 }
 @media (min-width: 1360px) {
   .td-header-cna .td-header-top-menu-full .td-container {
-    padding: 0 50px 0 40px;
+    padding: 0 105px 0 95px;
   }
 }
 .td-header-cna .td-header-top-menu-full a {
@@ -29645,7 +29646,7 @@ p {
     overflow-y: hidden;
     overflow-x: scroll;
     margin: 0;
-    padding-bottom: 35px;
+    padding-bottom: 15px;
   }
 }
 #CNA_videos .video-grid-scroll .video_module_small {
@@ -29677,7 +29678,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video-grid-scroll .video_module_small .entry-title {
-    font-size: 12px;
+    font-size: 14px;
     border: none;
   }
 }
@@ -29944,7 +29945,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 
 /* SOCIAL NETWORK */
 .td-social-icon-wrap i.td-icon-instagram:hover {
-  color: #e1306e !important;
+  color: #EB7BA2 !important;
 }
 /* SOCIAL COUNTER */
 .td_social_type:last-child {
