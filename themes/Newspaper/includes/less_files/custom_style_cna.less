@@ -733,7 +733,7 @@ p {
 * 			POST STYLE 
 **********************************/
 
-// Title
+/* Title */
 .td-post-title {
 	margin-bottom: 40px;
 	@media (max-width: 767px) {
@@ -743,7 +743,7 @@ p {
 		font-weight: 600;
 	}
 }
-// Subtitle
+/* Subtitle */
 .td-post-sub-title {
 	font-size: 20px;
 	line-height: 1.4;
@@ -752,7 +752,7 @@ p {
 	color: #666;
 	font-style: normal;
 }
-// Post content
+/* Post content */
 .td-post-content,
 .td-page-content, 
 .wpb_text_column, 
@@ -792,13 +792,13 @@ p {
 		text-transform: none;
 	}
 }
-// Featured Image
+/* Featured Image */
 .td-post-featured-image {
 	img {
 		width: 100% !important;
 	}
 }
-// Meta  info
+/* Meta  info */
 .td-module-meta-info{
 	font-size: 14px;
 	.td-post-author-name {
@@ -815,7 +815,7 @@ p {
 	}
 }
 
-// Fuentes
+/* Fuentes de la noticia */
 .td-post-source-tags {
 	.td-post-small-box {
 		a[href="#"]{
@@ -830,9 +830,33 @@ p {
 	}
 }
 
-// Author Box: no display
+/* Author Box: no display */
 .author-box-wrap {
 	display: none !important;
+}
+
+/* Noticias Vinculadas */
+.td_block_related_posts {
+	.td_block_inner {
+		background-color: rgb(128, 117, 144); // Color de Videos de CNA
+		.td-related-row {
+			padding: 20px 20px 0;
+		}
+		.td-module-title {
+			> a {
+				color: rgba(255, 255, 255, 0.8);
+			}
+		}
+		.td-next-prev-wrap,  {
+			margin-top: 17px;
+		}
+		// Efecto Hover
+		.td_module_related_posts:hover {
+				a {
+				color: white;
+			}
+		}
+	}
 }
 
 /* Post template CNA */
