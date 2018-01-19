@@ -838,25 +838,22 @@ p {
 /* Noticias Vinculadas */
 .td_block_related_posts {
 	.td_block_inner {
-		background-color: rgb(128, 117, 144); // Color de Videos de CNA
+		background-color: @background_color_9;
 		.td-related-row {
 			padding: 20px 20px 0;
-		}
-		.td-module-title {
-			> a {
-				color: rgba(255, 255, 255, 0.8);
-			}
-		}
-		
-		// Efecto Hover
-		.td_module_related_posts:hover {
-				a {
+		}		
+	}
+	.td-next-prev-wrap,  {
+		background-color: @background_color_9;
+		padding: 0 20px 20px;
+		a {
+			color: #666;
+			border-color: #a9a9a9;
+			&:hover {
+				border-color: #d33;
 				color: white;
 			}
 		}
-	}
-	.td-next-prev-wrap,  {
-		margin-top: 17px;
 	}
 }
 

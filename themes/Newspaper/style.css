@@ -29897,19 +29897,22 @@ p {
 }
 /* Noticias Vinculadas */
 .td_block_related_posts .td_block_inner {
-  background-color: #807590;
+  background-color: #dadada;
 }
 .td_block_related_posts .td_block_inner .td-related-row {
   padding: 20px 20px 0;
 }
-.td_block_related_posts .td_block_inner .td-module-title > a {
-  color: rgba(255, 255, 255, 0.8);
-}
-.td_block_related_posts .td_block_inner .td_module_related_posts:hover a {
-  color: white;
-}
 .td_block_related_posts .td-next-prev-wrap {
-  margin-top: 17px;
+  background-color: #dadada;
+  padding: 0 20px 20px;
+}
+.td_block_related_posts .td-next-prev-wrap a {
+  color: #666;
+  border-color: #a9a9a9;
+}
+.td_block_related_posts .td-next-prev-wrap a:hover {
+  border-color: #d33;
+  color: white;
 }
 /* Post template CNA */
 div[class*="post-template-cna"] .td-crumb-container {
