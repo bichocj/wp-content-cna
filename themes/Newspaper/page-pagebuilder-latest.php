@@ -247,7 +247,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                             <!-- end Noticias -->
                         </div>
                     </div>
-                    <div class="td-pb-span4 td-main-sidebar" role="complementary">
+                    <div class="td-pb-span4 td-main-sidebar fix-w-sidebar" role="complementary">
                         <div class="td-ss-main-sidebar">
                             <?php get_sidebar(); ?>
                         </div>
@@ -271,7 +271,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                         ?>
                     </div>
                 </div>
-	            <div class="td-pb-span4 td-main-sidebar" role="complementary">
+	            <div class="td-pb-span4 td-main-sidebar fix-w-sidebar" role="complementary">
 		            <div class="td-ss-main-sidebar">
 			            <?php get_sidebar(); ?>
 		            </div>

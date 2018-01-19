@@ -363,12 +363,6 @@ p {
 			}
 		} 
 	}
-
-	// Separator of Menu
-	.menu-separator {
-		margin: 11px 0 0;
-		border-top: 2px solid #232121;
-	}
 }
 
 /* Footer */
@@ -399,6 +393,26 @@ p {
 .td-footer-template-4 {
 	.td-footer-info {
 		margin-bottom: 26px;
+	}
+}
+
+/* Sidebar */
+// Fixing width despues de haber aumentado el tamaño del contenedor
+//
+// 1er caso: Usando una clase
+.fix-w-sidebar {
+	@media (min-width: 1360px){
+		.td-ss-main-sidebar {
+			min-width: 392px;
+		}
+	}	
+}
+// 2do Caso : aplicando directamente  a todos los sidebars
+.td-main-sidebar.td-pb-span4 {
+	@media (min-width: 1360px){
+		.td-ss-main-sidebar {
+			min-width: 392px;
+		}
 	}
 }
 
@@ -1020,26 +1034,52 @@ div[class*="post-template-cna"] {
 				}
 				width: 25%;
 				padding-right: 2px;
+
+				// Reduccion de lineas de titulo
+				.entry-title {
+					width: 96%;
+					margin: 0 auto;
+				}
+				&:first-child {
+					.entry-title {
+						width: 98%;
+						margin-left: 0;
+					}
+				}
+				&:last-child {
+					.entry-title {
+						width: 98%;
+						margin-right: 0;
+					}
+				}
 			}
 			.td_module_mx4 {
 				padding-bottom: 0;
 				margin-bottom: 0;
+				// Transition efect
+				-webkit-transition: -webkit-box-shadow ease 250ms;
+				transition: -webkit-box-shadow ease 250ms;
+				transition: box-shadow ease 250ms;
+				transition: box-shadow ease 250ms, -webkit-box-shadow ease 250ms;
+				// Efect Hover
 				&:hover {
+					// border-color: @color_7;
+					-webkit-box-shadow: 0px 3px 7px #999;
+					box-shadow: 0px 3px 7px #999;
+
 					a[rel="bookmark"] {
 						&::before {						
 							background-color:rgba(136, 80, 80, 0.2); //  rgba(221, 51, 51, 0.1);
 							background-color:rgba(254, 108, 97, 0.35);
 							background-color: rgba(18, 99, 169, 0.25);
-							background-color: rgba(18, 99, 171, 0.3)
+							background-color: rgba(18, 99, 171, 0.3);
+							background-color: rgba(121, 28, 28, 0.35);
 						}
 					}
 					.entry-thumb {
 						height: 110%;
 					}
 					.entry-title {
-						// border-color: @color_7;
-    					-webkit-box-shadow: 0px 3px 7px #999;
-    					        box-shadow: 0px 3px 7px #999;
 						a {
 							color: #121212;
 						}
@@ -1099,23 +1139,20 @@ div[class*="post-template-cna"] {
 			transition: height 0.3s ease, opacity 0.3s;
     		-webkit-transition: height 0.3s ease, opacity 0.3s;
 		}
-		.entry-title {
+		.entry-title {			
+			font-size: 18px;
+			line-height: 1.3;
+			color: @color_4;
+			//padding: 15px 15px 20px; // = space between trending and last news bar
+			padding: 15px 10px 20px; // = space between trending and last news bar
+			border-bottom: 1px solid @color_2;
+						
 			@media screen and (max-width: 767px) {
 				font-size: 16px;
 				padding-left: 5px;				
 				padding-bottom: 0;
 				border: none;
-			}			
-			font-size: 18px;
-			line-height: 1.3;
-			color: @color_4;
-			// background-color: @background_color_20; // = a bg trending 
-			padding: 15px 15px 20px; // = space between trending and last news bar
-			border-bottom: 1px solid @color_2;
-			-webkit-transition: -webkit-box-shadow ease 250ms;
-			transition: -webkit-box-shadow ease 250ms;
-			transition: box-shadow ease 250ms;
-			transition: box-shadow ease 250ms, -webkit-box-shadow ease 250ms;
+			}
 			a {
 				@media screen and (max-width: 767px) {
 					display: inline-block;
