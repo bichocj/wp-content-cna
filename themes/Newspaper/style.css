@@ -29536,6 +29536,9 @@ p {
     padding-left: 10%;
     margin: 0 0 16px;
   }
+  .most_viewed_news li:last-child {
+    display: block;
+  }
 }
 .most_viewed_news li::before {
   content: counter(my-lastnews-counter);
@@ -29705,6 +29708,11 @@ p {
 }
 #CNA_videos .video_module_big {
   margin-top: 25px;
+}
+@media (max-width: 767px) {
+  #CNA_videos .video_module_big {
+    margin-top: 10px;
+  }
 }
 #CNA_videos .video_module_big .video-module-thumb {
   margin-bottom: 5px;
@@ -30458,7 +30466,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   display: none;
 }
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .td-module-thumb {
-  height: 713px !important;
+  height: 700px !important;
 }
 @media (max-width: 767px) {
   .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .td-module-thumb {
@@ -30480,20 +30488,37 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
     margin-left: 0;
   }
 }
+.td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .td-big-grid-meta {
+  width: 90%;
+  margin-bottom: 12px;
+}
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .entry-title {
   font-size: 20px;
   line-height: 1.1;
-  margin: 20px 0;
-  height: 66px;
+  margin: 10px 0 5px 0;
+  height: 46px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 @media (max-width: 767px) {
   .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .entry-title {
+    display: block;
     height: auto;
   }
+}
+.td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .myExcerpt {
+  width: 100%;
+  white-space: initial;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.15;
+  height: 34px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .td-grid-style-1.td_block_big_grid_2 .td-big-grid-scroll {
   float: left;
@@ -30562,13 +30587,12 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 }
 .td-grid-style-1.td_block_big_grid_2 .smallGrid2Gallery:first-child .myExcerpt {
   display: block;
+  width: 100%;
   white-space: initial;
   font-size: 16px;
   font-weight: 600;
   height: 45px;
   color: #ffffff;
-  margin-top: 16px;
-  margin-bottom: 5px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;

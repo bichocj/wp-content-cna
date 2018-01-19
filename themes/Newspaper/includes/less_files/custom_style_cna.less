@@ -460,6 +460,9 @@ p {
 			font-size: 14px;
 			padding-left: 10%;
 			margin: 0 0 16px;
+			&:last-child {
+				display: block;
+			}
 		}
 		/*@media (max-width: 585px) {
 			width: 49.5%;
@@ -640,6 +643,9 @@ p {
 	}
 	.video_module_big {
 		margin-top: 25px;
+		@media (max-width: 767px) {
+			margin-top: 10px;
+		}
 		.video-module-thumb {
 			margin-bottom: 5px;
 			text-align: center;
@@ -1446,6 +1452,8 @@ div[class*="post-template-cna"] {
 			}
 		}
 		.bigGrid2Gallery {
+			float: right;
+			width: 37%;
 			@media (max-width: 767px) {
 				float: none;
 				display: block;
@@ -1453,8 +1461,6 @@ div[class*="post-template-cna"] {
 				margin: auto;
 			}
 
-			float: right;
-			width: 37%;
 			// Fix bug
 			~ .bigGrid2Gallery {
 				display: none;
@@ -1463,7 +1469,7 @@ div[class*="post-template-cna"] {
 				@media (max-width: 767px) {
 					height: auto !important;
 				}				
-				height: 713px !important;	
+				height: 700px !important;	
 
 				// Filtro de color sobre las imagenes
 				a[rel="bookmark"] {
@@ -1483,20 +1489,39 @@ div[class*="post-template-cna"] {
 				margin-left: -25%;	
 
 			}
+			.td-big-grid-meta {
+				width: 90%;
+				margin-bottom: 12px;
+			}
 			.entry-title {
-				@media (max-width: 767px) {
-					height: auto;
-				}
 				font-size: 20px;
 				line-height: 1.1;
-				margin: 20px 0;
+				margin: 10px 0 5px 0;
 				//Truncate
-				height: 66px;
+				height: 46px;
 				overflow: hidden;
 				//Elipsis
 				display: -webkit-box;
-				-webkit-line-clamp: 3;
+				-webkit-line-clamp: 2;
 				-webkit-box-orient: vertical; 
+				@media (max-width: 767px) {
+					display: block;
+					height: auto;
+				}
+			}
+			.myExcerpt {
+				width: 100%;
+				white-space: initial;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 1.15;
+				//Truncate
+				height: 34px;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical; 
+
 			}
 		}
 		
@@ -1559,13 +1584,14 @@ div[class*="post-template-cna"] {
 				}
 				.myExcerpt {
 					display: block;
+					width: 100%;
 					white-space: initial;
 					font-size: 16px;
 					font-weight: 600;
 					height: 45px;
 					color: @color_1;
-					margin-top: 16px;
-					margin-bottom: 5px;
+					// margin-top: 16px;
+					// margin-bottom: 5px;
 					overflow: hidden;
 					//Elipsis
 					display: -webkit-box;
