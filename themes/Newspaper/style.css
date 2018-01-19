@@ -29910,7 +29910,7 @@ div[class*="post-template-cna"] .td-module-meta-info > [class^="td"] {
   margin-bottom: 2px;
 }
 div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name {
-  font-size: 16px;
+  font-size: 15px;
 }
 div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   color: #7c7c7c;
@@ -29918,9 +29918,6 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 /* Post Template CNA 1 */
 .post-template-cna-1 .td-post-featured-image {
   margin-bottom: 30px;
-}
-.post-template-cna-1 .sidebar-post-cna {
-  margin-top: 66px;
 }
 /* Post Template CNA 2 */
 .post-template-cna-2 .td-post-header {
