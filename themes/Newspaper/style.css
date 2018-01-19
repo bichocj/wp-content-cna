@@ -29905,11 +29905,11 @@ p {
 .td_block_related_posts .td_block_inner .td-module-title > a {
   color: rgba(255, 255, 255, 0.8);
 }
-.td_block_related_posts .td_block_inner .td-next-prev-wrap {
-  margin-top: 17px;
-}
 .td_block_related_posts .td_block_inner .td_module_related_posts:hover a {
   color: white;
+}
+.td_block_related_posts .td-next-prev-wrap {
+  margin-top: 17px;
 }
 /* Post template CNA */
 div[class*="post-template-cna"] .td-crumb-container {
