@@ -110,7 +110,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                         $imgDestacada = wp_get_attachment_image_src( $thumbID, 'thumbnail' ); // Thumbnail, medium, large, full
                         $imgTitle = get_the_title();
                         $urlNews = get_permalink();
-                        echo '<a class="nImage hidden-xs" href="'. $urlNews .'"> <img width="150" height="150" class="entry-thumb td-animation-stack-type0-1 hidden-xs" src="'.$imgDestacada[0].'"
+                        echo '<a class="nImage visible-xs" href="'. $urlNews .'"> <img width="150" height="150" class="entry-thumb td-animation-stack-type0-1 hidden-xs" src="'.$imgDestacada[0].'"
                         alt="" title="'.$imgTitle.'"> </a>'
                 ?>
                 <div class="nTitle">

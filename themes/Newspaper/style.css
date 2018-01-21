@@ -6191,8 +6191,6 @@ figure.aligncenter {
   .td_mycBlock_3432434539 .td_block_text_with_title,
   .headerBlock15-25615 > .wpb_wrapper > div:last-of-type,
   .td_mycBlock_3432434539 .td_block_big_grid_3 .td-big-thumb.bigCustomBlock,
-  .td-row-hide-resp-498451,
-  div.hmblockw-84351.td-row-hide-resp-498451,
   .home .td-main-sidebar,
   .td-contact-area-button-54564316 .contID-126726137213,
   .headerBlock15-25615 > .wpb_wrapper > .vc_custom_heading {
@@ -29205,12 +29203,17 @@ p {
 /********************************** 
 *			HELPERS
 ***********************************/
-.hidden-xs {
+.visible-xs {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .hidden-xs {
+  .visible-xs {
     display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hidden-xs-600 {
+    display: none;
   }
 }
 .titulo-negrita {
@@ -29226,6 +29229,20 @@ p {
 .no-pd-column-inner .vc_column_container > .vc_column-inner {
   padding-left: 0;
   padding-right: 0;
+}
+.without-meta-info .td-module-meta-info {
+  display: none;
+}
+.cna-big-thumb figure {
+  overflow: hidden;
+}
+.cna-big-thumb img {
+  max-width: initial;
+  width: auto;
+  height: 320px;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
 }
 /****** Sections *******/
 .title-main-new {
@@ -29247,6 +29264,159 @@ p {
 }
 .section-destacados .td_block_text_with_title {
   padding-bottom: 0;
+}
+.section-economia-tecnologia .td_block_1 {
+  padding-bottom: 0;
+}
+.section-economia-tecnologia .td_block_1 .td_module_4 {
+  padding-bottom: 26px;
+}
+.section-economia-tecnologia .td_block_1 .td_module_6 {
+  padding-bottom: 21px;
+}
+.section-economia-tecnologia .td_block_1 .td_module_6:last-child {
+  padding-bottom: 26px;
+}
+.section-economia-tecnologia .td_block_1 .td_module_6 .entry-title {
+  font-size: 15px;
+  line-height: 20px;
+}
+.section-economia-tecnologia .td_block_15 {
+  padding-bottom: 26px;
+}
+.section-economia-tecnologia .td_block_15 .td-next-prev-wrap {
+  margin-bottom: 0;
+}
+.section-economia-tecnologia .td-opiniones {
+  margin-left: -10px;
+  margin-right: -10px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .section-economia-tecnologia .td-opiniones {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.section-economia-tecnologia .td-opiniones [class*="td-pb-span"] {
+  width: 30.33333333%;
+  padding: 18px 20px 0px;
+  margin: 0 1.5% 24px;
+  background-color: #eceff1;
+  border: 1px solid #546d7a;
+}
+.section-economia-tecnologia .td-opiniones [class*="td-pb-span"]:last-child {
+  margin-bottom: 28px;
+}
+@media (max-width: 1359px) {
+  .section-economia-tecnologia .td-opiniones [class*="td-pb-span"] {
+    float: left;
+    width: 47%;
+  }
+}
+@media (max-width: 480px) {
+  .section-economia-tecnologia .td-opiniones [class*="td-pb-span"] {
+    float: none;
+    width: 100%;
+    margin: 0 auto 10px;
+    border: none;
+  }
+}
+.section-economia-tecnologia .td-opiniones [class*="td-pb-span"] .vc_column-inner {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .section-economia-tecnologia .td-opiniones [class*="td-pb-span"] .vc_column-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_text_column.titulo {
+  position: relative;
+  margin-bottom: 22px;
+  height: 88px;
+}
+@media (max-width: 480px) {
+  .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo {
+    height: auto;
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper {
+  padding-bottom: 18px;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+  .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper {
+    position: initial;
+    transform: none;
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper * {
+  color: #222;
+  max-height: 68px;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.15;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper * {
+    font-size: 13px;
+    line-height: 1.25;
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_text_column.titulo:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 98%;
+  height: 1px;
+  background-color: #546d7a;
+}
+@media (max-width: 480px) {
+  .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo:after {
+    background-color: rgba(84, 109, 122, 0.35);
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_text_column.autor {
+  background-color: #546e7a;
+  margin: 0 -25px;
+  padding: 8px 20px;
+}
+@media (max-width: 767px) {
+  .section-economia-tecnologia .td-opiniones .wpb_text_column.autor {
+    margin: 0 -20px;
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_text_column.autor * {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  .section-economia-tecnologia .td-opiniones .wpb_text_column.autor * {
+    font-size: 13px;
+  }
+}
+.section-economia-tecnologia .td-opiniones .wpb_single_image.vc_align_center {
+  margin-bottom: 0;
 }
 .section-cna-vivo .td_block_text_with_title {
   padding-bottom: 0;
@@ -29303,6 +29473,10 @@ p {
 /********************************** 
 * 			TEMPLATES 
 ***********************************/
+/* Page template-Page pagebuilder latest*/
+.page-template-page-pagebuilder-latest .td-pb-article-list .page-nav {
+  display: none;
+}
 /* Header */
 .td-header-cna .top-bar-style-2 {
   position: relative;
@@ -29490,8 +29664,7 @@ p {
 }
 @media (max-width: 767px) {
   .most_viewed_news {
-    width: 96%;
-    margin: auto;
+    margin-bottom: 0;
   }
 }
 .most_viewed_news ul {
@@ -29534,7 +29707,7 @@ p {
     width: 100%;
     font-size: 14px;
     padding-left: 10%;
-    margin: 0 0 16px;
+    margin: 0 0 10px;
   }
   .most_viewed_news li:last-child {
     display: block;
@@ -29603,7 +29776,7 @@ p {
     float: left;
     width: 60%;
     padding-left: 15px;
-    line-height: 1.25;
+    line-height: 1.15;
   }
 }
 .most_viewed_news .nImage {
@@ -29614,7 +29787,7 @@ p {
 /* CNA Videos*/
 #CNA_videos {
   margin-bottom: 26px;
-  padding: 12px 18px 24px;
+  padding: 12px 16px 24px;
   background-color: #d33;
 }
 #CNA_videos [class*="video_module_"] a.wrap-thumb {
@@ -29713,12 +29886,12 @@ p {
   }
 }
 #CNA_videos .video_module_big {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 @media (min-width: 1360px) {
   #CNA_videos .video_module_big {
     max-width: 640px;
-    margin: 25px auto 0;
+    margin: 15px auto 0;
   }
 }
 @media (max-width: 767px) {
@@ -29746,7 +29919,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video_module_big .video-meta-container .entry-title {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.15;
   }
 }
@@ -30449,6 +30622,9 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   background-color: #dd3333;
   position: relative;
 }
+.td-grid-style-1.td_block_big_grid_2 .td-big-grid-post:hover .td-module-thumb a[rel="bookmark"]::before {
+  background: rgba(121, 28, 28, 0.35) !important;
+}
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery {
   float: right;
   width: 37%;
@@ -30465,7 +30641,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   display: none;
 }
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .td-module-thumb {
-  height: 700px !important;
+  height: 678px !important;
 }
 @media (max-width: 767px) {
   .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .td-module-thumb {
@@ -30492,10 +30668,10 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   margin-bottom: 12px;
 }
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .entry-title {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.1;
-  margin: 10px 0 5px 0;
-  height: 46px;
+  margin: 10px 0 0;
+  height: 48px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -30512,7 +30688,8 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   white-space: initial;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.25;
+  margin-bottom: 15px;
   height: 34px;
   overflow: hidden;
   display: -webkit-box;
@@ -30568,12 +30745,13 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   }
 }
 .td-grid-style-1.td_block_big_grid_2 .smallGrid2Gallery:first-child .td-big-grid-meta {
-  padding-top: 20px;
+  padding: 15px 0 10px;
 }
 .td-grid-style-1.td_block_big_grid_2 .smallGrid2Gallery:first-child .entry-title {
   font-size: 28px;
   line-height: 1;
   height: 60px;
+  margin-bottom: 0;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -30590,8 +30768,9 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   white-space: initial;
   font-size: 16px;
   font-weight: 600;
-  height: 45px;
   color: #ffffff;
+  margin: 0;
+  height: 45px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -30658,6 +30837,9 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 }
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-post:hover .td-post-category {
   background-color: #222 !important;
+}
+.td-grid-style-1.td_block_big_grid_3 .td-big-grid-post:hover .td-module-thumb a[rel="bookmark"]::before {
+  background: rgba(121, 28, 28, 0.35) !important;
 }
 .td-grid-style-1.td_block_big_grid_3 .bigCustomBlock {
   /* Responsive big custom Block */
@@ -31220,57 +31402,6 @@ div.td_block_it837003251 > .vc_column-inner {
 .td_block_text_with_title .wp-polls .wp-polls-ans.wp-polls-stad li {
   width: 84%;
 }
-.td-customField22324345454.td-pb-row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-.td-customField22324345454.td-pb-row [class*="td-pb-span"] {
-  padding: 20px 20px 10px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border: 1px solid #999999;
-  margin: 0 1.5%;
-  width: 30.33333333%;
-}
-.td-customField22324345454.td-pb-row .wpb_single_image.vc_align_center {
-  margin-bottom: 0;
-}
-.td-customField22324345454.td-pb-row .wpb_text_column p {
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-.td-customField22324345454.td-pb-row .wpb_text_column:first-child p:last-child {
-  font-size: .938em;
-  margin-bottom: 12px;
-  font-weight: bold;
-  line-height: 16px;
-}
-.td-customField22324345454.td-pb-row div.wpb_text_column p:first-child {
-  font-size: .813em;
-}
-.td-customField22324345454.td-pb-row .wpb_content_element {
-  margin-bottom: 14px;
-  padding-bottom: 8px;
-  position: relative;
-}
-.td-customField22324345454.td-pb-row .wpb_content_element:last-child {
-  margin-bottom: 0;
-  margin-top: -6px;
-}
-.td-customField22324345454.td-pb-row .wpb_content_element:last-child p {
-  margin-bottom: 0;
-}
-.td-customField22324345454.td-pb-row .wpb_content_element:first-child:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 95%;
-  height: 1px;
-  background-color: #000000;
-}
 #tdw-2732633243 .wpc-weather-id {
   display: inline-block;
   width: 31.33%;
@@ -31493,20 +31624,6 @@ div.cb-657545417432 {
   left: 0;
   background-color: #CDCDCD;
 }
-.hmblockw-84351 .td_block_1 {
-  padding-bottom: 0;
-}
-.hmblockw-84351 .td_block_1 .td_module_6 {
-  padding-bottom: 21px;
-}
-.hmblockw-84351 .td_block_15 {
-  padding-bottom: 0;
-  margin-bottom: -2px;
-  margin-top: -5px;
-}
-.without-date .td-module-meta-info {
-  display: none;
-}
 .bgimage {
   background-position: center;
   background-size: cover;
@@ -31601,10 +31718,6 @@ div.cb-657545417432 {
   }
 }
 @media (max-width: 767px) {
-  .td-customField22324345454.td-pb-row [class*="td-pb-span"] {
-    display: inline-block;
-    width: 29%;
-  }
   .whatsappBlock-2343242642 {
     font-size: 26px;
   }
@@ -31652,17 +31765,6 @@ div.cb-657545417432 {
   }
 }
 @media (max-width: 635px) {
-  .td-customField22324345454.td-pb-row {
-    text-align: center;
-  }
-  .td-customField22324345454.td-pb-row [class*="td-pb-span"] {
-    display: inline-block;
-    width: 46%;
-    margin-bottom: 15px;
-  }
-  .td-customField22324345454.td-pb-row [class*="td-pb-span"]:last-child {
-    margin-bottom: 0;
-  }
   .whatsappBlock-2343242642 {
     font-size: 17px;
   }
@@ -31677,14 +31779,6 @@ div.cb-657545417432 {
   }
 }
 @media (max-width: 417px) {
-  .td-customField22324345454.td-pb-row [class*="td-pb-span"] {
-    display: inline-block;
-    width: 100%;
-    margin: 0 1.5% 10px;
-  }
-  .td-customField22324345454.td-pb-row [class*="td-pb-span"]:last-child {
-    margin-bottom: 0;
-  }
   .whatsappBlock-2343242642 {
     font-size: 13px;
   }
