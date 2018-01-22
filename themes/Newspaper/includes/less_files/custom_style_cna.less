@@ -996,15 +996,24 @@ p {
 				display: block;
 				overflow: hidden;
 				position: relative;
-				@media (min-width: 1360px) {
-					height: 445px;
+				height: auto;	
+				@media (min-width: 767px) {
+					height: 260px;
 				}
+				@media (min-width: 1141px) {
+					height: 375px;
+				}
+				@media (min-width: 1360px) {
+					height: 450px;
+				}
+				
+				
 			}
 			.entry-thumb {
 				display: block;
 				width: 100%;
 				transform: translate(-50%);
-				position: absolute;
+				position: relative;
 				left: 50%;
 			}
 		}
@@ -1848,6 +1857,7 @@ div[class*="post-template-cna"] {
 					height: auto;
 					width: 100%;
 					margin-left: 0;
+					position: static
 				}
 			}
 			.td-big-grid-meta {

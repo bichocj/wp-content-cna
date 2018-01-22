@@ -29972,17 +29972,28 @@ p {
   display: block;
   overflow: hidden;
   position: relative;
+  height: auto;
+}
+@media (min-width: 767px) {
+  #CNA_videos .video_module_big .video-module-thumb a.wrap-thumb {
+    height: 260px;
+  }
+}
+@media (min-width: 1141px) {
+  #CNA_videos .video_module_big .video-module-thumb a.wrap-thumb {
+    height: 375px;
+  }
 }
 @media (min-width: 1360px) {
   #CNA_videos .video_module_big .video-module-thumb a.wrap-thumb {
-    height: 445px;
+    height: 450px;
   }
 }
 #CNA_videos .video_module_big .video-module-thumb .entry-thumb {
   display: block;
   width: 100%;
   transform: translate(-50%);
-  position: absolute;
+  position: relative;
   left: 50%;
 }
 #CNA_videos .video_module_big .video-meta-container .entry-title {
@@ -30759,6 +30770,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
     height: auto;
     width: 100%;
     margin-left: 0;
+    position: static;
   }
 }
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .td-big-grid-meta {
