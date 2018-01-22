@@ -30035,6 +30035,11 @@ p {
   bottom: 0;
   margin-bottom: 0;
 }
+@media (max-width: 640px) {
+  .td-post-actions .td-category {
+    position: initial;
+  }
+}
 .td-post-actions .td-category li {
   margin-bottom: 0;
   font-size: 14px;
@@ -30044,6 +30049,12 @@ p {
   right: 0;
   top: 0;
   padding-right: 5px;
+}
+@media (max-width: 640px) {
+  .post-sharing-buttons {
+    position: initial !important;
+    margin-bottom: 10px;
+  }
 }
 .post-sharing-buttons [class*="td-social"] {
   display: block !important;
@@ -30055,6 +30066,12 @@ p {
   padding: 0 !important;
   text-align: center;
   margin-left: 10px !important;
+}
+@media (max-width: 640px) {
+  .post-sharing-buttons [class*="td-social"] {
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+  }
 }
 .post-sharing-buttons [class*="td-social"] i {
   font-size: 17px !important;
