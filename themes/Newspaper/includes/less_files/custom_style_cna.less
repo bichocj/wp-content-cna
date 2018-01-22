@@ -135,16 +135,18 @@ p {
 
 // Para imagenes que deben verse grandes (cuadradas)
 .cna-big-thumb {
-	figure {
-		overflow: hidden;
-	}
-	img {
-		max-width: initial;
-		width: auto;
-		height: 320px;
-		transform: translateX(-50%);
-		position: relative;
-		left: 50%;
+	@media (max-width: 767px) {
+		figure {
+			overflow: hidden;
+		}
+		img {
+			max-width: initial;
+			width: auto;
+			height: 320px;
+			transform: translateX(-50%);
+			position: relative;
+			left: 50%;
+		}
 	}
 }
 
@@ -1502,6 +1504,10 @@ div[class*="post-template-cna"] {
 			@media (min-width: 1360px) {
 				padding-left: 103px;
 			}
+			@media (max-width: 767px) {
+				padding: 0;
+				margin: 0;
+			}
 		}
 	}
 	.td-trending-now-title {
@@ -1516,6 +1522,10 @@ div[class*="post-template-cna"] {
 				background-color: @background_color_12;
 			}
 		}
+		@media (max-width: 767px) {
+			width: 100%;
+			text-align: center;
+		}		
 	}
 }
 
