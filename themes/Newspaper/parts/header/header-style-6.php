@@ -42,34 +42,36 @@ Header style 6 - CNA
             <!-- Trending News -->
             <div id="trendingNews" class="td_block_trending_now">
                 <div class="td-trending-now-wrapper trending-now-header" id="td_uid_2_5a543d4bd7620" data-start="">
-                    <div class="td-trending-now-title"><span>Últimas Noticias</span></div>
-                    <div class="td-trending-now-display-area">
+                    <div class="td-container">
+                        <div class="td-trending-now-title"><span>Últimas Noticias</span></div>
+                        <div class="td-trending-now-display-area">
 
-                    <?php   $args = array(
-                            'post_type' => 'post',
-                            'post_status' => 'publish',
-                            'posts_per_page' => 4
-                        );
-                        $queryTrend = new WP_Query($args); 
-                    ?>
-                        
-                    <?php if ($queryTrend->have_posts()) : ?>
-                        <!-- <div class="td_module_trending_now td-trending-now-post-0 td-trending-now-post" style="opacity: 0; z-index: 0;"> -->
-                        <?php while ($queryTrend->have_posts()) : $queryTrend->the_post() ;?>
-                            <div class="td_module_trending_now td-trending-now-post" style="opacity: 0; z-index: 0;">
-                                <h3 class="entry-title td-module-title">
-                                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                                </h3>
-                            </div>
+                            <?php   $args = array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4
+                                );
+                                $queryTrend = new WP_Query($args); 
+                            ?>
+                                
+                            <?php if ($queryTrend->have_posts()) : ?>
+                                <!-- <div class="td_module_trending_now td-trending-now-post-0 td-trending-now-post" style="opacity: 0; z-index: 0;"> -->
+                                <?php while ($queryTrend->have_posts()) : $queryTrend->the_post() ;?>
+                                    <div class="td_module_trending_now td-trending-now-post" style="opacity: 0; z-index: 0;">
+                                        <h3 class="entry-title td-module-title">
+                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                        </h3>
+                                    </div>
+                                    
+                                <?php endwhile; ?>
+
+                            <?php else: 
+                                echo 'No hay nada para mostrar en este momentos';
+                            ?> 
+                                
+                            <?php endif; wp_reset_postdata(); ?>
                             
-                        <?php endwhile; ?>
-
-                    <?php else: 
-                        echo 'No hay nada para mostrar en este momentos';
-                    ?> 
-                        
-                    <?php endif; wp_reset_postdata(); ?>
-                        
+                        </div>
                     </div>
                 </div>
             </div>

@@ -408,20 +408,31 @@ p {
 .td-header-cna {
 	.top-bar-style-2 {
 		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			background-image: url(images/custom/nuevologocna-header-white.png);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			top: 8px;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 13%;
-			padding-bottom: 12.65%; // 13.21%;
-			margin: auto;
+		// &::before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	background-image: url(images/custom/nuevologocna-header-white.png);
+		// 	background-position: center;
+		// 	background-repeat: no-repeat;
+		// 	background-size: contain;
+		// 	top: 8px;
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	width: 13%;
+		// 	padding-bottom: 12.65%; // 13.21%;
+		// 	margin: auto;
+		// }
+		.td-header-sp-logo {
+			.td-visual-hidden {
+				position: absolute;
+				text-indent: -9999px;
+				font-size: 0;
+				overflow: hidden;
+			}
+			img {
+				height: 155px;
+			}
 		}
 		.thisCNATVWrap {
 			margin-top: 10px;
@@ -453,7 +464,7 @@ p {
 		margin-bottom: 1px; // Separacion de la barra de navegación
 		.td-container {
 			@media (min-width: 1360px) {
-				padding: 0 105px 0 95px; 
+				padding: 0 95px; 
 			}
 		}
 		a {
@@ -481,6 +492,7 @@ p {
 		}
 		.td-header-sp-top-menu {
 			text-align: right;
+			padding-right: 13px !important;
 			#wpc-weather.small {
 				.now {
 					>.location_name {
@@ -533,8 +545,8 @@ p {
 		.td-container {
 			padding-right: 0;
 			@media (min-width: 1360px) {
-				padding-left: 40px;
-				padding-right: 40px;
+				padding-left: 95px;
+				padding-right: 95px;
 			}
 		}
 	}
@@ -1485,7 +1497,16 @@ div[class*="post-template-cna"] {
 }
 //Trending bar dentro d header Block Top
 #trendingNews {
+	.trending-now-header {
+		.td-container {
+			@media (min-width: 1360px) {
+				padding-left: 103px;
+			}
+		}
+	}
 	.td-trending-now-title {
+		width: auto;
+		text-align: initial;
 		@media (min-width: 768px) {
 			background: transparent;
 			padding: 0;
