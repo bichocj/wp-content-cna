@@ -25,9 +25,6 @@ class td_module_mx9 extends td_module {
                     <div class="td-big-grid-meta">
                         <?php if (td_util::get_option('tds_category_module_mx9') == 'yes') { echo $this->get_category(); }?>
                         <?php echo $this->get_title();?>
-                        <div class="myExcerpt">
-                        <?php echo $this->get_excerpt(); ?>
-                        </div>
                     </div>
                 </div>
             </div>
