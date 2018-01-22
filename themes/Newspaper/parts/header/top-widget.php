@@ -9,7 +9,7 @@
 //check to see if we show the socials from our theme or from wordpress
 if(td_util::get_option('td_social_networks_show') == 'show') { ?>
 <div class="td-header-sp-top-widget">
-    <div>
+    <div class="follow-us">
         <div class="textSub">Siguenos en:</div>
         <?php
 

@@ -221,7 +221,7 @@ p {
 			padding: 18px 20px 0px;
 			margin: 0 1.5% 24px;
 			background-color: #eceff1;
-			border: 1px solid #546d7a;
+			// border: 1px solid #546d7a;
 			&:last-child {
 				margin-bottom: 28px; // Separacicon de la siguiene seccion
 			}
@@ -252,6 +252,7 @@ p {
 				position: relative;
 				margin-bottom: 22px;
 				height: 88px;
+				border-bottom: 1px dotted #546d7a;
 				@media (max-width: 480px){
 					height: auto;
 				}				
@@ -287,19 +288,19 @@ p {
 					}
 				}
 				// Separador - borde
-				&:after {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					width: 98%;
-					height: 1px;
-					background-color: #546d7a;
-					@media (max-width: 480px) {
-						background-color: rgba(84, 109, 122, 0.35);
-					}
-				}
+				// &:after {
+				// 	content: '';
+				// 	position: absolute;
+				// 	bottom: 0;
+				// 	left: 0;
+				// 	right: 0;
+				// 	width: 98%;
+				// 	height: 1px;
+				// 	background-color: #546d7a;
+				// 	@media (max-width: 480px) {
+				// 		background-color: rgba(84, 109, 122, 0.35);
+				// 	}
+				// }
 			}
 			&.autor {
 				background-color: #546e7a;
@@ -436,8 +437,13 @@ p {
 				height: 155px;
 			}
 		}
-		.thisCNATVWrap {
+
+		/* Widget top */
+		.follow-us {
 			margin-top: 10px;
+		}
+		.thisCNATVWrap {
+			margin-top: 15px;
 		}
 		.thisCNATV { // a
 			display: block;
@@ -445,9 +451,9 @@ p {
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
-			width: 60%;
-			padding-bottom: 73.5%;
-			margin-left: 5px;
+			width: 55px;
+			padding-bottom: 55px;
+			margin: 5px auto auto 5px;
 			-webkit-transition: -webkit-transform ease 300ms;
 			transition: -webkit-transform ease 300ms;
 			transition: transform ease 300ms;
@@ -742,7 +748,7 @@ p {
 		// max-height: 155px;
 		position: relative;
 		margin: 0 0 0 .5%;
-		padding: 30px 16px 31px 50px;
+		padding: 30px 15px 30px 30px;
 		display: list-item;
 
 		@media (max-width: 1018px) {
@@ -762,25 +768,14 @@ p {
 				display: block;
 			}
 		}
-		/*@media (max-width: 585px) {
-			width: 49.5%;
-			font-size: 14px;
-		}
-		@media (max-width: 500px) {
-			font-size: 14px;
-			line-height: 16px;
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
-		}*/
 		
 		&::before {
 			content: counter(my-lastnews-counter);
 			counter-increment: my-lastnews-counter;
 			position: absolute;
 			top: 37px;
-			left: 15px;
-			font-size: 42px;
+			left: 10px;
+			font-size: 40px;
 			color: @color_1;
 			@media (max-width: 767px) {
 				left: 10px;
@@ -812,17 +807,17 @@ p {
 	}
 	.nTitle {
 		display: block;
-		width: 100%;
-		// height: 88px;
-		height: 66px;
+		float: left;
+		width: 50%;
+		height: 110px;
+		padding-left: 15px;		
 		color: @color_1;
 		font-size: 17px;
 		line-height: 1.3;
 		overflow: hidden;
-		//Truncate
+		// //Truncate
 		display: -webkit-box;
-		// -webkit-line-clamp: 4;
-		-webkit-line-clamp: 3;
+		-webkit-line-clamp: 5;
 		-webkit-box-orient: vertical;  
 		text-overflow: ellipsis;
 		a {
@@ -830,10 +825,9 @@ p {
 		}	
 		@media (max-width: 767px) {
 			-webkit-line-clamp: unset;
+			width: 60%;			
 			display: block;
 			height: auto;
-			float: left;
-			width: 60%;
 			padding-left: 15px;
 			line-height: 1.15;
 		}		
@@ -842,17 +836,24 @@ p {
 		}*/
 	} 
 	.nImage {
-		width: 40%;
+		width: 50%;
 		float: left;
 		padding-left: 15px;
+		@media (max-width: 767px) {
+			width: 40%;			
+		}	
+		img {
+			display: block;
+		}
 	}
 }
 
 /* CNA Videos*/
 #CNA_videos {
 	margin-bottom: 26px;
-	padding: 12px 16px 24px;
-	background-color: #d33;// Grid = @background_color_9;
+	//padding: 12px 16px 24px;
+	//background-color: #d33;// Grid = @background_color_9;
+	
 	// .video-grid-wrapper {
 	// 	h2  {
 	// 		margin-top: 0;
@@ -905,7 +906,7 @@ p {
 			font-weight: 500;
 			> a {
 				display: block;
-				color: rgba(255, 255, 255, 0.9);
+				// color: rgba(255, 255, 255, 0.9);
 				-webkit-transition: color 0s ease;
 				transition: color 0s ease;
 			}
@@ -916,9 +917,9 @@ p {
 				background-color: rgba(121, 28, 28, 0.35);
 			}
 			.entry-title {
-				border-color: #fff;;
+				border-color: #d33 !important;
 				> a {
-					color: #fff;
+					color: #d33;
 				}
 			}
 		}
@@ -954,9 +955,9 @@ p {
 				margin: 0;
 				font-size: 15px;
 				line-height: 1.2;
-				padding: 12px 3px 12px;				
+				padding: 8px 3px 8px;				
 				border-bottom: 1px solid #666;
-				border-color: rgba(255, 255, 255, 0.9);
+				// border-color: rgba(255, 255, 255, 0.9);
 				@media screen and (max-width: 767px) {				
 					font-size: 14px;
 					border: none;
@@ -980,23 +981,31 @@ p {
 	.video_module_big {
 		margin-top: 15px;
 		@media (min-width: 1360px) {
-			max-width: 640px;
+			// max-width: 640px;
 			margin: 15px auto 0;
 		}
 		@media (max-width: 767px) {
 			margin-top: 10px;
 		}
 		.video-module-thumb {
-			max-width: 640px;			
+			// max-width: 640px;			
 			margin-bottom: 5px;
 			text-align: center;
 			
 			a.wrap-thumb {
-				display: inline-block;
+				display: block;
+				overflow: hidden;
+				position: relative;
+				@media (min-width: 1360px) {
+					height: 445px;
+				}
 			}
 			.entry-thumb {
 				display: block;
 				width: 100%;
+				transform: translate(-50%);
+				position: absolute;
+				left: 50%;
 			}
 		}
 		.video-meta-container {
@@ -1817,11 +1826,11 @@ div[class*="post-template-cna"] {
 				display: none;
 			}
 			.td-module-thumb {
+				height: 709px !important;	
+				width: 100%;
 				@media (max-width: 767px) {
 					height: auto !important;
 				}				
-				height: 678px !important;	
-
 				// Filtro de color sobre las imagenes
 				a[rel="bookmark"] {
 					&::before {
@@ -1832,7 +1841,9 @@ div[class*="post-template-cna"] {
 			.entry-thumb {
 				height: 100%;
 				width: auto;
-				margin-left: -25%;	
+				max-width: initial;
+				position: relative;
+				left: -65%;
 				@media (max-width: 767px) {
 					height: auto;
 					width: 100%;
@@ -1840,13 +1851,14 @@ div[class*="post-template-cna"] {
 				}
 			}
 			.td-big-grid-meta {
-				width: 90%;
-				margin-bottom: 12px;
+				width: 100%;
+				padding: 15px 20px 16px 20px;
+				margin: 0;;
 			}
 			.entry-title {
-				font-size: 22px;
+				font-size: 21px;
 				line-height: 1.1;
-				margin: 10px 0 0;
+				margin: 0;
 				//Truncate
 				height: 48px;
 				overflow: hidden;
@@ -1858,21 +1870,6 @@ div[class*="post-template-cna"] {
 					display: block;
 					height: auto;
 				}
-			}
-			.myExcerpt {
-				width: 100%;
-				white-space: initial;
-				font-size: 14px;
-				font-weight: 600;
-				line-height: 1.25;
-				margin-bottom: 15px;
-				//Truncate
-				height: 34px;
-				overflow: hidden;
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical; 
-
 			}
 		}
 		
