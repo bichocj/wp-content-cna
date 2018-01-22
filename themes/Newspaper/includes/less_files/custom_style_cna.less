@@ -1006,8 +1006,6 @@ p {
 				@media (min-width: 1360px) {
 					height: 450px;
 				}
-				
-				
 			}
 			.entry-thumb {
 				display: block;
@@ -1054,6 +1052,50 @@ p {
 * 			POST STYLE 
 **********************************/
 
+/* Post Actions*/
+.td-post-actions {
+	position: relative;
+	min-height: 40px;
+	margin-bottom: 10px;
+	.td-category {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		margin-bottom: 0;
+		li {
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+	}
+}
+/* Post Sharing*/
+.post-sharing-buttons{
+	right: 0;
+	top: 0;
+	padding-right: 5px;
+	// a
+	[class*="td-social"] {
+		display: block !important;
+		float: left;
+		border-radius: 50%;
+		min-width: 40px;
+		height: 40px !important;
+		line-height: 43px;
+		padding: 0 !important;
+		text-align: center;
+		margin-left: 10px !important;
+		i {
+			font-size: 17px !important;
+		}
+	}
+	.td-social-whatsapp {
+		display: inline-block !important;
+		line-height: 45px;
+		i {
+			font-size: 19px !important;
+		}
+	}
+}
 /* Title */
 .td-post-title {
 	margin-bottom: 40px;
@@ -1654,16 +1696,15 @@ div[class*="post-template-cna"] {
 			margin-right: 0;
 			margin-left: 0;
 		}
-		.td-icon-twitter {
+		[class*="td-icon-"] {
 			font-size: 15px;
 		}
-		.td-icon-facebook {
-			font-size: 15px;
+		.td-social-youtube {
+			background-color: #bb0000;
 		}
-		.td-icon-whatsapp {
-			font-size: 15px;
+		.td-social-instagram {
+			background-color: #e1306e ;
 		}
-		
 		// Position in modules
 		&.share_module_mx6 {
 			bottom: 5px;

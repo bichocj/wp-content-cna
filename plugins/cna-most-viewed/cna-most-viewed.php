@@ -102,5 +102,5 @@ class most_viewed_widget extends WP_Widget {
 
 // registrar el widget 
 add_action('widgets_init', create_function('', 'return register_widget("most_viewed_widget");'));
-?>
+
 
