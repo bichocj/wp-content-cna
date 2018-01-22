@@ -17,11 +17,8 @@ class most_viewed_widget extends WP_Widget {
         $this->WP_Widget('most_viewed_widget', 'Lo más visto en CNA', $options);
     }
     function form($instance) {
-         // Valores por defecto
          $defaults = array('titulo' => 'Lo más visto en CNA', 'posts'=> '4');
-         // Se hace un merge, en $instance quedan los valores actualizados
          $instance = wp_parse_args((array)$instance, $defaults);
-         // Cogemos los valores
          $titulo = $instance['titulo'];
          $posts = $instance['posts'];
          // Mostramos el formulario
@@ -40,10 +37,8 @@ class most_viewed_widget extends WP_Widget {
     }
     function update($new_instance, $old_instance) {
         $instance = $old_instance;
-        // Con sanitize_text_field elimiamos HTML de los campos
         $instance['titulo'] = sanitize_text_field($new_instance['titulo']);
         $instance['posts'] = sanitize_text_field($new_instance['posts']);
-        // $instance['url'] = sanitize_text_field($new_instance['url']);s
         return $instance;
     }
     function widget($args, $instance) {
@@ -78,7 +73,7 @@ class most_viewed_widget extends WP_Widget {
 		<?php if ( $titulo ) {
 			echo $args['before_title'] . $titulo . $args['after_title'];
 		} ?>
-		<ul class="lnList">
+		<ul class="lnList clearfix">
 		<?php while ( $news_Query->have_posts() ) : $news_Query->the_post(); ?>
             <li>
                 <?php 
@@ -86,7 +81,7 @@ class most_viewed_widget extends WP_Widget {
                         $imgDestacada = wp_get_attachment_image_src( $thumbID, 'thumbnail' ); // Thumbnail, medium, large, full
                         $imgTitle = get_the_title();
                         $urlNews = get_permalink();
-                        echo '<a class="nImage visible-xs" href="'. $urlNews .'"> <img width="150" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
+                        echo '<a class="nImage" href="'. $urlNews .'"> <img width="150" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
                         alt="" title="'.$imgTitle.'"> </a>'
                 ?>
                 <div class="nTitle">
@@ -99,10 +94,7 @@ class most_viewed_widget extends WP_Widget {
 		<?php
 		// Reset the global $the_post as this query will have stomped on it
 		wp_reset_postdata();
-
 		endif;
-        
-        // echo $after_widget;
     }
  }
 

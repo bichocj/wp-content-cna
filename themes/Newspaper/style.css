@@ -29638,7 +29638,7 @@ p {
 .td-footer-template-4 .td-footer-info {
   margin-bottom: 26px;
 }
-/* Sidebar */
+/***** Sidebar *****/
 @media (min-width: 1360px) {
   .fix-w-sidebar .td-ss-main-sidebar {
     min-width: 392px;
@@ -29648,6 +29648,92 @@ p {
   .td-main-sidebar.td-pb-span4 .td-ss-main-sidebar {
     min-width: 392px;
   }
+}
+.widget {
+  margin-bottom: 26px;
+}
+.widget .block-title {
+  margin-bottom: 26px;
+}
+/* Widget - Most Viewed */
+.widget-most-viewed ul {
+  margin: 0;
+  padding: 0;
+  counter-reset: my-lastnews-counter;
+  list-style: none;
+}
+.widget-most-viewed li {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.25;
+  padding: 20px 20px 20px 10%;
+  margin: 0 0 1px;
+  position: relative;
+  background-color: #dc0000;
+}
+.widget-most-viewed li::before {
+  content: counter(my-lastnews-counter);
+  counter-increment: my-lastnews-counter;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.widget-most-viewed li:first-child {
+  background-color: #b60000;
+}
+.widget-most-viewed li:nth-child(2) {
+  background-color: #c60000;
+}
+.widget-most-viewed li:nth-child(3) {
+  background-color: #ce0000;
+}
+.widget-most-viewed li:last-child {
+  margin-bottom: 0;
+}
+.widget-most-viewed .nImage {
+  display: block;
+  width: 40%;
+  float: left;
+  padding-left: 15px;
+}
+@media (max-width: 992px) {
+  .widget-most-viewed .nImage {
+    width: auto;
+  }
+}
+@media (max-width: 400px) {
+  .widget-most-viewed .nImage {
+    width: 40%;
+  }
+}
+.widget-most-viewed .nImage img {
+  width: 113px;
+}
+.widget-most-viewed .nTitle {
+  -webkit-line-clamp: unset;
+  display: block;
+  height: auto;
+  float: left;
+  width: 60%;
+  padding-left: 15px;
+  line-height: 1.35;
+  font-size: 15px;
+}
+@media (max-width: 992px) {
+  .widget-most-viewed .nTitle {
+    padding-left: 20px;
+  }
+}
+.widget-most-viewed .nTitle:hover a {
+  color: #fff;
+  text-decoration: underline;
+}
+.widget-most-viewed .nTitle a {
+  color: #fff;
 }
 /* Category Template CNA */
 .td_category_template_cna .td-category-header {

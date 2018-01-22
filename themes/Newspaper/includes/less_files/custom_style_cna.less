@@ -605,7 +605,7 @@ p {
 	}
 }
 
-/* Sidebar */
+/***** Sidebar *****/
 // Fixing width despues de haber aumentado el tamaño del contenedor
 //
 // 1er caso: Usando una clase
@@ -617,10 +617,101 @@ p {
 	}	
 }
 // 2do Caso : aplicando directamente  a todos los sidebars
-.td-main-sidebar.td-pb-span4 {
-	@media (min-width: 1360px){
-		.td-ss-main-sidebar {
-			min-width: 392px;
+.td-main-sidebar{
+	&.td-pb-span4 {
+		@media (min-width: 1360px){
+			.td-ss-main-sidebar {
+				min-width: 392px;
+			}
+		}
+	}
+}
+// Fixing Widgets
+.widget {
+	margin-bottom: 26px;
+	.block-title {
+		margin-bottom: 26px;
+	}
+}
+
+/* Widget - Most Viewed */
+.widget-most-viewed {
+	ul {
+		margin: 0;
+		padding: 0;
+		counter-reset: my-lastnews-counter;
+		list-style: none;
+	}
+	li {
+		display: block;
+		float: left;
+		width: 100%;
+		font-size: 14px;
+		line-height: 1.25;
+		padding: 20px 20px 20px 10%;
+		margin: 0 0 1px;
+		position: relative;
+		//Por defecto de nth 4  a mas
+		background-color: #dc0000;
+		&::before {
+			content: counter(my-lastnews-counter);
+			counter-increment: my-lastnews-counter;
+			position: absolute;
+			top: 13px;
+			left: 15px;
+			font-size: 40px;
+			color: #ffffff;
+		}
+		&:first-child {
+			background-color: #b60000;
+		}
+		&:nth-child(2) {
+			background-color: #c60000;
+		}
+		&:nth-child(3) {
+			background-color: #ce0000;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+	.nImage {
+		display: block;
+		width: 40%;
+		float: left;
+		padding-left: 15px;
+		@media (max-width: 992px) {
+			width: auto;
+		}	
+		@media (max-width: 400px) {
+			width: 40%;
+		}	
+		img {
+			width: 113px;
+		}
+	}
+	.nTitle {
+		-webkit-line-clamp: unset;
+		display: block;
+		height: auto;
+		float: left;
+		width: 60%;
+		padding-left: 15px;
+		line-height: 1.35;
+		font-size: 15px;
+		@media (max-width: 992px) {
+			padding-left: 20px;
+		}	
+
+		&:hover {
+			a {
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+		a {
+			color: #fff;
 		}
 	}
 }
