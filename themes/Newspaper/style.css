@@ -29157,8 +29157,8 @@ td-md-is-safari
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
-/********************************** 
-* 		TYPOGRAPHY 
+/**********************************
+* 		TYPOGRAPHY
 **********************************/
 body,
 p {
@@ -29200,7 +29200,7 @@ p {
     max-width: 1274px;
   }
 }
-/********************************** 
+/**********************************
 *			HELPERS
 ***********************************/
 .visible-xs {
@@ -29219,7 +29219,7 @@ p {
 .titulo-negrita {
   font-weight: 500;
 }
-/********************************** 
+/**********************************
 *		VC CLASES
 ***********************************/
 .no-pb-grids [class*="td_block_big_grid"],
@@ -29457,8 +29457,8 @@ p {
   padding-bottom: 0;
 }
 /* MAGAZINE - Custom Grid2 Gallery  */
-/********************************** 
-* 			TEMPLATES 
+/**********************************
+* 			TEMPLATES
 ***********************************/
 /* Page template-Page pagebuilder latest*/
 .page-template-page-pagebuilder-latest .td-pb-article-list .page-nav {
@@ -30020,8 +30020,8 @@ p {
 		}
 	}
 } */
-/********************************** 
-* 			POST STYLE 
+/**********************************
+* 			POST STYLE
 **********************************/
 /* Post Actions*/
 .td-post-actions {
@@ -30275,8 +30275,8 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 .post-template-cna-2 .wrapper-feature {
   margin-bottom: 26px;
 }
-/********************************** 
-* 			WIDGETS 
+/**********************************
+* 			WIDGETS
 ********************************** /
 
 /* SOCIAL NETWORK */
@@ -30347,8 +30347,8 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 [class*="sidebar"] .wpc-weather-id:last-child #wpc-weather {
   margin-bottom: 0;
 }
-/********************************** 
-*			DIV BLOCKS 
+/**********************************
+*			DIV BLOCKS
 ***********************************/
 /* Header Style 6 - CNA */
 .td-header-cna.td-header-style-6 {
@@ -30648,8 +30648,79 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
     text-align: center;
   }
 }
-/********************************** 
-* 		SHARE MODULE 
+/***** Single Top Bar - 6 Last News *****/
+#last-6-news {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#last-6-news .l6-title {
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  background-color: #e9e9e9;
+}
+#last-6-news .l6-title > span {
+  display: inline-block;
+  padding: 10px;
+  background-color: #d33;
+  color: white;
+}
+#last-6-news .l6-row {
+  padding: 10px 0px 0px;
+  margin-right: -18px;
+}
+#last-6-news .l6-block2 {
+  float: left;
+  width: 16.666%;
+  padding: 0 18px 0 0;
+}
+#last-6-news .td-module-thumb a[rel="bookmark"]::before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+#last-6-news .entry-title {
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0 3px 13px;
+  border-bottom: 1px solid #999;
+}
+#last-6-news .entry-title > a {
+  display: block;
+  height: 38px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#last-6-news .l6-module {
+  -webkit-transition: -webkit-box-shadow ease 250ms;
+  transition: -webkit-box-shadow ease 250ms;
+  transition: box-shadow ease 250ms;
+  transition: box-shadow ease 250ms, -webkit-box-shadow ease 250ms;
+}
+#last-6-news .l6-module:hover a[rel="bookmark"]::before {
+  background-color: rgba(121, 28, 28, 0.35);
+}
+#last-6-news .l6-module:hover .entry-title {
+  border-color: #D33;
+}
+#last-6-news .l6-module:hover .entry-title a {
+  color: #D33;
+}
+/**********************************
+* 		SHARE MODULE
 **********************************/
 .share_module_block.td-default-sharing {
   position: absolute;
@@ -30725,8 +30796,8 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 .share_module_block.sharemainBox .td-icon-whatsapp {
   font-size: 14px;
 }
-/********************************** 
-*			CUSTOM GRIDS 
+/**********************************
+*			CUSTOM GRIDS
 ***********************************/
 /* Excerpt */
 .myExcerpt {
