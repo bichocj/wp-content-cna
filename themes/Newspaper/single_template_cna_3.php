@@ -20,15 +20,17 @@ $td_mod_single = new td_module_single($post);
                 <div class="td-pb-span12">
                     <div class="td-post-header">
                         <div class="td-post-actions clearfix">
-                            <!-- Sharing module -->
-                            <div class="td-default-sharing share_module_block post-sharing-buttons clearfix">
-                                <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://localhost/wordpress/?p=722" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="td-icon-facebook"></i></a>
-                                <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=Papa+Francisco+en+Per%C3%BA%3A+PPK+inspeccion%C3%B3+las+instalaciones+de+Las+Palmas&amp;url=http://localhost/wordpress/?p=722&amp;via=CNA" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="td-icon-twitter"></i></a>
-                                <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=Papa+Francisco+en+Per%C3%BA%3A+PPK+inspeccion%C3%B3+las+instalaciones+de+Las+Palmas - http%3A%2F%2Flocalhost%2Fwordpress%2F%3Fp%3D722" data-action="share/whatsapp/share"><i class="td-icon-whatsapp"></i></a>
+                            <!-- Sharing module cna 3 -->
+                            <?php
+                                $twitter_user = td_util::get_option( 'tds_tweeter_username' );
+                                echo '<div -class="td-default-sharing share_module_block post-sharing-buttons clearfix">
+                                    <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=' . urlencode( esc_url( get_permalink() ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-facebook"></i></a>
+                                    <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=' . htmlspecialchars(urlencode(html_entity_decode(esc_html(get_the_title()), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . '&url=' . urlencode( esc_url( get_permalink() ) ) . '&via=' . urlencode( $twitter_user ? $twitter_user : get_bloginfo( 'name' ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-twitter"></i></a>
+                                    <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=' . htmlspecialchars(urlencode(html_entity_decode(esc_html(get_the_title()), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . ' - ' . urlencode( esc_url( get_permalink() ) ) . '" data-action="share/whatsapp/share" ><i class="td-icon-whatsapp"></i></a>
 
-                                <a class="td-social-sharing-buttons td-social-youtube" target="_blank" href="https://www.youtube.com/channel/UCClyftK9ZJKavq9TaAyJl8w" title="Youtube"><i class="td-icon-font td-icon-youtube"></i></a>
-                                <a class="td-social-sharing-buttons td-social-instagram"  target="_blank" href="https://www.instagram.com/cna.pe/" title="Instagram"><i class="td-icon-font td-icon-instagram"></i></a>
-                            </div>
+                                    <a class="td-social-sharing-buttons td-social-youtube" target="_blank" href="https://www.youtube.com/channel/UCClyftK9ZJKavq9TaAyJl8w" title="Youtube"><i class="td-icon-font td-icon-youtube"></i></a>
+                                    <a class="td-social-sharing-buttons td-social-instagram"  target="_blank" href="https://www.instagram.com/cna.pe/" title="Instagram" ><i class="td-icon-font td-icon-instagram"></i></a>
+                            </div>'; ?>
                             <!-- end Sharing module -->
                             <?php echo $td_mod_single->get_category(); ?>                            
 
