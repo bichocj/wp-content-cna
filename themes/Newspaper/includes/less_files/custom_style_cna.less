@@ -2453,6 +2453,12 @@ div[class*="post-template-cna"] {
 				line-height: 1.5;
 				padding: 0;
 				font-family: inherit;
+				
+				@media (max-width: 767px) {
+					font-size: 13px;
+				}
+			}
+			> span {
 				// truncate
 				height: 42px; // = alto de pager 
 				overflow: hidden;
@@ -2460,17 +2466,12 @@ div[class*="post-template-cna"] {
 				-webkit-line-clamp: 2;
 				-webkit-box-orient: vertical;
 				text-overflow: ellipsis;
-				@media (max-width: 767px) {
-					font-size: 13px;
-					line-height: 1.3;
-					height: 50px;
-					-webkit-line-clamp: 3;					
-				}
-			}
-			> span {
 				padding: 0 0 0 100px;				
 				@media (max-width: 767px) {
 					padding-left: 65px;
+					line-height: 1.3;
+					height: 50px;
+					-webkit-line-clamp: 3;					
 				}
 			}
 		}
