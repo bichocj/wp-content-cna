@@ -15,26 +15,25 @@ $td_mod_single = new td_module_single($post);
 
     <div class="td-container td-post-template-2 post-template-cna-2">
         <article id="post-<?php echo $td_mod_single->post->ID;?>" class="<?php echo join(' ', get_post_class());?>" <?php echo $td_mod_single->get_item_scope();?>>
-            <div class="td-crumb-container"><?php echo td_page_generator::get_single_breadcrumbs($td_mod_single->title); ?></div>
             <div class="td-pb-row">
                 <div class="td-pb-span12">
-                    <div class="td-post-header">
+                    <div class="td-post-header post-header-slider">
                         <div class="td-post-actions clearfix">
+                            <!-- Breadcrumb -->
+                            <div class="td-crumb-container"><?php echo td_page_generator::get_single_breadcrumbs($td_mod_single->title); ?></div>
                             <!-- Sharing module cna 3 -->
                             <?php
                                 $twitter_user = td_util::get_option( 'tds_tweeter_username' );
                                 echo '<div class="td-default-sharing share_module_block post-sharing-buttons clearfix">
                                     <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=' . urlencode( esc_url( get_permalink() ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-facebook"></i></a>
-                                    <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=' . htmlspecialchars(urlencode(html_entity_decode(esc_html(get_the_title()), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . '&url=' . urlencode( esc_url( get_permalink() ) ) . '&via=' . urlencode( $twitter_user ? $twitter_user : get_bloginfo( 'name' ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-twitter"></i></a>
-                                    <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=' . htmlspecialchars(urlencode(html_entity_decode(esc_html(get_the_title()), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . ' - ' . urlencode( esc_url( get_permalink() ) ) . '" data-action="share/whatsapp/share" ><i class="td-icon-whatsapp"></i></a>
-
-                                    <a class="td-social-sharing-buttons td-social-youtube" target="_blank" href="https://www.youtube.com/channel/UCClyftK9ZJKavq9TaAyJl8w" title="Youtube"><i class="td-icon-font td-icon-youtube"></i></a>
                                     <a class="td-social-sharing-buttons td-social-instagram"  target="_blank" href="https://www.instagram.com/cna.pe/" title="Instagram" ><i class="td-icon-font td-icon-instagram"></i></a>
+                                    <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=' . htmlspecialchars(urlencode(html_entity_decode(esc_html(get_the_title()), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . '&url=' . urlencode( esc_url( get_permalink() ) ) . '&via=' . urlencode( $twitter_user ? $twitter_user : get_bloginfo( 'name' ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-twitter"></i></a>
+                                    <a class="td-social-sharing-buttons td-social-youtube" target="_blank" href="https://www.youtube.com/channel/UCClyftK9ZJKavq9TaAyJl8w" title="Youtube"><i class="td-icon-font td-icon-youtube"></i></a>
+                                    <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=' . htmlspecialchars(urlencode(html_entity_decode(esc_html(get_the_title()), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . ' - ' . urlencode( esc_url( get_permalink() ) ) . '" data-action="share/whatsapp/share" ><i class="td-icon-whatsapp"></i></a>
                                 </div>'; ?>
                             <!-- end Sharing module -->
-                            <?php echo $td_mod_single->get_category(); ?>                            
-
                         </div>
+                        <?php echo $td_mod_single->get_category(); ?>                            
                         <header class="td-post-title">
                             <?php echo $td_mod_single->get_title();?>
                             <?php if (!empty($td_mod_single->td_post_theme_settings['td_subtitle'])) { ?>

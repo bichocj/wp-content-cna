@@ -29379,12 +29379,13 @@ p {
   }
 }
 .section-economia-tecnologia .td-opiniones .wpb_text_column.autor {
-  background-color: #546e7a;
+  background-color: #de4432;
   margin: 0 -25px;
   padding: 8px 20px;
 }
 @media (max-width: 767px) {
   .section-economia-tecnologia .td-opiniones .wpb_text_column.autor {
+    background-color: #546e7a;
     margin: 0 -20px;
   }
 }
@@ -29813,14 +29814,14 @@ p {
   display: block;
   float: left;
   width: 50%;
-  height: 110px;
+  height: 120px;
   padding-left: 15px;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.3;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   /*@media (max-width: 500px) {
@@ -29846,6 +29847,11 @@ p {
   padding-left: 15px;
 }
 @media (max-width: 767px) {
+  .most_viewed_news .nImage {
+    width: auto;
+  }
+}
+@media (max-width: 500px) {
   .most_viewed_news .nImage {
     width: 40%;
   }
@@ -29893,7 +29899,7 @@ p {
 }
 #CNA_videos .video-grid-scroll {
   margin: auto -8px;
-  padding: 5px 0 15px;
+  padding: 5px 0 0;
 }
 @media screen and (max-width: 992px) {
   #CNA_videos .video-grid-scroll {
@@ -29951,12 +29957,7 @@ p {
   }
 }
 #CNA_videos .video_module_big {
-  margin-top: 15px;
-}
-@media (min-width: 1360px) {
-  #CNA_videos .video_module_big {
-    margin: 15px auto 0;
-  }
+  margin-top: 16px;
 }
 @media (max-width: 767px) {
   #CNA_videos .video_module_big {
@@ -29999,7 +30000,6 @@ p {
   margin: 0;
   font-size: 20px;
   line-height: 1.3;
-  text-align: center;
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video_module_big .video-meta-container .entry-title {
@@ -30026,33 +30026,35 @@ p {
 .td-post-actions {
   position: relative;
   min-height: 40px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.td-post-actions .td-category {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  margin-bottom: 0;
+.td-post-actions .td-crumb-container {
+  padding-right: 260px;
+  padding-top: 0;
+  margin-bottom: 0 !important;
 }
 @media (max-width: 640px) {
-  .td-post-actions .td-category {
-    position: initial;
+  .td-post-actions .td-crumb-container {
+    padding-right: 0;
   }
 }
-.td-post-actions .td-category li {
-  margin-bottom: 0;
-  font-size: 14px;
+.post-template-cna-2 .td-post-actions {
+  margin-top: 0;
 }
 /* Post Sharing*/
 .post-sharing-buttons {
   right: 0;
   top: 0;
   padding-right: 5px;
+  padding-left: 5px;
+  border-left: 1px solid #ccc;
 }
 @media (max-width: 640px) {
   .post-sharing-buttons {
     position: initial !important;
     margin-bottom: 10px;
+    padding: 0;
+    border: none;
   }
 }
 .post-sharing-buttons [class*="td-social"] {
@@ -30081,6 +30083,11 @@ p {
 }
 .post-sharing-buttons .td-social-whatsapp i {
   font-size: 19px !important;
+}
+/* Category */
+.td-category li {
+  margin-bottom: 0;
+  font-size: 14px;
 }
 /* Title */
 .td-post-title {
@@ -30215,6 +30222,15 @@ p {
 div[class*="post-template-cna"] .td-crumb-container {
   margin-bottom: 20px;
 }
+div[class*="post-template-cna"] .td-crumb-container .entry-crumbs {
+  color: #999;
+}
+div[class*="post-template-cna"] .td-crumb-container .entry-crumbs a {
+  color: #999;
+}
+div[class*="post-template-cna"] .td-crumb-container .entry-crumbs a:hover {
+  color: #666;
+}
 div[class*="post-template-cna"] .td-post-sharing {
   text-align: center;
 }
@@ -30245,7 +30261,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 /* Post Template CNA 2 */
 .post-template-cna-2 .td-post-header {
   background-color: #F3F0F0;
-  padding: 30px;
+  padding: 30px 30px 5px;
   margin-bottom: 40px;
 }
 @media (max-width: 640px) {
@@ -30270,6 +30286,9 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 .post-template-cna-2 .td-post-header .td-post-sharing-top {
   margin-top: 32px;
   margin-bottom: 0 !important;
+}
+.post-template-cna-2 .td-post-header.post-header-slider {
+  padding-bottom: 0;
 }
 .post-template-cna-2 .wrapper-feature {
   margin-bottom: 26px;
@@ -31106,6 +31125,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   background: rgba(121, 28, 28, 0.35) !important;
 }
 .td-grid-style-1.td_block_big_grid_3 .bigCustomBlock {
+  margin-right: 0;
   /* Responsive big custom Block */
   width: 62%;
   background-color: #DD3333;
@@ -31116,6 +31136,7 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 @media (max-width: 767px) {
   .td-grid-style-1.td_block_big_grid_3 .bigCustomBlock {
     width: 96%;
+    margin-right: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -31221,10 +31242,15 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   }
 }
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post {
-  width: 49%;
+  width: 49.5%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post:first-child {
-  width: 99%;
+  width: 100%;
+}
+.td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post:last-child {
+  float: right;
 }
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post .td-meta-info-container {
   background-color: #d33;
@@ -31352,10 +31378,10 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   }
 }
 .bx-wrapper .bxslider .bx-caption > span {
-  height: 42px;
+  height: 63px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   padding: 0 0 0 100px;
@@ -31451,8 +31477,8 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   padding: 0;
   right: auto;
   top: auto;
-  height: 40px;
-  line-height: 40px;
+  height: 63px;
+  line-height: 60px;
   width: 83px;
   background-color: #d33;
   color: #fff;
@@ -31464,8 +31490,10 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
 }
 @media (max-width: 767px) {
   .bx-wrapper .bx-pager {
-    bottom: 25px;
+    bottom: 15px;
     left: 15px;
+    height: 50px;
+    line-height: 50px;
     font-size: 14px;
     width: 50px;
   }
