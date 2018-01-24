@@ -2446,12 +2446,12 @@ div[class*="post-template-cna"] {
 				position: static;
 				padding: 15px;
 			}
-			> span {
+			span {
 				font-size: 14px;
 				font-weight: 600;
 				color: @color_5;
 				line-height: 1.5;
-				padding: 0 0 0 100px;
+				padding: 0;
 				font-family: inherit;
 				// truncate
 				height: 42px; // = alto de pager 
@@ -2463,9 +2463,14 @@ div[class*="post-template-cna"] {
 				@media (max-width: 767px) {
 					font-size: 13px;
 					line-height: 1.3;
-					padding-left: 65px;
 					height: 50px;
 					-webkit-line-clamp: 3;					
+				}
+			}
+			> span {
+				padding: 0 0 0 100px;				
+				@media (max-width: 767px) {
+					padding-left: 65px;
 				}
 			}
 		}
