@@ -29424,13 +29424,12 @@ p {
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  margin-top: 25px;
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal {
   /* color: #5ddfdf; */
   color: #c3ffff;
   text-shadow: 1px 1px 5px #212121;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: -1px;
   margin-bottom: 30px;
 }
@@ -29440,8 +29439,8 @@ p {
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal > span {
   display: inline-block;
   color: white;
-  font-size: 18px;
-  letter-spacing: -1px;
+  font-size: 16px;
+  letter-spacing: 0px;
   padding: 3px 10px;
   margin-top: 5px;
   text-transform: uppercase;
