@@ -90,19 +90,19 @@ p {
 *			HELPERS
 ***********************************/
 .visible-xs {
-	display: none;
+	display: none !important;
 	@media screen and (max-width: 767px) {
-		display: block;
+		display: block !important;
 	}
 }
 .hidden-xs-600 {
 	@media screen and (max-width: 600px) {
-		display: none;
+		display: none; // Usarlo sabiamente, ya que no funciona actualmente sin el important
 	}
 }
 .hidden-xl {
 	@media screen and (min-width: 1360px) {
-		display: none;
+		display: none !important;
 	}
 }
 // Para titulos. Roboto
@@ -753,7 +753,8 @@ p {
 		// max-height: 155px;
 		position: relative;
 		margin: 0 0 0 .5%;
-		padding: 30px 15px 30px 30px;
+		// padding: 30px 15px 30px 30px;
+		padding: 30px 15px 30px 25px;
 		display: list-item;
 
 		@media (max-width: 1018px) {
@@ -780,7 +781,8 @@ p {
 			position: absolute;
 			top: 37px;
 			left: 10px;
-			font-size: 40px;
+			// font-size: 40px;
+			font-size: 35px;
 			color: @color_1;
 			@media (max-width: 767px) {
 				left: 10px;
@@ -815,11 +817,13 @@ p {
 		float: left;
 		width: 50%;
 		height: 120px;
-		padding-left: 15px;
-		color: @color_1;
-		font-size: 16px;
-		line-height: 1.3;
 		overflow: hidden;
+		padding-left: 15px;
+		// font-size: 16px;
+		font-size: 15px;
+		padding-top: 6px; // Añadido 
+		color: @color_1;
+		line-height: 1.3;
 		// //Truncate
 		display: -webkit-box;
 		-webkit-line-clamp: 6;
@@ -972,10 +976,12 @@ p {
 				}
 				//Truncate
 				> a {
-					height: 38px;
+					// height: 38px;
+					height: 54px;
 					overflow: hidden;
 					display: -webkit-box;
-					-webkit-line-clamp: 2;
+					// -webkit-line-clamp: 2;
+					-webkit-line-clamp: 3;
 					-webkit-box-orient: vertical;
 					text-overflow: ellipsis;
 					@media screen and (max-width: 767px) {
@@ -1349,9 +1355,9 @@ div[class*="post-template-cna"] {
 	&:last-child {
 		margin-bottom: 0;
 	}
-	&.td_social_instagram {
-		background-color: @color_instagram !important;
-	}
+}
+&.td_social_instagram {
+	background-color: @color_instagram;
 }
 /* WP-POLLS */
 .wp-polls  {
