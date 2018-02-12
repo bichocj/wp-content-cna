@@ -29204,11 +29204,11 @@ p {
 *			HELPERS
 ***********************************/
 .visible-xs {
-  display: none;
+  display: none !important;
 }
 @media screen and (max-width: 767px) {
   .visible-xs {
-    display: block;
+    display: block !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -29218,7 +29218,7 @@ p {
 }
 @media screen and (min-width: 1360px) {
   .hidden-xl {
-    display: none;
+    display: none !important;
   }
 }
 .titulo-negrita {

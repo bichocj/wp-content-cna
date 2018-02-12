@@ -90,19 +90,19 @@ p {
 *			HELPERS
 ***********************************/
 .visible-xs {
-	display: none;
+	display: none !important;
 	@media screen and (max-width: 767px) {
-		display: block;
+		display: block !important;
 	}
 }
 .hidden-xs-600 {
 	@media screen and (max-width: 600px) {
-		display: none;
+		display: none; // Usarlo sabiamente, ya que no funciona actualmente sin el important
 	}
 }
 .hidden-xl {
 	@media screen and (min-width: 1360px) {
-		display: none;
+		display: none !important;
 	}
 }
 // Para titulos. Roboto
