@@ -9932,7 +9932,7 @@ var tdAnimationSprite = {};
     
     date_time("date_time");
 
-    jQuery('.wp-polls.results-type h4.pollTitle').html('LA ENCUESTA anterior');
+    jQuery('.wp-polls.results-type h4.pollTitle').html('LA ENCUESTA ANTERIOR');
     jQuery('.customGrid2Gallery .td-pb-span12 .td_block_big_grid_2 .td-big-grid-wrapper .td-big-grid-scroll').after(jQuery('.bigGrid2Gallery.td_module_mx9'));
 
     /*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
