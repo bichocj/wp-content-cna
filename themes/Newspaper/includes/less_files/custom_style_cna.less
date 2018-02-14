@@ -78,12 +78,20 @@ p {
 	font-family: @font1;
 }
 
+/**********************************
+*	THEME  - FIXIN  ELEMENTS
+***********************************/
 /* CONTENEDOR */
 .td-container {
 	@media (min-width: 1360px){
 		width: 100%;
 		max-width: 1274px;
 	}
+}
+
+.block-title span {
+  // For fixing whitespace
+  margin-bottom: -0.5px;
 }
 
 /**********************************
@@ -148,7 +156,8 @@ p {
 			max-width: initial;
 			width: auto;
 			height: 320px;
-			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%);
 			position: relative;
 			left: 50%;
 		}
@@ -264,7 +273,8 @@ p {
 				.wpb_wrapper {
 					padding-bottom: 18px;
 					// Centrar el contenido
-					transform: translateY(-50%);
+					-webkit-transform: translateY(-50%);
+					        transform: translateY(-50%);
 					position: absolute;
 					top: 50%;
 					//Truncate
@@ -275,7 +285,8 @@ p {
 					text-overflow: ellipsis;
 					@media (max-width: 480px){
 						position: initial;
-						transform: none;
+						-webkit-transform: none;
+						        transform: none;
 					}
 					* {
 						color: #222;
@@ -1020,7 +1031,8 @@ p {
 			.entry-thumb {
 				display: block;
 				width: 100%;
-				transform: translate(-50%);
+				-webkit-transform: translate(-50%);
+				        transform: translate(-50%);
 				position: relative;
 				left: 50%;
 			}

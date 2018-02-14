@@ -29193,12 +29193,18 @@ p {
 #bbpress-forums .bbp-topic-header .bbp-meta .bbp-topic-permalink {
   font-family: 'Open Sans', arial, sans-serif;
 }
+/**********************************
+*	THEME  - FIXIN  ELEMENTS
+***********************************/
 /* CONTENEDOR */
 @media (min-width: 1360px) {
   .td-container {
     width: 100%;
     max-width: 1274px;
   }
+}
+.block-title span {
+  margin-bottom: -0.5px;
 }
 /**********************************
 *			HELPERS
@@ -29246,6 +29252,7 @@ p {
     max-width: initial;
     width: auto;
     height: 320px;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: relative;
     left: 50%;
@@ -29352,6 +29359,7 @@ p {
 }
 .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper {
   padding-bottom: 18px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
@@ -29364,6 +29372,7 @@ p {
 @media (max-width: 480px) {
   .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper {
     position: initial;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -29998,6 +30007,7 @@ p {
 #CNA_videos .video_module_big .video-module-thumb .entry-thumb {
   display: block;
   width: 100%;
+  -webkit-transform: translate(-50%);
   transform: translate(-50%);
   position: relative;
   left: 50%;
