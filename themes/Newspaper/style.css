@@ -29433,10 +29433,6 @@ p {
   background-color: #1e1641;
 }
 @media (max-width: 1018px) {
-  .section-cna-vivo .container-tv-vivo {
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
 }
 @media (max-width: 1018px) {
   .section-cna-vivo .container-tv-vivo .wpb_column:not(.container-reproductor) {
@@ -29452,6 +29448,13 @@ p {
 @media (max-width: 1018px) {
   .section-cna-vivo .container-tv-vivo .container-reproductor {
     width: 100% !important;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1018px) {
+  .section-cna-vivo .container-tv-vivo .container-reproductor iframe {
+    height: 360px !important;
   }
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] {

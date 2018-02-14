@@ -364,8 +364,8 @@ p {
 		background-color: #1e1641;
 		// Inicio - Responsive de las columnas
 		@media (max-width: 1018px) { 
-			padding-top: 20px;
-			padding-bottom: 0px;
+			// padding-top: 30px;
+			// padding-bottom: 10px;
 		}
 		.wpb_column {
 			&:not(.container-reproductor) {
@@ -375,6 +375,7 @@ p {
 			}
 		}
 		// Fin - Responsive de las columnas
+		// - Revisar cuando s trabaje la version mobile en los media query
 		.container-reproductor { //contenedor de reproductor
 			@media (min-width: 1019px) {
 				padding-left: 0;
@@ -382,6 +383,14 @@ p {
 			}
 			@media (max-width: 1018px) {
 				width: 100% !important;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+			// Iframe de video
+			iframe {
+				@media (max-width: 1018px) {
+					height: 360px !important;
+				}
 			}
 		}
 		[class*="banner-tv"] {
