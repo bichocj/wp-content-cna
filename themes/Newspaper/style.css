@@ -31268,6 +31268,11 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   top: 0;
   bottom: auto;
 }
+@media screen and (min-width: 768px) {
+  .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post .td-meta-info-container {
+    min-height: 119px;
+  }
+}
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post .td-big-grid-meta {
   margin: 15px 15px;
 }
