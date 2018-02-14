@@ -29193,12 +29193,18 @@ p {
 #bbpress-forums .bbp-topic-header .bbp-meta .bbp-topic-permalink {
   font-family: 'Open Sans', arial, sans-serif;
 }
+/**********************************
+*	THEME  - FIXIN  ELEMENTS
+***********************************/
 /* CONTENEDOR */
 @media (min-width: 1360px) {
   .td-container {
     width: 100%;
     max-width: 1274px;
   }
+}
+.block-title span {
+  margin-bottom: -0.5px;
 }
 /**********************************
 *			HELPERS
@@ -29246,6 +29252,7 @@ p {
     max-width: initial;
     width: auto;
     height: 320px;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: relative;
     left: 50%;
@@ -29352,6 +29359,7 @@ p {
 }
 .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper {
   padding-bottom: 18px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
@@ -29364,6 +29372,7 @@ p {
 @media (max-width: 480px) {
   .section-economia-tecnologia .td-opiniones .wpb_text_column.titulo .wpb_wrapper {
     position: initial;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -29423,9 +29432,30 @@ p {
   background-position: center center;
   background-color: #1e1641;
 }
-.section-cna-vivo .container-tv-vivo .container-reproductor {
-  padding-left: 0;
-  padding-right: 0;
+@media (max-width: 1018px) {
+}
+@media (max-width: 1018px) {
+  .section-cna-vivo .container-tv-vivo .wpb_column:not(.container-reproductor) {
+    display: none;
+  }
+}
+@media (min-width: 1019px) {
+  .section-cna-vivo .container-tv-vivo .container-reproductor {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1018px) {
+  .section-cna-vivo .container-tv-vivo .container-reproductor {
+    width: 100% !important;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1018px) {
+  .section-cna-vivo .container-tv-vivo .container-reproductor iframe {
+    height: 360px !important;
+  }
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] {
   text-align: center;
@@ -29998,6 +30028,7 @@ p {
 #CNA_videos .video_module_big .video-module-thumb .entry-thumb {
   display: block;
   width: 100%;
+  -webkit-transform: translate(-50%);
   transform: translate(-50%);
   position: relative;
   left: 50%;
@@ -31267,6 +31298,11 @@ div[class*="post-template-cna"] .td-module-meta-info .td-post-author-name > a {
   background-color: #d33;
   top: 0;
   bottom: auto;
+}
+@media screen and (min-width: 768px) {
+  .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post .td-meta-info-container {
+    min-height: 119px;
+  }
 }
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post .td-big-grid-meta {
   margin: 15px 15px;

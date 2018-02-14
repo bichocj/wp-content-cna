@@ -78,12 +78,20 @@ p {
 	font-family: @font1;
 }
 
+/**********************************
+*	THEME  - FIXIN  ELEMENTS
+***********************************/
 /* CONTENEDOR */
 .td-container {
 	@media (min-width: 1360px){
 		width: 100%;
 		max-width: 1274px;
 	}
+}
+
+.block-title span {
+  // For fixing whitespace
+  margin-bottom: -0.5px;
 }
 
 /**********************************
@@ -148,7 +156,8 @@ p {
 			max-width: initial;
 			width: auto;
 			height: 320px;
-			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%);
 			position: relative;
 			left: 50%;
 		}
@@ -264,7 +273,8 @@ p {
 				.wpb_wrapper {
 					padding-bottom: 18px;
 					// Centrar el contenido
-					transform: translateY(-50%);
+					-webkit-transform: translateY(-50%);
+					        transform: translateY(-50%);
 					position: absolute;
 					top: 50%;
 					//Truncate
@@ -275,7 +285,8 @@ p {
 					text-overflow: ellipsis;
 					@media (max-width: 480px){
 						position: initial;
-						transform: none;
+						-webkit-transform: none;
+						        transform: none;
 					}
 					* {
 						color: #222;
@@ -350,10 +361,37 @@ p {
         background: url(../../uploads/2018/01/mundo-bg-3.png) no-repeat;
         background-size: contain;
         background-position: center center;
-        background-color: #1e1641;
+		background-color: #1e1641;
+		// Inicio - Responsive de las columnas
+		@media (max-width: 1018px) { 
+			// padding-top: 30px;
+			// padding-bottom: 10px;
+		}
+		.wpb_column {
+			&:not(.container-reproductor) {
+				@media (max-width: 1018px) {
+					display: none;
+				}
+			}
+		}
+		// Fin - Responsive de las columnas
+		// - Revisar cuando s trabaje la version mobile en los media query
 		.container-reproductor { //contenedor de reproductor
-			padding-left: 0;
-			padding-right: 0;
+			@media (min-width: 1019px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			@media (max-width: 1018px) {
+				width: 100% !important;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+			// Iframe de video
+			iframe {
+				@media (max-width: 1018px) {
+					height: 360px !important;
+				}
+			}
 		}
 		[class*="banner-tv"] {
 			text-align: center;
@@ -1020,7 +1058,8 @@ p {
 			.entry-thumb {
 				display: block;
 				width: 100%;
-				transform: translate(-50%);
+				-webkit-transform: translate(-50%);
+				        transform: translate(-50%);
 				position: relative;
 				left: 50%;
 			}
@@ -2381,6 +2420,9 @@ div[class*="post-template-cna"] {
 					background-color: @color_7;
 					top: 0;
 					bottom: auto;
+					@media screen and (min-width: 768px){
+						min-height: 119px;
+					}
 				}
 				.td-big-grid-meta {
 					margin: 15px 15px;
