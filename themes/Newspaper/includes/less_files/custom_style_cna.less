@@ -361,10 +361,28 @@ p {
         background: url(../../uploads/2018/01/mundo-bg-3.png) no-repeat;
         background-size: contain;
         background-position: center center;
-        background-color: #1e1641;
+		background-color: #1e1641;
+		// Inicio - Responsive de las columnas
+		@media (max-width: 1018px) { 
+			padding-top: 20px;
+			padding-bottom: 0px;
+		}
+		.wpb_column {
+			&:not(.container-reproductor) {
+				@media (max-width: 1018px) {
+					display: none;
+				}
+			}
+		}
+		// Fin - Responsive de las columnas
 		.container-reproductor { //contenedor de reproductor
-			padding-left: 0;
-			padding-right: 0;
+			@media (min-width: 1019px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			@media (max-width: 1018px) {
+				width: 100% !important;
+			}
 		}
 		[class*="banner-tv"] {
 			text-align: center;
