@@ -5,7 +5,7 @@
         <div class="td-header-sp-logo">
             <h1 class="td-logo"> 
                 <a class="td-main-logo" href="/">
-                    <img class="td-retina-data" src="<?php echo get_template_directory_uri(); ?>/images/custom/nuevologocna-header-white.png" alt="CNA en todo el mundo" title="CNA en todo el mundo">
+                    <img class="td-retina-data" src="<?php echo get_template_directory_uri(); ?>/images/custom/nuevologocna-header-white.png" alt="CNA en todo el mundo" title="CNA, en todo el mundo">
                     <span class="td-visual-hidden">CNA NOTICIAS</span>
                 </a>
             </h1> 
