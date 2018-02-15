@@ -2756,10 +2756,10 @@ div.td_block_it837003251 {
 }
 .wp-polls {
 	background-color: @background_color_1;
-	padding: 15px 8px 5px;
+	padding-bottom: 15px;
 	border: none;
 	position: relative;
-	>p {
+	> p {
 		font-size: 15px;
 	}
 	a[href^="#ViewPoll"] {
@@ -2772,6 +2772,7 @@ div.td_block_it837003251 {
 		-webkit-transition: all .20s;
 		font-weight: bold;
 		font-size: 14px;
+		margin-bottom: 15px;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -2785,13 +2786,22 @@ div.td_block_it837003251 {
 		-moz-transition: all .20s;
 		-webkit-transition: all .20s;
 		text-decoration: none;
-		background-color: @background_color_2;
-		width: 70%;
+		background-color: @background_color_12;
 		border-radius: 4px;
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
+		float: right;
+		margin-right: 5%;
+		font-size: 14px;
 		&:hover {
 			background-color: @background_color_3;
+		}
+		@media (max-width: 767px) {
+			margin-right: 20%;
+		}
+		@media (min-width: 768px) and (max-width: 1018px) {
+			margin: 0px;
+			float: none;
 		}
 	}
 	a[href^="#VotePoll"] {
@@ -2813,6 +2823,9 @@ div.td_block_it837003251 {
 		&:hover {
 			background-color: @background_color_3;
 		}
+		@media (max-width: 767px) {
+			margin-left: 20%;
+		}
 	}
 	.pollLogo {
 		width: 90px;
@@ -2827,7 +2840,7 @@ div.td_block_it837003251 {
 		}
 	}
 	.wp-polls-ans {
-		>p {
+		> p {
 			&:first-of-type {
 				display: none;
 			}
@@ -2886,7 +2899,7 @@ div.td_block_it837003251 {
 	.wp-polls-form {
 		.wp-polls-ans {
 			ul {
-				margin: 10px auto 15px;
+				margin: 20px auto 20px;
 			}
 			>p {
 				&:first-of-type {
@@ -2900,9 +2913,15 @@ div.td_block_it837003251 {
 		font-weight: bold;
 		text-align: center;
 		margin-top: 0;
+		color: @color_1;
+		background-color: @background_color_12;
+		padding: 14px 0px;
+		font-size: 16px;
+	}
+	p.pollTitle {
+		margin: 25px 15px 0;
 	}
 	.pollTitle {
-		margin: 10px 15px 0;
 		padding-bottom: 5px;
 		strong {
 			font-weight: normal;
@@ -2937,7 +2956,7 @@ div.td_block_it837003251 {
 		font-size: 17px;
 		margin-top: 2px;
 		font-weight: bold;
-		padding-bottom: 0;
+		padding-bottom: 14px;
 	}
 	.wp-custom-cna-polls-ans {
 		margin-bottom: 16px;
@@ -2965,10 +2984,13 @@ div.td_block_it837003251 {
 			li {
 				margin: 7px auto;
 				text-align: left;
-				width: 15%;
+				width: 70%;
 				position: relative;
 				font-weight: bold;
 				line-height: 20px;
+				@media (min-width: 768px) and (max-width: 1018px) {
+					width: 50%;
+				}
 				input {
 					position: absolute;
 					width: 13px;
