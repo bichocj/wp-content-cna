@@ -32410,9 +32410,9 @@ div.cb-657545417432 {
 }
 .pollsarchive .wp-polls p.pollTitle {
   margin: 25px 0px 0px;
+  text-align: left;
 }
 .pollsarchive .pollTitle {
-  text-align: left !important;
   background-color: #DD3333;
   color: #ffffff;
   padding: 10px 20px;
