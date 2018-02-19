@@ -31835,6 +31835,9 @@ div.td_block_it837003251 > .vc_column-inner {
 .wp-polls .wp-polls-ans .wp-custom-cna-polls-ans .answer-label span {
   color: #000;
 }
+.wp-polls .wp-polls-ans .wpcna-polls-results {
+  font-size: 16px;
+}
 .wp-polls .wp-polls-form .wp-polls-ans ul {
   margin: 20px auto 20px;
 }
@@ -31854,6 +31857,7 @@ div.td_block_it837003251 > .vc_column-inner {
 .wp-polls p.pollTitle {
   margin: 25px 15px 0;
   font-size: 16px;
+  text-align: center;
 }
 .wp-polls .pollTitle {
   padding-bottom: 5px;
@@ -32366,6 +32370,81 @@ div.cb-657545417432 {
   #facebook-cna {
     display: none;
   }
+}
+.wpcna-hide {
+  display: none !important;
+}
+.wpcna-show {
+  display: block !important;
+}
+.pollsarchive .wpcna-polls-title-header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+}
+.pollsarchive .wp-polls h4.pollTitle {
+  display: none;
+}
+.pollsarchive .wp-polls div:first-child p.pollTitle {
+  pointer-events: none;
+  background-color: transparent;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.pollsarchive .wp-polls div:first-child p.pollTitle::before {
+  content: none;
+}
+.pollsarchive .wp-polls div:first-child .wp-polls-ans {
+  display: block;
+}
+.pollsarchive .wp-polls div:nth-child(2) {
+  display: block;
+  margin-bottom: 30px;
+}
+.pollsarchive .wp-polls p.pollTitle {
+  margin: 25px 0px 0px;
+}
+.pollsarchive .pollTitle {
+  text-align: left !important;
+  background-color: #DD3333;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.pollsarchive .pollTitle.wpcna-isShow::before {
+  font-family: 'newspaper', sans-serif;
+  margin: 0px 8px 0px -3px;
+  content: '\e804';
+}
+.pollsarchive .pollTitle.wpcna-isHide::before {
+  font-family: 'newspaper', sans-serif;
+  margin: 0px 8px 0px -3px;
+  content: '\e801';
+}
+.pollsarchive .pollTitle::before {
+  font-family: 'newspaper', sans-serif;
+  margin: 0px 8px 0px -3px;
+  content: '\e801';
+}
+.pollsarchive .pollTitle:hover {
+  cursor: pointer;
+}
+.pollsarchive .wpcna-polls-alldates {
+  padding: 10px 30px 5px;
+  margin-top: -26px;
+  display: none;
+}
+.pollsarchive .wpcna-polls-alldates .wpcna-polls-dates {
+  font-size: 16px;
+}
+.pollsarchive .wp-polls-ans {
+  padding: 10px 20px 0px;
+  display: none;
+}
+.pollsarchive .wp-polls-ans .wpcna-polls-results {
+  display: none;
 }
 /******************************************************
 *             END - CUSTOM STYLE - CNA
