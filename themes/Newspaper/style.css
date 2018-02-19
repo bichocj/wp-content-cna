@@ -30987,6 +30987,32 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb img {
     width: 100% !important;
   }
 }
+/* Fixing module 15 */
+@media screen and (min-width: 1360px) {
+  .td_block_15 .td-column-2 .td-module-thumb {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 1359px) {
+  .td_block_15 .td-column-2 .td-module-thumb {
+    height: 218px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .td_block_15 .td-column-2 .td-module-thumb {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1018px) {
+  .td_block_15 .td-column-2 .td-module-thumb {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .td_block_15 .td-column-2 .td-module-thumb {
+    height: auto;
+  }
+}
 /* Fixing Entry Thumb */
 .td-module-thumb {
   overflow: hidden;
@@ -30994,6 +31020,9 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb img {
 .td-module-thumb .entry-thumb {
   min-height: 100%;
   min-width: 100%;
+  max-width: initial;
+  width: auto;
+  position: relative;
 }
 /****** Block Big Grid - Style 1 - CNA *******/
 .td-grid-style-1 {
