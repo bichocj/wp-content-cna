@@ -2938,6 +2938,9 @@ div.td_block_it837003251 {
 				}
 			}
 		}
+		.wpcna-polls-results{
+			font-size: 16px;
+		}
 	}
 	.wp-polls-form {
 		.wp-polls-ans {
@@ -2964,6 +2967,7 @@ div.td_block_it837003251 {
 	p.pollTitle {
 		margin: 25px 15px 0;
 		font-size: 16px;
+		text-align: center;
 	}
 	.pollTitle {
 		padding-bottom: 5px;
@@ -3602,17 +3606,98 @@ div.cb-657545417432 {
 }
 
 .wpcna-hide {
-	display: none;
+	display: none !important;
 }
 .wpcna-show {
-	display: block;
+	display: block !important;
 }
 
-.wpcna-polls-archive-question {
-	text-align: left;
-    background-color: @background_color_12;
-    color: @color_1;
-    padding: 10px 20px;
+.pollsarchive {
+	.wpcna-polls-title-header {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 26px;
+	}
+	.wp-polls {
+		// .wpcna-polls-questions {
+		// 	background-image: url(images/trama_square.jpg);
+		// }
+		// .wpcna-polls-alldates {
+		// 	background-image: url(images/trama_square.jpg);
+		// }
+		h4.pollTitle {
+			display: none;
+		}
+		div { 
+			&:first-child {
+				p.pollTitle {
+					pointer-events: none;
+					background-color: transparent;
+					color: @color_3;
+					font-weight: 500;
+					font-size: 20px;
+					text-align: center;
+					margin-top: 30px;
+					&::before {
+						content: none;
+					}
+				}
+				.wp-polls-ans  {
+					display: block;
+				}
+			}
+			&:nth-child(2) {
+				display: block;
+				margin-bottom: 30px;				
+			}
+		}
+		p.pollTitle {
+			margin: 25px 0px 0px;
+		}
+	}
+	.pollTitle {
+		text-align: left !important;
+		background-color: @background_color_12;
+		color: @color_1;
+		padding: 10px 20px;
+		&.wpcna-isShow{
+			&::before {
+				font-family: @font4;
+				margin: 0px 8px 0px -3px;
+				content: '\e804';
+			}
+		}
+		&.wpcna-isHide {
+			&::before {
+				font-family: @font4;
+				margin: 0px 8px 0px -3px;
+				content: '\e801';
+			}
+		}
+		&::before {
+			font-family: @font4;;
+			margin: 0px 8px 0px -3px;
+			content: '\e801';
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.wpcna-polls-alldates {
+		padding: 10px 30px 5px;
+		margin-top: -26px;
+		display: none;
+		.wpcna-polls-dates {
+			font-size: 16px;
+		}
+	}
+	.wp-polls-ans {
+		padding: 10px 20px 0px;
+		display: none;
+		.wpcna-polls-results {
+			display: none;
+		}
+	}
 }
 
 // * { outline: 1px solid rgba(0, 250, 0, 0.35)}
