@@ -29915,8 +29915,17 @@ p {
   display: block;
 }
 /* CNA Videos*/
+.section-cna-videos .block-title {
+  border-color: #4c3d95;
+}
+.section-cna-videos .block-title > span {
+  display: block;
+  background-color: #4c3d95;
+}
 #CNA_videos {
   margin-bottom: 26px;
+  border-bottom: 4px solid #4c3d95;
+  padding-bottom: 20px;
 }
 #CNA_videos [class*="video_module_"] a.wrap-thumb {
   display: block;
@@ -29989,7 +29998,7 @@ p {
   font-size: 15px;
   line-height: 1.2;
   padding: 8px 3px 8px;
-  border-bottom: 2px solid #dd3333;
+  border-bottom: 2px solid #4c3d95;
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video-grid-scroll .video_module_small .entry-title {
@@ -30012,7 +30021,7 @@ p {
   }
 }
 #CNA_videos .video_module_big {
-  margin-top: 16px;
+  margin-top: 26px;
 }
 @media (max-width: 767px) {
   #CNA_videos .video_module_big {
@@ -30020,7 +30029,7 @@ p {
   }
 }
 #CNA_videos .video_module_big .video-module-thumb {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   text-align: center;
 }
 #CNA_videos .video_module_big .video-module-thumb a.wrap-thumb {
@@ -30063,6 +30072,16 @@ p {
   margin: 0;
   font-size: 20px;
   line-height: 1.3;
+}
+@media screen and (min-width: 1019px) {
+  #CNA_videos .video_module_big .video-meta-container .entry-title {
+    min-height: 51px;
+    overflow-y: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video_module_big .video-meta-container .entry-title {
@@ -31989,7 +32008,7 @@ div.td_block_it837003251 > .vc_column-inner {
   text-align: center;
 }
 .contID-126726137213 .text:last-child {
-  border-bottom: 5px solid #d33;
+  border-bottom: 4px solid #d33;
 }
 .whatsappBlock-2343242642 {
   background-color: #009b3a;
