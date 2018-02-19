@@ -291,6 +291,23 @@ abstract class td_module {
                             }
                         } // end on video if
 
+                        // on Magazine add the play icon
+                            $cats = get_the_category($this->post->ID);
+                            
+                            $cat = $cats[0]; // let's just assume the post has one category
+                            $cat_id = $cat->cat_ID;
+                            $cat_name = $cat->name;
+                            $cat_slug = $cat->slug;
+
+                        if ($cat_slug == 'magazine') {
+                            // load the small or medium play icon
+                            if ($use_small_post_format_icon_size === true) {
+                                $buffy .= '<span class="td-video-play-ico td-video-small"><img width="20" class="td-retina" src="' . td_global::$get_template_directory_uri . '/images/icons/ico-camera-large.png' . '" alt="Magazine"/></span>';
+                            } else {
+                                $buffy .= '<span class="td-video-play-ico"><img width="40" class="td-retina" src="' . td_global::$get_template_directory_uri . '/images/icons/ico-camera-large.png' . '" alt="Magazine"/></span>';
+                            }
+                        } // end on Magazine if
+
                 $buffy .= '</a>';
             $buffy .= '</div>'; //end wrapper
 
