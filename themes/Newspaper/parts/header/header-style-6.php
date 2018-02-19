@@ -83,6 +83,7 @@ Header style 6 - CNA
                     <div class="td-block-row">
                     <?php $newsQuery = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 4) );?>
                     <?php if($newsQuery->have_posts()) : ?>
+                    <div id="header-bxslider">
                         <?php while($newsQuery->have_posts()) : $newsQuery->the_post(); ?>
                         <!-- td-block-span4 -->
                         <div class="td-block-span4">
@@ -118,6 +119,7 @@ Header style 6 - CNA
                         </div> 
                         <!-- ./td-block-span4 -->
                         <?php endwhile; ?>
+                                    </div>
                     <?php endif; wp_reset_postdata(); ?>
                     </div>
                 </div>
