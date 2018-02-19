@@ -2534,8 +2534,9 @@ div[class*="post-template-cna"] {
 			@media (min-width:1019px) and (max-width: 1200px) {
 				width: 44%;
 			}
-			width: 37%;
-			float: right;
+			width: 38%;
+			float: left;
+			padding-left: 3px;
 			position: relative;
 			.td-big-grid-post {
 				width: 49.5%; // Small Thumb 
@@ -2545,14 +2546,17 @@ div[class*="post-template-cna"] {
 					width: 100%;
 				}
 				&:last-child {
-					float: right;
+					width: 50.5%;
+					float: left;
+					padding-left: 3px;
 				}
 				.td-meta-info-container {
 					background-color: @color_7;
 					top: 0;
 					bottom: auto;
 					@media screen and (min-width: 768px){
-						min-height: 119px;
+						// min-height: 119px;
+						min-height: 79px;
 					}
 				}
 				.td-big-grid-meta {
@@ -2618,7 +2622,7 @@ div[class*="post-template-cna"] {
 					-webkit-line-clamp: 2 !important;
 				}
 				line-height: 23px;
-				height: 46px !important;
+				height: 43px !important;
 				-webkit-line-clamp: 2 !important;
 			}
 		}
