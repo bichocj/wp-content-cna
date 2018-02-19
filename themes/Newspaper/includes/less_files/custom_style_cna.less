@@ -88,12 +88,13 @@ p {
 		max-width: 1274px;
 	}
 }
-
+/* Block title */ 
+// Evitar la separacion del titulo y del borde 
+// del elemento block title al hacerle zoom
+//
 .block-title span {
-  // For fixing whitespace
   margin-bottom: -0.5px;
 }
-
 // Fixing container fb
 .fb-page, 
 .fb-page span, 
@@ -210,7 +211,6 @@ p {
 	.td_block_text_with_title {
 		padding-bottom: 0;
 	}
-	// Evitar padding bottom de los otros elementos
 }
 .section-economia-tecnologia {
 	// Economia
@@ -1092,6 +1092,16 @@ p {
 				left: 50%;
 			}
 		}
+		// Icono de play centrado
+		.td-video-play-ico  {
+			> img {
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+			}
+		}
 		.video-meta-container {
 			.entry-title {
 				margin:  0;
@@ -1107,7 +1117,19 @@ p {
 	}
 }
 
-
+/* Icono Video  - Magazine */
+// Cambiando posicion de icono play de videos
+// 
+.td-video-play-ico {
+	> img {
+		top: 5px;
+		right: 5px;
+		bottom: auto; 
+		left: auto; 
+		opacity: 0.75 !important;
+		width: 35px;
+	}
+}
 
 /*  PopUp Maker*/
 /* .pum-container {

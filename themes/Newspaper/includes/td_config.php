@@ -354,7 +354,7 @@ class td_config {
             array(
                 'file' => td_global::$get_template_directory . '/single_template_cna_1.php',
                 'text' => 'Single template CNA 1',
-                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/single_template_2.png',
+                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/cna_template_1.png',
                 'show_featured_image_on_all_pages' => false,
                 'bg_disable_background' => false,          // disable the featured image
                 'bg_box_layout_config' => 'auto',                // auto | td-boxed-layout | td-full-layout
@@ -365,7 +365,7 @@ class td_config {
             array(
                 'file' => td_global::$get_template_directory . '/single_template_cna_2.php',
                 'text' => 'Single template CNA 2',
-                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/single_template_3.png',
+                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/cna_template_2.png',
                 'show_featured_image_on_all_pages' => true, //shows the featured image on all the pages
                 'bg_disable_background' => false,          // disable the featured image
                 'bg_box_layout_config' => 'auto',                // auto | td-boxed-layout | td-full-layout
@@ -377,7 +377,7 @@ class td_config {
             array(
                 'file' => td_global::$get_template_directory . '/single_template_cna_3.php',
                 'text' => 'Single template CNA 3',
-                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/single_template_3.png',
+                'img' => td_global::$get_template_directory_uri . '/images/panel/single_templates/cna_template_3.png',
                 'show_featured_image_on_all_pages' => true, //shows the featured image on all the pages
                 'bg_disable_background' => false,          // disable the featured image
                 'bg_box_layout_config' => 'auto',                // auto | td-boxed-layout | td-full-layout
