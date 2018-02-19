@@ -29970,10 +29970,12 @@ p {
 .section-cna-videos .block-title > span {
   display: block;
   background-color: #4c3d95;
+  height: 42px;
+  line-height: 30px;
 }
 #CNA_videos {
   margin-bottom: 26px;
-  border-bottom: 4px solid #4c3d95;
+  border-bottom: 8px solid #4c3d95;
   padding-bottom: 20px;
 }
 #CNA_videos [class*="video_module_"] a.wrap-thumb {
