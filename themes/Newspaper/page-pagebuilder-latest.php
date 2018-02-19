@@ -156,6 +156,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                 $queryVideo = new WP_Query($args_video); 
                                             ?>
                                             <?php if($queryVideo->have_posts()) : ?>
+                                            <div id="videos-bxslider">
                                                 <?php while($queryVideo->have_posts()) : $queryVideo->the_post(); ?>
                                                     <div class="video_module_small">
                                                         <div class="video-module-thumb">
@@ -178,6 +179,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                     </div>
                                                     <!-- end video module -->
                                                 <?php endwhile; ?>
+                                                </div>
                                             <?php else: ?>
                                                 <p> En este momento no hay videos para mostrar. </p>
                                             <?php endif; wp_reset_postdata(); ?>
