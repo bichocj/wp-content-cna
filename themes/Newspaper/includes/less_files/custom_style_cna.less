@@ -215,6 +215,24 @@ p {
 	}
 }
 .section-economia-tecnologia {
+	/* Moodule 15 */
+	.td_block_15 .td-column-2 .td-module-thumb {
+		@media screen and (min-width: 1360px) {
+			height: 260px;
+		}
+		@media screen and (max-width: 1359px) {
+			height: 218px;
+		}
+		@media screen and (max-width: 1040px) {
+			height: 200px;
+		}
+		@media screen and (max-width: 1018px) {
+			height: 150px;
+		}
+		@media screen and (max-width: 767px) {
+			height: auto;
+		}
+	} 
 	// Economia
 	.td_block_1 {
 		padding-bottom: 0;
@@ -949,14 +967,16 @@ p {
 		border-color: @color_video_cna;
 		> span {
 			display: block;
-    		background-color: @color_video_cna;
+			background-color: @color_video_cna;
+			height: 42px;
+			line-height: 30px;
 		}
 	}
 }
 
 #CNA_videos {
 	margin-bottom: 26px; 
-    border-bottom: 4px solid @color_video_cna;
+    border-bottom: 8px solid @color_video_cna;
     padding-bottom: 20px;
 	//padding: 12px 16px 24px;
 	//background-color: #d33;// Grid = @background_color_9;
@@ -2163,25 +2183,7 @@ div[class*="post-template-cna"] {
 		width: 100% !important;
 	}
 }
-/* Fixing module 15 */
-// Cambio de estilo para le tema de CNA
-/*.td_block_15 .td-column-2 .td-module-thumb {
-	@media screen and (min-width: 1360px) {
-		height: 260px;
-	}
-	@media screen and (max-width: 1359px) {
-		height: 218px;
-	}
-	@media screen and (max-width: 1040px) {
-		height: 200px;
-	}
-	@media screen and (max-width: 1018px) {
-		height: 150px;
-	}
-	@media screen and (max-width: 767px) {
-		height: auto;
-	}
-} */
+
 /* Fixing Entry Thumb */
 // Imagenes que ocupen todo el espacio del contenedor
 .td-module-thumb {
@@ -2560,8 +2562,9 @@ div[class*="post-template-cna"] {
 			@media (min-width:1019px) and (max-width: 1200px) {
 				width: 44%;
 			}
-			width: 37%;
-			float: right;
+			width: 38%;
+			float: left;
+			padding-left: 3px;
 			position: relative;
 			.td-big-grid-post {
 				width: 49.5%; // Small Thumb 
@@ -2571,14 +2574,17 @@ div[class*="post-template-cna"] {
 					width: 100%;
 				}
 				&:last-child {
-					float: right;
+					width: 50.5%;
+					float: left;
+					padding-left: 3px;
 				}
 				.td-meta-info-container {
 					background-color: @color_7;
 					top: 0;
 					bottom: auto;
 					@media screen and (min-width: 768px){
-						min-height: 119px;
+						// min-height: 119px;
+						min-height: 79px;
 					}
 				}
 				.td-big-grid-meta {
@@ -2644,7 +2650,7 @@ div[class*="post-template-cna"] {
 					-webkit-line-clamp: 2 !important;
 				}
 				line-height: 23px;
-				height: 46px !important;
+				height: 43px !important;
 				-webkit-line-clamp: 2 !important;
 			}
 		}
@@ -3145,6 +3151,8 @@ div.td_block_it837003251 {
 
 
 #tdw-2732633243 {
+	// Evitar espacio a los lados
+	margin: 0 -1%;
 	.wpc-weather-id {
 		display: inline-block;
 		width: 31.33%;
