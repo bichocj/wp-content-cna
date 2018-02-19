@@ -215,6 +215,24 @@ p {
 	}
 }
 .section-economia-tecnologia {
+	/* Moodule 15 */
+	.td_block_15 .td-column-2 .td-module-thumb {
+		@media screen and (min-width: 1360px) {
+			height: 260px;
+		}
+		@media screen and (max-width: 1359px) {
+			height: 218px;
+		}
+		@media screen and (max-width: 1040px) {
+			height: 200px;
+		}
+		@media screen and (max-width: 1018px) {
+			height: 150px;
+		}
+		@media screen and (max-width: 767px) {
+			height: auto;
+		}
+	} 
 	// Economia
 	.td_block_1 {
 		padding-bottom: 0;
@@ -2137,25 +2155,7 @@ div[class*="post-template-cna"] {
 		width: 100% !important;
 	}
 }
-/* Fixing module 15 */
-// Cambio de estilo para le tema de CNA
-/*.td_block_15 .td-column-2 .td-module-thumb {
-	@media screen and (min-width: 1360px) {
-		height: 260px;
-	}
-	@media screen and (max-width: 1359px) {
-		height: 218px;
-	}
-	@media screen and (max-width: 1040px) {
-		height: 200px;
-	}
-	@media screen and (max-width: 1018px) {
-		height: 150px;
-	}
-	@media screen and (max-width: 767px) {
-		height: auto;
-	}
-} */
+
 /* Fixing Entry Thumb */
 // Imagenes que ocupen todo el espacio del contenedor
 .td-module-thumb {
@@ -3123,6 +3123,8 @@ div.td_block_it837003251 {
 
 
 #tdw-2732633243 {
+	// Evitar espacio a los lados
+	margin: 0 -1%;
 	.wpc-weather-id {
 		display: inline-block;
 		width: 31.33%;
