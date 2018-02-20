@@ -29980,6 +29980,7 @@ p {
   margin-bottom: 26px;
   border-bottom: 8px solid #1263a9;
   padding-bottom: 20px;
+  margin-top: -13px;
 }
 #CNA_videos [class*="video_module_"] a.wrap-thumb {
   display: block;
@@ -30074,7 +30075,7 @@ p {
   }
 }
 #CNA_videos .video_module_big {
-  margin-top: 26px;
+  margin-top: 18px;
 }
 @media (max-width: 767px) {
   #CNA_videos .video_module_big {
@@ -30412,7 +30413,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td_block_inner {
   background-color: transparent;
 }
 div[class*="post-template-cna"] .td_block_related_posts .td_block_inner .td-related-row .td-related-span4 {
-  padding-right: 2px;
+  padding-right: 16px;
 }
 div[class*="post-template-cna"] .td_block_related_posts .td-next-prev-wrap {
   background-color: transparent;
@@ -30427,7 +30428,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-next-prev-wrap a:hov
 }
 div[class*="post-template-cna"] .td_block_related_posts .td-module-title {
   font-size: 15px;
-  padding: 5px 10px 0px 10px;
+  padding: 5px 0px;
 }
 div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb {
   height: 240px;
@@ -31766,7 +31767,7 @@ div.td_block_it837003251 > .vc_column-inner {
   text-decoration: underline;
 }
 .wp-polls input.Buttons {
-  padding: 6px 20px;
+  padding: 6px 5px;
   color: #ffffff;
   border: none;
   text-transform: uppercase;
@@ -31885,6 +31886,9 @@ div.td_block_it837003251 > .vc_column-inner {
 .wp-polls .wp-polls-ans .wpcna-polls-results {
   font-size: 16px;
   text-align: center;
+}
+.wp-polls .wp-polls-ans .wpcna-polls-results a:first-child {
+  line-height: 1.9;
 }
 .wp-polls .wp-polls-form .wp-polls-ans ul {
   margin: 20px auto 20px;
@@ -32467,8 +32471,11 @@ div.cb-657545417432 {
   margin-bottom: 30px;
 }
 .pollsarchive .wp-polls p.pollTitle {
-  margin: 25px 0px 0px;
+  margin: 25px 30px 0px 30px;
   text-align: left;
+}
+.pollsarchive .wp-polls ul {
+  margin-left: 0px;
 }
 .pollsarchive .pollTitle {
   background-color: #DD3333;
@@ -32476,18 +32483,14 @@ div.cb-657545417432 {
   padding: 10px 20px;
 }
 .pollsarchive .pollTitle.wpcna-isShow::before {
-  font-family: 'newspaper', sans-serif;
-  margin: 0px 8px 0px -3px;
   content: '\e804';
 }
 .pollsarchive .pollTitle.wpcna-isHide::before {
-  font-family: 'newspaper', sans-serif;
-  margin: 0px 8px 0px -3px;
   content: '\e801';
 }
 .pollsarchive .pollTitle::before {
   font-family: 'newspaper', sans-serif;
-  margin: 0px 8px 0px -3px;
+  margin: 5px 10px 0px -3px;
   content: '\e801';
 }
 .pollsarchive .pollTitle:hover {
@@ -32502,11 +32505,31 @@ div.cb-657545417432 {
   font-size: 16px;
 }
 .pollsarchive .wp-polls-ans {
-  padding: 20px 20px 0px;
+  padding: 20px 30px 0px 30px;
   display: none;
 }
 .pollsarchive .wp-polls-ans .wpcna-polls-results {
   display: none;
+}
+.pollsarchive button {
+  background-color: #000000;
+  border: medium none;
+  padding: 8px 15px;
+  margin-left: 6px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.pollsarchive button a {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.pollsarchive button:hover {
+  cursor: pointer;
+  background-color: #DD3333;
 }
 /******************************************************
 *             END - CUSTOM STYLE - CNA

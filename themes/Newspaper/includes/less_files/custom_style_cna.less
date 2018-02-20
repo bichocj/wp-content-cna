@@ -982,7 +982,8 @@ p {
 #CNA_videos {
 	margin-bottom: 26px; 
     border-bottom: 8px solid @color_video_cna;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
+	margin-top: -13px; 
 	//padding: 12px 16px 24px;
 	//background-color: #d33;// Grid = @background_color_9;
 
@@ -1114,7 +1115,7 @@ p {
 	}
 	.video_module_big {
 		// margin-top: 16px;
-		margin-top: 26px;
+		margin-top: 18px; //Cuenta padding y margin superiores
 		@media (max-width: 767px) {
 			margin-top: 10px;
 		}
@@ -1460,7 +1461,7 @@ div[class*="post-template-cna"] {
 			background-color: transparent;
 			.td-related-row {
 				.td-related-span4 {
-					padding-right: 2px;
+					padding-right: 16px;
 				}
 			}
 		}
@@ -1477,7 +1478,7 @@ div[class*="post-template-cna"] {
 		}
 		.td-module-title {
 			font-size: 15px;
-			padding: 5px 10px 0px 10px;
+			padding: 5px 0px;
 		}
 		// // Para incremento de tamaño de imagenes de related posts
 		.td-module-thumb {
@@ -2928,7 +2929,7 @@ div.td_block_it837003251 {
 		}
 	}
 	input.Buttons {
-		padding: 6px 20px;
+		padding: 6px 5px;
 		color: @color_1;
 		border: none;
 		text-transform: uppercase;
@@ -3048,6 +3049,11 @@ div.td_block_it837003251 {
 		.wpcna-polls-results{
 			font-size: 16px;
 			text-align: center;
+			a {
+				&:first-child {
+					line-height: 1.9;
+				}
+			}
 		}
 	}
 	.wp-polls-form {
@@ -3735,12 +3741,6 @@ div.cb-657545417432 {
 		font-size: 26px;
 	}
 	.wp-polls {
-		// .wpcna-polls-questions {
-		// 	background-image: url(images/trama_square.jpg);
-		// }
-		// .wpcna-polls-alldates {
-		// 	background-image: url(images/trama_square.jpg);
-		// }
 		padding-top: 0px;
 		h4.pollTitle {
 			display: none;
@@ -3769,8 +3769,11 @@ div.cb-657545417432 {
 			}
 		}
 		p.pollTitle {
-			margin: 25px 0px 0px;
+			margin: 25px 30px 0px 30px;
 			text-align: left;
+		}
+		ul {
+			margin-left: 0px; 
 		}
 	}
 	.pollTitle {
@@ -3779,21 +3782,17 @@ div.cb-657545417432 {
 		padding: 10px 20px;
 		&.wpcna-isShow{
 			&::before {
-				font-family: @font4;
-				margin: 0px 8px 0px -3px;
 				content: '\e804';
 			}
 		}
 		&.wpcna-isHide {
 			&::before {
-				font-family: @font4;
-				margin: 0px 8px 0px -3px;
 				content: '\e801';
 			}
 		}
 		&::before {
 			font-family: @font4;;
-			margin: 0px 8px 0px -3px;
+			margin: 5px 10px 0px -3px;
 			content: '\e801';
 		}
 		&:hover{
@@ -3809,10 +3808,30 @@ div.cb-657545417432 {
 		}
 	}
 	.wp-polls-ans {
-		padding: 20px 20px 0px;
+		padding: 20px 30px 0px 30px;
 		display: none;
 		.wpcna-polls-results {
 			display: none;
+		}
+	}
+	button {
+		background-color: @background_color_5;
+		border: medium none;
+		padding: 8px 15px;
+		margin-left: 6px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		a {
+			color: @color_1;
+			font-size: 11px;
+			font-weight: bold;
+			line-height: 16px;
+			text-transform: uppercase;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: @background_color_12;
 		}
 	}
 }
