@@ -32025,15 +32025,21 @@ div.td_block_it837003251 > .vc_column-inner {
 .td_block_text_with_title .wp-polls .wp-polls-ans.wp-polls-stad li {
   width: 84%;
 }
-#tdw-2732633243 {
+#cna-weather {
   margin: 0 -1%;
 }
-#tdw-2732633243 .wpc-weather-id {
-  display: inline-block;
-  width: 31.33%;
+#cna-weather .wpc-weather-id {
+  display: block;
+  float: left;
   margin: 0 1%;
+  width: 31.33%;
 }
-#tdw-2732633243 [class*="wpc-weather-80"] {
+@media screen and (min-width: 768px) and (max-width: 1018px) {
+  #cna-weather .wpc-weather-id {
+    width: 48%;
+  }
+}
+#cna-weather #wpc-weather {
   background-color: #abf2b3 !important;
   margin: 4px 0;
 }
