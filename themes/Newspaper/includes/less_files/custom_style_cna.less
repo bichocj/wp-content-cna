@@ -1057,7 +1057,7 @@ p {
 		@media screen and (max-width: 992px) {
 			white-space: nowrap;
 			overflow-y: hidden;
-			overflow-x: scroll;
+			overflow-x: hidden;
 			margin: 0;
 			padding-bottom: 15px;
 		}
@@ -1172,6 +1172,34 @@ p {
 			}
 		}
 
+	}
+	// Slide para videos de CNA
+	.bx-wrapper {
+		.bx-controls-direction {
+			a {
+				top: 40%;
+				&::before {
+					color: @color_1;
+					background-color: @color_video_cna;
+					border: none;
+					padding: 0px 10px 0px;
+				}
+			}
+			.bx-prev {
+				left: 0px;
+				&::before {
+					left: 1px;
+					font-size: 45px;
+				}
+			}
+			.bx-next {
+				right: 0px;
+				&::before {
+					right: 0px;
+					font-size: 45px;
+				}
+			}	
+		}
 	}
 }
 
@@ -1627,7 +1655,7 @@ div[class*="post-template-cna"] {
 			@media screen and (max-width: 992px) {
 				white-space: nowrap;
 				overflow-y: hidden;
-				overflow-x: scroll;
+				overflow-x: hidden;
 				padding-bottom: 35px;
 			}
 			@media screen and (max-width: 762px) {
@@ -1780,6 +1808,32 @@ div[class*="post-template-cna"] {
 				text-overflow: ellipsis;
 
 			}
+		}
+	}
+	// Slider para las últimas noticias
+	.bx-wrapper {
+		.bx-controls-direction {
+			a {
+				top: 40%;
+				&::before {
+					color: @color_3;
+					background-color: @background_color_12;
+					border: none;
+					padding: 0px 15px 0px;
+				}
+			}
+			.bx-prev {
+				left: 0px;
+				&::before {
+					left: 1px;
+				}
+			}
+			.bx-next {
+				right: 0px;
+				&::before {
+					right: 1px;
+				}
+			}	
 		}
 	}
 }
