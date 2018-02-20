@@ -29968,17 +29968,17 @@ p {
 }
 /* CNA Videos*/
 .section-cna-videos .block-title {
-  border-color: #4c3d95;
+  border-color: #1263a9;
 }
 .section-cna-videos .block-title > span {
   display: block;
-  background-color: #4c3d95;
+  background-color: #1263a9;
   height: 42px;
   line-height: 30px;
 }
 #CNA_videos {
   margin-bottom: 26px;
-  border-bottom: 8px solid #4c3d95;
+  border-bottom: 8px solid #1263a9;
   padding-bottom: 20px;
 }
 #CNA_videos [class*="video_module_"] a.wrap-thumb {
@@ -30052,7 +30052,7 @@ p {
   font-size: 15px;
   line-height: 1.2;
   padding: 8px 3px 8px;
-  border-bottom: 2px solid #4c3d95;
+  border-bottom: 2px solid #1263a9;
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video-grid-scroll .video_module_small .entry-title {
@@ -30148,7 +30148,7 @@ p {
 }
 #CNA_videos .bx-wrapper .bx-controls-direction a::before {
   color: #ffffff;
-  background-color: #4c3d95;
+  background-color: #1263a9;
   border: none;
   padding: 0px 10px 0px;
 }
@@ -32033,7 +32033,8 @@ div.td_block_it837003251 > .vc_column-inner {
   width: 31.33%;
   margin: 0 1%;
 }
-#tdw-2732633243 .wpc-weather-800 {
+#tdw-2732633243 [class*="wpc-weather-80"] {
+  background-color: #abf2b3 !important;
   margin: 4px 0;
 }
 #tdblock-3333434543543 .inlineDolar {
