@@ -31712,7 +31712,7 @@ div.td_block_it837003251 > .vc_column-inner {
 }
 .wp-polls {
   background-color: #ffffff;
-  padding-bottom: 15px;
+  padding: 15px 8px;
   border: none;
   position: relative;
 }
@@ -31748,7 +31748,7 @@ div.td_block_it837003251 > .vc_column-inner {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   float: right;
-  margin-right: 5%;
+  margin-right: 8%;
   font-size: 14px;
 }
 .wp-polls input.Buttons:hover {
@@ -31853,6 +31853,7 @@ div.td_block_it837003251 > .vc_column-inner {
 }
 .wp-polls .wp-polls-ans .wpcna-polls-results {
   font-size: 16px;
+  text-align: center;
 }
 .wp-polls .wp-polls-form .wp-polls-ans ul {
   margin: 20px auto 20px;
@@ -31864,19 +31865,16 @@ div.td_block_it837003251 > .vc_column-inner {
 .wp-polls h4.pollTitle {
   font-weight: bold;
   text-align: center;
-  margin-top: 0;
-  color: #ffffff;
-  background-color: #DD3333;
-  padding: 14px 0px;
-  font-size: 16px;
+  margin: 0 auto;
+  font-size: 19px;
+}
+.wp-polls h4.pollTitle > div {
+  font-size: 14px;
 }
 .wp-polls p.pollTitle {
-  margin: 25px 15px 0;
+  margin: 15px 15px 0;
   font-size: 16px;
   text-align: center;
-}
-.wp-polls .pollTitle {
-  padding-bottom: 5px;
 }
 .wp-polls .pollTitle strong {
   font-weight: normal;
@@ -31910,10 +31908,9 @@ div.td_block_it837003251 > .vc_column-inner {
   font-size: 17px;
   margin-top: 2px;
   font-weight: bold;
-  padding-bottom: 14px;
 }
 .wp-polls.results-type .wp-custom-cna-polls-ans {
-  margin-bottom: 16px;
+  margin: 20px 0;
 }
 .td_block_text_with_title .wp-polls li {
   margin: 7px auto;
@@ -32401,6 +32398,9 @@ div.cb-657545417432 {
   font-weight: 700;
   font-size: 26px;
 }
+.pollsarchive .wp-polls {
+  padding-top: 0px;
+}
 .pollsarchive .wp-polls h4.pollTitle {
   display: none;
 }
@@ -32411,7 +32411,7 @@ div.cb-657545417432 {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .pollsarchive .wp-polls div:first-child p.pollTitle::before {
   content: none;
@@ -32459,7 +32459,7 @@ div.cb-657545417432 {
   font-size: 16px;
 }
 .pollsarchive .wp-polls-ans {
-  padding: 10px 20px 0px;
+  padding: 20px 20px 0px;
   display: none;
 }
 .pollsarchive .wp-polls-ans .wpcna-polls-results {
