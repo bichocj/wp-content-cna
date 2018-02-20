@@ -2236,8 +2236,10 @@ div[class*="post-template-cna"] {
 			}
 		}
 		.bigGrid2Gallery {
-			float: right;
-			width: 37%;
+			float: left;
+			width: 39%;
+			margin-right: 0;
+			background-color: transparent;
 			@media (max-width: 767px) {
 				float: none;
 				display: block;
@@ -2250,7 +2252,7 @@ div[class*="post-template-cna"] {
 				display: none;
 			}
 			.td-module-thumb {
-				height: 709px !important;
+				height: 697px !important;
 				width: 100%;
 				@media (max-width: 767px) {
 					height: auto !important;
@@ -2266,8 +2268,8 @@ div[class*="post-template-cna"] {
 				height: 100%;
 				width: auto;
 				max-width: initial;
-				position: relative;
-				left: -65%;
+				// position: relative;
+				margin-left: -50%;
 				@media (max-width: 767px) {
 					height: auto;
 					width: 100%;
@@ -2301,11 +2303,13 @@ div[class*="post-template-cna"] {
 
 		.td-big-grid-scroll {
 			float: left;
-			width: 61.5%;
+			width: 61%;
+			padding-right: 5px;
 			white-space: normal;
 			@media (max-width: 767px) {
 				width: auto;
 				float: none;
+				padding-right: initial;
 			}
 		}
 
@@ -2315,14 +2319,14 @@ div[class*="post-template-cna"] {
 				width: 100%;
 			}
 			float: left;
-			width: 48.5%;
+			width: 50%;
 			.myExcerpt {
 				display: none;
 			}
 			// Medium thumb
 			&:first-child {
 				width: 100%;
-				margin-bottom: 15px;
+				margin-bottom: 5px;
 				.td-module-thumb {
 					width: 100%;
 					height: 380px;
@@ -2347,7 +2351,7 @@ div[class*="post-template-cna"] {
 				.entry-title {
 					font-size: 28px;
 					line-height: 1;
-					height: 60px;
+					height: 58px;
 					margin-bottom: 0;
 					overflow: hidden;
 					//Elipsis
@@ -2358,10 +2362,10 @@ div[class*="post-template-cna"] {
 						height: auto;
 					}
 				}
-				.myExcerpt {
+				.myExcerpt {		
 					display: block;
 					width: 100%;
-					white-space: initial;
+					white-space: normal;
 					font-size: 16px;
 					font-weight: 600;
 					color: @color_1;
@@ -2374,8 +2378,11 @@ div[class*="post-template-cna"] {
 					-webkit-box-orient: vertical;
 				}
 			}
+			&:nth-child(2) {
+				padding-right: 2.5px;
+			}
 			&:last-child {
-				float: right;
+				padding-left: 2.5px;
 			}
 
 			.td-module-thumb {
