@@ -1067,16 +1067,30 @@ p {
 			margin: 0;
 			padding-bottom: 15px;
 		}
-
 		.video_module_small {
 			float: left;
 			width: 25%;
-			padding: 0 8px;
+			padding-right: 16px;
+			@media (min-width: 1360px) {
+				width: 213px !important;
+			}
+			@media (min-width:1141px) and (max-width: 1359px) {
+				width: 178px !important;
+			}
+			@media (min-width:1019px) and (max-width: 1140px) {
+				width: 226px !important;
+			}
+			@media (min-width:768px) and (max-width: 1018px) {
+				width: 167px !important;
+			}
+			@media (max-width: 767px) {
+				width: 189px !important;
+			}
 			@media screen and (max-width: 992px) {
 				float: none;
 				display: inline-block;
 				vertical-align: top;
-				width: 40%;
+				// width: 40%;
 				padding: 0 5px 0 1px;
 				white-space: normal;
 			}
@@ -1181,6 +1195,7 @@ p {
 	}
 	// Slide para videos de CNA
 	.bx-wrapper {
+		min-width: 100%; 
 		.bx-controls-direction {
 			a {
 				top: 40%;
@@ -1189,17 +1204,22 @@ p {
 					background-color: @color_video_cna;
 					border: none;
 					padding: 0px 10px 0px;
+					// opacity: 1;
+				}
+				&:hover {
+					&::before {
+						// transform: none;
+						// -webkit-transform: none;
+					}
 				}
 			}
 			.bx-prev {
-				left: 0px;
 				&::before {
-					left: 1px;
+					left: 0px;
 					font-size: 45px;
 				}
 			}
 			.bx-next {
-				right: 0px;
 				&::before {
 					right: 0px;
 					font-size: 45px;
