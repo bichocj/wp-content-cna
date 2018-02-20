@@ -29475,10 +29475,12 @@ p {
   margin: auto;
   padding-top: 50px;
   padding-bottom: 30px;
-  background: url(../../uploads/2018/01/mundo-bg-3.png) no-repeat;
-  background-size: contain;
+  /*background: url(../../uploads/2018/01/mundo-bg-3.png) no-repeat;
+		background-size: contain;*/
+  background: url(../../uploads/2018/02/bg-cna-en-vivo.jpg) no-repeat;
+  background-size: cover;
   background-position: center center;
-  background-color: #1e1641;
+  background-color: #e84735;
 }
 @media (max-width: 1018px) {
 }
@@ -29508,6 +29510,7 @@ p {
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  display: none;
 }
 .section-cna-vivo .container-tv-vivo [class*="banner-tv"] .canal {
   /* color: #5ddfdf; */
