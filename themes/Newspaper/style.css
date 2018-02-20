@@ -32025,26 +32025,31 @@ div.td_block_it837003251 > .vc_column-inner {
 .td_block_text_with_title .wp-polls .wp-polls-ans.wp-polls-stad li {
   width: 84%;
 }
-#cna-weather {
+#cna-widget-weather {
   margin: 0 -1%;
 }
-#cna-weather .wpc-weather-id {
+#cna-widget-weather .wpc-weather-id {
   display: block;
   float: left;
   margin: 0 1%;
   width: 31.33%;
 }
 @media screen and (min-width: 768px) and (max-width: 1018px) {
-  #cna-weather .wpc-weather-id {
+  #cna-widget-weather .wpc-weather-id {
     width: 48%;
   }
 }
-#cna-weather #wpc-weather {
+#cna-widget-weather #wpc-weather {
   background-color: #abf2b3 !important;
   margin: 4px 0;
 }
-#tdblock-3333434543543 .inlineDolar {
+#cna-widget-dollar {
+  margin: 0 -0.5%;
+}
+#cna-widget-dollar .inlineDolar {
   width: 49%;
+  float: left;
+  margin: 0 0.5%;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -32056,11 +32061,11 @@ div.td_block_it837003251 > .vc_column-inner {
   background-color: #b1dbd4;
   color: #404040;
 }
-#tdblock-3333434543543 .inlineDolar div {
+#cna-widget-dollar .inlineDolar div {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-#tdblock-3333434543543 .inlineDolar div:last-child {
+#cna-widget-dollar .inlineDolar div:last-child {
   font-size: 14px;
   margin-top: 0;
   line-height: initial;
@@ -32544,6 +32549,9 @@ div.cb-657545417432 {
 }
 .pollsarchive .wp-polls-ans .wpcna-polls-results {
   display: none;
+}
+* {
+  outline: 1px solid rgba(0, 250, 0, 0.35);
 }
 /******************************************************
 *             END - CUSTOM STYLE - CNA
