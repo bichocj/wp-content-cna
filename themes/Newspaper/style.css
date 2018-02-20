@@ -30257,6 +30257,13 @@ p {
   margin-bottom: 0;
   font-size: 14px;
 }
+/* Category in Single Posts */
+.single-post .td-category a {
+  background-color: #dd3333;
+}
+.single-post .td-category a:hover {
+  background-color: #bd2020;
+}
 /* Title */
 .td-post-title {
   margin-bottom: 40px;
