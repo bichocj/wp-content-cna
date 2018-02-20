@@ -1986,7 +1986,7 @@ div[class*="post-template-cna"] {
 		@media screen and (max-width: 992px) {
 			white-space: nowrap;
 			overflow-y: hidden;
-			overflow-x: scroll;
+			overflow-x: hidden;
 			padding-bottom: 35px;
 		}
 	}
@@ -2069,6 +2069,34 @@ div[class*="post-template-cna"] {
 	 				color: #D33;
 	 			}
 	 		}
+		}
+	}
+	.bx-wrapper {
+		max-width: 1275px !important;
+		.bx-controls-direction {
+			a {
+				top: 35%;
+				&::before {
+					color: @color_3;
+					background-color: @background_color_12;
+					border: none;
+					padding: 0px 10px 0px;
+				}
+			}
+			.bx-prev {
+				left: 0px;
+				&::before {
+					left: 1px;
+					font-size: 45px;
+				}
+			}
+			.bx-next {
+				right: 0px;
+				&::before {
+					right: 0px;
+					font-size: 45px;
+				}
+			}	
 		}
 	}
 }	

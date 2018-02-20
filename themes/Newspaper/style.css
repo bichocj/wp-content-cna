@@ -30913,7 +30913,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb img {
   #last-6-news .l6-row {
     white-space: nowrap;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
     padding-bottom: 35px;
   }
 }
@@ -30986,6 +30986,32 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb img {
 }
 #last-6-news .l6-module:hover .entry-title a {
   color: #D33;
+}
+#last-6-news .bx-wrapper {
+  max-width: 1275px !important;
+}
+#last-6-news .bx-wrapper .bx-controls-direction a {
+  top: 35%;
+}
+#last-6-news .bx-wrapper .bx-controls-direction a::before {
+  color: #000;
+  background-color: #DD3333;
+  border: none;
+  padding: 0px 10px 0px;
+}
+#last-6-news .bx-wrapper .bx-controls-direction .bx-prev {
+  left: 0px;
+}
+#last-6-news .bx-wrapper .bx-controls-direction .bx-prev::before {
+  left: 1px;
+  font-size: 45px;
+}
+#last-6-news .bx-wrapper .bx-controls-direction .bx-next {
+  right: 0px;
+}
+#last-6-news .bx-wrapper .bx-controls-direction .bx-next::before {
+  right: 0px;
+  font-size: 45px;
 }
 /**********************************
 * 		SHARE MODULE

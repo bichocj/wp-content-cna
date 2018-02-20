@@ -156,29 +156,29 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                 $queryVideo = new WP_Query($args_video); 
                                             ?>
                                             <?php if($queryVideo->have_posts()) : ?>
-                                            <div id="videos-bxslider">
-                                                <?php while($queryVideo->have_posts()) : $queryVideo->the_post(); ?>
-                                                    <div class="video_module_small">
-                                                        <div class="video-module-thumb">
-                                                            <a href="<?php the_permalink(); ?>" rel="bookmark" class ="wrap-thumb" title="<?php the_title(); ?>">
-                                                                <?php 
-                                                                    $thumbID = get_post_thumbnail_id( $post->ID );
-                                                                    $imgDestacada = wp_get_attachment_image_src( $thumbID, array(218,150) ); 
-                                                                    $imgTitle = get_the_title();
-                                                                    echo '<img width="218" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
-                                                                    alt="'.$imgTitle.'">'
-                                                                ?>
-                                                                <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-large.png" alt="video"></span>                                                                
-                                                            </a>
+                                                <div id="videos-bxslider">
+                                                    <?php while($queryVideo->have_posts()) : $queryVideo->the_post(); ?>
+                                                        <div class="video_module_small">
+                                                            <div class="video-module-thumb">
+                                                                <a href="<?php the_permalink(); ?>" rel="bookmark" class ="wrap-thumb" title="<?php the_title(); ?>">
+                                                                    <?php 
+                                                                        $thumbID = get_post_thumbnail_id( $post->ID );
+                                                                        $imgDestacada = wp_get_attachment_image_src( $thumbID, array(218,150) ); 
+                                                                        $imgTitle = get_the_title();
+                                                                        echo '<img width="218" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
+                                                                        alt="'.$imgTitle.'">'
+                                                                    ?>
+                                                                    <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-large.png" alt="video"></span>                                                                
+                                                                </a>
+                                                            </div>
+                                                            <div class="video-meta-container">
+                                                                <h3 class="entry-title">
+                                                                <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                                                </h3>
+                                                            </div>
                                                         </div>
-                                                        <div class="video-meta-container">
-                                                            <h3 class="entry-title">
-                                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end video module -->
-                                                <?php endwhile; ?>
+                                                        <!-- end video module -->
+                                                    <?php endwhile; ?>
                                                 </div>
                                             <?php else: ?>
                                                 <p> En este momento no hay videos para mostrar. </p>
