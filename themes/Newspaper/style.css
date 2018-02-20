@@ -32518,23 +32518,23 @@ div.cb-657545417432 {
 .pollsarchive .wp-polls-ans .wpcna-polls-results {
   display: none;
 }
-.pollsarchive button {
+.pollsarchive .wpcna-pollsarchive-btn {
+  text-align: center;
+  font-size: 16px;
+}
+.pollsarchive .wpcna-pollsarchive-btn button {
   background-color: #000000;
   border: medium none;
-  padding: 8px 15px;
+  padding: 10px 20px;
   margin-left: 6px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
-.pollsarchive button a {
+.pollsarchive .wpcna-pollsarchive-btn button a {
   color: #ffffff;
-  font-size: 11px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
 }
-.pollsarchive button:hover {
+.pollsarchive .wpcna-pollsarchive-btn button:hover {
   cursor: pointer;
   background-color: #DD3333;
 }
