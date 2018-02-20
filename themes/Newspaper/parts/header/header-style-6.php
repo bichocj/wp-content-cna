@@ -50,7 +50,7 @@ Header style 6 - CNA
                             <?php   $args = array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 4
+                                    'posts_per_page' => 6
                                 );
                                 $queryTrend = new WP_Query($args); 
                             ?>
@@ -83,7 +83,6 @@ Header style 6 - CNA
                     <div class="td-block-row">
                     <?php $newsQuery = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 4) );?>
                     <?php if($newsQuery->have_posts()) : ?>
-                        <div id="header-bxslider">
                             <?php while($newsQuery->have_posts()) : $newsQuery->the_post(); ?>
                             <!-- td-block-span4 -->
                             <div class="td-block-span4">
@@ -119,7 +118,6 @@ Header style 6 - CNA
                             </div> 
                             <!-- ./td-block-span4 -->
                             <?php endwhile; ?>
-                        </div>
                     <?php endif; wp_reset_postdata(); ?>
                     </div>
                 </div>
@@ -136,7 +134,6 @@ Header style 6 - CNA
                         <div class="l6-row clearfix">
                             <?php $news6Query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 6) );?>
                             <?php if($news6Query->have_posts()) : ?>
-                                <div id="last-6-news-bxslider">
                                     <?php while($news6Query->have_posts()) : $news6Query->the_post(); ?>
                                     <!-- l6-block-->
                                     <div class="l6-block2">
@@ -172,7 +169,7 @@ Header style 6 - CNA
                                     </div> 
                                     <!-- ./l6-block  -->
                                     <?php endwhile; ?>
-                                </div>    
+                                    
                             <?php endif; wp_reset_postdata(); ?>
                         </div>
                     </div>

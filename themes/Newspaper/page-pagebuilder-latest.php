@@ -149,7 +149,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                             <?php   $args_video = array(
                                                         'post_type' => 'post',
                                                         'post_status' => 'publish',
-                                                        'posts_per_page' => 4,
+                                                        'posts_per_page' => 6,
                                                         'cat' => 26, // Cat : Videos CNA
                                                         'tag__not_in' => array( 27 ) // No Tag : Video Destacado
                                                     );
