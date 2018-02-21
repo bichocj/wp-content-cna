@@ -1085,45 +1085,45 @@ p {
 			float: left;
 			width: 25%;
 			padding-right: 16px;
-			&:last-child {
-				padding-right: 0px;
-				@media (min-width: 1360px) {
-					width: 197px !important;
-				}
-				@media (min-width:1141px) and (max-width: 1359px) {
-					width: 162px !important;
-				}
-				@media (min-width:1019px) and (max-width: 1140px) {
-					width: 205px !important;
-				}
-				@media (min-width:768px) and (max-width: 1018px) {
-					width: 151px !important;
-				}
-				@media (max-width: 767px) {
-					width: 175px !important;
-				}	
-			}
 			@media (min-width: 1360px) {
 				width: 213px !important;
+				&:last-child {
+					padding-right: 0px;
+					width: 197px !important;
+				}
 			}
 			@media (min-width:1141px) and (max-width: 1359px) {
 				width: 178px !important;
+				&:last-child {
+					padding-right: 0px;
+					width: 162px !important;
+				}
 			}
 			@media (min-width:1019px) and (max-width: 1140px) {
 				width: 221px !important;
+				&:last-child {
+					padding-right: 0px;
+					width: 205px !important;
+				}
 			}
 			@media (min-width:768px) and (max-width: 1018px) {
 				width: 167px !important;
+				&:last-child {
+					padding-right: 0px;
+					width: 151px !important;
+				}
 			}
 			@media (max-width: 767px) {
 				width: 191px !important;
+				&:last-child {
+					padding-right: 0px;
+					width: 175px !important;
+				}
 			}
 			@media screen and (max-width: 992px) {
 				float: none;
 				display: inline-block;
 				vertical-align: top;
-				// width: 40%;
-				// padding: 0 5px 0 1px;
 				white-space: normal;
 			}
 			.entry-thumb {
@@ -1582,6 +1582,9 @@ div[class*="post-template-cna"] {
 				position: absolute;
 				left: 50%;
 				top: 50%;
+				@media screen {
+					
+				}
 			}   
 		}
 	}
