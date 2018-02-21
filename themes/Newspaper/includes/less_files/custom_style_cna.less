@@ -258,6 +258,11 @@ p {
 		padding-bottom: 26px;
 		.td-next-prev-wrap {
 			margin-bottom: 0;
+			a {
+				background-color: @background_color_12;
+				color: @color_1;
+				border-color: @color_8;
+			}
 		}
 	}
 	// Opiniones
@@ -1499,12 +1504,13 @@ div[class*="post-template-cna"] {
 		.td-next-prev-wrap,  {
 			background-color: transparent;
 			a {
-				color: #666;
-				border-color: #a9a9a9;
-				&:hover {
-					border-color: #d33;
-					color: white;
-				}
+				color: @color_1;
+				border-color: @background_color_12;
+				background-color: @background_color_12;
+				// &:hover {
+				// 	border-color: #d33;
+				// 	color: white;
+				// }
 			}
 		}
 		.td-module-title {
