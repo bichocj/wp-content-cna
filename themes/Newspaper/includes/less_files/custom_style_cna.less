@@ -1076,6 +1076,24 @@ p {
 			float: left;
 			width: 25%;
 			padding-right: 16px;
+			&:last-child {
+				padding-right: 0px;
+				@media (min-width: 1360px) {
+					width: 197px !important;
+				}
+				@media (min-width:1141px) and (max-width: 1359px) {
+					width: 162px !important;
+				}
+				@media (min-width:1019px) and (max-width: 1140px) {
+					width: 205px !important;
+				}
+				@media (min-width:768px) and (max-width: 1018px) {
+					width: 151px !important;
+				}
+				@media (max-width: 767px) {
+					width: 175px !important;
+				}	
+			}
 			@media (min-width: 1360px) {
 				width: 213px !important;
 			}
