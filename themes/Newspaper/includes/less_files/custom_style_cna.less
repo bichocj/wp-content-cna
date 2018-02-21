@@ -444,6 +444,14 @@ p {
 			}
 			// Iframe de video
 			iframe {
+				margin: 0 auto;
+				display: block;
+				@media (min-width: 1141px) and (max-width: 1359px) {
+					height: 420px; 
+				}
+				@media (min-width: 1019px) and (max-width: 1140px) {
+					height: 375px;
+				}
 				@media (max-width: 1018px) {
 					height: 360px !important;
 				}
