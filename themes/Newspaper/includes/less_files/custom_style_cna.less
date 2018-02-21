@@ -2353,7 +2353,7 @@ div[class*="post-template-cna"] {
 					height: 505px !important;
 				}
 				@media (min-width:768px) and (max-width: 1018px) {
-					height: 457px !important;
+					height: 459px !important;
 				}
 				
 				@media (max-width: 767px) {
@@ -2399,6 +2399,10 @@ div[class*="post-template-cna"] {
 				display: -webkit-box;
 				-webkit-line-clamp: 2;
 				-webkit-box-orient: vertical;
+				@media (min-width: 768px) and (max-width: 1018px) {
+					font-size: 16px;
+					line-height: 22.4px;
+				} 
 				@media (max-width: 767px) {
 					display: block;
 					height: auto;
@@ -2483,10 +2487,9 @@ div[class*="post-template-cna"] {
 						line-height: 23.1px;
 					}
 					@media (min-width:768px) and (max-width: 1018px) {
-						font-size: 21px;
-						line-height: 23.1px;
+						font-size: 20px;
+						line-height: 22.4px;
 					}
-
 					@media (max-width: 767px) {
 						height: auto;
 					}
@@ -2505,9 +2508,13 @@ div[class*="post-template-cna"] {
 					display: -webkit-box;
 					-webkit-line-clamp: 2;
 					-webkit-box-orient: vertical;
-					@media (min-width:1019px) and (max-width: 1359px) {
+					@media (min-width:768px) and (max-width: 1359px) {
 						font-weight: 100;
 					}
+					@media (min-width:768px) and (max-width: 1018px) {
+						line-height: 22.4px;
+					}
+
 				}
 			}
 			&:nth-child(2) {
@@ -2554,6 +2561,11 @@ div[class*="post-template-cna"] {
 				margin-bottom: 0;
 			}
 			.entry-title {
+				//Font Luisa
+				@media (min-width: 768px) and (max-width: 1018px){
+					font-size: 16px;
+					line-height: 22.4px;
+				}
 				@media (max-width: 767px) {
 					height: auto;
 				}
