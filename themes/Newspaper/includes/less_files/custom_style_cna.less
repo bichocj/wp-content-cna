@@ -773,7 +773,7 @@ p {
 		width: 100%;
 		font-size: 14px;
 		line-height: 1.25;
-		padding: 20px 20px 20px 10%;
+		padding: 20px 15px 20px 25px;
 		margin: 0 0 1px;
 		position: relative;
 		//Por defecto de nth 4  a mas
@@ -784,7 +784,7 @@ p {
 			position: absolute;
 			top: 13px;
 			left: 15px;
-			font-size: 40px;
+			font-size: 35px;
 			color: #ffffff;
 		}
 		&:first-child {
@@ -799,7 +799,10 @@ p {
 		&:last-child {
 			margin-bottom: 0;
 		}
-
+		@media (min-width:768px) and (max-width: 1018px) {
+			// width: 151px !important;
+			font-size: 14px;
+		}
 	}
 	.nImage {
 		display: block;
@@ -814,6 +817,9 @@ p {
 		}
 		img {
 			width: 113px;
+			@media (min-width:768px) and (max-width: 1018px) {
+				width: 60px !important;
+			}
 		}
 	}
 	.nTitle {
@@ -825,8 +831,11 @@ p {
 		padding-left: 15px;
 		line-height: 1.35;
 		font-size: 15px;
-		@media (max-width: 992px) {
-			padding-left: 20px;
+		// @media (max-width: 992px) {
+		// 	padding-left: 20px;
+		// }
+		@media (min-width:768px) and (max-width: 1018px) {
+			padding-left: 10px;
 		}
 
 		&:hover {
@@ -3913,7 +3922,7 @@ div.cb-657545417432 {
 	}
 }
 
-* { outline: 1px solid rgba(0, 250, 0, 0.35)}
+// * { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
 *             END - CUSTOM STYLE - CNA
 ******************************************************/
