@@ -1203,13 +1203,14 @@ p {
 		min-width: 100%; 
 		.bx-controls-direction {
 			a {
-				top: 40%;
+				top: 25%;
 				&::before {
+					font-size: 10px;
 					color: @color_1;
 					background-color: @color_video_cna;
 					border: none;
-					padding: 0px 10px 0px;
-					// opacity: 1;
+					padding: 10px;
+					opacity: 1;
 				}
 				&:hover {
 					&::before {
@@ -1221,13 +1222,15 @@ p {
 			.bx-prev {
 				&::before {
 					left: 0px;
-					font-size: 45px;
+					content: '\e80c';
+					padding: 10px 12px 10px 8px; 
 				}
 			}
 			.bx-next {
 				&::before {
 					right: 0px;
-					font-size: 45px;
+					content: '\e80d';
+					padding: 10px 8px 10px 12px; 
 				}
 			}	
 		}
