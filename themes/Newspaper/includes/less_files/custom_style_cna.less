@@ -944,19 +944,35 @@ p {
 		display: block;
 		float: left;
 		width: 50%;
-		height: 115px;
-		overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: visible;
 		padding-left: 15px;
 		font-size: 15px;
 		color: @color_1;
 		line-height: 1.3;
 		// //Truncate
 		display: -webkit-box;
-		-webkit-line-clamp: 6;
 		-webkit-box-orient: vertical;
 		text-overflow: ellipsis;
+		@media (min-width: 1360px) {
+			height: 116px;
+			-webkit-line-clamp: 6;
+		}
+		@media (min-width:1141px) and (max-width: 1359px) {
+			height: 97px;
+			-webkit-line-clamp: 5;
+		}
+		@media (min-width:1019px) and (max-width: 1140px) {
+			height: 79px;
+			-webkit-line-clamp: 4;
+		}
+		@media (min-width:768px) and (max-width: 1018px) {
+			height: 76px;
+			-webkit-line-clamp: 4;
+		}
 		a {
 			color: @color_1;
+			font-size: 14px;
 		}
 		@media (max-width: 767px) {
 			-webkit-line-clamp: unset;
