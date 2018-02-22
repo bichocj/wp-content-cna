@@ -3939,7 +3939,7 @@ var tdTrendingNowObject = {};
             return setInterval(function () {
                 //console.log(i + "=>" + list[i] + "\n");
                 tdTrendingNowObject.tdTrendingNowChangeText([autoStartItem, 'left'], true);
-            }, 3000);
+            }, 7000);
         }
     };
 
