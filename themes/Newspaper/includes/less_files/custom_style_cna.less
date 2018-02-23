@@ -243,12 +243,28 @@ p {
 		}
 		.td_module_6 {
 			padding-bottom: 21px;
+			@media (min-width:768px) and (max-width: 1018px) {
+				padding-bottom: 26px;
+			}
 			&:last-child {
 				padding-bottom: 26px;
 			}
 			.entry-title {
 				font-size: 15px;
 				line-height: 20px;
+				@media (min-width:1019px) and (max-width: 1140px) {
+					font-size: 14px;
+				}
+				@media (min-width:768px) and (max-width: 1018px) {
+					font-size: 14px;
+					line-height: 18px;
+					overflow: hidden;
+					height: auto;
+					display: -webkit-box;
+					-webkit-line-clamp: 4 !important;
+					-webkit-box-orient: vertical;
+					text-overflow: ellipsis;
+				}
 			}
 
 		}
