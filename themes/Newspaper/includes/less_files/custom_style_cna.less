@@ -39,6 +39,9 @@
 @font3:'Roboto', sans-serif;
 @font4:'newspaper', sans-serif;
 
+@space_1: 26px;
+@space_2: 13px;
+
 /******************************************************
 *                  CUSTOM STYLE - CNA
 ******************************************************/
@@ -95,9 +98,15 @@ p {
 // Evitar la separacion del titulo y del borde 
 // del elemento block title al hacerle zoom
 //
-.block-title span {
-  margin-bottom: -0.5px;
-}
+.block-title {
+	margin-bottom: @space_1;
+	@media (min-width:768px) and (max-width: 1018px) {
+		margin-bottom: @space_2;
+	}
+	span {
+		margin-bottom: -0.5px;
+	}
+} 
 // Fixing container fb
 .fb-page, 
 .fb-page span, 
@@ -239,15 +248,18 @@ p {
 	.td_block_1 {
 		padding-bottom: 0;
 		.td_module_4 {
-			padding-bottom: 26px;
+			padding-bottom: @space_1;
+			@media (min-width:768px) and (max-width: 1018px) {
+				padding-bottom: @space_2;
+			}
 		}
 		.td_module_6 {
 			padding-bottom: 21px;
 			@media (min-width:768px) and (max-width: 1018px) {
-				padding-bottom: 26px;
+				padding-bottom: @space_2;
 			}
 			&:last-child {
-				padding-bottom: 26px;
+				padding-bottom: @space_1;
 			}
 			.entry-title {
 				font-size: 15px;
@@ -777,9 +789,15 @@ p {
 }
 // Fixing Widgets
 .widget {
-	margin-bottom: 26px;
+	margin-bottom: @space_1;
+	@media (min-width:768px) and (max-width: 1018px) {
+		margin-bottom: @space_2;
+	}
 	.block-title {
-		margin-bottom: 26px;
+		margin-bottom: @space_1;
+		@media (min-width:768px) and (max-width: 1018px) {
+			margin-bottom: @space_2;
+		}
 	}
 }
 
@@ -901,7 +919,10 @@ p {
 .most_viewed_news {
 	padding-bottom: 0;
 	overflow: hidden;
-	margin-bottom: 26px;
+	margin-bottom: @space_1;
+	@media (min-width:768px) and (max-width: 1018px) {
+		margin-bottom: @space_2 !important;
+	}
 	@media (max-width: 767px) {
 		margin-bottom: 0;
 	}
@@ -1049,7 +1070,7 @@ p {
 }
 
 #CNA_videos {
-	margin-bottom: 26px; 
+	margin-bottom: @space_1; 
 	margin-top: -22px; 
 
 	// .video-grid-wrapper {
@@ -1449,7 +1470,7 @@ p {
 .td-post-title {
 	margin-bottom: 40px;
 	@media (max-width: 767px) {
-		margin-bottom: 26px;
+		margin-bottom: @space_2;
 	}
 	.entry-title {
 		font-weight: 600;
@@ -1787,14 +1808,20 @@ div[class*="post-template-cna"] {
 }
 /* Header Block Top - Last News Trending and Bar */
 .headerBlockTop{
-	margin-top: 24px;
+	margin-top: @space_1;
+	@media (min-width:768px) and (max-width: 1018px) {
+		margin-top: @space_2;
+	}
 	@media (max-width: 767px) {
 		margin-top: 10px;
 	}
 }
 /* Last News Bar */
 #last-news-bar {
-	padding-bottom: 25px;
+	padding-bottom: @space_1;
+	@media (min-width:768px) and (max-width: 1018px) {
+		padding-bottom: @space_2;
+	}
 	@media (max-width: 767px) {
 		padding-bottom: 0;
 	}
@@ -1991,7 +2018,10 @@ div[class*="post-template-cna"] {
 	background-color: @background_color_20;
 	overflow: hidden;
 	&.trending-now-header {
-		margin-bottom: 24px;
+		margin-bottom: @space_1;
+		@media (min-width:768px) and (max-width: 1018px) {
+			margin-bottom: @space_2;
+		}
 		@media screen and (max-width: 767px) {
 			margin-bottom: 5px;
 		}
@@ -3078,7 +3108,10 @@ div[class*="post-template-cna"] {
 	}
 }
 div.td_block_text_with_title {
-	padding-bottom: 27px;
+	padding-bottom: @space_1;	
+	@media (min-width:768px) and (max-width: 1018px) {
+		padding-bottom: @space_2;
+	}
 }
 .td_block_it837003251 {
 	.td_mod_wrap {
@@ -3401,6 +3434,12 @@ div.td_block_it837003251 {
 			li {
 				width: 84%;
 			}
+		}
+	}
+	p {
+		margin-bottom: @space_1;	
+		@media (min-width:768px) and (max-width: 1018px) {
+			margin-bottom: @space_2;
 		}
 	}
 }
@@ -4068,6 +4107,24 @@ div.cb-657545417432 {
 				background-color: darken(@background_color_18, 10%);
 			}
 		}
+	}
+}
+.vc_empty_space {
+	height: @space_1 !important;	
+	@media (min-width:768px) and (max-width: 1018px) {
+		height: @space_2 !important;
+	}
+}
+.vc_custom_1516214746217 {
+	margin-bottom: @space_1 !important;
+	@media (min-width:768px) and (max-width: 1018px) {
+		margin-bottom: @space_2 !important;
+	}
+}
+.td_block_social_counter {
+	padding-bottom: @space_1 !important;
+	@media (min-width:768px) and (max-width: 1018px) {
+		padding-bottom: @space_2 !important;
 	}
 }
 
