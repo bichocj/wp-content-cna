@@ -206,7 +206,7 @@ function poll_scripts() {
     wp_localize_script('wp-polls', 'pollsL10n', array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'text_wait' => __('Your last request is still being processed. Please wait a while ...', 'wp-polls'),
-        'text_valid' => __('Por favor, elija una respuesta válida de la encuesta.', 'wp-polls'),
+        'text_valid' => __('Por favor, elija una respuesta válida de LA ENCUESTA.', 'wp-polls'),
         'text_multiple' => __('Maximum number of choices allowed: ', 'wp-polls'),
         'show_loading' => intval($poll_ajax_style['loading']),
         'show_fading' => intval($poll_ajax_style['fading'])
