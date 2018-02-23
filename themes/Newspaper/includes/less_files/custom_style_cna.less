@@ -1554,7 +1554,9 @@ div[class*="post-template-cna"] {
 		.entry-crumbs{
 			color: #999;
 			margin-bottom: 9px;
-			padding-top: 21px;			
+			@media (min-width:768px) and (max-width: 1018px) {
+				padding-top: 21px;
+			}		
 			a {
 				color: #999;
 				&:hover {
@@ -2075,7 +2077,12 @@ div[class*="post-template-cna"] {
 
 /***** Single Top Bar - 6 Last News *****/
 #last-6-news {
-	display: none;
+	@media (min-width:768px) and (max-width: 1018px) {
+		display: none;
+	}
+	@media (max-width: 767px) {
+		display: none;
+	}
 	margin-top: 25px;
 	margin-bottom: 20px;
 	@media screen and (max-width: 767px) {
@@ -2201,7 +2208,12 @@ div[class*="post-template-cna"] {
 		position: absolute;
 		display: inline-block;
 		z-index: 10;
-		margin-top: 8px;
+		@media (min-width:768px) and (max-width: 1018px) {
+			margin-top: 8px;
+		}
+		@media (max-width: 767px) {
+			margin-top: 8px;
+		}
 		.td-social-sharing-buttons {
 			display: inline-block;
 			padding: 3px 12px;
