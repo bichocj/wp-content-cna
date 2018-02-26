@@ -486,13 +486,28 @@ p {
 				margin: 0 auto;
 				display: block;
 				@media (min-width: 1141px) and (max-width: 1359px) {
-					height: 420px; 
+					height: 375px; 
 				}
 				@media (min-width: 1019px) and (max-width: 1140px) {
-					height: 375px;
+					height: 330px;
 				}
 				@media (max-width: 1018px) {
-					height: 260px !important;
+					height: 225px !important;
+				}
+			}
+			.td-trending-now-title { 
+				@media (max-width: 1359px) {
+					width: auto;
+				}
+				@media (max-width: 1018px) {
+					font-size: 14px;
+				}
+			}
+			.td-trending-now-post {
+				.entry-title {
+					@media (max-width: 1018px) {
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -528,6 +543,10 @@ p {
 				}
 			}
 		}
+	}
+	// Pegar la trending bar
+	.wpb_raw_code {
+		margin-bottom: 0px;
 	}
 }
 .section-magazine {
@@ -2549,7 +2568,7 @@ div[class*="post-template-cna"] {
 		.td-big-grid-scroll {
 			float: left;
 			width: 61%;
-			padding-right: 5px;
+			padding-right: 3px;
 			white-space: normal;
 			//Luisa
 			@media (min-width:768px) and (max-width: 1359px) {
@@ -2575,13 +2594,16 @@ div[class*="post-template-cna"] {
 			// Medium thumb
 			&:first-child {
 				width: 100%;
-				margin-bottom: 5px;
+				margin-bottom: 3px;
 				.td-module-thumb {
 					width: 100%;
 					height: 380px;
 					// Luisa
+					@media (min-width: 1360px) {
+						height: 383px;
+					}
 					@media (min-width:1019px) and (max-width: 1359px) {
-						height: 170px;
+						height: 172px;
 					}
 					@media (min-width:768px) and (max-width: 1018px) {
 						height: 150px;
@@ -2654,10 +2676,10 @@ div[class*="post-template-cna"] {
 				}
 			}
 			&:nth-child(2) {
-				padding-right: 2.5px;
+				padding-right: 1.5px;
 			}
 			&:last-child {
-				padding-left: 2.5px;
+				padding-left: 1.5px;
 			}
 
 			.td-module-thumb {
@@ -2666,7 +2688,7 @@ div[class*="post-template-cna"] {
 					height: 202px ;
 				}
 				@media (min-width:768px) and (max-width: 1018px) {
-					height: 176px ;
+					height: 178px ;
 				}
 				@media (max-width: 767px) {
 					height: auto !important;
@@ -2778,7 +2800,7 @@ div[class*="post-template-cna"] {
 				}
 				@media (min-width:1019px) and (max-width: 1200px) {
 					margin-top: 224px;
-					height: 360px;
+					height: 366px;
 				}
 
 				width: 100%;
@@ -3233,9 +3255,9 @@ div.td_block_it837003251 {
 		-webkit-transition: all .20s;
 		text-decoration: none;
 		background-color: @background_color_12;
-		border-radius: 4px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
+		// border-radius: 4px;
+		// -moz-border-radius: 4px;
+		// -webkit-border-radius: 4px;
 		float: right;
 		margin-right: 8%;
 		font-size: 14px;
@@ -3349,7 +3371,7 @@ div.td_block_it837003251 {
 			text-align: center;
 			a {
 				&:first-child {
-					line-height: 1.9;
+					line-height: 2.2;
 				}
 			}
 		}
@@ -3402,6 +3424,41 @@ div.td_block_it837003251 {
 		right: 0;
 		top: 20px;
 		margin: auto;
+	}
+	&:first-child {
+		.wpcna-polls-results {
+			a {
+				&:last-child {
+					display: block !important;
+					padding: 6px 5px;
+					color: @color_1;
+					border: none;
+					text-transform: uppercase;
+					transition: all .20s;
+					-moz-transition: all .20s;
+					-webkit-transition: all .20s;
+					text-decoration: none;
+					background-color: @background_color_12;
+					// border-radius: 4px;
+					// -moz-border-radius: 4px;
+					// -webkit-border-radius: 4px;
+					float: right;
+					margin-right: 8%;
+					font-size: 13px;
+					&:hover {
+						background-color: @background_color_3;
+					}
+					@media (max-width: 767px) {
+						margin-right: 20%;
+					}
+					@media (min-width: 768px) and (max-width: 1018px) {
+						margin: 0px auto;
+						float: none;
+						width: 65%;
+					}
+				}
+			}
+		}
 	}
 }
 .wp-polls-loading {
