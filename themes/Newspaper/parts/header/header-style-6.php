@@ -50,19 +50,26 @@ Header style 6 - CNA
                             <?php   $args = array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 6
+                                    'posts_per_page' => 4
                                 );
                                 $queryTrend = new WP_Query($args); 
                             ?>
                                 
                             <?php if ($queryTrend->have_posts()) : ?>
-                                <!-- <div class="td_module_trending_now td-trending-now-post-0 td-trending-now-post" style="opacity: 0; z-index: 0;"> -->
                                 <?php while ($queryTrend->have_posts()) : $queryTrend->the_post() ;?>
-                                    <div class="td_module_trending_now td-trending-now-post" style="opacity: 0; z-index: 0;">
-                                        <h3 class="entry-title td-module-title">
-                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                                        </h3>
-                                    </div>
+                                    <?php if( $queryTrend->current_post == 0 ) :?>
+                                        <div class="td_module_trending_now td-trending-now-post post-current" style="opacity: 1; z-index: 1;">
+                                            <h3 class="entry-title td-module-title">
+                                                <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                            </h3>
+                                        </div>
+                                    <?php else : ?>
+                                        <div class="td_module_trending_now td-trending-now-post" style="opacity: 0; z-index: 0;">
+                                            <h3 class="entry-title td-module-title">
+                                                <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                            </h3>
+                                        </div>
+                                    <?php endif;?>
                                     
                                 <?php endwhile; ?>
 
@@ -76,7 +83,7 @@ Header style 6 - CNA
                     </div>
                 </div>
             </div>
-
+            <!-- end trending -->
             <!-- Last News -->
             <div id="last-news-bar" class="td_block_wrap td_block_15 ">
                 <div id="" class=" td-column-3">
