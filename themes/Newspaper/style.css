@@ -32185,8 +32185,7 @@ div.td_block_it837003251 > .vc_column-inner {
   -webkit-transition: all .20s;
   text-decoration: none;
   background-color: #DD3333;
-  float: right;
-  margin-right: 8%;
+  margin-left: 15px;
   font-size: 14px;
 }
 .wp-polls input.Buttons:hover {
@@ -32347,7 +32346,7 @@ div.td_block_it837003251 > .vc_column-inner {
   margin: auto;
 }
 .wp-polls:first-child .wpcna-polls-results a:last-child {
-  display: block !important;
+  display: inline-block !important;
   padding: 6px 5px;
   color: #ffffff;
   border: none;
@@ -32357,8 +32356,7 @@ div.td_block_it837003251 > .vc_column-inner {
   -webkit-transition: all .20s;
   text-decoration: none;
   background-color: #DD3333;
-  float: right;
-  margin-right: 8%;
+  margin-left: 15;
   font-size: 13px;
 }
 .wp-polls:first-child .wpcna-polls-results a:last-child:hover {
