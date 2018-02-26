@@ -1218,6 +1218,13 @@ p {
 				display: block;
 				width: 100%;
 			}
+			// Icono de play menor al tamaño por defecto
+			.td-video-play-ico  {
+				> img {
+					width: 30px;
+					padding: 4px,
+				}
+			}
 			.entry-title {
 				margin: 0;
 				font-size: 15px;
@@ -1288,7 +1295,9 @@ p {
 				right: 0;
 				bottom: 0;
 				left: 0;
-				width: 50px;
+				width: 55px;
+				border: none;
+				padding: 0;
 			}
 		}
 		.video-meta-container {
@@ -1376,11 +1385,13 @@ p {
 .td-video-play-ico {
 	> img {
 		top: 5px;
-		right: 5px;
+		left: 5px;
 		bottom: auto; 
-		left: auto; 
-		opacity: 0.75 !important;
-		width: 35px;
+		right: auto; 
+		opacity: 0.85 !important;
+		width: 38px;
+		BORDER: 1px solid rgba(255,255,255,0.9);
+		padding: 5px;
 	}
 }
 

@@ -168,7 +168,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                         echo '<img width="218" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
                                                                         alt="'.$imgTitle.'">'
                                                                     ?>
-                                                                    <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-large.png" alt="video"></span>                                                                
+                                                                    <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-white.png" alt="video"></span>                                                                
                                                                 </a>
                                                             </div>
                                                             <div class="video-meta-container">
@@ -211,7 +211,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                 echo '<img class="entry-thumb" src="'.$imgDestacada[0].'"
                                                                 alt="'.$imgTitle.'">'
                                                             ?>
-                                                            <span class="td-video-play-ico"><img width="40" class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-large.png" alt="video"></span>
+                                                            <span class="td-video-play-ico"><img class="td-retina td-animation-stack-type0-2" src="<?php echo get_template_directory_uri(); ?>/images/icons/ico-video-white.png" alt="video"></span>
                                                         </a>
                                                     </div>
                                                     <div class="video-meta-container">
