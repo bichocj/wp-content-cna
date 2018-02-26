@@ -2558,7 +2558,7 @@ div[class*="post-template-cna"] {
 		.td-big-grid-scroll {
 			float: left;
 			width: 61%;
-			padding-right: 5px;
+			padding-right: 3px;
 			white-space: normal;
 			//Luisa
 			@media (min-width:768px) and (max-width: 1359px) {
@@ -2584,13 +2584,16 @@ div[class*="post-template-cna"] {
 			// Medium thumb
 			&:first-child {
 				width: 100%;
-				margin-bottom: 5px;
+				margin-bottom: 3px;
 				.td-module-thumb {
 					width: 100%;
 					height: 380px;
 					// Luisa
+					@media (min-width: 1360px) {
+						height: 383px;
+					}
 					@media (min-width:1019px) and (max-width: 1359px) {
-						height: 170px;
+						height: 172px;
 					}
 					@media (min-width:768px) and (max-width: 1018px) {
 						height: 150px;
@@ -2663,10 +2666,10 @@ div[class*="post-template-cna"] {
 				}
 			}
 			&:nth-child(2) {
-				padding-right: 2.5px;
+				padding-right: 1.5px;
 			}
 			&:last-child {
-				padding-left: 2.5px;
+				padding-left: 1.5px;
 			}
 
 			.td-module-thumb {
@@ -2675,7 +2678,7 @@ div[class*="post-template-cna"] {
 					height: 202px ;
 				}
 				@media (min-width:768px) and (max-width: 1018px) {
-					height: 176px ;
+					height: 178px ;
 				}
 				@media (max-width: 767px) {
 					height: auto !important;
