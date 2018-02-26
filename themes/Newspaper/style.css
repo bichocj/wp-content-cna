@@ -30227,6 +30227,10 @@ p {
   display: block;
   width: 100%;
 }
+#CNA_videos .video-grid-scroll .video_module_small .td-video-play-ico > img {
+  width: 30px;
+  padding: 4px;
+}
 #CNA_videos .video-grid-scroll .video_module_small .entry-title {
   margin: 0;
   font-size: 15px;
