@@ -50,7 +50,7 @@ Header style 6 - CNA
                             <?php   $args = array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 6
+                                    'posts_per_page' => 4
                                 );
                                 $queryTrend = new WP_Query($args); 
                             ?>
