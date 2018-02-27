@@ -459,9 +459,8 @@ p {
         background-position: center center;
 		background-color: #e84735;
 		// Inicio - Responsive de las columnas
-		@media (max-width: 1018px) { 
-			// padding-top: 30px;
-			// padding-bottom: 10px;
+		@media (min-width: 768px) and (max-width: 1018px) { 
+			margin-bottom: @space_2 !important;
 		}
 		.wpb_column {
 			&:not(.container-reproductor) {
@@ -547,7 +546,7 @@ p {
 	}
 	// Pegar la trending bar
 	.wpb_raw_code {
-		margin-bottom: 3px;
+		margin-bottom: 0px;
 	}
 }
 .section-magazine {
