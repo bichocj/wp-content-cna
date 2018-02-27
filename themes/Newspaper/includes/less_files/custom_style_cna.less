@@ -498,18 +498,23 @@ p {
 					height: 215px !important;
 				}
 			}
-			.td-trending-now-title { 
-				@media (max-width: 1359px) {
+			.td-trending-now-title {
+				padding: 2px 20px;
+				font-size: 18px;
+				width: auto;
+				@media (min-height: 1141px) and (max-width: 1359px) {
 					width: auto;
 				}
-				@media (max-width: 1018px) {
-					font-size: 14px;
+				@media (min-width: 768px) and (max-width: 1018px) {
+					padding: 2px 10px;
+					font-size: 16px;
 				}
 			}
 			.td-trending-now-post {
 				.entry-title {
-					@media (max-width: 1018px) {
-						font-size: 14px;
+					font-size: 18px;
+					@media (min-width: 768px) and (max-width: 1018px) {
+						font-size: 16px;
 					}
 				}
 			}
