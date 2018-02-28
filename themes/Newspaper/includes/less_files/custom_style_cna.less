@@ -488,14 +488,17 @@ p {
 			iframe {
 				margin: 0 auto;
 				display: block;
+				@media (min-width: 1360px) {
+					height: 425px;
+				}
 				@media (min-width: 1141px) and (max-width: 1359px) {
-					height: 360px; 
+					height: 345px; 
 				}
 				@media (min-width: 1019px) and (max-width: 1140px) {
-					height: 315px;
+					height: 300px;
 				}
 				@media (min-width: 768px) and (max-width: 1018px) {
-					height: 215px !important;
+					height: 210px !important;
 				}
 			}
 			.td-trending-now-title {
@@ -552,9 +555,12 @@ p {
 			}
 		}
 	}
-	// Pegar la trending bar
+	// Separación reproductor y trending bar
 	.wpb_raw_code {
-		margin-bottom: 0px;
+		margin-bottom: @space_1;
+		@media (min-width: 768px) and (min-width: 1018px) {
+			margin-bottom: @space_2;
+		}
 	}
 }
 .section-magazine {
