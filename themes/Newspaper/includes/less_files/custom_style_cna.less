@@ -140,7 +140,7 @@ p {
 }
 .hidden-xs-600 {
 	@media screen and (max-width: 600px) {
-		display: none; // Usarlo sabiamente, ya que no funciona actualmente sin el important
+		display: none !important; // Usarlo sabiamente, ya que no funciona actualmente sin el important
 	}
 }
 .hidden-xl {
@@ -243,6 +243,19 @@ p {
 .section-destacados {
 	.td_block_text_with_title {
 		padding-bottom: 0;
+		@media screen and (max-width: 600px) { //reswpcna
+			display: none !important;
+		}	
+	}
+	.td-big-grid-post-0 {
+		@media screen and (max-width: 600px) { //reswpcna
+			display: none !important;
+		}
+	}
+	.td-big-grid-post-3 {
+		@media screen and (max-width: 600px) { //reswpcna
+			display: none !important;
+		}
 	}
 }
 .section-economia-tecnologia {
