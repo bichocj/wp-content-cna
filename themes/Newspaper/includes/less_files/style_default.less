@@ -1,3 +1,4 @@
+@backgrond_color_21: #dfd0d2;
 /*
 *
 */
@@ -6239,6 +6240,24 @@ figure.aligncenter {
     padding-right: 0;
   }
 }
+
+//wpcna - responsive reswpcna
+@media (max-width: 600px) {
+  .home .td-pb-row.move-out div.td_module_10 {
+    background-color: @backgrond_color_21;
+    text-align: center;
+    
+  }
+  div.td_module_10 .entry-title a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1;
+    font-size: 35px;
+  }
+}
+
 @media screen and (min-width: 601px){
   .td-additional-fields-responsive-684654,
   body .td-contact-area-button-54564316,
