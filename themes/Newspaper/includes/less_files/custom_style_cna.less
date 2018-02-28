@@ -2964,6 +2964,9 @@ div[class*="post-template-cna"] {
 			@media (min-width:1019px) and (max-width: 1200px) {
 				width: 44%;
 			}
+			@media screen and (max-width: 600px) { //reswpcna
+				padding-left: 0px;
+			}
 			width: 38%;
 			float: left;
 			padding-left: 3px;
@@ -2974,14 +2977,13 @@ div[class*="post-template-cna"] {
 				margin-right: 0;
 				@media screen and (max-width: 600px) { //reswpcna
 					background-color: @background_color_12;
-					width: 50%;
+					width: 50% !important;
 				}
 				&:first-child { // Medium Thumb
 					width: 100%;
 					@media screen and (max-width: 600px) { //reswpcna
 						background-color: @background_color_12;
-						width: 50%;
-						margin-right: @space_2;
+						width: 50% !important;
 					}
 				}
 				&:last-child {
