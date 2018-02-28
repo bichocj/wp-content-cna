@@ -1938,6 +1938,9 @@ div[class*="post-template-cna"] {
 	@media (max-width: 767px) {
 		padding-bottom: 0;
 	}
+	@media screen and (max-width: 600px) {
+		margin-bottom: @space_2;
+	}
 	.td-column-3{
 		.td-block-row {
 			width: 100%;
@@ -1965,6 +1968,10 @@ div[class*="post-template-cna"] {
 				.entry-title {
 					width: 96%;
 					margin: 0 auto;
+					@media screen and (max-width: 600px){
+						padding: 3px 8px;
+						font-size: 14px;
+					}
 				}
 				&:first-child {
 					.entry-title {
@@ -2401,8 +2408,7 @@ div[class*="post-template-cna"] {
 			bottom: 5px;
 			right: 4px;
 			@media (max-width: 600px) { //reswpcna
-				right: 234px;
-				bottom: -10px;
+				position: initial;
 			}
 		}
 		&.share_module_mx5 {
