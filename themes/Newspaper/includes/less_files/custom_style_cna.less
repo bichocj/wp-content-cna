@@ -197,6 +197,21 @@ p {
 			left: 50%;
 		}
 	}
+	@media (max-width: 600px) { //reswpcna Hacer que las imagenes sean cuadradas
+		height: 94vw;
+		position: relative;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: auto;
+			max-width: initial;
+			min-width: 100%;
+			position: absolute;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+			left: 50%;
+		}
+	}
 }
 
 // Adecuadnoe stilo para moviles
