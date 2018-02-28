@@ -28,13 +28,7 @@ Header style 6 - CNA
     </div>
     <!-- <hr class="menu-separator"> -->
 
-    <div class="td-banner-wrap-full">
-        <div class="td-container td-container-header td-header-row td-header-header">
-            <div class="td-header-sp-recs">
-                <?php locate_template('parts/header/ads.php', true); ?>
-            </div>
-        </div>
-    </div>
+    
 
 
     <?php // If is home
