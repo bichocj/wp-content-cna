@@ -46,6 +46,7 @@
 @space_3: 30px;
 @space_4: 15px;
 @space_grid: 3px;
+@space_last_news: 5px; 
 
 /******************************************************
 *                  CUSTOM STYLE - CNA
@@ -1932,7 +1933,7 @@ div[class*="post-template-cna"] {
 	}
 	@media screen and (max-width: 767px) { //reswpcna
 		padding-bottom: 0;
-		margin-bottom: @space_2;
+		margin-bottom: @space_last_news; //last news bar 
 	}
 	.td-column-3{
 		.td-block-row {
@@ -1965,9 +1966,10 @@ div[class*="post-template-cna"] {
 				.entry-title {
 					width: 96%;
 					margin: 0 auto;
-					@media screen and (max-width: 600px){
-						padding: 3px 8px;
+					@media screen and (max-width: 600px){ //reswpcna 
+						padding: 8px 3px;
 						font-size: 14px;
+						margin: 0px;
 					}
 				}
 				&:first-child {
@@ -2079,7 +2081,7 @@ div[class*="post-template-cna"] {
 
 			@media screen and (max-width: 767px) {
 				font-size: 16px;
-				padding-left: 5px;
+				padding-left: @space_last_news;
 				padding-bottom: 0;
 				border: none;
 			}
@@ -2131,10 +2133,8 @@ div[class*="post-template-cna"] {
 	@media screen and (max-width: 767px) {
 		height: 90px;
 	}
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767px) { //reswpcna 600 to 767
 		height: 100px;
-	}
-	@media screen and (max-width: 600px) {
 		background-color: @background_color_21;
 	}
 	padding: 0px;
@@ -2146,8 +2146,8 @@ div[class*="post-template-cna"] {
 		@media (min-width:768px) and (max-width: 1018px) {
 			margin-bottom: @space_2;
 		}
-		@media screen and (max-width: 767px) {
-			margin-bottom: 5px;
+		@media screen and (max-width: 767px) { //reswpcna
+			margin-bottom: @space_last_news;
 		}
 	}
 	.td-trending-now-title {
@@ -4290,7 +4290,7 @@ div.cb-657545417432 {
 		p.pollTitle {
 			margin: 25px 30px 0px 30px;
 			text-align: left;
-			@media screen and (max-width: 600px) {
+			@media screen and (max-width: 767px) { //reswpcna
 				margin-left: 0px;
 				margin-right: 0px;
 			}
