@@ -186,24 +186,13 @@ p {
 
 // Para imagenes que deben verse grandes (cuadradas)
 .cna-big-thumb {
-	@media (max-width: 767px) {
-		figure {
-			overflow: hidden;
-		}
-		img {
-			max-width: initial;
-			width: 100%; //Style cna.pe
-			height: auto; //Style cna.pe
-			-webkit-transform: translateX(-50%);
-			        transform: translateX(-50%);
-			position: relative;
-			left: 50%;
-		}
-	}
-	@media (max-width: 600px) { //reswpcna Hacer que las imagenes sean cuadradas
+	@media screen and (max-width: 767px) { //reswpcna Hacer que las imagenes sean cuadradas
 		height: 94vw;
 		position: relative;
 		overflow: hidden;
+		figure {
+			overflow: hidden;
+		}
 		img {
 			height: 100%;
 			width: auto;
