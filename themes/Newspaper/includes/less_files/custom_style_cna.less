@@ -7,6 +7,7 @@
 @color_7: #d33;
 @color_8: #dd3333;
 @color_9: #111111;
+@color_10: #eaeaea; //Footer
 @color_instagram: #e1306e;
 @color_instagram_2:#EB7BA2;
 // @color_video_cna: #4c3d95;
@@ -838,6 +839,9 @@ p {
 }
 .footer-email-wrap {
 	padding-top: 5px;
+	a {
+		color: @color_10 !important; //wpcna
+	}
 }
 .td-footer-template-4 {
 	.td-footer-info {
@@ -4316,6 +4320,10 @@ div.cb-657545417432 {
 		p.pollTitle {
 			margin: 25px 30px 0px 30px;
 			text-align: left;
+			@media screen and (max-width: 600px) {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
 		}
 		ul {
 			margin-left: 0px; 
@@ -4348,6 +4356,10 @@ div.cb-657545417432 {
 		padding: 10px 30px 5px;
 		margin-top: -26px;
 		display: none;
+		@media screen and (max-width: 600px) { //reswpcna
+			padding-right: 0px;
+			padding-left: 0px; 
+		}
 		.wpcna-polls-dates {
 			font-size: 16px;
 		}
@@ -4355,6 +4367,10 @@ div.cb-657545417432 {
 	.wp-polls-ans {
 		padding: 20px 30px 0px 30px;
 		display: none;
+		@media screen and (max-width: 600px) { //reswpcna
+			padding-left: 0px;
+			padding-right: 0px;
+		}
 		.wpcna-polls-results {
 			display: none;
 		}
@@ -4377,6 +4393,9 @@ div.cb-657545417432 {
 				cursor: pointer;
 				background-color: darken(@background_color_18, 10%);
 			}
+		}
+		@media screen and (max-width: 600px) { //reswpcna
+			font-size: 14px;
 		}
 	}
 }
