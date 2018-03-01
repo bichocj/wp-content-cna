@@ -1951,12 +1951,19 @@ div[class*="post-template-cna"] {
 			@media screen and (max-width: 762px) {
 				padding-bottom: 0;
 			}
-			.td-block-span4 {
-				@media screen and (max-width: 767px) {
+			.td-block-span4 { //reswpcna
+				@media (min-width: 601px) and (max-width: 767px) { //Se mantiene punto de quiebre para que se siga mostrando 4 videos
 					float: none;
 					display: inline-block;
 					vertical-align: top;
-					width: 40%;
+					width: 189px;
+					padding: 0 1px;
+				}
+				@media screen and (max-width: 600px) {
+					width: 177px;
+					float: none;
+					display: inline-block;
+					vertical-align: top;
 					padding: 0 1px;
 				}
 				width: 25%;
@@ -2032,10 +2039,10 @@ div[class*="post-template-cna"] {
 			@media (min-width:768px) and (max-width: 1018px) {
 				height: 300px;
 			}
-			@media screen and (max-width: 767px) {
+			@media (min-width: 601px) and (max-width: 767px) { //Mantiene el punto de quiebre para que se muestren 4 imagenes
 				height: 180px;
 			}
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 600px) { //reswpcna
 				height: 120px;
 			}
 			height: 400px;
@@ -4415,7 +4422,7 @@ div.cb-657545417432 {
 		background: transparent; /* make scrollbar transparent */
 	}
 }
-* { outline: 1px solid rgba(0, 250, 0, 0.35)}
+// * { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
 *             END - CUSTOM STYLE - CNA
 ******************************************************/
