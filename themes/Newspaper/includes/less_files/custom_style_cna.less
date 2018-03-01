@@ -246,21 +246,21 @@ p {
 .section-destacados {
 	.td_block_text_with_title {
 		padding-bottom: 0;
-		@media screen and (max-width: 600px) { //reswpcna
+		@media screen and (max-width: 767px) { //reswpcna
 			display: none !important;
 		}	
 	}
 	.td-big-grid-post-0 {
-		@media screen and (max-width: 600px) { //reswpcna
+		@media screen and (max-width: 767px) { //reswpcna
 			display: none !important;
 		}
 	}
 	.td-big-grid-post-3 {
-		@media screen and (max-width: 600px) { //reswpcna
+		@media screen and (max-width: 767px) { //reswpcna
 			display: none !important;
 		}
 	}
-	@media screen and (max-width: 600px) { //reswpcna
+	@media screen and (max-width: 767px) { //reswpcna
 		.vc_empty_space {
 			display: none !important ;
 		}
@@ -1931,10 +1931,7 @@ div[class*="post-template-cna"] {
 	@media (min-width:768px) and (max-width: 1018px) {
 		margin-top: @space_2;
 	}
-	@media (max-width: 767px) {
-		margin-top: 10px;
-	}
-	@media screen and (max-width: 600px) { //reswpcna
+	@media screen and (max-width: 767px) { //reswpcna
 		margin-top: 8px
 	}
 }
@@ -2197,13 +2194,10 @@ div[class*="post-template-cna"] {
 		padding-top: 8px;
 		padding-right: 0;
 		.entry-title {
-			@media screen and (max-width: 767px) {
-				font-size: 14px;
-				white-space: normal
-			}
-			@media screen and (max-width: 600px) { //reswpcna 
+			@media screen and (max-width: 767px) { //reswpcna 
 				font-size: 18px;
 				line-height: 1.15;
+				white-space: normal;
 			}
 			text-transform: none;
 			font-size: 16px;
@@ -4095,7 +4089,30 @@ div.cb-657545417432 {
 	}
 }
 @media (max-width: 767px) {
-
+	.wpcna-first-new { //reswpcna
+		margin-bottom: @space_grid;
+		.wpb_wrapper {
+			&:first-child {
+				display: flex; 
+				flex-flow: column wrap;
+				background-color: @background_color_12;
+			}
+			.title-main-new {
+				order: 1;
+				color: @color_1;
+				font-size: 28px;
+				margin: 0px;
+				padding-top: 16px; //space padding y margin seccion de iconos sociales
+			}
+			.subtitle-main-new {
+				display: none;
+			}
+			.vc_custom_1516140720558 {
+				order: 2;
+				margin-bottom: @space_2;
+			}
+		}
+	}
 
 	.whatsappBlock-2343242642 {
 		font-size: 26px;
@@ -4220,30 +4237,6 @@ div.cb-657545417432 {
 	}
 }
 @media (max-width:600px) {
-	.wpcna-first-new {
-		margin-bottom: @space_grid;
-		.wpb_wrapper {
-			&:first-child {
-				display: flex; 
-				flex-flow: column wrap;
-				background-color: @background_color_12;
-			}
-			.title-main-new {
-				order: 1;
-				color: @color_1;
-				font-size: 28px;
-				margin: 0px;
-				padding-top: 16px; //space padding y margin seccion de iconos sociales
-			}
-			.subtitle-main-new {
-				display: none;
-			}
-			.vc_custom_1516140720558 {
-				order: 2;
-				margin-bottom: @space_2;
-			}
-		}
-	}
 	.td-row-hide-resp-498451 {
 		display: block;
 	}
@@ -4356,7 +4349,7 @@ div.cb-657545417432 {
 		padding: 10px 30px 5px;
 		margin-top: -26px;
 		display: none;
-		@media screen and (max-width: 600px) { //reswpcna
+		@media screen and (max-width: 767px) { //reswpcna
 			padding-right: 0px;
 			padding-left: 0px; 
 		}
@@ -4367,7 +4360,7 @@ div.cb-657545417432 {
 	.wp-polls-ans {
 		padding: 20px 30px 0px 30px;
 		display: none;
-		@media screen and (max-width: 600px) { //reswpcna
+		@media screen and (max-width: 767px) { //reswpcna
 			padding-left: 0px;
 			padding-right: 0px;
 		}
@@ -4394,7 +4387,7 @@ div.cb-657545417432 {
 				background-color: darken(@background_color_18, 10%);
 			}
 		}
-		@media screen and (max-width: 600px) { //reswpcna
+		@media screen and (max-width: 767px) { //reswpcna
 			font-size: 14px;
 		}
 	}
