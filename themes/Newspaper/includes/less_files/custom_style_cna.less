@@ -2949,26 +2949,21 @@ div[class*="post-template-cna"] {
 			}
 		}
 		.td-big-grid-scroll {
-			@media (max-width: 767px) {
-				float: none;
-				width: 96%;
-				margin: 0 auto;
-				//Evitar estilo prdeterminado
-				white-space: normal;
-			}
 			@media (min-width:768px) and (max-width: 1200px){
 				width: 49%;
 			}
 			@media (min-width:1019px) and (max-width: 1200px) {
 				width: 44%;
 			}
-			@media screen and (max-width: 600px) { //reswpcna
-				padding-left: 10px;
-				padding-right: 10px;
+			@media screen and (max-width: 767px) { //reswpcna
+				padding-left: 0px; //Ocupa el 100% de la pantalla
+				padding-right: 0px; //Ocupa el 100% de la pantalla
 				padding-top: 0px;
 				width: 100%;
 				margin: 0px !important;
-				
+				float: none;
+				//Evitar estilo prdeterminado
+				white-space: normal;
 			}
 			width: 38%;
 			float: left;
@@ -4073,6 +4068,8 @@ div.cb-657545417432 {
 				display: flex; 
 				flex-flow: column wrap;
 				background-color: @background_color_12;
+				margin-right: -10px;
+				margin-left: -10px;
 			}
 			.title-main-new {
 				order: 1;
@@ -4418,7 +4415,7 @@ div.cb-657545417432 {
 		background: transparent; /* make scrollbar transparent */
 	}
 }
-// * { outline: 1px solid rgba(0, 250, 0, 0.35)}
+* { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
 *             END - CUSTOM STYLE - CNA
 ******************************************************/
