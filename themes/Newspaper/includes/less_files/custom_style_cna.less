@@ -727,17 +727,44 @@ p {
 				.td-big-grid-meta {
 					padding: 15px !important;
 				}
+				.td-module-thumb {
+					position: relative;
+					height: 94vw !important;
+				}
+				.entry-thumb{
+					width: auto;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
 			}
+			
 			.smallGrid2Gallery {
 				margin-bottom: 3px;
 				&:last-child {
 					margin-bottom: 0;
 				}
+				&:first-child {
+					.td-module-thumb {
+						height: 94vw !important;
+					}
+				}
 				.td-big-grid-meta {
 					padding: 15px 0 !important;
 				}
+				.td-module-thumb {
+					position: relative;
+					height: 94vw !important;
+				}
+				.entry-thumb{
+					width: auto !important;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
 				.entry-title {
 					-webkit-line-clamp: 3 !important;
+					text-overflow: ellipsis;
 					margin-bottom: 0;
 				}
 			}
