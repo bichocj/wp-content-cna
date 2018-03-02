@@ -352,9 +352,15 @@ p {
 				background-color: @background_economia;
 				margin-bottom: @space_2;
 				padding-bottom: 0px;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex; 
-				flex-wrap: wrap;
-				flex-flow: row;
+				-ms-flex-wrap: wrap; 
+				    flex-wrap: wrap;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				    -ms-flex-flow: row;
+				        flex-flow: row;
 				.td-module-thumb {
 					width: 52%;
 					position: relative;
@@ -751,11 +757,47 @@ p {
 		// Para modificar Bloques de Magazine
 		.td-grid-style-1.td_block_big_grid_2 {
 			.bigGrid2Gallery{
-
+				.td-big-grid-meta {
+					padding: 15px !important;
+				}
+				.td-module-thumb {
+					position: relative;
+					height: 94vw !important;
+				}
+				.entry-thumb{
+					width: auto;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
 			}
+			
 			.smallGrid2Gallery {
 				margin-bottom: 3px;
 				&:last-child {
+					margin-bottom: 0;
+				}
+				&:first-child {
+					.td-module-thumb {
+						height: 94vw !important;
+					}
+				}
+				.td-big-grid-meta {
+					padding: 15px 0 !important;
+				}
+				.td-module-thumb {
+					position: relative;
+					height: 94vw !important;
+				}
+				.entry-thumb{
+					width: auto !important;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				.entry-title {
+					-webkit-line-clamp: 3 !important;
+					text-overflow: ellipsis;
 					margin-bottom: 0;
 				}
 			}
@@ -4280,14 +4322,21 @@ div.cb-657545417432 {
 		margin-bottom: @space_grid;
 		.wpb_wrapper {
 			&:first-child {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex; 
-				flex-flow: column wrap;
+				-webkit-box-orient: vertical; 
+				-webkit-box-direction: normal; 
+				    -ms-flex-flow: column wrap; 
+				        flex-flow: column wrap;
 				background-color: @background_color_12;
 				margin-right: -10px;
 				margin-left: -10px;
 			}
 			.title-main-new {
-				order: 1;
+				-webkit-box-ordinal-group: 2;
+				    -ms-flex-order: 1;
+				        order: 1;
 				color: @color_1;
 				font-size: 28px;
 				margin: 0px;
@@ -4297,7 +4346,9 @@ div.cb-657545417432 {
 				display: none;
 			}
 			.vc_custom_1516140720558 {
-				order: 2;
+				-webkit-box-ordinal-group: 3;
+				    -ms-flex-order: 2;
+				        order: 2;
 				margin-bottom: @space_2;
 			}
 		}
