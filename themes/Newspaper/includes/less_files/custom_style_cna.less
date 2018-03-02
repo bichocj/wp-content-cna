@@ -333,6 +333,9 @@ p {
 		@media screen and (max-width: 767px) {
 			height: auto;
 		}
+		@media screen and (max-width: 600px) {
+			height: 43vw;
+		}
 	} 
 	// Economia
 	.td_block_1 {
@@ -441,7 +444,7 @@ p {
 				border-color: @color_8;
 			}
 		}
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 600px) {
 			.td_module_mx4 {
 				.td-module-image {
 					position: relative;
@@ -458,12 +461,12 @@ p {
 						-webkit-line-clamp: 3;
 						-webkit-box-orient: vertical;
 						text-overflow: ellipsis;
-						height: 62px;
+						height: 61px;
 					}
 				}
 			}
 			.td-column-2 {
-				.td-block-row {
+				.td-block-row { 
 					.td-block-span4 {
 						width: 50%;
 						&:nth-child(odd) {
@@ -480,6 +483,19 @@ p {
 				}
 			} 
 		}
+	}
+
+	.td_with_ajax_pagination ~ .td_with_ajax_pagination  {
+			@media screen and (max-width: 600px) {
+				.td_module_wrap {
+					background-color: @background_cultura !important;
+				}
+				.td-column-2 {
+					.td-module-thumb {
+						height: 67vw;
+					}
+				}  
+			}
 	}
 	// Opiniones
 	.td-opiniones {
