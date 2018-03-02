@@ -1180,10 +1180,12 @@ p {
 			left: 20px;
 			font-size: 35px;
 			color: @color_8;
+			@media (min-width: 1019px) and (max-width: 1140px) {
+				left: 10px;
+			}
 			@media (min-width:768px) and (max-width: 1018px) {
 				font-size: 30px !important;
-				top: 5px !important;  
-				left: 8px !important;
+				// left: 20px !important;
 			}
 		}
 		&:first-child {
@@ -1211,11 +1213,14 @@ p {
 		width: 50%;
 		float: left;
 		@media (min-width: 1361px) {
-			padding-left: 18px;
+			padding-left: 38px;
 		}
 		@media (min-width: 1141px) and (max-width: 1360px) {
 			padding-left: 38px;
 		}
+		@media (min-width: 1019px) and (max-width: 1140px) {
+			padding-left: 20px;
+		}		
 		@media (max-width: 992px) {
 			width: auto;
 		}
