@@ -216,7 +216,7 @@ p {
 
 /****** Sections *******/
 
-//Noticia principal
+/*Noticia principal*/
 .title-main-new {
 	font-weight: 600;
 	font-size: 55px;
@@ -233,6 +233,8 @@ p {
 		line-height: 1.3;
 	}
 }
+/* Seccion destacados*/
+// Seccion interesante
 .section-destacados {
 	.td_block_text_with_title {
 		padding-bottom: 0;
@@ -254,8 +256,46 @@ p {
 		.vc_empty_space {
 			display: none !important ;
 		}
+		// Redes sociales de module 11
+		.share_module_block.td-default-sharing.share_module_mx11{
+			display: none;
+		}
 	}
 }
+/* Seccion 12 Noticias */
+// Visible solo en dispositivos mobiles < 768px
+
+.section-12-noticias {
+	.td_module_10{
+		@media (max-width: 767px) {
+			background-color: @background_color_21;
+			text-align: center;
+			padding: 0;
+			margin-bottom: 20px;
+			.entry-thumb,
+			.td-module-thumb,
+			.item-details {
+					width: 100%;
+					position: relative;
+					margin-left: 0;
+					margin-bottom: 0,
+			}
+			.entry-thumb {
+				max-height: 370px; //reswpcna
+			}
+			.item-details{
+				padding: 20px 12px 15px;
+				border-top: 5px solid @background_color_12,
+			}
+			.entry-title {
+				a {
+					color: @color_9;
+				}
+			}
+		}
+	}
+}
+/* Seccion Economía y Tecnología*/
 .section-economia-tecnologia {
 	/* Moodule 15 */
 	.td_block_15 .td-column-2 .td-module-thumb {
@@ -1630,7 +1670,7 @@ p {
 .td-module-meta-info{
 	font-size: 14px;
 	//Screen size
-	@media (max-width: 600px) {
+	@media (max-width: 767px) {
 		display: none;
 	}
 	.td-post-author-name {
@@ -2374,7 +2414,7 @@ div[class*="post-template-cna"] {
 			// margin-top: 8px;
 		}
 		@media (max-width: 767px) {
-			margin-top: 8px;
+			// margin-top: 8px;
 		}
 		.td-social-sharing-buttons {
 			display: inline-block;
@@ -2383,6 +2423,19 @@ div[class*="post-template-cna"] {
 			font-size: 16px;
 			margin-right: 0;
 			margin-left: 0;
+			@media (max-width: 767px) {
+				// Inicialmente solo se aplicaba a los sgtes modulos:
+				//div.td_module_mx6 
+				// div.td_module_mx11 
+				// div.td_module_10 
+				margin-top: 8px;
+				border-radius: 50%;
+				min-width: 35px;
+				height: 35px;
+				line-height: 35px;
+				padding: 0;
+				text-align: center;
+			}
 		}
 		.td-icon-whatsapp { //reswpcna change 600px 
 			@media screen and (max-width: 767px) {
@@ -2412,7 +2465,7 @@ div[class*="post-template-cna"] {
 		&.share_module_mx11 {
 			bottom: 5px;
 			right: 4px;
-			@media (max-width: 600px) { //reswpcna
+			@media (max-width: 767px) { //reswpcna
 				position: initial;
 			}
 		}
@@ -4047,15 +4100,6 @@ div.cb-657545417432 {
 	.remove-thisWidImp-25151 {
 		display: none !important;
 	}
-	.home {
-		.td-pb-row.move-out {
-			div.td_module_10 {
-				.entry-thumb {
-					max-height: 370px; //reswpcna
-				}
-			}
-		}
-	}
 	.td-page-content {
 		p {
 			font-size: 18px;
@@ -4092,6 +4136,20 @@ div.cb-657545417432 {
 				order: 2;
 				margin-bottom: @space_2;
 			}
+		}
+		// Share buttons
+		.share_module_block.td-default-sharing {
+			.td-social-sharing-buttons{
+				line-height: 21px;
+				border-radius: 2px;
+				height: auto;
+				padding: 3px 12px;
+				> i.td-icon-twitter {
+					position: relative; 
+					top: 1.5spx;
+				}
+			}
+			
 		}
 	}
 
