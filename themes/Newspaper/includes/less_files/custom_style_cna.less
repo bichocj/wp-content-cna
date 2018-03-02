@@ -294,10 +294,31 @@ p {
 			@media (min-width:768px) and (max-width: 1018px) {
 				padding-bottom: @space_2;
 			}
+			@media screen and (max-width: 767px) { //reswpcna *
+				background-color: @background_economia;
+				margin-bottom: @space_2;
+				padding-bottom: 0px;
+				display: flex; 
+				flex-wrap: wrap;
+				flex-flow: row;
+				.td-module-thumb {
+					width: 52%;
+					position: relative;
+					margin-bottom: 0px;
+				}
+				.item-details {
+					width: 48%;
+					padding: @space_2;
+					margin-left: 0px;
+				}
+			}
 			&:last-child {
 				padding-bottom: @space_1;
 				@media (min-width: 768px) and (max-width: 1018px) {
 					padding-bottom: @space_2;
+				}
+				@media screen and (max-width: 767px) { //reswpcna
+					padding-bottom: 0px;
 				}
 			}
 			.entry-title {
