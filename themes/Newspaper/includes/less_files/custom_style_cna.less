@@ -408,6 +408,15 @@ p {
 			}
 
 		}
+		.td-block-row {
+			.td-block-span6 {
+				&:first-child {
+					@media screen and (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+		}
 	}
 	// Tecnologia
 	.td_block_15 {
