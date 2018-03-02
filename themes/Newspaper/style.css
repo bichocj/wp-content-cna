@@ -29667,6 +29667,11 @@ p {
 .section-magazine .td_block_text_with_title {
   padding-bottom: 0;
 }
+@media (max-width: 767px) {
+  .section-magazine .share_module_mx10 .td-social-sharing-buttons {
+    margin-left: 3px !important;
+  }
+}
 /* Contenedor de las 12 noticias Abajo*/
 @media (max-width: 767px) {
   .container-CNA-news {
