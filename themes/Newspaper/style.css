@@ -31525,7 +31525,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   background: rgba(121, 28, 28, 0.35) !important;
 }
 .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery {
-  float: left;
+  float: right;
   width: 39%;
   margin-right: 0;
   background-color: transparent;
