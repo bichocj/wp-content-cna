@@ -1157,6 +1157,8 @@ p {
 		padding: 0;
 		counter-reset: my-lastnews-counter;
 		list-style: none;
+		background: @background_color_12;
+		padding: 15px;
 	}
 	li {
 		display: block;
@@ -1165,35 +1167,36 @@ p {
 		font-size: 14px;
 		line-height: 1.25;
 		padding: 10px 35px 10px 25px;
-		margin: 0 0 1px;
+		// margin: 0 0 1px;
+		margin: 0px;
 		position: relative;
 		//Por defecto de nth 4  a mas
-		background-color: #dc0000;
-		@media (min-width:768px) and (max-width: 1018px) {
-			&::before {
+		background-color: @background_color_1;
+		&::before {
+			content: counter(my-lastnews-counter);
+			counter-increment: my-lastnews-counter;
+			position: absolute;
+			top: 3px;
+			left: 10px;
+			font-size: 35px;
+			color: @color_9;
+			@media (min-width:768px) and (max-width: 1018px) {
 				font-size: 30px !important;
 				top: 5px !important;  
 				left: 8px !important;
 			}
 		}
-		
-		&::before {
-			content: counter(my-lastnews-counter);
-			counter-increment: my-lastnews-counter;
-			position: absolute;
-			top: 13px;
-			left: 15px;
-			font-size: 35px;
-			color: #ffffff;
-		}
 		&:first-child {
-			background-color: #b60000;
+			// background-color: #b60000;
+			background-color: @background_color_1;
 		}
 		&:nth-child(2) {
-			background-color: #c60000;
+			// background-color: #c60000;
+			background-color: @background_color_1;
 		}
 		&:nth-child(3) {
-			background-color: #ce0000;
+			// background-color: #ce0000;
+			background-color: @background_color_1;
 		}
 		&:last-child {
 			margin-bottom: 0;
@@ -1228,14 +1231,13 @@ p {
 		line-height: 1.35;
 		font-size: 14px;
 		// Truncate
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		height: auto;
-		color: #fff;
 		a {
-			color: #fff;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			height: auto;
+			color: @color_9;
 		}
 		@media (min-width: 1360px) {
 			-webkit-line-clamp: 5;
@@ -4705,6 +4707,9 @@ div.cb-657545417432 {
 	}
 	.td_uid_29_5a9937c452cbd_rand {
 		display: none !important;
+	}
+	.td_block_wrap {
+		padding-bottom: 0px !important;
 	}
 }
 // * { outline: 1px solid rgba(0, 250, 0, 0.35)}
