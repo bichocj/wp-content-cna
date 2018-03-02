@@ -168,4 +168,19 @@ require_once('includes/api-try.php');
 //
 //print_r(td_remote_video::vimeo_api_get_videos_info(array('141710401', '135900733', '135911266')));
 //die;
+
+/* Adicion de recursos customizados para CNA*/
+function custom_cna_scripts() {
+	//
+	wp_enqueue_style( 'PT_Serif_font', 'https://fonts.googleapis.com/css?family=PT+Serif:400,700', false );
+
+	// Caragar el JQuery ór defecto de Wp
+	wp_enqueue_script("jquery");
+
+	/* JS */
+	wp_register_script('cna_script', get_template_directory_uri() . '/js/cna_theme.js', array('jquery'), null, false);
+	wp_enqueue_script('cna_script');
+}
+add_action ('wp_enqueue_scripts', 'custom_cna_scripts');
+
 ?>
