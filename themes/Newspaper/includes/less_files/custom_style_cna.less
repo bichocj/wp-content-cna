@@ -310,6 +310,9 @@ p {
 					width: 48%;
 					padding: @space_2;
 					margin-left: 0px;
+					a {
+						color: @color_1;
+					}
 				}
 			}
 			&:last-child {
@@ -338,6 +341,16 @@ p {
 					text-overflow: ellipsis;
 					min-height: 80px;
 				}
+				@media screen and (max-width: 767px) { //reswpcna
+					color: @color_1 !important;
+					overflow: hidden;
+					height: auto;
+					display: -webkit-box;
+					-webkit-line-clamp: 4 !important;
+					-webkit-box-orient: vertical;
+					text-overflow: ellipsis;
+					min-height: 80px;
+				}
 			}
 
 		}
@@ -358,6 +371,21 @@ p {
 				color: @color_1;
 				border-color: @color_8;
 			}
+		}
+		@media screen and (max-width: 767px) {
+			.td_module_mx4 {
+				.td-module-image {
+					position: relative;
+					width: 100%;
+				}
+			}
+			.td-column-2 {
+				.td-block-row {
+					.td-block-span4 {
+						width: 50%;
+					}
+				}
+			} 
 		}
 	}
 	// Opiniones
