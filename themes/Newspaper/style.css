@@ -29663,10 +29663,19 @@ p {
     margin-bottom: 13px;
   }
 }
+/* Sección Magazine*/
 .section-magazine .td_block_text_with_title {
   padding-bottom: 0;
 }
-/* MAGAZINE - Custom Grid2 Gallery  */
+/* Contenedor de las 12 noticias Abajo*/
+@media (max-width: 767px) {
+  .container-CNA-news {
+    display: none !important;
+  }
+}
+.container-CNA-news .td-default-sharing.share_module_block {
+  display: none !important;
+}
 /**********************************
 * 			TEMPLATES
 ***********************************/

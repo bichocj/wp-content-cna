@@ -227,14 +227,12 @@ if(!empty($post->post_content)) { //show this only when we have content
                                     <!-- end Video Destacado -->
                                         
                                     <div class="clearfix"></div>
-                                
-                            </div>
+                                </div>
                                 <!-- end Videos -->
-
-
                             </div>
                             <!-- End CNA TV -->
                             <!-- Noticias -->
+                            <div class="container-CNA-news">
                             <?php if ((empty($paged) or $paged < 2) and $list_custom_title_show === true) { ?>
                                 <h4 class="block-title"><span><?php echo $td_list_custom_title?></span></h4>
                             <?php }
@@ -246,6 +244,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                             td_page_generator::get_pagination();
                             wp_reset_query();
                             ?>
+                            </div>
                             <!-- end Noticias -->
                         </div>
                     </div>
