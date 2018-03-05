@@ -128,7 +128,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 
 <?php if (is_home() || is_front_page()) { ?>
 <!-- 6 noticias -->
-<div class="section-noticias-xs2 section-12-noticias">
+<div class="section-noticias-xs2 section-12-noticias visible-xs">
     <div class="td-container">
         <div class="block-title">
             <span>Noticias</span>
