@@ -125,6 +125,62 @@ if(!empty($post->post_content)) { //show this only when we have content
 <!-- end Lo Más Visto -->
 <?php } ?>
 
+
+<?php if (is_home() || is_front_page()) { ?>
+<!-- 6 noticias -->
+<div class="section-noticias-xs2 section-12-noticias">
+    <div class="td-container">
+        <div class="block-title">
+            <span>Noticias</span>
+        </div>
+        <?php $news_query = new WP_Query( array('post_type' => 'post', 'offset' => 6, 'post_status' => 'publish', 'posts_per_page' => 6) );?>
+        <?php if($news_query->have_posts()) : ?>
+        <div class="td_block_inner">
+            <?php while($news_query->have_posts()) : $news_query->the_post(); ?>
+            <div class="td-block-span12">
+                <div class="td_module_10 td_module_wrap td-animation-stack">
+                    <div class="td-module-thumb">    
+                        <?php 
+                                $thumbIDNews = get_post_thumbnail_id( $post->ID );
+                                $imgDestacadaNews = wp_get_attachment_image_src( $thumbIDNews, 'thumbnail' ); // Thumbnail, medium, large, full
+                                $imgTitleNews = get_the_title();
+                                $urlNewsNews = get_permalink();
+                                echo '<a href="'. $urlNewsNews .'" rel="bookmark"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaNews[0].'"
+                                    alt="" title="' .$imgTitleNews.'"> </a>'
+                        ?>
+                    </div>
+                    <div class="item-details">
+                            <h3 class="entry-title td-module-title">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h3>
+                    </div>
+                    <div class="td-excerpt">
+                        <?php get_permalink()?>
+                    </div>
+                    <div class="td-default-sharing share_module_block share_module_mx11">
+                        <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://cna.atixplus.com/?p=799"
+                            onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                            <i class="td-icon-facebook"></i>
+                        </a>
+                        <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=%E2%80%9CDiez+a%C3%B1os+de+m%C3%BAsica%E2%80%9D%2C+por+Lionel+Igersheim&amp;url=http://cna.atixplus.com/?p=799&amp;via=CNA"
+                                  onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                            <i class="td-icon-twitter"></i>
+                        </a>
+                        <a class="td-social-sharing-buttons td-social-whatsapp hidden-xs" href="whatsapp://send?text=%E2%80%9CDiez+a%C3%B1os+de+m%C3%BAsica%E2%80%9D%2C+por+Lionel+Igersheim - http%3A%2F%2Fcna.atixplus.com%2F%3Fp%3D799"
+                                 data-action="share/whatsapp/share">
+                            <i class="td-icon-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; ?>
+        </div>
+        <?php endif; wp_reset_postdata(); ?>
+    </div>
+</div>
+<!-- end 6 noticias -->
+<?php } ?>
+
 <div class="td-container td-pb-article-list">
     <div class="td-pb-row">
         <?php
