@@ -647,8 +647,6 @@ p {
 		margin: auto;
         padding-top: 50px;
         padding-bottom: 30px;
-        /*background: url(../../uploads/2018/01/mundo-bg-3.png) no-repeat;
-		background-size: contain;*/
         background: url(../../uploads/2018/02/bg-cna-en-vivo-tapiz3.jpg) no-repeat;
 		background-size: cover;
         background-position: center center;
@@ -656,6 +654,7 @@ p {
 		// Inicio - Responsive de las columnas
 		@media (min-width: 768px) and (max-width: 1018px) { 
 			margin-bottom: @space_2 !important;
+			padding-bottom: 40px;
 		}
 		.wpb_column {
 			&:not(.container-reproductor) {
@@ -690,7 +689,7 @@ p {
 					height: 300px;
 				}
 				@media (min-width: 768px) and (max-width: 1018px) {
-					height: 210px !important;
+					height: 205px !important;
 				}
 			}
 			.td-trending-now-title {
@@ -749,9 +748,9 @@ p {
 	}
 	// Separación reproductor y trending bar
 	.wpb_raw_code {
-		margin-bottom: @space_1;
-		@media (min-width: 768px) and (min-width: 1018px) {
-			margin-bottom: @space_2;
+		// margin-bottom: @space_1;
+		@media (min-width: 768px) and (max-width: 1018px) {
+			margin-bottom: @space_2 !important;
 		}
 	}
 }
@@ -3652,6 +3651,9 @@ div.td_block_it837003251 {
 .wpcna-sidebar-poll {
 	padding: 10px 10px 10px;
 	background-image: url(images/trama_square.jpg);
+	@media (max-width: 767px) {
+		margin-bottom: @space_2;
+	}
 }
 .wp-polls {
 	background-color: @background_color_1;
@@ -3902,7 +3904,7 @@ div.td_block_it837003251 {
 	}
 }
 .wp-polls.results-type {
-	@media (min-width:768px) and (max-width: 1018px) {
+	@media (max-width: 1018px) {
 		display: none;
 	}
 	.pollLogo {
