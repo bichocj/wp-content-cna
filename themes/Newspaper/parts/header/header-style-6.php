@@ -79,7 +79,7 @@ Header style 6 - CNA
             </div>
             <!-- end trending -->
             <!-- Last News -->
-            <div id="last-news-bar" class="td_block_wrap td_block_15 ">
+            <div id="last-news-bar" class="td_block_wrap td_block_15 hidden-xs-600">
                 <div id="" class=" td-column-3">
                     <div class="td-block-row">
                     <?php $newsQuery = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 4) );?>
