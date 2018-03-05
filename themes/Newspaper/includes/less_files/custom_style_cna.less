@@ -291,7 +291,8 @@ p {
 			}
 			.item-details{
 				padding: 15px 12px 12px;
-				border-top: 5px solid @background_color_12,
+				border-top: 5px solid @background_color_12;
+				position: initial;
 			}
 			//wpcna - responsive reswpcna
 			.entry-title {
@@ -309,6 +310,7 @@ p {
 					-webkit-box-orient: vertical;
 	  				height: auto;					
 					overflow: hidden;
+					min-height: 41px;
 				}
 			}	
 		}
@@ -2761,7 +2763,11 @@ div[class*="post-template-cna"] {
 			bottom: 5px;
 			right: 4px;
 			@media (max-width: 767px) { //reswpcna
-				position: initial;
+				position: absolute;
+				top: 0px;
+				a.td-social-whatsapp {
+					display: none !important;
+				}
 			}
 		}
 		&.share_module_mx5 {
