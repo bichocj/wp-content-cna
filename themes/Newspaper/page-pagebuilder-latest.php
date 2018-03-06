@@ -181,6 +181,13 @@ if(!empty($post->post_content)) { //show this only when we have content
 <!-- end 6 noticias -->
 <?php } ?>
 
+<!-- Sidebar social -->
+<div class="section-socials-xs visible-xs">
+    <?php dynamic_sidebar( 'sidebar-mobile' ); ?>
+</div>
+
+
+<!-- End social -->
 <div class="td-container td-pb-article-list">
     <div class="td-pb-row">
         <?php
