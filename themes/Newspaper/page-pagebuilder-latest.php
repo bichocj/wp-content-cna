@@ -529,7 +529,80 @@ if(!empty($post->post_content)) { //show this only when we have content
         </div>
     </div>
 <?php } ?>
-<!-- Section Cultura inicio -->
+<!-- Section Cultura fin -->
+
+<!-- Section Magazine inicio -->
+<?php if (is_home() || is_front_page()) { ?>
+    <div class="section-magazine no-pb-grids wpb_column vc_column_container td-pb-span12 visible-xs">
+        <div class="wpb_wrapper">
+            <div class="td_block_wrap td_block_text_with_title td_uid_11_5a9ecea73229a_rand td-pb-border-top">
+                <div class="block-title">
+                    <span>Magazine</span>
+                </div>
+            </div>
+            <div class="td_block_wrap td_block_big_grid_2 td_uid_12_5a9ecea7334a8_rand td-grid-style-1 td-hover-1 td-pb-border-top">
+                <div class="td_block_inner">
+                    <?php $news_query_magazine = new WP_Query( array(
+                                                                'post_type' => 'post', 
+                                                                'post_status' => 'publish', 
+                                                                'posts_per_page' => 4,
+                                                                'cat' => 22) //Id categoría Magazine, get cat name
+                                                            );?>
+                    <?php if($news_query_magazine->have_posts()) : ?>
+                            <div class="td-big-grid-wrapper">
+                                <?php while($news_query_magazine->have_posts()) : $news_query_magazine->the_post(); ?>
+                                <div class="td-big-grid-scroll">
+                                    <div class="td_module_mx10 td-animation-stack td-big-grid-post-1 td-big-grid-post td-small-thumb smallGrid2Gallery">
+                                        <div class="td-module-thumb">    
+                                            <?php 
+                                                $thumbIDMagazine = get_post_thumbnail_id( $post->ID );
+                                                $imgDestacadaMagazine = wp_get_attachment_image_src( $thumbIDMagazine, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                $imgTitleMagazine = get_the_title();
+                                                $urlNewsMagazine = get_permalink();
+                                                echo '<a href="'. $urlNewsMagazine .'" rel="bookmark" title="' .$imgTitleMagazine.'"> <img width="324" height="160" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaMagazine[0].'"
+                                                    alt="" title="' .$imgTitleMagazine.'"> </a>'
+                                            ?>
+                                        </div>
+                                        <div class="td-meta-info-container">
+                                            <div class="td-meta-align">
+                                                <div class="td-big-grid-meta">
+                                                    <h3 class="entry-title td-module-title">
+                                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="td-default-sharing share_module_block share_module_mx10">
+                                            <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://localhost/wordpress/?p=314"
+                                                onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                                                <i class="td-icon-facebook"></i>
+                                            </a>
+
+                                            <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=Peligra+investigaci%C3%B3n+contra+Waldo+R%C3%ADos+y+donantes+por+mill%C3%B3n+de+soles&amp;url=http://localhost/wordpress/?p=314&amp;via=CNA"
+                                                onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                                                <i class="td-icon-twitter"></i>
+                                            </a>
+
+                                            <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=Peligra+investigaci%C3%B3n+contra+Waldo+R%C3%ADos+y+donantes+por+mill%C3%B3n+de+soles - http%3A%2F%2Flocalhost%2Fwordpress%2F%3Fp%3D314"
+                                                data-action="share/whatsapp/share">
+                                                <i class="td-icon-whatsapp"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php endwhile; ?>
+                            </div>
+                    <?php endif; wp_reset_postdata(); ?>                
+                </div>  
+            </div>
+        </div>
+    </div>
+<?php } ?>
+<!-- Section Magazine fin -->
+
+
+
+
 <?php
 
 get_footer();
