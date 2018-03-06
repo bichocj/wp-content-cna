@@ -316,10 +316,6 @@ p {
 }
 /* Seccion Economía y Tecnología*/
 .section-economia-tecnologia {
-	@media screen and (max-width: 767px) {
-		padding-left: 10px; //Section en la version responsive
-		padding-right: 10px;
-	}
 	/* Moodule 15 */
 	.td_block_15 .td-column-2 .td-module-thumb {
 		@media screen and (min-width: 1360px) {
@@ -427,6 +423,10 @@ p {
 				}
 			}
 		}
+		@media screen and (max-width: 767px) {
+			padding-left: 10px; //Section en la version responsive
+			padding-right: 10px;
+		}
 	}
 	// Tecnologia
 	.td_block_15 {
@@ -436,6 +436,8 @@ p {
 		}
 		@media (max-width: 767px) {
 			padding-bottom: @space_2;
+			padding-left: 10px; //Section en la version responsive
+			padding-right: 10px;
 		}
 		.td-next-prev-wrap {
 			margin-bottom: 0;
