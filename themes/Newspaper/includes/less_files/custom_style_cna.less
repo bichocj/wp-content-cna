@@ -2725,26 +2725,31 @@ div[class*="post-template-cna"] {
 				//div.td_module_mx6 
 				// div.td_module_mx11 
 				// div.td_module_10 
-				margin-top: 8px;
-				border-radius: 50%;
-				min-width: 35px;
-				height: 35px;
-				line-height: 35px;
-				padding: 0;
+				margin-top: 0px;
+				min-width: 40px;
+				line-height: 27px;
 				text-align: center;
+				width: 45px;
+				height: 25px;
+				position: relative;
+				display: block;
+				float: left;
 				margin-left: 3px;
 			}
 		}
 		.td-icon-whatsapp { //reswpcna change 600px 
 			@media screen and (max-width: 767px) {
-				font-size: 23px !important;
-				position: relative;
-				top: 4px;
+				font-size: 19px !important;
+				// position: relative;
+				top: 2px;
 				left: 0.35px;
 			}
 		}
 		[class*="td-icon-"] {
 			font-size: 15px;
+			@media screen and (max-width: 767px) {
+				position: absolute;
+			}
 		}
 		.td-social-youtube {
 			background-color: #bb0000;
@@ -2752,6 +2757,21 @@ div[class*="post-template-cna"] {
 		.td-social-instagram {
 			background-color: #e1306e ;
 		}
+		@media screen and (max-width: 767px) {
+			.td-social-twitter {
+				.td-icon-twitter {
+					top: 5px;
+					left: 15px;
+				}
+			}
+			.td-social-facebook {
+				.td-icon-facebook {
+					top: 5px;
+					left: 20px;
+				}
+			}
+		}
+
 		// Position in modules
 		&.share_module_mx6 {
 			bottom: 5px;
@@ -2765,7 +2785,7 @@ div[class*="post-template-cna"] {
 			right: 4px;
 			@media (max-width: 767px) { //reswpcna
 				position: absolute;
-				top: 0px;
+				top: 8px;
 				right: 8px;
 				a.td-social-whatsapp {
 					display: inline-block !important;
@@ -2800,6 +2820,8 @@ div[class*="post-template-cna"] {
 			// 	}
 			// }
 			@media (max-width: 767px) {
+				right: 8px;
+				top: 8px;
 				a.td-social-whatsapp {
 					display: inline-block !important;
 				}
@@ -2817,6 +2839,8 @@ div[class*="post-template-cna"] {
 			// 	}
 			// }
 			@media (max-width: 767px) {
+				right: 8px;
+				top: 8px;
 				a.td-social-whatsapp {
 					display: inline-block !important;
 				}
@@ -4485,7 +4509,7 @@ div.cb-657545417432 {
 				padding: 3px 12px;
 				> i.td-icon-twitter {
 					position: relative; 
-					top: 1.5spx;
+					top: 1.5px;
 				}
 			}
 			
