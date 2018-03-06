@@ -900,14 +900,17 @@ p {
 		}
 		// Sidebar 
 		.td-ss-main-sidebar {
-			.td_block_widget {
-				// Widget El tiempo segun numero de hijo de Main Sidebar
-				&:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
-					@media (max-width: 767px) {
-						display: none !important;
-					}
-				}
+			@media screen and (max-width: 767px) {
+				display: none !important;
 			}
+			// .td_block_widget {
+			// 	// Widget El tiempo segun numero de hijo de Main Sidebar
+			// 	&:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+			// 		@media (max-width: 767px) {
+			// 			display: none !important;
+			// 		}
+			// 	}
+			// }
 		}
 		
 	}
@@ -4811,6 +4814,11 @@ div.cb-657545417432 {
 	.td_block_wrap {
 		padding-bottom: 0px !important;
 	}
+}
+
+.section-socials-xs {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 // * { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
