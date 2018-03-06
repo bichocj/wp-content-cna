@@ -419,9 +419,6 @@ if(!empty($post->post_content)) { //show this only when we have content
 <?php } ?>
 <!-- Section Economía Fin -->
 
-
-
-
 <!-- Section Tecnología inicio -->
 
 <?php if (is_home() || is_front_page()) { ?>
@@ -477,6 +474,62 @@ if(!empty($post->post_content)) { //show this only when we have content
     </div>
 <?php } ?>
 
+<!-- Section Tecnología inicio -->
+
+<!-- Section Cultura inicio -->
+<?php if (is_home() || is_front_page()) { ?>
+    <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
+        <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
+            <div class="wpb_wrapper">
+                <div class="td_block_wrap td_block_15 td_uid_7_5a9e8251eb6a2_rand td_with_ajax_pagination td-pb-border-top section-cultura">
+                    <div class="block-title">
+                        <span>Cultura</span>
+                    </div>
+                    <div class="td_block_inner td-column-2">
+                        <?php $news_query_cultura = new WP_Query( array(
+                                                                    'post_type' => 'post', 
+                                                                    'post_status' => 'publish', 
+                                                                    'posts_per_page' => 4,
+                                                                    'cat' => 29) //Id categoría Cultura, get cat name
+                                                                );?>
+                        <?php if($news_query_cultura->have_posts()) : ?>
+                            <div class="td-block-row">
+                                <?php while($news_query_cultura->have_posts()) : $news_query_cultura->the_post(); ?>
+                                <div class="td-block-span4">
+                                    <div class="td_module_mx4 td_module_wrap td-animation-stack">
+                                        <div class="td-module-image">
+                                            <div class="td-module-thumb">    
+                                                <?php 
+                                                    $thumbIDCultura = get_post_thumbnail_id( $post->ID );
+                                                    $imgDestacadaCultura = wp_get_attachment_image_src( $thumbIDCultura, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                    $imgTitleCultura = get_the_title();
+                                                    $urlNewsCultura = get_permalink();
+                                                    echo '<a href="'. $urlNewsCultura .'" rel="bookmark" title="' .$imgTitleCultura.'"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaCultura[0].'"
+                                                        alt="" title="' .$imgTitleCultura.'"> </a>'
+                                                ?>
+                                            </div>
+                                            <?php 
+                                                $categoryNameCultura = get_cat_name(29);
+                                                $categoryUrlCultura = get_category_link(29);
+                                                echo '<a href="' .$categoryUrlCultura. '" class="td-post-category" >"'.$categoryNameCultura.'"</a>'
+                                            ?>
+                                        </div>
+                                        <h3 class="entry-title td-module-title">
+                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <?php endwhile; ?>
+                            </div>
+                            <?php endif; wp_reset_postdata(); ?>
+                            
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+<?php } ?>
+<!-- Section Cultura inicio -->
 <?php
 
 get_footer();
