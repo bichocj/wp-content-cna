@@ -490,7 +490,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                     'post_type' => 'post', 
                                                                     'post_status' => 'publish', 
                                                                     'posts_per_page' => 4,
-                                                                    'cat' => 29) //Id categoría Cultura, get cat name
+                                                                    'cat' => 28) //Id categoría Cultura, get cat name
                                                                 );?>
                         <?php if($news_query_cultura->have_posts()) : ?>
                             <div class="td-block-row">
@@ -509,8 +509,8 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                 ?>
                                             </div>
                                             <?php 
-                                                $categoryNameCultura = get_cat_name(29);
-                                                $categoryUrlCultura = get_category_link(29);
+                                                $categoryNameCultura = get_cat_name(28);
+                                                $categoryUrlCultura = get_category_link(28);
                                                 echo '<a href="' .$categoryUrlCultura. '" class="td-post-category" >"'.$categoryNameCultura.'"</a>'
                                             ?>
                                         </div>
