@@ -142,7 +142,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                     <div class="td-module-thumb">    
                         <?php 
                                 $thumbIDNews = get_post_thumbnail_id( $post->ID );
-                                $imgDestacadaNews = wp_get_attachment_image_src( $thumbIDNews, 'thumbnail' ); // Thumbnail, medium, large, full
+                                $imgDestacadaNews = wp_get_attachment_image_src( $thumbIDNews, [218,150] ); // Thumbnail, medium, large, full
                                 $imgTitleNews = get_the_title();
                                 $urlNewsNews = get_permalink();
                                 echo '<a href="'. $urlNewsNews .'" rel="bookmark"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaNews[0].'"
