@@ -442,8 +442,8 @@ if(!empty($post->post_content)) { //show this only when we have content
                         <?php if($news_query_tecnologia->have_posts()) : ?>
                             <div class="td-block-row">
                                 <?php while($news_query_tecnologia->have_posts()) : $news_query_tecnologia->the_post(); ?>
-                                <div class="td-block-span6">
-                                    <div class="td_module_6 td_module_wrap td-animation-stack">
+                                <div class="td-block-span4">
+                                    <div class="td_module_mx4 td_module_wrap td-animation-stack">
                                         <div class="td-module-image">
                                             <div class="td-module-thumb">    
                                                 <?php 
