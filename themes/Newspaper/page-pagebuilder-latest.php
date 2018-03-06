@@ -372,7 +372,6 @@ if(!empty($post->post_content)) { //show this only when we have content
 
 <!-- Section Economía Inicio -->
 <?php if (is_home() || is_front_page()) { ?>
-    <!-- 6 noticias -->
     <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
         <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
             <div class="wpb_wrapper">
@@ -417,9 +416,67 @@ if(!empty($post->post_content)) { //show this only when we have content
             </div>
         </div>
     </div>
-    <!-- end 6 noticias -->
 <?php } ?>
 <!-- Section Economía Fin -->
+
+
+
+
+<!-- Section Tecnología inicio -->
+
+<?php if (is_home() || is_front_page()) { ?>
+    <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
+        <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
+            <div class="wpb_wrapper">
+                <div class="td_block_wrap td_block_15 td_uid_6_5a9e8251e1734_rand td_with_ajax_pagination td-pb-border-top">
+                    <div class="block-title">
+                        <span>Tecnología</span>
+                    </div>
+                    <div class="td_block_inner td-column-2">
+                        <?php $news_query_tecnologia = new WP_Query( array(
+                                                                    'post_type' => 'post', 
+                                                                    'post_status' => 'publish', 
+                                                                    'posts_per_page' => 4,
+                                                                    'cat' => 20) //Id categoría Tecnologia, get cat name
+                                                                );?>
+                        <?php if($news_query_tecnologia->have_posts()) : ?>
+                            <div class="td-block-row">
+                                <?php while($news_query_tecnologia->have_posts()) : $news_query_tecnologia->the_post(); ?>
+                                <div class="td-block-span6">
+                                    <div class="td_module_6 td_module_wrap td-animation-stack">
+                                        <div class="td-module-image">
+                                            <div class="td-module-thumb">    
+                                                <?php 
+                                                    $thumbIDTecnologia = get_post_thumbnail_id( $post->ID );
+                                                    $imgDestacadaTecnologia = wp_get_attachment_image_src( $thumbIDTecnologia, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                    $imgTitleTecnologia = get_the_title();
+                                                    $urlNewsTecnologia = get_permalink();
+                                                    echo '<a href="'. $urlNewsTecnologia .'" rel="bookmark" title="' .$imgTitleTecnologia.'"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaTecnologia[0].'"
+                                                        alt="" title="' .$imgTitleTecnologia.'"> </a>'
+                                                ?>
+                                            </div>
+                                            <?php 
+                                                $categoryNameTecnologia = get_cat_name(20);
+                                                $categoryUrlTecnologia = get_category_link(20);
+                                                echo '<a href="' .$categoryUrlTecnologia. '" class="td-post-category" >"'.$categoryNameTecnologia.'"</a>'
+                                            ?>
+                                        </div>
+                                        <h3 class="entry-title td-module-title">
+                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <?php endwhile; ?>
+                            </div>
+                            <?php endif; wp_reset_postdata(); ?>
+                            
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
 <?php
 
 get_footer();
