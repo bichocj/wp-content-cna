@@ -370,9 +370,56 @@ if(!empty($post->post_content)) { //show this only when we have content
 </div> <!-- /.td-container -->
 </div> <!-- /.td-main-content-wrap -->
 
-
-
-
+<!-- Section Economía Inicio -->
+<?php if (is_home() || is_front_page()) { ?>
+    <!-- 6 noticias -->
+    <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
+        <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
+            <div class="wpb_wrapper">
+                <div class="td_block_wrap td_block_1 td_uid_5_5a9e8251d3f4b_rand td-pb-border-top">
+                    <div class="block-title">
+                        <span>Economía</span>
+                    </div>
+                    <div class="td_block_inner">
+                        <?php $news_query_economia = new WP_Query( array(
+                                                                    'post_type' => 'post', 
+                                                                    'post_status' => 'publish', 
+                                                                    'posts_per_page' => 5, 'cat' => 22) //Id categoría Economía
+                                                                );?>
+                        <?php if($news_query_economia->have_posts()) : ?>
+                            <div class="td-block-row">
+                                <?php while($news_query_economia->have_posts()) : $news_query_economia->the_post(); ?>
+                                <div class="td-block-span6">
+                                    <div class="td_module_6 td_module_wrap td-animation-stack">
+                                        <div class="td-module-thumb">    
+                                            <?php 
+                                                    $thumbIDEconomia = get_post_thumbnail_id( $post->ID );
+                                                    $imgDestacadaEconomia = wp_get_attachment_image_src( $thumbIDEconomia, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                    $imgTitleEconomia = get_the_title();
+                                                    $urlNewsEconomia = get_permalink();
+                                                    echo '<a href="'. $urlNewsEconomia .'" rel="bookmark" title="' .$imgTitleEconomia.'"> <img width="100" height="70" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaEconomia[0].'"
+                                                        alt="" title="' .$imgTitleEconomia.'"> </a>'
+                                            ?>
+                                        </div>
+                                        <div class="item-details">
+                                                <h3 class="entry-title td-module-title">
+                                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php endwhile; ?>
+                            </div>
+                            <?php endif; wp_reset_postdata(); ?>
+                            
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- end 6 noticias -->
+<?php } ?>
+<!-- Section Economía Fin -->
 <?php
 
 get_footer();
