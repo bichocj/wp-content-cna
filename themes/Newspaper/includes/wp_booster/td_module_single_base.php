@@ -899,13 +899,13 @@ class td_module_single_base extends td_module {
         }
 
         if (td_global::$cur_single_template_sidebar_pos == 'no_sidebar' or $force_sidebar_position === 'no_sidebar') {
-            $td_related_limit = 5 * $tds_similar_articles_rows;
-            $td_related_class = 'td-related-full-width';
-            $td_column_number = 5;
-        } else {
             $td_related_limit = 3 * $tds_similar_articles_rows;
-            $td_related_class = '';
+            $td_related_class = 'td-related-full-width';
             $td_column_number = 3;
+        } else {
+            $td_related_limit = 6 * $tds_similar_articles_rows;
+            $td_related_class = '';
+            $td_column_number = 6;
         }
 
 
