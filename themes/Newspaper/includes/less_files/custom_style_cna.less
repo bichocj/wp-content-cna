@@ -692,6 +692,14 @@ p {
         background-position: center center;
 		background-color: #e84735;
 		// Inicio - Responsive de las columnas
+		@media (min-width: 1141px) and (max-width: 1360px) {
+			padding-top: 45px;
+			padding-bottom: 25px;
+		}
+		@media (min-width: 1019px) and (max-width: 1140px) {
+			padding-top: 30px;
+			padding-bottom: 20px; 
+		}
 		@media (min-width: 768px) and (max-width: 1018px) { 
 			margin-bottom: @space_2 !important;
 			padding-bottom: 10px;
@@ -724,10 +732,10 @@ p {
 					height: 445px; 
 				}
 				@media (min-width: 1141px) and (max-width: 1359px) {
-					height: 345px; 
+					height: 375px; 
 				}
 				@media (min-width: 1019px) and (max-width: 1140px) {
-					height: 300px;
+					height: 345px;
 				}
 				@media (min-width: 768px) and (max-width: 1018px) {
 					height: 255px !important;
