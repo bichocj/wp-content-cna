@@ -1828,6 +1828,18 @@ p {
 	padding-right: 5px;
 	padding-left: 5px;
 	border-left: 1px solid #ccc;
+	@media (min-width: 768px) {
+		a {
+			.td-social-whatsapp {
+				position: relative;
+				>i.td-icon-whatsapp {
+					position: absolute;
+					top: 10px;
+					left: 12px;
+				}
+			}
+		}
+	}
 	@media (max-width: 767px) { //reswpcna
 		margin-bottom: 10px;
 		padding: 0;
@@ -1836,15 +1848,31 @@ p {
 		a {
 			min-width: 40px !important;
 			line-height: 43px !important;
-			i.td-icon-instagram {
+			width: auto !important;
+			>i.td-icon-facebook {
+				top: 10px !important;
+				left: 16px !important;
+			}
+			>i.td-icon-instagram {
 				font-size: 18px !important;
+				top: 9px !important;
+				left: 12.5px !important;
+			}
+			>i.td-icon-twitter {
+				top: 10px !important;
+				left: 11px !important;
+			}
+			>i.td-icon-youtube {
+				top: 10px !important;
+				left: 12px !important;
+			}
+			>i.td-icon-whatsapp {
+				top: 8px !important;
+				left: 3px !important; 
 			}
 			&:last-child {
 				margin-right: 0px !important;
 			}
-		}
-		.td-icon-whatsapp {
-			top: 2px !important;
 		}
 	}
 	// a
