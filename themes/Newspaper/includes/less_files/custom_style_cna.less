@@ -365,10 +365,12 @@ p {
 					width: 52%;
 					position: relative;
 					margin-bottom: 0px;
+					height: 120px;
 				}
 				.item-details {
 					width: 48%;
 					padding: @space_2;
+					padding-top: 18px;
 					margin-left: 0px;
 					a {
 						color: @color_1;
@@ -391,28 +393,31 @@ p {
 					font-size: 14px;
 				}
 				@media (min-width:768px) and (max-width: 1018px) {
-					font-size: 14px;
-					line-height: 18px;
-					overflow: hidden;
-					height: auto;
-					display: -webkit-box;
-					-webkit-line-clamp: 4 !important;
-					-webkit-box-orient: vertical;
-					text-overflow: ellipsis;
 					min-height: 80px;
+					a {	
+						font-size: 14px;
+						line-height: 18px;
+						overflow: hidden;
+						height: auto;
+						display: -webkit-box;
+						-webkit-line-clamp: 4;
+						-webkit-box-orient: vertical;
+						text-overflow: ellipsis;
+					}
 				}
 				@media screen and (max-width: 767px) { //reswpcna
-					color: @color_1 !important;
-					overflow: hidden;
-					height: auto;
-					display: -webkit-box;
-					-webkit-line-clamp: 4 !important;
-					-webkit-box-orient: vertical;
-					text-overflow: ellipsis;
 					min-height: 80px;
+					a {
+						font-size: 18px;	
+						overflow: hidden;
+						height: auto;
+						display: -webkit-box;
+						-webkit-line-clamp: 4;
+						-webkit-box-orient: vertical;
+						text-overflow: ellipsis;
+					}				
 				}
 			}
-
 		}
 		.td-block-row {
 			.td-block-span6 {
