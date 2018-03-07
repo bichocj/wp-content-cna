@@ -2108,6 +2108,14 @@ div[class*="post-template-cna"] {
 		.td-module-title {
 			font-size: 15px;
 			padding: 5px 0px;
+			a {
+				height: auto;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+				text-overflow: ellipsis;
+			}
 		}
 		// // Para incremento de tamaño de imagenes de related posts
 		.td-module-thumb {
