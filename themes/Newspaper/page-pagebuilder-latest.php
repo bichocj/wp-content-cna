@@ -372,7 +372,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 
 <!-- Section Economía Inicio -->
 <?php if (is_home() || is_front_page()) { ?>
-    <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
+    <div class="section-economia-tecnologia section-economia td-pb-row td-ss-row vc_row wpb_row visible-xs">
         <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
             <div class="wpb_wrapper">
                 <div class="td_block_wrap td_block_1 td_uid_5_5a9e8251d3f4b_rand td-pb-border-top">
@@ -422,7 +422,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 <!-- Section Tecnología inicio -->
 
 <?php if (is_home() || is_front_page()) { ?>
-    <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
+    <div class="section-economia-tecnologia section-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
         <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
             <div class="wpb_wrapper">
                 <div class="td_block_wrap td_block_15 td_uid_6_5a9e8251e1734_rand td_with_ajax_pagination td-pb-border-top">
@@ -478,7 +478,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 
 <!-- Section Cultura inicio -->
 <?php if (is_home() || is_front_page()) { ?>
-    <div class="section-economia-tecnologia td-pb-row td-ss-row vc_row wpb_row visible-xs">
+    <div class="section-economia-tecnologia section-cultura td-pb-row td-ss-row vc_row wpb_row visible-xs">
         <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
             <div class="wpb_wrapper">
                 <div class="td_block_wrap td_block_15 td_uid_7_5a9e8251eb6a2_rand td_with_ajax_pagination td-pb-border-top section-cultura">
