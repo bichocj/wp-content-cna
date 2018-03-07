@@ -1159,8 +1159,15 @@ p {
 .td-footer-template-4 {
 	.td-footer-info {
 		margin-bottom: 26px;
+		.td-social-icon-wrap {
+			.td-icon-whatsapp {
+				font-size: 19px;
+				line-height: 36px;
+			}
+		}
 	}
 }
+
 
 /***** Sidebar *****/
 // Fixing width despues de haber aumentado el tamaño del contenedor
@@ -4943,6 +4950,17 @@ div.cb-657545417432 {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: @space_1;
+}
+
+.td_module_mx6, .td_module_mx11, .td_module_mx10 {
+	@media screen and (max-width: 767px) {
+		&:hover {
+			img {
+				-webkit-transform: translateX(-50%) !important;
+				transform: translateX(-50%) !important;
+			}
+		}
+	}
 }
 // * { outline: 1px solid rgba(0, 250, 0, 0.35)}
 /******************************************************
