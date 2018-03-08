@@ -40,6 +40,8 @@
 @background_cultura: #93bf0d;
 @background_magazine: #8e44ad;
 @background_magazine_responsive: #8e44ad;
+@background_whatsapp: #009c3b;
+@background_facebook: #516eab;
 
 @font1:'Open Sans', arial, sans-serif;
 @font2: Verdana, Geneva, sans-serif;
@@ -365,6 +367,7 @@ p {
 					width: 52%;
 					position: relative;
 					margin-bottom: 0px;
+					// height: 175px;
 					// height: 120px; resize
 				}
 				.item-details {
@@ -4955,6 +4958,30 @@ div.cb-657545417432 {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: @space_1;
+	.td_block_wrap {
+		&:nth-child(1) {
+			.block-title {
+				border-color: @background_whatsapp;
+				&:nth-child(1) {
+					span {
+						background-color: @background_whatsapp;
+					}
+				}
+			}
+		}
+		&:nth-child(2) {
+			.block-title {
+				border-color: @background_facebook;
+				&:nth-child(1) {
+					span {
+						background-color: @background_facebook;
+					}
+				}
+			}
+		}
+	}
+	
+
 }
 
 .td_module_mx6, .td_module_mx11, .td_module_mx10 {
