@@ -584,12 +584,6 @@ if(!empty($post->post_content)) { //show this only when we have content
     </div> <!-- /.td-pb-row -->
 </div> <!-- /.td-container -->
 </div> <!-- /.td-main-content-wrap -->
-
-
-
-
-
-
 <?php
 
 get_footer();

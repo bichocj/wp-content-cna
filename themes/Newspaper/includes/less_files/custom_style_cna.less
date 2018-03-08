@@ -428,10 +428,6 @@ p {
 				}
 			}
 		}
-		@media screen and (max-width: 767px) {
-			padding-left: 10px; //Section en la version responsive
-			padding-right: 10px;
-		}
 	}
 	// Tecnologia
 	.td_block_15 {
@@ -441,8 +437,6 @@ p {
 		}
 		@media (max-width: 767px) {
 			padding-bottom: @space_2;
-			padding-left: 10px; //Section en la version responsive
-			padding-right: 10px;
 		}
 		.td-next-prev-wrap {
 			margin-bottom: 0;
@@ -819,8 +813,8 @@ p {
 		margin-bottom: @space_2;
 		// Para modificar Bloques de Magazine
 		.td-grid-style-1.td_block_big_grid_2 {
-			margin-right: 0px;
-			margin-left: 0px;
+			margin-right: -10px;
+			margin-left: -10px;
 			.bigGrid2Gallery{
 				.td-big-grid-meta {
 					padding: 15px !important;
@@ -882,6 +876,8 @@ p {
 		// Title
 		.block-title {
 			border-color: @background_magazine_responsive;
+			margin-right: -10px;
+			margin-left: -10px;
 			>span {
 				background-color: @background_magazine_responsive;
 			}
@@ -1693,7 +1689,7 @@ p {
 		margin-top: 9px; //Cuenta padding y margin superiores
 		@media (max-width: 767px) {
 			margin-top: 10px;
-			margin-bottom: -26px; //reswpc
+			margin-bottom: 0px; //reswpc
 		}
 		.video-module-thumb {
 			// margin-bottom: 5px;
