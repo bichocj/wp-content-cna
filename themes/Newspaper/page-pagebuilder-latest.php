@@ -388,7 +388,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                     <?php 
                                                                         $categoryNameTecnologia = get_cat_name(20);
                                                                         $categoryUrlTecnologia = get_category_link(20);
-                                                                        echo '<a href="' .$categoryUrlTecnologia. '" class="td-post-category" >"'.$categoryNameTecnologia.'"</a>'
+                                                                        echo '<a href="' .$categoryUrlTecnologia. '" class="td-post-category category-tecnologia" >"'.$categoryNameTecnologia.'"</a>'
                                                                     ?>
                                                                 </div>
                                                                 <h3 class="entry-title td-module-title">
@@ -440,7 +440,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                     <?php 
                                                                         $categoryNameCultura = get_cat_name(28);
                                                                         $categoryUrlCultura = get_category_link(28);
-                                                                        echo '<a href="' .$categoryUrlCultura. '" class="td-post-category" >"'.$categoryNameCultura.'"</a>'
+                                                                        echo '<a href="' .$categoryUrlCultura. '" class="td-post-category category-cultura" >"'.$categoryNameCultura.'"</a>'
                                                                     ?>
                                                                 </div>
                                                                 <h3 class="entry-title td-module-title">
