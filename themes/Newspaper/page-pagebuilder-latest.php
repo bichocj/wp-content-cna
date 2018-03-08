@@ -125,6 +125,10 @@ if(!empty($post->post_content)) { //show this only when we have content
 <!-- end Lo Más Visto -->
 <?php } ?>
 
+<!-- Sidebar social -->
+<div class="section-socials-xs visible-xs">
+    <?php dynamic_sidebar( 'sidebar-mobile' ); ?>
+</div>
 
 <?php if (is_home() || is_front_page()) { ?>
 <!-- 6 noticias -->
@@ -180,11 +184,6 @@ if(!empty($post->post_content)) { //show this only when we have content
 </div>
 <!-- end 6 noticias -->
 <?php } ?>
-
-<!-- Sidebar social -->
-<div class="section-socials-xs visible-xs">
-    <?php dynamic_sidebar( 'sidebar-mobile' ); ?>
-</div>
 
 <!-- End social -->
 <div class="td-container td-pb-article-list">
