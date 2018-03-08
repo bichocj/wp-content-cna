@@ -180,6 +180,15 @@ function dcms_agregar_nueva_zona_widgets() {
 		'before_widget' => '',
 		'after_widget'  => '',
 	) );
+
+	register_sidebar( array(
+		'id'          => 'sidebar-mas-visto',
+		'name'        => __( 'Sidebar Lo Más Visto', $text_domain ),
+		'before_title'  => '',
+		'after_title'   => '',
+		'before_widget' => '',
+		'after_widget'  => '',
+	) );
 	
 }
 

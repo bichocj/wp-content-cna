@@ -94,7 +94,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 
 <?php if (is_home() || is_front_page()) { ?>
 <!-- Lo Más visto -->
-<div class="most_viewed_news td-main-content-wrap">
+<div class="most_viewed_news td-main-content-wrap hidden-xs-600">
     <div class="td-container">
         <div class="block-title">
             <span>Lo más visto en CNA</span>
@@ -184,6 +184,12 @@ if(!empty($post->post_content)) { //show this only when we have content
 </div>
 <!-- end 6 noticias -->
 <?php } ?>
+
+<!-- Sidebar Lo mas Visto -->
+<div class="section-socials-xs visible-xs">
+    <?php dynamic_sidebar( 'sidebar-mas-visto' ); ?>
+</div>
+<!-- Sidebar lo mas Visto end -->
 
 <!-- End social -->
 <div class="td-container td-pb-article-list">
