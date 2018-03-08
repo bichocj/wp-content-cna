@@ -529,6 +529,11 @@ if(!empty($post->post_content)) { //show this only when we have content
                                 </div>
                             </div>
                             <!-- Section Magazine Fin -->
+                            <!-- Sidebar Contáctame -->
+                            <div class="visible-xs sidebar-contacte-cna">
+                                <?php dynamic_sidebar( 'sidebar-contacte-cna' ); ?>
+                            </div>
+                            <!-- Fin sidebar contáctame -->
                         </div>
                     </div>
                     <div class="td-pb-span4 td-main-sidebar fix-w-sidebar" role="complementary">

@@ -189,6 +189,15 @@ function dcms_agregar_nueva_zona_widgets() {
 		'before_widget' => '<aside class="widget">',
 		'after_widget'  => '</aside>',
 	) );
+
+	register_sidebar( array(
+		'id'          => 'sidebar-contacte-cna',
+		'name'        => __( 'Sidebar Contacto', $text_domain ),
+		'before_title'  => '',
+		'after_title'   => '',
+		'before_widget' => '',
+		'after_widget'  => '',
+	) );
 	
 }
 
