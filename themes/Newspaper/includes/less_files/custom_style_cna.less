@@ -2225,9 +2225,6 @@ div[class*="post-template-cna"] {
 			margin-bottom: @space_2;
 		}
 	}
-	.sidebar-post-cna  {
-		// margin-top: 66px; // Quitado porque ya no se muestran btn compartir
-	}
 }
 
 /* Post Template CNA 2 */
@@ -4544,9 +4541,26 @@ div.cb-657545417432 {
 			.td-main-sidebar {
 				.td-ss-main-sidebar {
 					>div {
-						// &:nth-of-type(4) {
-						// 	display: none !important;
-						// }
+						&:nth-of-type(5) {
+							.block-title {
+								border-color: @background_whatsapp;
+								&:nth-child(1) {
+									span {
+										background-color: @background_whatsapp;
+									}
+								}
+							}
+						}
+						&:nth-of-type(6) {
+							.block-title {
+								border-color: @background_facebook;
+								&:nth-child(1) {
+									span {
+										background-color: @background_facebook;
+									}
+								}
+							}
+						}
 						// &:nth-of-type(6) {
 						// 	display: none !important;
 						// }
@@ -4554,9 +4568,6 @@ div.cb-657545417432 {
 						// 	display: none !important;
 						// }
 						&:nth-of-type(8) {
-							display: none !important;
-						}
-						&:nth-of-type(9) {
 							display: none !important;
 						}
 					}
