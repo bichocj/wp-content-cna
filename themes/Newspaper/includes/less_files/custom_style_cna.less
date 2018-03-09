@@ -812,7 +812,7 @@ p {
 			}
 		}
 	}
-	@media (max-width: 767px) {
+	@media screen and (max-width: 767px) {
 		margin-bottom: @space_2;
 		// Para modificar Bloques de Magazine
 		.td-grid-style-1.td_block_big_grid_2 {
@@ -887,6 +887,26 @@ p {
 			margin-left: -10px;
 			>span {
 				background-color: @background_magazine_responsive;
+			}
+		}
+		.td-social-sharing-buttons {
+			width: auto !important;
+			height: auto !important;
+			margin-left: -8px !important;
+			text-shadow: 1px 1px 1px #000;
+			padding: 0px !important;
+			i[class*="td-icon-"] {
+				font-size: 18px !important;
+			}
+			.td-icon-facebook {
+				left: 36px !important;
+			}
+			>i.td-icon-whatsapp {
+				font-size: 19px !important;
+				top: 3px;
+			}
+			&:last-child {
+				margin-left: -6px !important;
 			}
 		}
 	}
@@ -2843,24 +2863,13 @@ div[class*="post-template-cna"] {
 				margin-top: 0px;
 				line-height: 27px;
 				text-align: center;
-				// width: 45px;
-				// height: 25px;
-				// margin-left: 3px;
-				// min-width: 40px;
-				width: auto;
-				height: auto;
+				width: 45px;
+				height: 25px;
+				margin-left: 3px;
+				min-width: 40px;
 				position: relative;
 				display: block;
 				float: left;
-				padding: 0px;
-				margin-left: -8px !important;
-				text-shadow: 1px 1px 1px #000;
-				i {
-					font-size: 18px;
-				}
-				&:last-child {
-					margin-left: -6px !important;
-				}
 			}
 		}
 		.td-icon-whatsapp { //reswpcna change 600px 
@@ -2872,7 +2881,7 @@ div[class*="post-template-cna"] {
 			}
 		}
 		[class*="td-icon-"] {
-			font-size: 15px;
+			// font-size: 15px;
 			@media screen and (max-width: 767px) {
 				position: absolute;
 			}
