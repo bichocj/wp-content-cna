@@ -1205,13 +1205,13 @@ p {
 // Fixing Widgets
 .widget {
 	margin-bottom: @space_1;
-	@media (min-width:768px) and (max-width: 1018px) {
+	@media (max-width: 1018px) {
 		margin-bottom: @space_2;
 	}
 	.block-title {
 		margin-bottom: @space_1;
-		@media (min-width:768px) and (max-width: 1018px) {
-			margin-bottom: @space_2;
+		@media (max-width: 1018px) {
+			margin-bottom: @space_2 !important;
 		}
 	}
 }
