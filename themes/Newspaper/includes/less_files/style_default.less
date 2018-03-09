@@ -434,20 +434,24 @@ img {
 //   // z-index: 100000;
 // }
 
-// .td-module-thumb {
-//   a[rel="bookmark"] {
-//     position: relative;
-//     // &::after {
-//     //   content: url(http://localhost/wordpress/wp-content/uploads/2018/03/cna-envivonuevo3.png) !important;
-//     //   top: 0;
-//     //   left: 25%;
-//     //   height: 50%;
-//     //   width: 50%;
-//     //   z-index: 1000;
-//     //   position: absolute !important;
-//     // }
-//   }
-// }
+.td-module-thumb {
+  // a[rel="bookmark"] {
+    // position: relative;
+
+    &::after {
+      content: url(images/custom/loading-cna.png) !important;
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+      position: absolute !important;
+      opacity: 0.5;
+      transform: translate(-50%, -50%);
+    }
+  // }
+}
+.entry-thumb {
+  z-index: 1;
+}
 
 .td-main-content-wrap,
 .td-category-grid {
