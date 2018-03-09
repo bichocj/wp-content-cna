@@ -9990,6 +9990,7 @@ function responsiveOrder(){
         // console.log('Si es un smartphone');
         jQuery('.td-details-weather').append(jQuery('.top-bar-style-2 .thisCNATVWrap'));
         jQuery('.td-details-weather .thisCNATVWrap .textSub').text('En vivo');
+        jQuery('.td-details-weather .thisCNATVWrap .textSub').append('<span class="en-vivo-trending"><img src="http://cna.atixplus.com/wp-content/uploads/2018/03/en-vivo.gif" alt="en-vivo"></span>');
         // jQuery('.td_mycBlock_3432434539 > .vc_column_container > .wpb_wrapper').append(jQuery('.td-additional-fields-responsive-684654 .td-tvenvivo-area-button-54564316'));
         // jQuery('.home .td-pb-article-list > .td-pb-row').addClass('move-out');
         // jQuery('.home .td_mycBlock_3432434539').after(jQuery('.home .td-pb-article-list > .td-pb-row'));
