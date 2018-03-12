@@ -450,6 +450,12 @@ p {
 				}
 			}
 		}
+		.block-title {
+			border-color: @background_economia;
+			>span {
+				background-color: @background_economia;
+			}
+		}
 	}
 	// Tecnologia
 	.td_block_15 {
@@ -509,20 +515,36 @@ p {
 					}
 				}
 			} 
+		} 
+	}
+	.td_with_ajax_pagination {
+			.block-title {
+				border-color: @background_tecnologia;
+				>span {
+					background-color: @background_tecnologia;
+				}
+			}
+	}
+	.td_with_ajax_pagination ~ .td_with_ajax_pagination {
+		.block-title {
+			border-color: @background_cultura;
+			>span {
+				background-color: @background_cultura;
+			}
 		}
 	}
 	//Cultura
 	.section-cultura { //construido en php
-			@media screen and (max-width: 767px) {
-				.td_module_wrap {
-					background-color: @background_cultura !important;
-				}
-				.td-column-2 {
-					.td-module-thumb {
-						height: 67vw;
-					}
-				}  
+		@media screen and (max-width: 767px) {
+			.td_module_wrap {
+				background-color: @background_cultura !important;
 			}
+			.td-column-2 {
+				.td-module-thumb {
+					height: 67vw;
+				}
+			}  
+		}
 	}
 	// Opiniones
 	.td-opiniones {
