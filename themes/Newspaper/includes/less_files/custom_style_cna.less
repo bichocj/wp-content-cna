@@ -1302,15 +1302,43 @@ p {
 
 /* Widget - Most Viewed */
 .widget-most-viewed {
+	.container-widget-mostview::before {
+		content: "";
+		background-image: url(../../uploads/2018/03/ico_megafono.png);
+		// C:\xampp\htdocs\wordpress\wp-content\themes\Newspaper\images\custom\ico_megafono.png
+		background-size: 50%;
+		background-color: @background_color_12;
+		background-size: 50%;
+		background-color: #DD3333;
+		height: 72px;
+		width: 75px;
+		position: absolute;
+		z-index: 3;
+		background-position-x: 50%;
+		background-position-y: 50%;
+		border-radius: 35px;
+		background-repeat: no-repeat;
+		left: 42%;
+	}
+	ul::before {
+			content: "Lo mas visto" !important;
+			font-size: 20px;
+			line-height: 21px;
+			color: black;
+			text-align: center;
+			margin: 20px 0 20px;
+			position: absolute;
+	}
 	ul {
+		font-family: @font_responsiva;
 		margin: 0;
 		padding: 0;
 		counter-reset: my-lastnews-counter;
 		list-style: none;
 		background: @background_color_12;
-		padding: 20px 25px;
+		padding: 40px 25px 25px;
 		@media screen and (max-width: 767px) { //reswpcna
-			padding: 20px 30px;
+
 		}
 	}
 	li {
@@ -1347,6 +1375,10 @@ p {
 		&:first-child {
 			// background-color: #b60000;
 			background-color: @background_color_1;
+			padding-top: 50px;
+			&::before {
+				top: 45px;
+			}
 		}
 		&:nth-child(2) {
 			// background-color: #c60000;
@@ -1439,7 +1471,7 @@ p {
 		}
 	}
 	@media screen and (max-width: 767px) {
-		display: none !important;
+		// display: none !important;
 	}
 }
 
