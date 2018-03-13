@@ -1380,7 +1380,7 @@ p {
 		width: 100%;
 		font-size: 14px;
 		line-height: 1.25;
-		padding: 0px 18px 18px 15px;
+		padding: 0px 5px 15px 25px;
 		// margin: 0 0 1px;
 		margin: 0px;
 		position: relative;
@@ -1390,20 +1390,18 @@ p {
 			content: counter(my-lastnews-counter);
 			counter-increment: my-lastnews-counter;
 			position: absolute;
-			top: 10px;
-			left: 15px;
+			top: 0px;
+			left: 0px;
 			font-size: 42px;
 			color: @color_8;
 			line-height: 0.75;
-			@media (min-width: 1019px) and (max-width: 1140px) {
-				left: 10px;
-			}
 			@media (min-width: 768px) and (max-width: 1018px) {
 				left: 3px;
-				font-size: 35px;
+				font-size: 30px;
 			}
 			@media screen and (max-width: 767px) {
 				top: 0px;
+				left: 15px;
 			}
 		}
 		&:first-child {
@@ -1421,9 +1419,10 @@ p {
 		&:last-child {
 			margin-bottom: 0;
 		}
+	
 		@media (min-width:768px) and (max-width: 1018px) {
 			font-size: 14px;
-			padding: 10px 15px 10px 20px;
+			padding: 0px 15px 10px 20px;
 		}
 		@media screen and (max-width: 767px) {
 			padding-left: 50px
@@ -1434,32 +1433,11 @@ p {
 		width: 50%;
 		float: left;
 		width: 38%;
-		// @media (min-width: 1361px) {
-		// 	padding-left: 38px;
-		// }
-		// @media (min-width: 1141px) and (max-width: 1360px) {
-		// 	padding-left: 38px;
-		// }
-		// @media (min-width: 1019px) and (max-width: 1140px) {
-		// 	padding-left: 20px;
-		// }
-		// @media (min-width: 768px) and (max-width: 1018px) {
-		// 	padding-left: 10px;
-		// }		
-		// @media (max-width: 992px) {
-		// 	width: auto;
-		// }
-		// @media (max-width: 400px) {
-			
-		// }
 		img {
 			width: 100%;
-			height: 33vw;
-			// @media (min-width:768px) and (max-width: 1018px) {
-			// 	width: 60px !important;
-			// }
+			height: 10vw;
 			@media (min-width: 768px) and (max-width: 1018px) {
-				height: 10vw;
+				height: 8vw;
 			}
 			@media (min-width: 401px) and (max-width: 767px) {
 				height: 33vw;
@@ -1474,9 +1452,9 @@ p {
 		width: 62%;
 		padding-left: 15px;
 		line-height: 1.35;
-		// @media (min-width: 767px) and (max-width: 1018px) {
-		// 	padding-left: 0px;
-		// }
+		@media (min-width: 767px) and (max-width: 1018px) {
+			padding-left: 10px;
+		}
 		a {
 			display: block;
 			// -webkit-box-orient: vertical;
