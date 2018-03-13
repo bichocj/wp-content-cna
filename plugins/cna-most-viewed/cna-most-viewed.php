@@ -74,6 +74,8 @@ class most_viewed_widget extends WP_Widget {
 			echo $args['before_title'] . $titulo . $args['after_title'];
 		} ?>
         <div class="container-widget-mostview">
+            <div class="list-widget-mostview">
+                <p>Lo más visto</p>
             <ul class="lnList clearfix">
             <?php while ( $news_Query->have_posts() ) : $news_Query->the_post(); ?>
                 <li>
@@ -91,6 +93,7 @@ class most_viewed_widget extends WP_Widget {
                 </li>
             <?php endwhile; ?>
             </ul>
+            </div>
         </div>
 		<?php echo $args['after_widget']; ?>
 		<?php
