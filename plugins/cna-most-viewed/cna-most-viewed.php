@@ -73,23 +73,28 @@ class most_viewed_widget extends WP_Widget {
 		<?php if ( $titulo ) {
 			echo $args['before_title'] . $titulo . $args['after_title'];
 		} ?>
-		<ul class="lnList clearfix">
-		<?php while ( $news_Query->have_posts() ) : $news_Query->the_post(); ?>
-            <li>
-                <?php 
-                        $thumbID = get_post_thumbnail_id( $post->ID );
-                        $imgDestacada = wp_get_attachment_image_src( $thumbID, 'thumbnail' ); // Thumbnail, medium, large, full
-                        $imgTitle = get_the_title();
-                        $urlNews = get_permalink();
-                        echo '<a class="nImage" href="'. $urlNews .'"> <img width="150" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
-                        alt="" title="'.$imgTitle.'"> </a>'
-                ?>
-                <div class="nTitle">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                </div>
-            </li>
-		<?php endwhile; ?>
-		</ul>
+        <div class="container-widget-mostview">
+            <div class="list-widget-mostview">
+                <p>Lo más visto</p>
+            <ul class="lnList clearfix">
+            <?php while ( $news_Query->have_posts() ) : $news_Query->the_post(); ?>
+                <li>
+                    <?php 
+                            $thumbID = get_post_thumbnail_id( $post->ID );
+                            $imgDestacada = wp_get_attachment_image_src( $thumbID, 'thumbnail' ); // Thumbnail, medium, large, full
+                            $imgTitle = get_the_title();
+                            $urlNews = get_permalink();
+                            echo '<a class="nImage" href="'. $urlNews .'"> <img width="150" height="150" class="entry-thumb" src="'.$imgDestacada[0].'"
+                            alt="" title="'.$imgTitle.'"> </a>'
+                    ?>
+                    <div class="nTitle">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </div>
+                </li>
+            <?php endwhile; ?>
+            </ul>
+            </div>
+        </div>
 		<?php echo $args['after_widget']; ?>
 		<?php
 		// Reset the global $the_post as this query will have stomped on it

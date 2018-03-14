@@ -45,7 +45,7 @@ class td_block_related_posts extends td_block {
         $buffy .= '</div>';
 
         //get the ajax pagination for this block
-        $buffy .= $this->get_block_pagination();
+        // $buffy .= $this->get_block_pagination();
         $buffy .= '</div> <!-- ./block -->';
         return $buffy;
     }
@@ -78,7 +78,9 @@ class td_block_related_posts extends td_block {
                         $buffy .= $td_block_layout->open_row();
                         $buffy .= $td_block_layout->open4();
                         $buffy .= $td_module_related_posts->render();
+
                         $buffy .= $td_block_layout->close4();
+
 
                         if ($td_current_column == 3) {
                             $buffy .= $td_block_layout->close_row();
@@ -86,19 +88,21 @@ class td_block_related_posts extends td_block {
 
                         break;
 
-                    case '5': //the layout when we are on
+                    case '6': //the layout when we are on
 
 
                         $buffy .= $td_block_layout->open_row();
                         $buffy .= $td_block_layout->open4();
                         $buffy .= $td_module_related_posts->render();
+                        // $buffy .= $td_module_related_posts->render();
                         $buffy .= $td_block_layout->close4();
 
-                        if ($td_current_column == 5) {
+                        if ($td_current_column == 6) {
                             $buffy .= $td_block_layout->close_row();
                         }
 
                         break;
+                        
                 }
 
 

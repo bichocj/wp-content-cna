@@ -9984,36 +9984,36 @@ function date_time(id){
         setTimeout('date_time("'+id+'");','1000');
         return true;
 }
-/*function responsiveOrder(){
+function responsiveOrder(){
     //if ( (jQuery(window).width() < 600 || jQuery(window).height() < 600)) {
     if ( jQuery(window).width() < 600) {
-        console.log('Si es un smartphone');
+        // console.log('Si es un smartphone');
         jQuery('.td-details-weather').append(jQuery('.top-bar-style-2 .thisCNATVWrap'));
         jQuery('.td-details-weather .thisCNATVWrap .textSub').text('En vivo');
-        jQuery('.td_mycBlock_3432434539 > .vc_column_container > .wpb_wrapper').append(jQuery('.td-additional-fields-responsive-684654 .td-tvenvivo-area-button-54564316'));
-        jQuery('.home .td-pb-article-list > .td-pb-row').addClass('move-out');
-        jQuery('.home .td_mycBlock_3432434539').after(jQuery('.home .td-pb-article-list > .td-pb-row'));
-        jQuery('.td-pb-row.move-out > .td-main-content > .td-ss-main-content > .td_module_10:nth-of-type(6)').after(jQuery('.td-additional-fields-responsive-684654 .td-appenvivo-area-button-54564316'));
-        jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316').addClass('move-out');
-        jQuery('.home .td-pb-article-list > .td-pb-row.move-out').after(jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316'));
-        jQuery('.home .td-main-page-wrap > .lastNews').parent().addClass('moved-lastnews');
-        jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316').addClass('move-out');
-        jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316.move-out').after(jQuery('.home .td-main-page-wrap > .lastNews'));
-        jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_11_"]').addClass('moving-this');
-        jQuery('.td-additional-fields-responsive-684654 > .wpb_column > .wpb_wrapper > .lastNews').after(jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_11_"].moving-this'));
+        jQuery('.td-details-weather .thisCNATVWrap .textSub').append('<span class="en-vivo-trending"><img src="http://cna.atixplus.com/wp-content/uploads/2018/03/en-vivo.gif" alt="en-vivo"></span>');
+        // jQuery('.td_mycBlock_3432434539 > .vc_column_container > .wpb_wrapper').append(jQuery('.td-additional-fields-responsive-684654 .td-tvenvivo-area-button-54564316'));
+        // jQuery('.home .td-pb-article-list > .td-pb-row').addClass('move-out');
+        // jQuery('.home .td_mycBlock_3432434539').after(jQuery('.home .td-pb-article-list > .td-pb-row'));
+        // jQuery('.td-pb-row.move-out > .td-main-content > .td-ss-main-content > .td_module_10:nth-of-type(6)').after(jQuery('.td-additional-fields-responsive-684654 .td-appenvivo-area-button-54564316'));
+        // jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316').addClass('move-out');
+        // jQuery('.home .td-pb-article-list > .td-pb-row.move-out').after(jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316'));
+        // jQuery('.home .td-main-page-wrap > .lastNews').parent().addClass('moved-lastnews');
+        // jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316').addClass('move-out');
+        // jQuery('.td-additional-fields-responsive-684654 .td-contact-area-button-54564316.move-out').after(jQuery('.home .td-main-page-wrap > .lastNews'));
+        // jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_11_"]').addClass('moving-this');
+        // jQuery('.td-additional-fields-responsive-684654 > .wpb_column > .wpb_wrapper > .lastNews').after(jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_11_"].moving-this'));
     } else {
         jQuery('.td-header-style-6 .td-header-top-menu-full .top-bar-style-2 .td-header-sp-top-widget').append(jQuery('.td-details-weather .thisCNATVWrap'));
-        jQuery('.top-bar-style-2 .thisCNATVWrap .textSub').text('Televisión en vivo');
-        jQuery('.home .td-contact-area-button-54564316.move-out').removeClass('move-out');
-        jQuery('.home .td-main-page-wrap.moved-lastnews >.td-container:first-child').after(jQuery('.home .td-additional-fields-responsive-684654 .lastNews'));
-        jQuery('.home .td-pb-article-list').append(jQuery('.home .td-pb-row.move-out'));
-        jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_10_"]').after(jQuery('.td-additional-fields-responsive-684654 > .wpb_column > .wpb_wrapper > [class*="td_uid_11_"].moving-this'));
-        jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_11_"].moving-this').removeClass('moving-this');
-        //jQuery('.td-additional-fields-responsive-684654 > .wpb_column > .wpb_wrapper > div.td_block_text_with_title:first-child').before(jQuery('.home .td-pb-article-list > .td-contact-area-button-54564316.move-out'));
-        console.log('No es un smartphone');
-        
+        // jQuery('.top-bar-style-2 .thisCNATVWrap .textSub').text('Televisión en vivo');
+        // jQuery('.home .td-contact-area-button-54564316.move-out').removeClass('move-out');
+        // jQuery('.home .td-main-page-wrap.moved-lastnews >.td-container:first-child').after(jQuery('.home .td-additional-fields-responsive-684654 .lastNews'));
+        // jQuery('.home .td-pb-article-list').append(jQuery('.home .td-pb-row.move-out'));
+        // jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_10_"]').after(jQuery('.td-additional-fields-responsive-684654 > .wpb_column > .wpb_wrapper > [class*="td_uid_11_"].moving-this'));
+        // jQuery('.additionalcol-movresp-564614985 > .wpb_wrapper > [class*="td_uid_11_"].moving-this').removeClass('moving-this');
+        // //jQuery('.td-additional-fields-responsive-684654 > .wpb_column > .wpb_wrapper > div.td_block_text_with_title:first-child').before(jQuery('.home .td-pb-article-list > .td-contact-area-button-54564316.move-out'));
+        // console.log('No es un smartphone');
     }
-}*/
+}
 function miniModal(){
     jQuery('.td-contact-area-button-54564316 .td-button-4548264').on('click',function(e){
         e.preventDefault();

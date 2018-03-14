@@ -424,6 +424,48 @@ img {
   width: auto\9;
   height: auto;
 }
+// img::after {
+//   // content: url(images/custom/cna-envivonuevo.png) !important;
+//   // bottom: 0;
+//   // display: block !important;
+//   // height: 50%;
+//   // width: 50%;
+//   // // position: absolute;
+//   // z-index: 100000;
+// }
+
+.td-module-thumb {
+  // a[rel="bookmark"] {
+    // position: relative;
+
+    &::after {
+      content: url(images/custom/loading-cna0.png) !important;
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+      position: absolute !important;
+      opacity: 0.5;
+      transform: translate(-50%, -50%);
+    }
+  // }
+}
+
+.section-economia-tecnologia {
+  .td_module_6 {
+    @media (min-width: 768px) {
+      .td-module-thumb {
+        &::after {
+          content: url(images/custom/loading-cna2.png) !important;
+        }
+      }
+    }
+  }
+}
+
+.entry-thumb {
+  z-index: 1;
+}
+
 .td-main-content-wrap,
 .td-category-grid {
   background-color: #fff;
@@ -19246,6 +19288,9 @@ body .td-page-title {
 .td-social-icon-wrap i.td-icon-vk:hover {
   color: #45668e;
 }
+.td-social-icon-wrap i.td-icon-whatsapp:hover {
+  color: #00e676;
+}
 .td-social-icon-wrap i.td-icon-windows:hover {
   color: #319de5;
 }
@@ -20999,6 +21044,10 @@ tagdiv animations
 }
 .td_social_youtube {
   background-color: #e14e42;
+  >span.td_social_info_name {
+    display: inline-block;
+    text-transform: capitalize;
+  }
 }
 .td_social_googleplus {
   background-color: #eb4026;
@@ -27631,8 +27680,8 @@ body.activity-permalink #buddypress div.activity-comments ul li {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.03);
+  // border: 1px solid rgba(255, 255, 255, 0.1);
+  // background-color: rgba(255, 255, 255, 0.03);
   /* responsive portrait tablet */
 }
 @media (min-width: 768px) and (max-width: 1018px) {
@@ -28745,20 +28794,20 @@ td-md-is-safari
 /*  ----------------------------------------------------------------------------
     Android
 */
-.td-md-is-android .td-hover-1 .td-big-grid-post:hover .entry-thumb {
-  /*CSS transitions*/
-  -o-transition-property: none !important;
-  -moz-transition-property: none !important;
-  -ms-transition-property: none !important;
-  -webkit-transition-property: none !important;
-  transition-property: none !important;
-  /*CSS transforms*/
-  -o-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
+// .td-md-is-android .td-hover-1 .td-big-grid-post:hover .entry-thumb {
+//   /*CSS transitions*/
+//   -o-transition-property: none !important;
+//   -moz-transition-property: none !important;
+//   -ms-transition-property: none !important;
+//   -webkit-transition-property: none !important;
+//   transition-property: none !important;
+//   /*CSS transforms*/
+//   -o-transform: none !important;
+//   -moz-transform: none !important;
+//   -ms-transform: none !important;
+//   -webkit-transform: none !important;
+//   transform: none !important;
+// }
 .td-md-is-android .td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-module-thumb a:last-child:before {
   box-shadow: none;
 }

@@ -94,7 +94,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 
 <?php if (is_home() || is_front_page()) { ?>
 <!-- Lo Más visto -->
-<div class="most_viewed_news td-main-content-wrap">
+<div class="most_viewed_news td-main-content-wrap hidden-xs-600">
     <div class="td-container">
         <div class="block-title">
             <span>Lo más visto en CNA</span>
@@ -125,6 +125,73 @@ if(!empty($post->post_content)) { //show this only when we have content
 <!-- end Lo Más Visto -->
 <?php } ?>
 
+<!-- Sidebar social -->
+<div class="section-socials-xs visible-xs">
+    <?php dynamic_sidebar( 'sidebar-mobile' ); ?>
+</div>
+
+<?php if (is_home() || is_front_page()) { ?>
+<!-- 6 noticias -->
+<div class="section-noticias-xs2 section-12-noticias visible-xs">
+    <div class="td-container">
+        <div class="block-title">
+            <span>Noticias</span>
+        </div>
+        <?php $news_query = new WP_Query( array('post_type' => 'post', 'offset' => 6, 'post_status' => 'publish', 'posts_per_page' => 6) );?>
+        <?php if($news_query->have_posts()) : ?>
+        <div class="td_block_inner">
+            <?php while($news_query->have_posts()) : $news_query->the_post(); ?>
+            <div class="td-block-span12">
+                <div class="td_module_10 td_module_wrap td-animation-stack">
+                    <div class="td-module-thumb">    
+                        <?php 
+                                $thumbIDNews = get_post_thumbnail_id( $post->ID );
+                                $imgDestacadaNews = wp_get_attachment_image_src( $thumbIDNews, [218,150] ); // Thumbnail, medium, large, full
+                                $imgTitleNews = get_the_title();
+                                $urlNewsNews = get_permalink();
+                                echo '<a href="'. $urlNewsNews .'" rel="bookmark"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaNews[0].'"
+                                    alt="" title="' .$imgTitleNews.'"> </a>'
+                        ?>
+                    </div>
+                    <div class="item-details">
+                            <h3 class="entry-title td-module-title">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h3>
+                    </div>
+                    <div class="td-excerpt">
+                        <?php get_permalink()?>
+                    </div>
+                    <div class="td-default-sharing share_module_block share_module_mx11">
+                        <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://cna.atixplus.com/?p=799"
+                            onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                            <i class="td-icon-facebook"></i>
+                        </a>
+                        <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=%E2%80%9CDiez+a%C3%B1os+de+m%C3%BAsica%E2%80%9D%2C+por+Lionel+Igersheim&amp;url=http://cna.atixplus.com/?p=799&amp;via=CNA"
+                                  onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                            <i class="td-icon-twitter"></i>
+                        </a>
+                        <a class="td-social-sharing-buttons td-social-whatsapp hidden-xs" href="whatsapp://send?text=%E2%80%9CDiez+a%C3%B1os+de+m%C3%BAsica%E2%80%9D%2C+por+Lionel+Igersheim - http%3A%2F%2Fcna.atixplus.com%2F%3Fp%3D799"
+                                 data-action="share/whatsapp/share">
+                            <i class="td-icon-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; ?>
+        </div>
+        <?php endif; wp_reset_postdata(); ?>
+    </div>
+</div>
+<!-- end 6 noticias -->
+<?php } ?>
+
+<!-- Sidebar Lo mas Visto -->
+<div class="visible-xs widget-most-viewed">
+    <?php dynamic_sidebar( 'sidebar-mas-visto' ); ?>
+</div>
+<!-- Sidebar lo mas Visto end -->
+
+<!-- End social -->
 <div class="td-container td-pb-article-list">
     <div class="td-pb-row">
         <?php
@@ -233,19 +300,240 @@ if(!empty($post->post_content)) { //show this only when we have content
                             <!-- End CNA TV -->
                             <!-- Noticias -->
                             <div class="container-CNA-news">
-                            <?php if ((empty($paged) or $paged < 2) and $list_custom_title_show === true) { ?>
-                                <h4 class="block-title"><span><?php echo $td_list_custom_title?></span></h4>
-                            <?php }
+                                <?php if ((empty($paged) or $paged < 2) and $list_custom_title_show === true) { ?>
+                                    <h4 class="block-title"><span><?php echo $td_list_custom_title?></span></h4>
+                                <?php }
 
 
-                            //query_posts(td_data_source::metabox_to_args($td_homepage_loop_filter, $paged));
-                            query_posts(td_data_source::metabox_to_args($td_homepage_loop, $paged));
-                            locate_template('loop.php', true);
-                            td_page_generator::get_pagination();
-                            wp_reset_query();
-                            ?>
+                                //query_posts(td_data_source::metabox_to_args($td_homepage_loop_filter, $paged));
+                                query_posts(td_data_source::metabox_to_args($td_homepage_loop, $paged));
+                                locate_template('loop.php', true);
+                                td_page_generator::get_pagination();
+                                wp_reset_query();
+                                ?>
                             </div>
                             <!-- end Noticias -->
+                            <!-- Section Economía Inicio -->
+                            <div class="section-economia-tecnologia section-economia visible-xs">
+                                <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
+                                    <div class="wpb_wrapper">
+                                        <div class="td_block_wrap td_block_1 td_uid_5_5a9e8251d3f4b_rand td-pb-border-top">
+                                            <div class="block-title">
+                                                <span>Economía</span>
+                                            </div>
+                                            <div class="td_block_inner">
+                                                <?php $news_query_economia = new WP_Query( array(
+                                                                                            'post_type' => 'post', 
+                                                                                            'post_status' => 'publish', 
+                                                                                            'posts_per_page' => 5, 'cat' => 22) //Id categoría Economía
+                                                                                        );?>
+                                                <?php if($news_query_economia->have_posts()) : ?>
+                                                    <div class="td-block-row">
+                                                        <?php while($news_query_economia->have_posts()) : $news_query_economia->the_post(); ?>
+                                                        <div class="td-block-span6">
+                                                            <div class="td_module_6 td_module_wrap td-animation-stack">
+                                                                <div class="td-module-thumb">    
+                                                                    <?php 
+                                                                            $thumbIDEconomia = get_post_thumbnail_id( $post->ID );
+                                                                            $imgDestacadaEconomia = wp_get_attachment_image_src( $thumbIDEconomia, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                                            $imgTitleEconomia = get_the_title();
+                                                                            $urlNewsEconomia = get_permalink();
+                                                                            echo '<a href="'. $urlNewsEconomia .'" rel="bookmark" title="' .$imgTitleEconomia.'"> <img width="100" height="70" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaEconomia[0].'"
+                                                                                alt="" title="' .$imgTitleEconomia.'"> </a>'
+                                                                    ?>
+                                                                </div>
+                                                                <div class="item-details">
+                                                                        <h3 class="entry-title td-module-title">
+                                                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                                        </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <?php endwhile; ?>
+                                                    </div>
+                                                    <?php endif; wp_reset_postdata(); ?>
+                                                    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section Economía Fin -->
+                            <!-- Section Tecnologia Inicio -->
+                            <div class="section-economia-tecnologia section-tecnologia visible-xs">
+                                <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
+                                    <div class="wpb_wrapper">
+                                        <div class="td_block_wrap td_block_15 td_uid_6_5a9e8251e1734_rand td_with_ajax_pagination td-pb-border-top">
+                                            <div class="block-title">
+                                                <span>Tecnología</span>
+                                            </div>
+                                            <div class="td_block_inner td-column-2">
+                                                <?php $news_query_tecnologia = new WP_Query( array(
+                                                                                            'post_type' => 'post', 
+                                                                                            'post_status' => 'publish', 
+                                                                                            'posts_per_page' => 4,
+                                                                                            'cat' => 20) //Id categoría Tecnologia, get cat name
+                                                                                        );?>
+                                                <?php if($news_query_tecnologia->have_posts()) : ?>
+                                                    <div class="td-block-row">
+                                                        <?php while($news_query_tecnologia->have_posts()) : $news_query_tecnologia->the_post(); ?>
+                                                        <div class="td-block-span4">
+                                                            <div class="td_module_mx4 td_module_wrap td-animation-stack">
+                                                                <div class="td-module-image">
+                                                                    <div class="td-module-thumb">    
+                                                                        <?php 
+                                                                            $thumbIDTecnologia = get_post_thumbnail_id( $post->ID );
+                                                                            $imgDestacadaTecnologia = wp_get_attachment_image_src( $thumbIDTecnologia, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                                            $imgTitleTecnologia = get_the_title();
+                                                                            $urlNewsTecnologia = get_permalink();
+                                                                            echo '<a href='. $urlNewsTecnologia .' rel="bookmark" title="' .$imgTitleTecnologia.'"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaTecnologia[0].'"
+                                                                                alt="" title="' .$imgTitleTecnologia.'"> </a>'
+                                                                        ?>
+                                                                    </div>
+                                                                    <?php 
+                                                                        // $categoryNameTecnologia = get_cat_name(20);
+                                                                        // $categoryUrlTecnologia = get_category_link(20);
+                                                                        // echo '<a href="' .$categoryUrlTecnologia. '" class="td-post-category category-tecnologia" >"'.$categoryNameTecnologia.'"</a>'
+                                                                    ?>
+                                                                </div>
+                                                                <h3 class="entry-title td-module-title">
+                                                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <?php endwhile; ?>
+                                                    </div>
+                                                    <?php endif; wp_reset_postdata(); ?>
+                                                    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- Section Tecnologia Fin -->
+                            <!-- Section Cultura Inicio -->
+                            <div class="section-economia-tecnologia section-cultura visible-xs">
+                                <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
+                                    <div class="wpb_wrapper">
+                                        <div class="td_block_wrap td_block_15 td_uid_7_5a9e8251eb6a2_rand td_with_ajax_pagination td-pb-border-top section-cultura">
+                                            <div class="block-title">
+                                                <span>Cultura</span>
+                                            </div>
+                                            <div class="td_block_inner td-column-2">
+                                                <?php $news_query_cultura = new WP_Query( array(
+                                                                                            'post_type' => 'post', 
+                                                                                            'post_status' => 'publish', 
+                                                                                            'posts_per_page' => 4,
+                                                                                            'cat' => 28) //Id categoría Cultura, get cat name
+                                                                                        );?>
+                                                <?php if($news_query_cultura->have_posts()) : ?>
+                                                    <div class="td-block-row">
+                                                        <?php while($news_query_cultura->have_posts()) : $news_query_cultura->the_post(); ?>
+                                                        <div class="td-block-span4">
+                                                            <div class="td_module_mx4 td_module_wrap td-animation-stack">
+                                                                <div class="td-module-image">
+                                                                    <div class="td-module-thumb">    
+                                                                        <?php 
+                                                                            $thumbIDCultura = get_post_thumbnail_id( $post->ID );
+                                                                            $imgDestacadaCultura = wp_get_attachment_image_src( $thumbIDCultura, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                                            $imgTitleCultura = get_the_title();
+                                                                            $urlNewsCultura = get_permalink();
+                                                                            echo '<a href="'. $urlNewsCultura .'" rel="bookmark" title="' .$imgTitleCultura.'"> <img width="218" height="150" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaCultura[0].'"
+                                                                                alt="" title="' .$imgTitleCultura.'"> </a>'
+                                                                        ?>
+                                                                    </div>
+                                                                    <?php 
+                                                                        // $categoryNameCultura = get_cat_name(28);
+                                                                        // $categoryUrlCultura = get_category_link(28);
+                                                                        // echo '<a href="' .$categoryUrlCultura. '" class="td-post-category category-cultura" >"'.$categoryNameCultura.'"</a>'
+                                                                    ?>
+                                                                </div>
+                                                                <h3 class="entry-title td-module-title">
+                                                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <?php endwhile; ?>
+                                                    </div>
+                                                    <?php endif; wp_reset_postdata(); ?>
+                                                    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section Cultura Fin -->
+                            <!-- Section Magazine Inicio -->
+                            <div class="section-magazine no-pb-grids wpb_column vc_column_container td-pb-span12 visible-xs">
+                                <div class="wpb_wrapper">
+                                    <div class="td_block_wrap td_block_text_with_title td_uid_11_5a9ecea73229a_rand td-pb-border-top">
+                                        <div class="block-title">
+                                            <span>Magazine</span>
+                                        </div>
+                                    </div>
+                                    <div class="td_block_wrap td_block_big_grid_2 td_uid_12_5a9ecea7334a8_rand td-grid-style-1 td-hover-1 td-pb-border-top">
+                                        <div class="td_block_inner">
+                                            <?php $news_query_magazine = new WP_Query( array(
+                                                                                        'post_type' => 'post', 
+                                                                                        'post_status' => 'publish', 
+                                                                                        'posts_per_page' => 4,
+                                                                                        'cat' => 22) //Id categoría Magazine, get cat name
+                                                                                    );?>
+                                            <?php if($news_query_magazine->have_posts()) : ?>
+                                                    <div class="td-big-grid-wrapper">
+                                                        <?php while($news_query_magazine->have_posts()) : $news_query_magazine->the_post(); ?>
+                                                        <div class="td-big-grid-scroll">
+                                                            <div class="td_module_mx10 td-animation-stack td-big-grid-post-1 td-big-grid-post td-small-thumb smallGrid2Gallery">
+                                                                <div class="td-module-thumb">    
+                                                                    <?php 
+                                                                        $thumbIDMagazine = get_post_thumbnail_id( $post->ID );
+                                                                        $imgDestacadaMagazine = wp_get_attachment_image_src( $thumbIDMagazine, 'thumbnail' ); // Thumbnail, medium, large, full
+                                                                        $imgTitleMagazine = get_the_title();
+                                                                        $urlNewsMagazine = get_permalink();
+                                                                        echo '<a href="'. $urlNewsMagazine .'" rel="bookmark" title="' .$imgTitleMagazine.'"> <img width="324" height="160" class="entry-thumb td-animation-stack-type0-1" src="'.$imgDestacadaMagazine[0].'"
+                                                                            alt="" title="' .$imgTitleMagazine.'"> </a>'
+                                                                    ?>
+                                                                </div>
+                                                                <div class="td-meta-info-container">
+                                                                    <div class="td-meta-align">
+                                                                        <div class="td-big-grid-meta">
+                                                                            <h3 class="entry-title td-module-title">
+                                                                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="td-default-sharing share_module_block share_module_mx10">
+                                                                    <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://localhost/wordpress/?p=314"
+                                                                        onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                                                                        <i class="td-icon-facebook"></i>
+                                                                    </a>
+
+                                                                    <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=Peligra+investigaci%C3%B3n+contra+Waldo+R%C3%ADos+y+donantes+por+mill%C3%B3n+de+soles&amp;url=http://localhost/wordpress/?p=314&amp;via=CNA"
+                                                                        onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
+                                                                        <i class="td-icon-twitter"></i>
+                                                                    </a>
+
+                                                                    <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=Peligra+investigaci%C3%B3n+contra+Waldo+R%C3%ADos+y+donantes+por+mill%C3%B3n+de+soles - http%3A%2F%2Flocalhost%2Fwordpress%2F%3Fp%3D314"
+                                                                        data-action="share/whatsapp/share">
+                                                                        <i class="td-icon-whatsapp"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <?php endwhile; ?>
+                                                    </div>
+                                            <?php endif; wp_reset_postdata(); ?>                
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section Magazine Fin -->
+                            <!-- Sidebar Contáctame -->
+                            <div class="visible-xs sidebar-contacte-cna">
+                                <?php dynamic_sidebar( 'sidebar-contacte-cna' ); ?>
+                            </div>
+                            <!-- Fin sidebar contáctame -->
                         </div>
                     </div>
                     <div class="td-pb-span4 td-main-sidebar fix-w-sidebar" role="complementary">
@@ -306,7 +594,6 @@ if(!empty($post->post_content)) { //show this only when we have content
     </div> <!-- /.td-pb-row -->
 </div> <!-- /.td-container -->
 </div> <!-- /.td-main-content-wrap -->
-
 <?php
 
 get_footer();

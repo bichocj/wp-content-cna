@@ -170,6 +170,39 @@ require_once('includes/api-try.php');
 //die;
 
 /* Adicion de recursos customizados para CNA*/
+function dcms_agregar_nueva_zona_widgets() {
+
+	register_sidebar( array(
+		'id'          => 'sidebar-mobile',
+		'name'        => __( 'Sidebar Mobile', $text_domain ),
+		'before_title'  => '',
+		'after_title'   => '',
+		'before_widget' => '',
+		'after_widget'  => '',
+	) );
+
+	register_sidebar( array(
+		'id'          => 'sidebar-mas-visto',
+		'name'        => __( 'Sidebar Lo Más Visto', $text_domain ),
+		'before_title'  => '<div class="block-title"><span>',
+		'after_title'   => '</span></div>',
+		'before_widget' => '<aside class="widget">',
+		'after_widget'  => '</aside>',
+	) );
+
+	register_sidebar( array(
+		'id'          => 'sidebar-contacte-cna',
+		'name'        => __( 'Sidebar Contacto', $text_domain ),
+		'before_title'  => '',
+		'after_title'   => '',
+		'before_widget' => '',
+		'after_widget'  => '',
+	) );
+	
+}
+
+add_action( 'widgets_init', 'dcms_agregar_nueva_zona_widgets' );
+
 function custom_cna_scripts() {
 	//
 	wp_enqueue_style( 'PT_Serif_font', 'https://fonts.googleapis.com/css?family=PT+Serif:400,700', false );
