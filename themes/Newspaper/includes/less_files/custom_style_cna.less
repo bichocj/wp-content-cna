@@ -1371,9 +1371,12 @@ p {
 		counter-reset: my-lastnews-counter;
 		list-style: none;
 		// background: @background_color_12;
-		padding: 0px 15px 0px 10px  !important;
+		padding: 0px 15px 0px 10px;
 		@media (min-width: 768px) and (max-width: 1018px) { //reswpcna
-			padding: 0px 12px 0px 3px  !important;
+			padding: 0px 12px 0px 3px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 0px 15px 0px 0px; 
 		}
 	}
 	li {
@@ -1438,6 +1441,9 @@ p {
 		img {
 			width: 100%;
 			height: 8vw;
+			@media (min-width: 1019px) and (max-width: 1359px) {
+				height: 7vw;
+			}
 			@media (min-width: 768px) and (max-width: 1018px) {
 				height: 6vw;
 			}	
