@@ -181,14 +181,14 @@ function dcms_agregar_nueva_zona_widgets() {
 		'after_widget'  => '',
 	) );
 
-	// register_sidebar( array(
-	// 	'id'          => 'sidebar-mas-visto',
-	// 	'name'        => __( 'Sidebar Lo Más Visto', $text_domain ),
-	// 	'before_title'  => '<div class="block-title"><span>',
-	// 	'after_title'   => '</span></div>',
-	// 	'before_widget' => '<aside class="widget">',
-	// 	'after_widget'  => '</aside>',
-	// ) );
+	register_sidebar( array(
+		'id'          => 'sidebar-mas-visto',
+		'name'        => __( 'Sidebar Lo Más Visto', $text_domain ),
+		'before_title'  => '<div class="block-title"><span>',
+		'after_title'   => '</span></div>',
+		'before_widget' => '<aside class="widget">',
+		'after_widget'  => '</aside>',
+	) );
 
 	register_sidebar( array(
 		'id'          => 'sidebar-contacte-cna',

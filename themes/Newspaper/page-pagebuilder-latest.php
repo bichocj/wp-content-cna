@@ -186,9 +186,9 @@ if(!empty($post->post_content)) { //show this only when we have content
 <?php } ?>
 
 <!-- Sidebar Lo mas Visto -->
-<!-- <div class="visible-xs widget-most-viewed">
-    <?php //dynamic_sidebar( 'sidebar-mas-visto' ); ?>
-</div> -->
+<div class="visible-xs widget-most-viewed">
+    <?php dynamic_sidebar( 'sidebar-mas-visto' ); ?>
+</div>
 <!-- Sidebar lo mas Visto end -->
 
 <!-- End social -->
