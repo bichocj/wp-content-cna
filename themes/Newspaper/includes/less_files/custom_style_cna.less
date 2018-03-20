@@ -749,19 +749,18 @@ p {
 	.container-tv-vivo { //row
 		margin: auto;
         padding-top: 50px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         background: url(../../uploads/2018/02/bg-cna-en-vivo-tapiz3.jpg) no-repeat;
 		background-size: cover;
         background-position: center center;
 		background-color: #e84735;
 		// Inicio - Responsive de las columnas
-		@media (min-width: 1141px) and (max-width: 1360px) {
+		@media (min-width: 1141px) and (max-width: 1359px) {
 			padding-top: 40px;
-			padding-bottom: 25px;
 		}
 		@media (min-width: 1019px) and (max-width: 1140px) {
 			padding-top: 30px;
-			padding-bottom: 20px; 
+			padding-bottom: 16px; 
 		}
 		@media (min-width: 768px) and (max-width: 1018px) { 
 			margin-bottom: @space_2 !important;
@@ -801,7 +800,15 @@ p {
 					height: 345px;
 				}
 				@media (min-width: 768px) and (max-width: 1018px) {
-					height: 255px !important;
+					height: 262px !important;
+				}
+			}
+			.td-trending-now-wrapper {
+				@media (min-width: 1019px) and (max-width: 1140px) {
+					margin-bottom: 0px;
+				}
+				@media (min-width: 768px) and (max-width: 1018px) {
+					height: 33px;
 				}
 			}
 			.td-trending-now-title {
@@ -813,14 +820,16 @@ p {
 				}
 				@media (min-width: 768px) and (max-width: 1018px) {
 					padding: 2px 10px;
-					font-size: 16px;
+					font-size: 14px;
+					line-height: 31px;
 				}
 			}
 			.td-trending-now-post {
 				.entry-title {
 					font-size: 18px;
 					@media (min-width: 768px) and (max-width: 1018px) {
-						font-size: 16px;
+						font-size: 14px;
+						line-height: 21px;
 					}
 				}
 			}
@@ -862,7 +871,7 @@ p {
 	.wpb_raw_code {
 		// margin-bottom: @space_1;
 		@media (min-width: 768px) and (max-width: 1018px) {
-			margin-bottom: @space_2 !important;
+			margin-bottom: 10px !important;
 		}
 	}
 }
