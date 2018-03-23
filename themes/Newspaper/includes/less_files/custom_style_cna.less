@@ -1454,21 +1454,32 @@ p {
 		width: 50%;
 		float: left;
 		width: 38%;
+		overflow: hidden;
+		height: 5vw;
+		@media (min-width: 1019px ) and (max-width: 1140px) {
+			height: 6px;
+		}
+		@media (min-width: 768px) and (max-width: 1018px) {
+			height: auto;
+		}
+		@media (max-width: 767px) {
+			height: 16vw;
+		}
 		img {
 			width: 100%;
-			height: 8vw;
-			@media (min-width: 1019px) and (max-width: 1359px) {
-				height: 7vw;
-			}
-			@media (min-width: 768px) and (max-width: 1018px) {
-				height: 6vw;
-			}	
-			@media (min-width: 401px) and (max-width: 767px) {
-				height: 33vw;
-			}
-			@media screen and (max-width: 400px) {
-				height: auto;
-			}
+			// height: 8vw;
+			// @media (min-width: 1019px) and (max-width: 1359px) {
+			// 	height: 7vw;
+			// }
+			// @media (min-width: 768px) and (max-width: 1018px) {
+			// 	height: 6vw;
+			// }	
+			// @media (min-width: 401px) and (max-width: 767px) {
+			// 	height: 33vw;
+			// }
+			// @media screen and (max-width: 400px) {
+			// 	height: auto;
+			// }
 		}
 	}
 	.nTitle {
@@ -1480,33 +1491,23 @@ p {
 			padding-left: 10px;
 		}
 		a {
-			display: block;
-			// -webkit-box-orient: vertical;
-			// text-overflow: ellipsis;
-			// overflow: hidden;
-			height: auto;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			-webkit-line-clamp: 3;
 			color: @color_9;
 			font-family: @font6;
-			font-size: 16px;
-			line-height: 18px;
-			// @media (min-width: 1360px) {
-			// 	-webkit-line-clamp: 5;
-			// }
-			// @media (min-width:1141px) and (max-width: 1359px) {
-			// 	-webkit-line-clamp: 5;
-			// }
-			// @media (min-width:1019px) and (max-width: 1140px) {
-			// 	-webkit-line-clamp: 4;
-			// }
+			font-size: 20px;
+			line-height: 22px;
 			@media (min-width: 768px) and (max-width: 1018px) {
 				font-size: 15px;
-				// padding-left: 10px;
-				// -webkit-line-clamp: 3;
+				line-height: 1.15;
 			}
-			// @media screen and (max-width: 767px) {
-			// 	font-size: 14px;
-			// 	-webkit-line-clamp: 5;
-			// }
+			@media (max-width: 767px) {
+				font-size: 17px;
+				line-height: 20px;
+			}
 		}
 		&:hover {
 			a {
