@@ -452,11 +452,21 @@ img {
 
 .section-economia-tecnologia {
   .td_module_6 {
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
       .td-module-thumb {
         &::after {
           content: url(images/custom/loading-cna2.png) !important;
         }
+      }
+    }
+  }
+}
+
+.td_mod_related_posts {
+  @media (max-width: 767px) {
+    .td-module-thumb {
+      &::after {
+        content: url(images/custom/loading-cna3.png) !important;
       }
     }
   }
