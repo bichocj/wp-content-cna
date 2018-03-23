@@ -1347,11 +1347,9 @@ p {
 			background-position-y: 50%;
 			border-radius: 35px;
 			background-repeat: no-repeat;
-			left: 42%;
+			left: 50%;
 			top: 0px;
-			@media (min-width: 768px) and (max-width: 1018px) {
-				left: 35%;
-			}
+			transform: translateX(-50%)
 		}
 	}
 	.list-widget-mostview {
@@ -1367,9 +1365,18 @@ p {
 			margin-top: 20px;
 			text-align: center;
 			text-size-adjust: 100%;
-			padding: 42px 25% 0px;
-			@media (min-width: 768px) and (max-width: 1018px) {
+			padding: 42px 20% 0px;
+			@media (min-width: 1141px) and (max-width: 1360px) {
 				padding: 42px 15% 0px;
+			}
+			@media (min-width: 1019px) and (max-width: 1140px) {
+				padding: 42px 10% 0px;
+			}
+			@media (min-width: 768px) and (max-width: 1018px) {
+				padding: 42px 0% 0px;
+			}
+			@media (max-width: 767px) {
+				padding: 42px 0% 0px;
 			}
 		}
 	}
