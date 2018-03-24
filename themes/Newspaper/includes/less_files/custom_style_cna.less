@@ -2859,12 +2859,19 @@ div[class*="post-template-cna"] {
 }
 //Trending bar dentro d header Block Top
 #trendingNews {
+	@media screen and (max-width: 767px) {
+		position: relative;
+	}
 	.trending-now-header {
+		@media screen and (max-width: 767px) {
+			position: absolute;
+			width: 100%;
+		}
 		.td-container {
 			@media (min-width: 1360px) {
 				padding-left: 103px;
 			}
-			@media (max-width: 767px) {
+			@media screen and (max-width: 767px) {
 				padding: 0;
 				margin: 0;
 			}
@@ -4800,6 +4807,7 @@ div.cb-657545417432 {
 }
 @media (max-width: 767px) {
 	.wpcna-first-new { //reswpcna
+		margin-top: 105px;
 		margin-bottom: @space_grid;
 		.wpb_wrapper {
 			&:first-child {
