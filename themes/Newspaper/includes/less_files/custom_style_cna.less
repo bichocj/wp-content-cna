@@ -1553,9 +1553,32 @@ p {
 		width: 24.6%;
 		position: relative;
 		margin: 0 0 0 .5%;
-		padding: 10px 20px 15px;
+		// padding: 10px 20px 15px;
 		display: list-item;
-
+		&::before {
+			content: counter(my-lastnews-counter);
+			counter-increment: my-lastnews-counter;
+			position: absolute;
+			top: 68%; //first style
+			left: 25px; //first style wpcna
+			font-size: 42px; //first style
+			color: @color_1;
+			@media (min-width: 1360px) {
+				top: 66%;
+			}
+			@media (min-width: 1141px) and (max-width: 1359px) {
+				left: 25px;
+				top: 64%;
+			}
+			@media (min-width: 1019px) and (max-width: 1140px) {
+				top: 65%;
+				left: 25px;
+			}
+			@media (max-width: 1018px) {
+				left: 15px;
+				top: 65%;
+			}
+		}
 		@media (max-width: 1018px) {
 			width: 24.6%;
 			font-size: 13px;
@@ -1597,63 +1620,71 @@ p {
 			}
 		}
 	}
+	.nWrapper {
+		height: 150px;
+		margin-bottom: 0;
+		overflow: hidden;
+		position: relative;
+		.entry-thumb {
+			height: 16vw;
+			width: auto;
+			max-width: initial;
+			min-width: 100%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+	}
 	.nTitle {
 		display: block;
 		float: right; //first style
 		width: 85%; //first style
-		overflow: hidden;
-		padding: 25px 15px 15px 5px; //first style
-		font-size: 20px; //first style
-		color: @color_1;
-		line-height: 22px; //first style
-		// //Truncate
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		text-overflow: ellipsis;
-		// height: auto;
-		&::before {
-			content: counter(my-lastnews-counter);
-			counter-increment: my-lastnews-counter;
-			position: absolute;
-			top: 25%; //first style
-			left: 25px; //first style wpcna
-			font-size: 42px; //first style
-			color: @color_1;
-			@media (max-width: 1018px) {
-				left: 15px;
-			}
-		}
+		// padding: 25px 15px 15px 15px; //first style
+		position: relative;
+		padding-top: 13px;
 		@media (min-width: 1360px) {
-			height: 100px;
-			padding-top: 13px;
-			-webkit-line-clamp: 4;
+			height: 125px;
+			padding: 23px 30px 30px 25px;
 		}
 		@media (min-width:1141px) and (max-width: 1359px) {
-			height: 132px;
-			-webkit-line-clamp: 4;
+			height: 155px;
+			padding: 35px 30px 30px 25px; 
 		}
 		@media (min-width:1019px) and (max-width: 1140px) {
-			height: 128px;
-			-webkit-line-clamp: 4;
+			padding: 35px 35px 30px 25px;
 		}
 		@media (min-width:768px) and (max-width: 1018px) {
-			height: 105px;
-			-webkit-line-clamp: 4;
-			padding-top: 13px;
-			font-size: 18px;
-			padding-bottom: 20px;
-		}
-		@media (max-width: 767px) { //reswpcna
-			-webkit-line-clamp: unset;
-			width: 100%;
-			display: block;
-			height: auto;
-			padding-left: 15px;
-			line-height: 1.15;
-			padding-top: 25px;
+			padding: 23px 20px 25px 20px;
 		}
 		a {
 			color: @color_1;
+			display: -webkit-box;
+			overflow: hidden;
+			font-size: 20px; //first style
+			line-height: 22px; //first style
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 4;
+			@media (min-width:768px) and (max-width: 1018px) {
+				font-size: 18px;
+			}
+			@media (min-width:1019px) and (max-width: 1140px) {
+				height: 88px;
+			}
+			@media (max-width: 1018px) {
+				height: 90px;
+			}
+			@media (max-width: 767px) { //reswpcna
+				-webkit-line-clamp: unset;
+				width: 100%;
+				display: block;
+				height: auto;
+				padding-left: 15px;
+				line-height: 1.15;
+				padding-top: 25px;
+			}
 		}
 
 	}

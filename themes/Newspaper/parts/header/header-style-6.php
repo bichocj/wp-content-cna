@@ -33,7 +33,7 @@ Header style 6 - CNA
 
     <?php // If is home
         if (is_home() || is_front_page()) { ?>
-        <div class="headerBlockTop"
+        <div class="headerBlockTop">
             <!-- Trending News -->
             <div id="trendingNews" class="td_block_trending_now">
                 <div class="td-trending-now-wrapper trending-now-header" id="td_uid_2_5a543d4bd7620" data-start="">
