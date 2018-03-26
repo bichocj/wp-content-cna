@@ -43,7 +43,7 @@
 @background_color_18: #dd3333;
 @background_color_19: #CDCDCD;
 @background_color_20: #e9e9e9;
-@background_color_21: #dfd0d2; //Color Sacado de Hola.com para responsive
+@background_color_21: #dfd0d2; //Color Sacado de Hola.com para responsive 
 @background_weather: #abf2b3;
 @background_economia: #2980b9;
 @background_tecnologia: #ff6400;
@@ -52,7 +52,7 @@
 @background_magazine_responsive: #8e44ad;
 @background_whatsapp: #009c3b;
 @background_facebook: #516eab;
-@background_videos: #e6dedb;
+@background_videos: #dfd0d2;
 
 @font1:'Open Sans', arial, sans-serif;
 @font2: Verdana, Geneva, sans-serif;
@@ -1704,11 +1704,17 @@ p {
 /* CNA Videos*/	
 .section-cna-videos {
 	background-color: @background_videos;
+	margin-bottom: @space_1;
+	border-bottom: 7px solid @color_8;
+	@media screen and (max-width: 1018px) {
+		margin-bottom: @space_2;
+	}
 	.block-title {
 		border-color: @color_video_cna;
 		text-transform: uppercase;
 		text-align: center;
 		font-size: 17px;
+		// margin-bottom: 20px;
 		> span {
 			display: block;
 			background-color: @color_video_cna;
@@ -1719,46 +1725,11 @@ p {
 }
 
 #CNA_videos {
-	margin-bottom: @space_1; 
-	margin-top: -22px; 
-	padding: 0px 10px;
-	@media (min-width:768px) and (max-width: 1018px) {
-		margin-bottom: @space_2;
-		margin-top: -9px; 
+	margin-top: -26px; 
+	padding: 20px;
+	@media screen and (max-width: 1018px) {
+		margin-top: -13px; 
 	}
-	@media (max-width: 767px) {
-		margin-bottom: @space_2; 
-		margin-top: -9px;
-	}
-
-	// .video-grid-wrapper {
-	// 	h2  {
-	// 		margin-top: 0;
-	// 		margin-bottom: 10px;
-	// 		font-size: 17px;
-	// 		border-bottom: 1px dotted #454556;
-	// 		text-transform: uppercase;
-	// 		line-height: 1.6;
-	// 		> span {
-	// 			background-color: #2E2E3A;
-	// 			color: white;
-	// 			padding: 5px 10px 5px 30px;
-	// 			position: relative;
-	// 			> span {
-	// 				display: inline-block;
-	// 				position: absolute;
-	// 				left: 0;
-	// 				top: 0;
-	// 				width: 20px;
-	// 				height: 30px;
-	// 				background-color: rgba(255, 255, 255, 0.2);
-	// 			}
-	// 		}
-	// 		@media screen and (max-width: 767px) {
-	// 			font-size: 14px;
-	// 		}
-	// 	}
-	// }
 
 	// Efectos Hover
 	[class*="video_module_"] {
@@ -1802,15 +1773,6 @@ p {
 		}
 	}
 	.video-grid-scroll {
-		// margin: auto -8px;
-		padding: 5px 0 0;
-		// @media screen and (max-width: 992px) {
-		// 	white-space: nowrap;
-		// 	overflow-y: hidden;
-		// 	overflow-x: hidden;
-		// 	margin: 0;
-		// 	padding-bottom: 15px;
-		// }
 		.video_module_small {
 			float: left;
 			width: 25%;
@@ -1881,14 +1843,13 @@ p {
 				}
 				//Truncate
 				> a {
-					height: 54px;
+					height: 34px;
 					overflow: hidden;
 					display: -webkit-box;
-					-webkit-line-clamp: 3;
+					-webkit-line-clamp: 2;
 					-webkit-box-orient: vertical;
 					text-overflow: ellipsis;
 					@media screen and (max-width: 767px) {
-						// display: block; //responsive reswpcna
 						height: auto;
 						-webkit-line-clamp: 2;
 					}
@@ -1938,15 +1899,16 @@ p {
 				bottom: 0;
 				left: 0;
 				width: 55px;
-				border: none;
-				padding: 0;
+				border: 1px solid rgba(255, 255, 255, 0.9);;
+				padding: 5px;
 			}
 		}
 		.video-meta-container {
 			.entry-title {
 				margin:  0;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 1.3;
+				text-align: center;
 				@media screen and (min-width: 1019px) {
 					a {
 						overflow-y: hidden;
@@ -2002,12 +1964,6 @@ p {
 					padding: 10px;
 					opacity: 1;
 				}
-				&:hover {
-					&::before {
-						// transform: none;
-						// -webkit-transform: none;
-					}
-				}
 			}
 			.disabled {
 				display: block !important;
@@ -2034,7 +1990,6 @@ p {
 
 /* Icono Video  - Magazine */
 // Cambiando posicion de icono play de videos
-// 
 .td-video-play-ico {
 	> img {
 		top: 5px;
