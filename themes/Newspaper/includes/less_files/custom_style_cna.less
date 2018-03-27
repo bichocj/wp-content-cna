@@ -1456,26 +1456,27 @@ p {
 	}
 	.nImage {
 		display: block;
-		width: 50%;
 		float: left;
 		width: 38%;
 		overflow: hidden;
-		height: 5vw;
-		@media (min-width: 1019px ) and (max-width: 1140px) {
-			height: 6vw;
-		}
-		@media (min-width: 768px) and (max-width: 1018px) {
-			height: auto;
-		}
 		@media (max-width: 767px) {
-			height: 16vw;
+			height: 23vw;
 		}
 		img {
 			width: 100%;
-			// height: 8vw;
-			// @media (min-width: 1019px) and (max-width: 1359px) {
-			// 	height: 7vw;
-			// }
+			height: 7vw;
+			@media (min-width: 1141px) and (max-width: 1359px) {
+				height: 8vw;
+			}
+			@media (min-width: 1019px ) and (max-width: 1140px) {
+				height: 9vw;
+			}
+			@media (min-width: 768px) and (max-width: 1018px) {
+				height: 8.5vw;	
+			}
+			@media screen and (max-width: 767px) {
+				height: auto;	
+			}
 			// @media (min-width: 768px) and (max-width: 1018px) {
 			// 	height: 6vw;
 			// }	
@@ -1491,7 +1492,7 @@ p {
 		float: left;
 		width: 62%;
 		padding-left: 15px;
-		line-height: 1.35;
+		line-height: 1.15;
 		@media (min-width: 767px) and (max-width: 1018px) {
 			padding-left: 10px;
 		}
@@ -1500,7 +1501,7 @@ p {
 			-webkit-box-orient: vertical;
 			text-overflow: ellipsis;
 			overflow: hidden;
-			-webkit-line-clamp: 3;
+			-webkit-line-clamp: 4;
 			color: @color_9;
 			font-family: @font6;
 			font-size: 20px;
@@ -1510,7 +1511,7 @@ p {
 				line-height: 1.15;
 			}
 			@media (max-width: 767px) {
-				font-size: 17px;
+				font-size: 19px;
 				line-height: 20px;
 			}
 		}
