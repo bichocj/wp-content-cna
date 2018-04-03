@@ -1729,6 +1729,9 @@ p {
 	@media (min-width: 768px) {
 		padding-bottom: 0px; 
 	}
+	@media screen and (max-width: 767px) {
+		padding-bottom: 5px;
+	}
 	// Efectos Hover
 	[class*="video_module_"] {
 		a.wrap-thumb {
@@ -1917,9 +1920,11 @@ p {
 						text-align: center;
 					}
 					min-height: 51px;
+					margin-bottom: 5px;
 				}
 				@media screen and (max-width: 767px) {
 					line-height: 1.15;
+					min-height: 43px;
 					a {
 						font-size: 17px;
 						overflow-y: hidden;
