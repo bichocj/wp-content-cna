@@ -31,6 +31,7 @@ jQuery(document).ready(function () {
     // Delete Hours
     deleteHours(document.getElementsByClassName("wpcna-polls-dates"), 'Resultados: No Expiry', "@", "Encuesta Vigente");
     addIframe();
+    addIframeNews();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -124,7 +125,15 @@ function addIframe () {
         jQuery('.cnavivo-mobile').hide();
         jQuery('.cnaenvivo-icon').hide();
         jQuery('#cnaenvivo-fullcontainer').append('<div class="iframe-preloader"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet"></iframe></div>')
+    })
+}
 
+function addIframeNews () {
+    jQuery('.cnaenvivo-icon-news').click(function() {
+        console.log('iconClicked');
+        jQuery('.cnavivo-mobile').hide();
+        jQuery('.cnaenvivo-icon-news').hide();
+        jQuery('#cnaenvivo-fullcontainer-news').append('<div class="iframe-preloader"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet"></iframe></div>')
     })
 }
 
