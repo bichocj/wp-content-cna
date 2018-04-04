@@ -133,7 +133,7 @@ function addIframeNews () {
         console.log('iconClicked');
         jQuery('.cnavivo-mobile').hide();
         jQuery('.cnaenvivo-icon-news').hide();
-        jQuery('#cnaenvivo-fullcontainer-news').append('<div class="iframe-preloader"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet"></iframe></div>')
+        jQuery('#cnaenvivo-fullcontainer-news').append('<div class="iframe-preloader" width="1240px" height="1000px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet"></iframe></div>')
     })
 }
 

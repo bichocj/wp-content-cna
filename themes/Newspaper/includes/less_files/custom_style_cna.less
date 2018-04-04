@@ -5326,7 +5326,6 @@ div.cb-657545417432 {
 	position: relative;
 	.cnavivo-mobile {
 		width: 100%;
-		height: 16vw;
 		margin-bottom: 13px;
 		.vc_single_image-wrapper {
 			display: block !important;
@@ -5337,15 +5336,6 @@ div.cb-657545417432 {
 			img {
 				width: 100%;
 			}
-		}
-		@media (max-width: 1140px) {
-			height: 14.6vw;
-		}
-		@media (min-width: 768px) and (max-width: 1018px) {
-			height: 14.6vw;
-		}
-		@media screen and (max-width: 767px) {
-			height: 53vw;
 		}
 	}
 	.cnaenvivo-icon-news {
@@ -5364,25 +5354,11 @@ div.cb-657545417432 {
 		.iframe-preloader {
 			background: black;
 			width: 100%;
-			height: 16vw;
-			@media (max-width: 1140px) {
-				height: 14.6vw;
-			}
-			@media screen and (max-width: 767px) {
-				height: 54.3vw;
-			}
 			iframe {
 				width: 100%;
-				height: 16vw;
 				border: none;
 				position: relative;
 				z-index: 2;
-				@media (max-width: 1140px) {
-					height: 14.6vw;
-				}
-				@media screen and (max-width: 767px) {
-					height: 54.6vw;				
-				}
 			}
 			.lds-ring {
 				display: inline-block;
@@ -5422,6 +5398,22 @@ div.cb-657545417432 {
 					transform: rotate(360deg);
 				}
 			}
+		}
+	}
+	// Fix a tamaño de imagen, precarga, y video
+	.cnavivo-mobile, .iframe-preloader, iframe {
+		height: 213px;
+		@media (min-width: 1141px) and (max-width: 1359px) {
+			height: 180px;
+		}
+		@media (min-width: 1019px) and (max-width: 1140px) {
+			height: 169px;
+		}
+		@media (min-width: 768px) and (max-width: 1018px) {
+			height: 128px;
+		}
+		@media screen and (max-width: 767px) {
+			height: 56.2vw;
 		}
 	}
 }
