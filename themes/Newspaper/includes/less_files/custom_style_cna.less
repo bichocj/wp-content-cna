@@ -1339,7 +1339,6 @@ p {
 		&::before {
 			content: "";
 			background-image: url(../../uploads/2018/03/ico_megafono.png);
-			// C:\xampp\htdocs\wordpress\wp-content\themes\Newspaper\images\custom\ico_megafono.png
 			background-size: 50%;
 			background-color: @background_color_12;
 			background-size: 50%;
@@ -1354,7 +1353,14 @@ p {
 			background-repeat: no-repeat;
 			left: 50%;
 			top: 0px;
-			transform: translateX(-50%)
+			transform: translateX(-50%);
+			@media (min-width: 768px) and (max-width: 1018px) {
+				height: 60px;
+				width: 60px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 1018px) {
+			padding: 10px 15px 15px;
 		}
 	}
 	.list-widget-mostview {
@@ -1379,6 +1385,7 @@ p {
 			}
 			@media (min-width: 768px) and (max-width: 1018px) {
 				padding: 42px 0% 0px;
+				font-size: 18px;
 			}
 			@media (max-width: 767px) {
 				padding: 42px 0% 0px;
