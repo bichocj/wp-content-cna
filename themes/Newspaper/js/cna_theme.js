@@ -129,3 +129,10 @@ function addIframeNews () {
         jQuery('#cnaenvivo-fullcontainer-news').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
     })
 }
+function changeHandler() {
+    screen.orientation.lock('landscape');
+ }
+ 
+document.addEventListener("fullscreenchange", changeHandler);
+document.addEventListener("webkitfullscreenchange", changeHandler);
+document.addEventListener("mozfullscreenchange", changeHandler);
