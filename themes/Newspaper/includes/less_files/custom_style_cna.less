@@ -5340,7 +5340,7 @@ div.cb-657545417432 {
 	}
 }
 
-// CNA en vivo NOTICIA
+// CNA en vivo dentro de una NOTICIA
 .wrapper-cnaenvivo-news {
 	position: relative;
 	.cnavivo-mobile {
@@ -5431,10 +5431,15 @@ div.cb-657545417432 {
 		@media (min-width: 768px) and (max-width: 1018px) {
 			height: 128px;
 		}
-		@media screen and (max-width: 767px) {
+		@media (min-width: 510px) and (max-width: 767px) {
 			height: 54.2vw;
 		}
-
+		@media (min-width: 425px) and (max-width: 509px) {
+			height: 52.4vw;
+		}
+		@media screen and (max-width: 424px) {
+			height: 52.5vw;
+		}
 	}
 }
 
