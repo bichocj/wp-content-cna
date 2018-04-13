@@ -58,10 +58,6 @@ jQuery(document).ready(function () {
 
 function deleteHours(dates, element, point, replace) {
     var dates = dates;
-    console.log("deleteHours");
-    console.log(dates);
-    console.log(dates.length);
-
     var text = "";
     var index = 0;
     if (dates.length > 0) {
@@ -72,7 +68,6 @@ function deleteHours(dates, element, point, replace) {
                 dates[i].innerHTML = text.slice(0, index);
             } else {
                 dates[i].innerHTML = replace;
-                console.log("else");
             }
         }
     }
