@@ -26,8 +26,12 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
         ?>
     </div>
     <div class="thisCNATVWrap">
-        <div class="textSub">Televisión en vivo</div>
-        <a href="#" class="thisCNATV" title="CNA en vivo">
+        <div class="textSub">
+            <a href="http://cna.atixplus.com/?page_id=910" title="CNA en vivo" target="_blank">
+                Televisión en vivo
+            </a>
+        </div>
+        <a href="#sectionCnaEnVivo" class="thisCNATV" title="CNA en vivo">
         </a>
     </div>
 </div>
