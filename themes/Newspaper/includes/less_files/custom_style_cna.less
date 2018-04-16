@@ -3279,7 +3279,7 @@ div[class*="post-template-cna"] {
 				height: 682px !important;
 				width: 100%;
 				@media (min-width:1019px) and (max-width: 1359px) {
-					height: 510px !important;
+					height: 544px !important;
 				}
 				@media (min-width:768px) and (max-width: 1018px) {
 					height: 446px !important;
@@ -3377,7 +3377,7 @@ div[class*="post-template-cna"] {
 					width: 100%;
 					height: 380px;
 					@media (min-width: 1360px) {
-						height: 383px;
+						height: 360px;
 					}
 					@media (min-width:1019px) and (max-width: 1359px) {
 						height: 204px;
@@ -3405,24 +3405,24 @@ div[class*="post-template-cna"] {
 				}
 				.entry-title {
 					font-size: 28px;
-					line-height: 1;
-					height: 87px;
+					line-height: 1.15;
+					height: 65px;
 					margin-bottom: 0;
 					overflow: hidden;
 					//Elipsis
 					display: -webkit-box;
-					-webkit-line-clamp: 3;
+					-webkit-line-clamp: 2;
 					-webkit-box-orient: vertical;
-					@media (min-width:1141px) and (max-width: 1359px) {
-						font-size: 23px;
-						line-height: 1.1;
-						height: 76px;
-					}
-					@media (min-width:1019px) and (max-width: 1140px) {
-						font-size: 23px;
-						line-height: 1.1;
-						height: 76px;
-					}
+					// @media (min-width:1141px) and (max-width: 1359px) {
+					// 	font-size: 23px;
+					// 	line-height: 1.1;
+					// 	height: 76px;
+					// }
+					// @media (min-width:1019px) and (max-width: 1140px) {
+					// 	font-size: 23px;
+					// 	line-height: 1.1;
+					// 	height: 76px;
+					// }
 					@media (min-width:768px) and (max-width: 1018px) {
 						font-size: 19px;
 						height: 67px;
@@ -3433,26 +3433,26 @@ div[class*="post-template-cna"] {
 					}
 				}
 				.myExcerpt {
-					display: none;
-					// display: block;
-					// width: 100%;
-					// white-space: normal;
-					// font-size: 16px;
-					// font-weight: 600;
-					// color: @color_1;
-					// margin: 0;
-					// height: 45px;
-					// overflow: hidden;
-					// //Elipsis
-					// display: -webkit-box;
-					// -webkit-line-clamp: 2;
-					// -webkit-box-orient: vertical;
-					// @media (min-width:768px) and (max-width: 1359px) {
-					// 	font-weight: 100;
-					// }
-					// @media (min-width:768px) and (max-width: 1018px) {
-					// 	line-height: 22.4px;
-					// }
+					display: block;
+					width: 100%;
+					white-space: normal;
+					font-size: 16px;
+					font-weight: 600;
+					color: @color_1;
+					margin: 0;
+					height: 45px;
+					overflow: hidden;
+					//Elipsis
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+					@media (min-width:1019px) and (max-width: 1359px) {
+						font-weight: 100;
+					}
+					@media (min-width:768px) and (max-width: 1018px) {
+						// line-height: 22.4px;
+						display: none;
+					}
 
 				}
 			}
