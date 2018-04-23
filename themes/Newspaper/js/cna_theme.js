@@ -32,6 +32,7 @@ jQuery(document).ready(function () {
     deleteHours(document.getElementsByClassName("wpcna-polls-dates"), 'Resultados: No Expiry', "@", "Encuesta Vigente");
     addIframe();
     addIframeNews();
+    displayIframe();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -118,7 +119,7 @@ function addIframe () {
     jQuery('.cnaenvivo-icon').click(function() {
         jQuery('.cnavivo-mobile').hide();
         jQuery('.cnaenvivo-icon').hide();
-        jQuery('#cnaenvivo-fullcontainer').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
+        jQuery('#cnaenvivo-fullcontainer').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe onload="removePreloader()" src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
     })
 }
 
@@ -129,9 +130,18 @@ function addIframeNews () {
         jQuery('#cnaenvivo-fullcontainer-news').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
     })
 }
+
 function changeHandler() {
     screen.orientation.lock('landscape');
- }
+}
+
+function displayIframe() {
+    if ( jQuery(window).width() < 600) {
+        jQuery('.textSub').click(function() {
+            jQuery('body').append('<div id="cnaenvivo-mobile"><div style="color:white">ESCAPE</div><iframe src="http://iblups.com/e_cnapet" style="top:0px; left:0px; position:fixed; z-index:999990" width="100%" height="100%"  frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
+        })
+    }
+}
  
 document.addEventListener("fullscreenchange", changeHandler);
 document.addEventListener("webkitfullscreenchange", changeHandler);
