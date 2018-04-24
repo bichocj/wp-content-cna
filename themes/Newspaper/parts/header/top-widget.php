@@ -29,8 +29,12 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
         <div class="textSub">
             Televisión en vivo
         </div>
-        <a href="#sectionCnaEnVivo" class="thisCNATV" title="CNA en vivo">
-        </a>
+        <div>
+            <a href="#sectionCnaEnVivo" class="thisCNATV" title="CNA en vivo">
+                En vivo
+                <span class="en-vivo-trending"><img src="http://cna.atixplus.com/wp-content/uploads/2018/03/en-vivo.gif" alt="en-vivo"></span>
+            </a>
+        </div>
     </div>
 </div>
 <?php
