@@ -13,7 +13,7 @@
 jQuery(document).ready(function () {
     // Delete Hours
     deleteHours(document.getElementsByClassName("wpcna-polls-dates"), 'Resultados: No Expiry', "@", "Encuesta Vigente");
-    addIframe();
+    // addIframe();
     // addIframeNews();
     displayIframe();
     // Resize plugin de Facebook
@@ -98,13 +98,13 @@ jQuery(function () {
 });
 
 //Add iframe
-function addIframe () {
-    jQuery('.cnaenvivo-icon').click(function() {
-        jQuery('.cnavivo-mobile').hide();
-        jQuery('.cnaenvivo-icon').hide();
-        jQuery('#cnaenvivo-fullcontainer').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe onload="removePreloader()" src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
-    })
-}
+// function addIframe () {
+//     jQuery('.cnaenvivo-icon').click(function() {
+//         jQuery('.cnavivo-mobile').hide();
+//         jQuery('.cnaenvivo-icon').hide();
+//         jQuery('#cnaenvivo-fullcontainer').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe onload="removePreloader()" src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
+//     })
+// }
 
 // function addIframeNews () {
 //     jQuery('.cnaenvivo-icon-news').click(function() {
