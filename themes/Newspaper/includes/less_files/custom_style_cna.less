@@ -5296,7 +5296,6 @@ div.cb-657545417432 {
 				width: 100%;
 				border: none;
 				position: relative;
-				
 				height: 53.2vw;
 			}
 			.lds-ring {
@@ -5345,101 +5344,128 @@ div.cb-657545417432 {
 
 
 // CNA en vivo dentro de una NOTICIA
-.wrapper-cnaenvivo-news {
-	position: relative;
-	.cnavivo-mobile {
-		width: 100%;
-		margin-bottom: 13px;
-		.vc_single_image-wrapper {
-			display: block !important;
-		}
-		.vc_figure {
-			max-width: initial;
-			width: 100%;
-			img {
-				width: 100%;
-			}
-		}
-	}
-	.cnaenvivo-icon-news {
-		position: absolute;
-		z-index: 1;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		transform: translate(-50%,-50%);
-		margin: 0px;
-		width: 10% !important; 
-		border: 1px solid white;
-		padding: 3px;
-	}
-	#cnaenvivo-fullcontainer-news {
-		.iframe-preloader {
-			background: black;
-			width: 100%;
-			iframe {
-				width: 100%;
-				border: none;
-				position: relative;
+// .wrapper-cnaenvivo-news {
+// 	position: relative;
+// 	.cnavivo-mobile {
+// 		width: 100%;
+// 		margin-bottom: 13px;
+// 		.vc_single_image-wrapper {
+// 			display: block !important;
+// 		}
+// 		.vc_figure {
+// 			max-width: initial;
+// 			width: 100%;
+// 			img {
+// 				width: 100%;
+// 			}
+// 		}
+// 	}
+// 	.cnaenvivo-icon-news {
+// 		position: absolute;
+// 		z-index: 1;
+// 		top: 50%;
+// 		left: 50%;
+// 		-webkit-transform: translateX(-50%);
+// 		transform: translate(-50%,-50%);
+// 		margin: 0px;
+// 		width: 10% !important; 
+// 		border: 1px solid white;
+// 		padding: 3px;
+// 	}
+// 	#cnaenvivo-fullcontainer-news {
+		
+// 		// .iframe-preloader {
+// 		// 	background: black;
+// 		// 	width: 100%;
+// 		// 	iframe {
+// 		// 		width: 100%;
+// 		// 		border: none;
+// 		// 		position: relative;
 				
-			}
-			.lds-ring {
-				display: inline-block;
-				position: absolute;
-				width: 64px;
-				height: 64px;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			.lds-ring div {
-				box-sizing: border-box;
-				display: block;
-				position: absolute;
-				width: 51px;
-				height: 51px;
-				margin: 6px;
-				border: 6px solid #fff;
-				border-radius: 50%;
-				animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-				border-color: #fff transparent transparent transparent;
-			}
-			.lds-ring div:nth-child(1) {
-				animation-delay: -0.45s;
-			}
-			.lds-ring div:nth-child(2) {
-				animation-delay: -0.3s;
-			}
-			.lds-ring div:nth-child(3) {
-				animation-delay: -0.15s;
-			}
-			@keyframes lds-ring {
-				0% {
-					transform: rotate(0deg);
-				}
-				100% {
-					transform: rotate(360deg);
-				}
-			}
+// 		// 	}
+// 		// 	.lds-ring {
+// 		// 		display: inline-block;
+// 		// 		position: absolute;
+// 		// 		width: 64px;
+// 		// 		height: 64px;
+// 		// 		top: 50%;
+// 		// 		left: 50%;
+// 		// 		transform: translate(-50%, -50%);
+// 		// 	}
+// 		// 	.lds-ring div {
+// 		// 		box-sizing: border-box;
+// 		// 		display: block;
+// 		// 		position: absolute;
+// 		// 		width: 51px;
+// 		// 		height: 51px;
+// 		// 		margin: 6px;
+// 		// 		border: 6px solid #fff;
+// 		// 		border-radius: 50%;
+// 		// 		animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+// 		// 		border-color: #fff transparent transparent transparent;
+// 		// 	}
+// 		// 	.lds-ring div:nth-child(1) {
+// 		// 		animation-delay: -0.45s;
+// 		// 	}
+// 		// 	.lds-ring div:nth-child(2) {
+// 		// 		animation-delay: -0.3s;
+// 		// 	}
+// 		// 	.lds-ring div:nth-child(3) {
+// 		// 		animation-delay: -0.15s;
+// 		// 	}
+// 		// 	@keyframes lds-ring {
+// 		// 		0% {
+// 		// 			transform: rotate(0deg);
+// 		// 		}
+// 		// 		100% {
+// 		// 			transform: rotate(360deg);
+// 		// 		}
+// 		// 	}
+// 		// }
+// 	}
+// 	// Fix a tamaño de imagen, precarga, y video
+// 	.cnavivo-mobile, .iframe-preloader, iframe {
+// 		height: 213px;
+// 		@media (min-width: 1141px) and (max-width: 1359px) {
+// 			height: 180px;
+// 		}
+// 		@media (min-width: 1019px) and (max-width: 1140px) {
+// 			height: 169px;
+// 		}
+// 		@media (min-width: 768px) and (max-width: 1018px) {
+// 			height: 128px;
+// 		}
+// 		@media (min-width: 510px) and (max-width: 767px) {
+// 			height: 53.8vw;
+// 		}
+// 		@media (min-width: 425px) and (max-width: 509px) {
+// 			height: 52.4vw;
+// 		}
+// 		@media screen and (max-width: 424px) {
+// 			height: 53vw;
+// 		}
+// 	}
+// }
+
+#cnaenvivo-news { 
+	&,iframe {
+		@media (min-width: 1360px) {
+			height: 213px;
 		}
-	}
-	// Fix a tamaño de imagen, precarga, y video
-	.cnavivo-mobile, .iframe-preloader, iframe {
-		height: 213px;
-		@media (min-width: 1141px) and (max-width: 1359px) {
-			height: 180px;
-		}
+		@media  (min-width: 1141px) and (max-width: 1359px) {
+			height: 150px;
+		}	
 		@media (min-width: 1019px) and (max-width: 1140px) {
-			height: 169px;
+			height: 150px;
 		}
 		@media (min-width: 768px) and (max-width: 1018px) {
 			height: 128px;
 		}
 		@media (min-width: 510px) and (max-width: 767px) {
-			height: 53.8vw;
+			height: 54.1vw;
 		}
 		@media (min-width: 425px) and (max-width: 509px) {
-			height: 52.4vw;
+			height: 54vw;
 		}
 		@media screen and (max-width: 424px) {
 			height: 53vw;
@@ -5503,9 +5529,6 @@ div.cb-657545417432 {
 			100% {
 				transform: rotate(360deg);
 			}
-		}
-		iframe {
-
 		}
 	}
 }
