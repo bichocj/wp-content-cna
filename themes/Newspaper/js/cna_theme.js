@@ -125,7 +125,7 @@ function changeHandler() {
         setTimeout(function(){
             screen.orientation.lock('landscape');
             flag += 1;
-        }, 100)
+        }, 300)
         
         
         console.log("change handlerrrrrrrrrrrr")
