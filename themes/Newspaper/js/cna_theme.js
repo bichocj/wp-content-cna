@@ -119,7 +119,6 @@ var flag = 0;
 function changeHandler() {
     console.log("thiiiiiiiiiiiiiiiis", this)
     if (flag === 0) {
-        alert("change")
         jQuery('html, body').animate({
             scrollTop: jQuery("#sectionCnaEnVivo").offset().top
         }, 100)
