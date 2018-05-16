@@ -117,17 +117,26 @@ jQuery(function () {
 var flag = 0;
 
 function changeHandler() {
-    jQuery('html, body').animate({
-        scrollTop: $("#cnaenvivo-portada").offset().top
-    }, 2000);
+    console.log("thiiiiiiiiiiiiiiiis", this)
     if (flag === 0) {
         screen.orientation.lock('landscape');
         flag += 1;
+        console.log("change handlerrrrrrrrrrrr")
     } else if (flag === 1) {
-        jQuery(window).height(500)
+        jQuery('html, body').animate({
+              scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+            }, 1000)
+        jQuery(this).click(function() {
+            // $('html, body').animate({
+            //   scrollTop: $("div.middle").offset().top
+            // }, 1000)
+            console.log("removeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
+          }),
         removeIframe();
+        console.log("when remove iframe")
         flag = 0
     }
+    
 }
 
 function displayIframe() {
