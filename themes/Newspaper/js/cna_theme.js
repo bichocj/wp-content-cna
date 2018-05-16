@@ -117,10 +117,14 @@ jQuery(function () {
 var flag = 0;
 
 function changeHandler() {
+    jQuery('html, body').animate({
+        scrollTop: $("#cnaenvivo-portada").offset().top
+    }, 2000);
     if (flag === 0) {
         screen.orientation.lock('landscape');
         flag += 1;
     } else if (flag === 1) {
+        jQuery(window).height(500)
         removeIframe();
         flag = 0
     }
