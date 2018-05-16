@@ -122,10 +122,11 @@ function changeHandler() {
         screen.orientation.lock('landscape');
         flag += 1;
         console.log("change handlerrrrrrrrrrrr")
-    } else if (flag === 1) {
         jQuery('html, body').animate({
-              scrollTop: jQuery("#sectionCnaEnVivo").offset().top
-            }, 1000)
+            scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+          }, 1000)
+    } else if (flag === 1) {
+      
         jQuery(this).click(function() {
             // $('html, body').animate({
             //   scrollTop: $("div.middle").offset().top
