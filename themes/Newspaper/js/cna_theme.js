@@ -118,7 +118,16 @@ var flag = 0;
 
 function changeHandler() {
     if (flag === 0) {
-        jQuery(window).height(1500)
+        window.onscroll = function() {
+            var valueScroll = window.pageYOffset;
+            console.log(valueScroll)
+            if(valueScroll > 1600) {
+                jQuery('html, body').animate({
+                    scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+                }, 1000)    
+            }
+        }
+        
         screen.orientation.lock('landscape');
         flag += 1;
 
