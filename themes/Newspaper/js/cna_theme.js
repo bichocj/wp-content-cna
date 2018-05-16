@@ -126,7 +126,7 @@ function changeHandler() {
         setTimeout(function(){
             console.log("disaaaaaaaaaaaaaaabled")
             jQuery("a").css("pointer-events", "initial")
-        }, 1000)
+        }, 10000)
         
         removeIframe();
         flag = 0
