@@ -117,10 +117,9 @@ jQuery(function () {
 var flag = 0;
 
 function changeHandler() {
-    console.log("thiiiiiiiiiiiiiiiis", this)
     if (flag === 0) {
         jQuery('html, body').animate({
-            scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+            scrollTop: jQuery(".textSub").offset().top
         }, 100)
         screen.orientation.lock('landscape');
         flag += 1;
