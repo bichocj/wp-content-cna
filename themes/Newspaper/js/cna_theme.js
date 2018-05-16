@@ -123,7 +123,11 @@ function changeHandler() {
         flag += 1;
 
     } else if (flag === 1) {
-        jQuery("a").css("pointer-events", "initial")
+        setTimeout(function(){
+            console.log("disaaaaaaaaaaaaaaabled")
+            jQuery("a").css("pointer-events", "initial")
+        }, 1000)
+        
         removeIframe();
         flag = 0
     }
