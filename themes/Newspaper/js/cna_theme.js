@@ -117,15 +117,22 @@ jQuery(function () {
 var flag = 0;
 
 function changeHandler() {
+    console.log("thiiiiiiiiiiiiiiiis", this)
     if (flag === 0) {
         jQuery('html, body').animate({
-            scrollTop: jQuery(".textSub").offset().top
+            scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+          }, 100)
+        setTimeout(function(){
+            screen.orientation.lock('landscape');
+            flag += 1;
         }, 100)
-        screen.orientation.lock('landscape');
-        flag += 1;
+        
+        
         console.log("change handlerrrrrrrrrrrr")
     } else if (flag === 1) {
-        
+        jQuery('html, body').animate({
+              scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+            }, 1000)
         jQuery(this).click(function() {
             // $('html, body').animate({
             //   scrollTop: $("div.middle").offset().top
