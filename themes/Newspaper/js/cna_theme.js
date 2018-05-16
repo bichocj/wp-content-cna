@@ -119,14 +119,15 @@ var flag = 0;
 function changeHandler() {
     console.log("thiiiiiiiiiiiiiiiis", this)
     if (flag === 0) {
+        alert("change")
+        jQuery('html, body').animate({
+            scrollTop: jQuery("#sectionCnaEnVivo").offset().top
+        }, 100)
         screen.orientation.lock('landscape');
         flag += 1;
         console.log("change handlerrrrrrrrrrrr")
-        jQuery('html, body').animate({
-            scrollTop: jQuery("#sectionCnaEnVivo").offset().top
-          }, 1000)
     } else if (flag === 1) {
-      
+        
         jQuery(this).click(function() {
             // $('html, body').animate({
             //   scrollTop: $("div.middle").offset().top
