@@ -118,21 +118,12 @@ var flag = 0;
 
 function changeHandler() {
     if (flag === 0) {
-        window.onscroll = function() {
-            var valueScroll = window.pageYOffset;
-            console.log(valueScroll)
-            if(valueScroll > 1600) {
-                jQuery('html, body').animate({
-                    scrollTop: jQuery("#sectionCnaEnVivo").offset().top
-                }, 1000)    
-            }
-        }
-        
+        jQuery("a").css("pointer-events", "none")
         screen.orientation.lock('landscape');
         flag += 1;
 
     } else if (flag === 1) {
-
+        jQuery("a").css("pointer-events", "initial")
         removeIframe();
         flag = 0
     }
