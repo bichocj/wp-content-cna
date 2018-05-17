@@ -127,7 +127,8 @@ function changeHandler() {
             console.log("disaaaaaaaaaaaaaaabled")
             // jQuery("a").css("pointer-events", "initial")
         }, 10000)
-        alert("wiiii change");
+        jQuery("a").removeClass("removePointerEvent")
+        jQuery("a").addClass("setPointerEvent")
         removeIframe();
         flag = 0
     }
