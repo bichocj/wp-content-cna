@@ -118,10 +118,7 @@ var flag = 0;
 
 function changeHandler() {
     if (flag === 0) {
-        jQuery('a').on('touchstart', function(e){
-            e.preventDefault();
-        });
-        
+        jQuery("a").addClass("removePointerEvent")
         screen.orientation.lock('landscape');
         flag += 1;
 
@@ -130,7 +127,7 @@ function changeHandler() {
             console.log("disaaaaaaaaaaaaaaabled")
             // jQuery("a").css("pointer-events", "initial")
         }, 10000)
-        alert("wiiii");
+        alert("wiiii change");
         removeIframe();
         flag = 0
     }
