@@ -127,7 +127,7 @@ function changeHandler() {
             console.log("disaaaaaaaaaaaaaaabled")
             // jQuery("a").css("pointer-events", "initial")
         }, 10000)
-        
+        alert("wiiii");
         removeIframe();
         flag = 0
     }
