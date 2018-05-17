@@ -97,23 +97,6 @@ jQuery(function () {
     });
 });
 
-//Add iframe
-// function addIframe () {
-//     jQuery('.cnaenvivo-icon').click(function() {
-//         jQuery('.cnavivo-mobile').hide();
-//         jQuery('.cnaenvivo-icon').hide();
-//         jQuery('#cnaenvivo-fullcontainer').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe onload="removePreloader()" src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
-//     })
-// }
-
-// function addIframeNews () {
-//     jQuery('.cnaenvivo-icon-news').click(function() {
-//         jQuery('.cnavivo-mobile').hide();
-//         jQuery('.cnaenvivo-icon-news').hide();
-//         jQuery('#cnaenvivo-fullcontainer-news').append('<div class="iframe-preloader" width="560px" height="315px"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe src="http://iblups.com/e_cnapet" width="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
-//     })
-// }
-
 var flag = 0;
 
 function changeHandler() {
@@ -121,16 +104,9 @@ function changeHandler() {
         jQuery("a").addClass("removePointerEvent")
         screen.orientation.lock('landscape');
         flag += 1;
-
     } else if (flag === 1) {
         removeIframe();
-        setTimeout(function(){
-            console.log("disaaaaaaaaaaaaaaabled")
-            // jQuery("a").css("pointer-events", "initial")
-        }, 10000)
         jQuery("a").removeClass("removePointerEvent")
-        // jQuery("a").addClass("setPointerEvent")
-        
         flag = 0
     }
 }
