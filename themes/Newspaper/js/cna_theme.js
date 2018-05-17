@@ -118,7 +118,10 @@ var flag = 0;
 
 function changeHandler() {
     if (flag === 0) {
-        jQuery("a").addClass("removePointerEvent")
+        jQuery('a').on('touchstart', function(e){
+            e.preventDefault();
+        });
+        
         screen.orientation.lock('landscape');
         flag += 1;
 
