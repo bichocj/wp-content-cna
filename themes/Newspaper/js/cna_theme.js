@@ -118,7 +118,7 @@ var flag = 0;
 
 function changeHandler() {
     if (flag === 0) {
-        jQuery("a").css("pointer-events", "none")
+        jQuery("a").addClass("removePointerEvent")
         screen.orientation.lock('landscape');
         flag += 1;
 
