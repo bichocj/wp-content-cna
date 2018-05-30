@@ -17,6 +17,7 @@ jQuery(document).ready(function () {
     // addIframeNews();
     displayIframe();
     addIdApps();
+    addIdPolls();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -125,6 +126,26 @@ function removeIframe(){
     jQuery('#cnaenvivo-mobile').remove();
 }
 
+function addIdPolls(){
+    let divWebPolls = jQuery('div[name=encuestas-web]');
+    let divMobilePolls = jQuery('div[name=encuestas-mobile]');
+    if ( jQuery(window).width() >= 768) {
+        if (divMobilePolls[0].id == "") {
+            divWebPolls.attr('id', 'encuestas-en-cna');
+        } else {
+            divMobilePolls.removeAttr("id");
+            divWebPolls.attr('id', 'encuestas-en-cna');
+        }
+    } else {
+        if (divWebPolls[0].id == "") {
+            divMobilePolls.attr('id', 'encuestas-en-cna');
+        } else {
+            divWebPolls.removeAttr("id");
+            divMobilePolls.attr('id', 'encuestas-en-cna');
+        }
+    } 
+}
+
 function addIdApps(){
     let divWeb = jQuery('div[name=apps-web]');
     let divMobile = jQuery('div[name=apps-mobile]');
@@ -144,7 +165,6 @@ function addIdApps(){
         }
     } 
 }
-addIdApps()
 
 function launchFullScreen(element) {
     if(element.requestFullScreen) {
