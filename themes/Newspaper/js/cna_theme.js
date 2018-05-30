@@ -16,6 +16,7 @@ jQuery(document).ready(function () {
     // addIframe();
     // addIframeNews();
     displayIframe();
+    addIdApps();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -123,6 +124,27 @@ function displayIframe() {
 function removeIframe(){
     jQuery('#cnaenvivo-mobile').remove();
 }
+
+function addIdApps(){
+    let divWeb = jQuery('div[name=apps-web]');
+    let divMobile = jQuery('div[name=apps-mobile]');
+    if ( jQuery(window).width() >= 768) {
+        if (divMobile[0].id == "") {
+            divWeb.attr('id', 'apps');
+        } else {
+            divMobile.removeAttr("id");
+            divWeb.attr('id', 'apps');
+        }
+    } else {
+        if (divWeb[0].id == "") {
+            divMobile.attr('id', 'apps');
+        } else {
+            divWeb.removeAttr("id");
+            divMobile.attr('id', 'apps');
+        }
+    } 
+}
+addIdApps()
 
 function launchFullScreen(element) {
     if(element.requestFullScreen) {
