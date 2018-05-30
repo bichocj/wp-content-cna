@@ -134,13 +134,16 @@ function addIdPolls(){
             divWebPolls.attr('id', 'encuestas-en-cna');
         } else {
             divMobilePolls.removeAttr("id");
+            divMobilePolls[0].removeClass("appsId");
             divWebPolls.attr('id', 'encuestas-en-cna');
         }
     } else {
         if (divWebPolls[0].id == "") {
+            divMobilePolls[0].addClass("appsId");
             divMobilePolls.attr('id', 'encuestas-en-cna');
         } else {
             divWebPolls.removeAttr("id");
+            divMobilePolls[0].addClass("appsId")
             divMobilePolls.attr('id', 'encuestas-en-cna');
         }
     } 
