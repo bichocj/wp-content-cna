@@ -116,7 +116,7 @@ function changeHandler() {
 function displayIframe() {
     if ( jQuery(window).width() < 600) {
         jQuery('.textSub').click(function() {
-            jQuery('body').append('<div id="cnaenvivo-mobile"><div id="cnaenvivo-close" onclick="removeIframe()"><i class="td-icon-close"></i></div><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe id="iframeFS" src="http://iblups.com/e_cnapet" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
+            jQuery('body').append('<div id="cnaenvivo-mobile"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><iframe id="iframeFS" src="http://iblups.com/e_cnapet" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>')
             launchFullScreen(document.getElementById("iframeFS"))
         })
     }
