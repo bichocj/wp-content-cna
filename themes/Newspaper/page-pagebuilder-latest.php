@@ -162,7 +162,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                         <?php get_permalink()?>
                     </div>
                     <div class="td-default-sharing share_module_block share_module_mx11">
-                        <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://cna.atixplus.com/?p=799"
+                        <a class="td-social-sharing-buttons td-social-facebook" href="https://www.facebook.com/sharer.php?u=http://cna.atixplus.com/?p=799"
                             onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
                             <i class="td-icon-facebook"></i>
                         </a>
@@ -504,7 +504,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                     </div>
                                                                 </div>
                                                                 <div class="td-default-sharing share_module_block share_module_mx10">
-                                                                    <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://localhost/wordpress/?p=314"
+                                                                    <a class="td-social-sharing-buttons td-social-facebook" href="https://www.facebook.com/sharer.php?u=http://localhost/wordpress/?p=314"
                                                                         onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
                                                                         <i class="td-icon-facebook"></i>
                                                                     </a>
