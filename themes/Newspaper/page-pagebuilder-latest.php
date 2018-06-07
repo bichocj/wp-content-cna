@@ -494,13 +494,11 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="td-default-sharing share_module_block share_module_mx10">
-                                                                <?php echo '<div class="td-default-sharing share_module_block share_module_mx11">
+                                                                <?php echo '<div class="td-default-sharing share_module_block share_module_mx10">
                                                                     <a class="td-social-sharing-buttons td-social-facebook" href="https://www.facebook.com/sharer.php?u=' . $urlNewsMagazine . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-facebook"></i></a>
                                                                     <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=' . htmlspecialchars(urlencode(html_entity_decode($imgTitleMagazine, ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . '&url=' . $urlNewsMagazine . '&via=' . urlencode( $twitter_user ? $twitter_user : get_bloginfo( 'name' ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-twitter"></i></a>
                                                                     <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=' . htmlspecialchars(urlencode(html_entity_decode($imgTitleMagazine, ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . ' - ' . urlencode( esc_url( $urlNewsMagazine ) ) . '" data-action="share/whatsapp/share" ><i class="td-icon-whatsapp"></i></a>
                                                                 </div>'; ?>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                         <?php endwhile; ?>
