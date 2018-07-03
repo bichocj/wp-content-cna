@@ -161,20 +161,11 @@ if(!empty($post->post_content)) { //show this only when we have content
                     <div class="td-excerpt">
                         <?php get_permalink()?>
                     </div>
-                    <div class="td-default-sharing share_module_block share_module_mx11">
-                        <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://cna.atixplus.com/?p=799"
-                            onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
-                            <i class="td-icon-facebook"></i>
-                        </a>
-                        <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=%E2%80%9CDiez+a%C3%B1os+de+m%C3%BAsica%E2%80%9D%2C+por+Lionel+Igersheim&amp;url=http://cna.atixplus.com/?p=799&amp;via=CNA"
-                                  onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
-                            <i class="td-icon-twitter"></i>
-                        </a>
-                        <a class="td-social-sharing-buttons td-social-whatsapp hidden-xs" href="whatsapp://send?text=%E2%80%9CDiez+a%C3%B1os+de+m%C3%BAsica%E2%80%9D%2C+por+Lionel+Igersheim - http%3A%2F%2Fcna.atixplus.com%2F%3Fp%3D799"
-                                 data-action="share/whatsapp/share">
-                            <i class="td-icon-whatsapp"></i>
-                        </a>
-                    </div>
+                    <?php echo '<div class="td-default-sharing share_module_block share_module_mx11">
+                        <a class="td-social-sharing-buttons td-social-facebook" href="https://www.facebook.com/sharer.php?u=' . $urlNewsNews . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-facebook"></i></a>
+                        <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=' . htmlspecialchars(urlencode(html_entity_decode($imgTitleNews, ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . '&url=' . $urlNewsNews . '&via=' . urlencode( $twitter_user ? $twitter_user : get_bloginfo( 'name' ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-twitter"></i></a>
+                        <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=' . htmlspecialchars(urlencode(html_entity_decode($imgTitleNews, ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . ' - ' . urlencode( esc_url( $urlNewsNews ) ) . '" data-action="share/whatsapp/share" ><i class="td-icon-whatsapp"></i></a>
+                    </div>'; ?>
                 </div>
             </div>
             <?php endwhile; ?>
@@ -503,22 +494,11 @@ if(!empty($post->post_content)) { //show this only when we have content
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="td-default-sharing share_module_block share_module_mx10">
-                                                                    <a class="td-social-sharing-buttons td-social-facebook" href="http://www.facebook.com/sharer.php?u=http://localhost/wordpress/?p=314"
-                                                                        onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
-                                                                        <i class="td-icon-facebook"></i>
-                                                                    </a>
-
-                                                                    <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=Peligra+investigaci%C3%B3n+contra+Waldo+R%C3%ADos+y+donantes+por+mill%C3%B3n+de+soles&amp;url=http://localhost/wordpress/?p=314&amp;via=CNA"
-                                                                        onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;">
-                                                                        <i class="td-icon-twitter"></i>
-                                                                    </a>
-
-                                                                    <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=Peligra+investigaci%C3%B3n+contra+Waldo+R%C3%ADos+y+donantes+por+mill%C3%B3n+de+soles - http%3A%2F%2Flocalhost%2Fwordpress%2F%3Fp%3D314"
-                                                                        data-action="share/whatsapp/share">
-                                                                        <i class="td-icon-whatsapp"></i>
-                                                                    </a>
-                                                                </div>
+                                                                <?php echo '<div class="td-default-sharing share_module_block share_module_mx10">
+                                                                    <a class="td-social-sharing-buttons td-social-facebook" href="https://www.facebook.com/sharer.php?u=' . $urlNewsMagazine . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-facebook"></i></a>
+                                                                    <a class="td-social-sharing-buttons td-social-twitter" href="https://twitter.com/intent/tweet?text=' . htmlspecialchars(urlencode(html_entity_decode($imgTitleMagazine, ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . '&url=' . $urlNewsMagazine . '&via=' . urlencode( $twitter_user ? $twitter_user : get_bloginfo( 'name' ) ) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;"><i class="td-icon-twitter"></i></a>
+                                                                    <a class="td-social-sharing-buttons td-social-whatsapp" href="whatsapp://send?text=' . htmlspecialchars(urlencode(html_entity_decode($imgTitleMagazine, ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . ' - ' . urlencode( esc_url( $urlNewsMagazine ) ) . '" data-action="share/whatsapp/share" ><i class="td-icon-whatsapp"></i></a>
+                                                                </div>'; ?>
                                                             </div>
                                                         </div>
                                                         <?php endwhile; ?>
