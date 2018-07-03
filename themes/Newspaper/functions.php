@@ -199,6 +199,14 @@ function dcms_agregar_nueva_zona_widgets() {
 		'after_widget'  => '',
 	) );
 	
+	register_sidebar( array(
+		'id'          => 'cna-dollar',
+		'name'        => __( 'El dólar en CNA', $text_domain ),
+		'before_title'  => '<div class="block-title"><span>',
+		'after_title'   => '</span></div>',
+		'before_widget' => '<aside class="widget">',
+		'after_widget'  => '</aside>',
+	) );
 }
 
 add_action( 'widgets_init', 'dcms_agregar_nueva_zona_widgets' );

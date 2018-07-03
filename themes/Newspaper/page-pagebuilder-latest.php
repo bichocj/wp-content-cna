@@ -350,6 +350,11 @@ if(!empty($post->post_content)) { //show this only when we have content
                                 </div>
                             </div>
                             <!-- Section Economía Fin -->
+                            <!-- Inicio el dólar en CNA -->
+                            <div class="visible-xs cna-dollar-xsvisible">
+                                <?php dynamic_sidebar( 'cna-dollar' ); ?>
+                            </div>
+                            <!-- Fin el dólar en CNA -->
                             <!-- Section Tecnologia Inicio -->
                             <div class="section-economia-tecnologia section-tecnologia visible-xs">
                                 <div class="without-meta-info wpb_column vc_column_container td-pb-span8">
