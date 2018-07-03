@@ -5208,16 +5208,6 @@ div.cb-657545417432 {
 	.td_block_wrap {
 		&:nth-child(1) {
 			.block-title {
-				border-color: @background_whatsapp;
-				&:nth-child(1) {
-					span {
-						background-color: @background_whatsapp;
-					}
-				}
-			}
-		}
-		&:nth-child(2) {
-			.block-title {
 				border-color: @background_facebook;
 				&:nth-child(1) {
 					span {
@@ -5226,9 +5216,17 @@ div.cb-657545417432 {
 				}
 			}
 		}
+		&:nth-child(2) {
+			.block-title {
+				border-color: @background_whatsapp;
+				&:nth-child(1) {
+					span {
+						background-color: @background_whatsapp;
+					}
+				}
+			}
+		}
 	}
-	
-
 }
 
 .td_module_mx6, .td_module_mx11, .td_module_mx10 {
