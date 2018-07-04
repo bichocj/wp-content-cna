@@ -1100,16 +1100,16 @@ p {
 			margin-top: 10px;
 		}
 		.thisCNATVWrap {
-			margin-top: 15px;
+			// margin-top: 5px;
 			.textSub{
-				margin-bottom: 20px;
+				margin-bottom: 5px;
 			}
 			.thisCNATV {
+				display: inline-block;
 				background-color: black;
-				padding: 10px 15px;
-				font-size: 18px;
+				padding: 8px 15px;
+				font-size: 14px;
 				border: 1px white solid;
-				margin-left: 3px
 			}
 		}
 		// .thisCNATV { // a
@@ -1131,6 +1131,58 @@ p {
 		// 		// opacity: 0.9;
 		// 	}
 		// }
+
+		.CNA_header_apps{
+			margin-top: 5px;
+			.textSub{
+				margin-bottom: 5px;
+			}
+			.wrap_header_apps {
+				>a {
+					display: inline-block;
+					margin-right: 5px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+				.imgStore {
+					display: block;
+					height: 30px;
+				}
+				&::after  {
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-align: center;
+						-ms-flex-align: center;
+							align-items: center;
+					-webkit-box-pack: center;
+						-ms-flex-pack: center;
+							justify-content: center;
+					
+					opacity: 0;
+					-webkit-transition: opacity ease 300ms;
+					transition: opacity ease 300ms;
+				}
+				&:hover{
+					position: relative;
+					&::after {
+						content: "EN CONSTRUCCI\00d3N" ;
+						background-color: white;
+						color: #555555;
+						font-size: 13px;
+						font-weight: 600;
+						text-align: center;
+						position: absolute;
+						right: 0;
+						left: 0;
+						top: 0;
+						bottom: 5px;
+						opacity: 0.8;
+					}
+				}
+			}
+		}
 	}
 	.td-header-top-menu-full {
 		background-color: #d33;
@@ -1156,8 +1208,8 @@ p {
 		.td-header-sp-top-widget {
 			text-align: left;
 			// margin-top: 25px;
+				padding-left: 8px !important;
 			.textSub {
-				padding-left: 5px;
 			}
 			.td-social-icon-wrap {
 				.td-icon-font {
