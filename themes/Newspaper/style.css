@@ -29894,6 +29894,7 @@ p {
     width: auto;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .section-magazine .td-grid-style-1.td_block_big_grid_2 .bigGrid2Gallery .entry-title {
@@ -29919,6 +29920,7 @@ p {
     width: auto !important;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .section-magazine .td-grid-style-1.td_block_big_grid_2 .smallGrid2Gallery .entry-title {
@@ -30231,6 +30233,7 @@ p {
   background-repeat: no-repeat;
   left: 50%;
   top: 0px;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 @media (min-width: 768px) and (max-width: 1018px) {
@@ -30257,6 +30260,9 @@ p {
   margin-left: 0px;
   margin-top: 20px;
   text-align: center;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   padding: 42px 20% 0px;
 }
@@ -31419,8 +31425,14 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   display: block;
 }
 .wrapper_app_cna .wrapper_app_img::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -34148,10 +34160,12 @@ div.cb-657545417432 {
     height: 64px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: -1;
   }
   #cnaenvivo-mobile .lds-ring div {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -34160,29 +34174,46 @@ div.cb-657545417432 {
     margin: 6px;
     border: 6px solid #fff;
     border-radius: 50%;
+    -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #fff transparent transparent transparent;
   }
   #cnaenvivo-mobile .lds-ring div:nth-child(1) {
+    -webkit-animation-delay: -0.45s;
     animation-delay: -0.45s;
   }
   #cnaenvivo-mobile .lds-ring div:nth-child(2) {
+    -webkit-animation-delay: -0.3s;
     animation-delay: -0.3s;
   }
   #cnaenvivo-mobile .lds-ring div:nth-child(3) {
+    -webkit-animation-delay: -0.15s;
     animation-delay: -0.15s;
   }
-  @keyframes lds-ring {
+  @-webkit-keyframes lds-ring {
     0% {
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
     }
     100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes lds-ring {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
   }
 }
 .removePointerEvent {
   pointer-events: none;
+  -ms-touch-action: none;
   touch-action: none;
   display: none;
 }
