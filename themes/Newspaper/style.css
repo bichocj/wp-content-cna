@@ -30083,7 +30083,7 @@ p {
 .td-header-cna .top-bar-style-2 .CNA_header_apps .wrap_header_apps:hover::after {
   content: "EN CONSTRUCCI\00d3N";
   background-color: white;
-  color: #555555;
+  color: #212121;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -30092,7 +30092,7 @@ p {
   left: 0;
   top: 0;
   bottom: 5px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 .td-header-cna .td-header-top-menu-full {
   background-color: #d33;
