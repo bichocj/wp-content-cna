@@ -136,23 +136,23 @@ if (TD_DEBUG_LIVE_THEME_STYLE) {
     }
 }
 
-register_sidebar( array(
-    'id'          => 'ads-rightside',
-    'name'        => __( 'Anuncio Derecha', $text_domain ),
-    'before_title'  => '',
-	'after_title'   => '',
-	'before_widget' => '',
-	'after_widget'  => '',
-) );
+// register_sidebar( array(
+//     'id'          => 'ads-rightside',
+//     'name'        => __( 'Anuncio Derecha', $text_domain ),
+//     'before_title'  => '',
+// 	'after_title'   => '',
+// 	'before_widget' => '',
+// 	'after_widget'  => '',
+// ) );
 
-register_sidebar( array(
-    'id'          => 'ads-leftside',
-    'name'        => __( 'Anuncio Izquierda', $text_domain ),
-    'before_title'  => '',
-	'after_title'   => '',
-	'before_widget' => '',
-	'after_widget'  => '',
-) );
+// register_sidebar( array(
+//     'id'          => 'ads-leftside',
+//     'name'        => __( 'Anuncio Izquierda', $text_domain ),
+//     'before_title'  => '',
+// 	'after_title'   => '',
+// 	'before_widget' => '',
+// 	'after_widget'  => '',
+// ) );
 
 require_once('includes/api-try.php');
 //td_util::update_option('tdx_remote_http', '');
@@ -175,6 +175,14 @@ function dcms_agregar_nueva_zona_widgets() {
 	register_sidebar( array(
 		'id'          => 'sidebar-mobile',
 		'name'        => __( 'Sidebar Mobile', $text_domain ),
+		'before_title'  => '',
+		'after_title'   => '',
+		'before_widget' => '',
+		'after_widget'  => '',
+	) );
+	register_sidebar( array(
+		'id'          => 'sidebar-post',
+		'name'        => __( 'Sidebar Post', $text_domain ),
 		'before_title'  => '',
 		'after_title'   => '',
 		'before_widget' => '',
