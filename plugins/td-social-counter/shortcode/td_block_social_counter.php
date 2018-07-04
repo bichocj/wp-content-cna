@@ -47,7 +47,7 @@ class td_block_social_counter extends td_block {
                     $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
                     // $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
                     $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
-                    $buffy .= '<span class="td_social_button"><a>' .
+                    $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
                         $social_network_meta['button'] . '</a></span>';
                     $buffy .= '</div>';
                 } else if ( $td_social_id == 'periscope') {
@@ -153,7 +153,7 @@ class td_block_social_counter extends td_block {
             case 'whatsapp':
                 return array(
                     'button' => __td('Contacto'),
-                    'url' => "",
+                    'url' => "https://api.whatsapp.com/send?phone=$user_id",
                     'text' => __td('985339090'),
                     // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
                 );

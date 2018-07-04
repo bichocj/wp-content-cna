@@ -10,7 +10,7 @@
 if(td_util::get_option('td_social_networks_show') == 'show') { ?>
 <div class="td-header-sp-top-widget">
     <div class="follow-us">
-        <div class="textSub">Siguenos en:</div>
+        <div class="textSub">Síguenos en:</div>
         <?php
 
             //get the socials that are set by user
@@ -19,6 +19,7 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
             if(!empty($td_get_social_network)) {
                 foreach($td_get_social_network as $social_id => $social_link) {
                     if(!empty($social_link)) {
+                        echo("<script>console.log('PHP: ++ ".$social_id."');</script>");
                        echo td_social_icons::get_icon($social_link, $social_id, 4, 16, true);
                     }
                 }

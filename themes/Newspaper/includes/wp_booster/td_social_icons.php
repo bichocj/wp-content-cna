@@ -3,7 +3,7 @@
 class td_social_icons {
     static $td_social_icons_array = array( //*Reorder client requirement
         'facebook' => 'Facebook',
-        'periscope' => 'Eye', //Ojo se debe agregar un icon aquí
+        'periscope' => 'Periscope', //Ojo se debe agregar un icon aquí
         'youtube' => 'Youtube',
         'twitter' => 'Twitter', 
         'instagram' => 'Instagram',
