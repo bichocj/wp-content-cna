@@ -55,7 +55,7 @@ class td_block_social_counter extends td_block {
                     $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
                     // $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
                     $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
-                    $buffy .= '<span class="td_social_button"><a>' .
+                    $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
                         $social_network_meta['button'] . '</a></span>';
                     $buffy .= '</div>';
                 } else {
@@ -143,7 +143,7 @@ class td_block_social_counter extends td_block {
             case 'periscope':
                 return array(
                     'button' => __td('Ver'),
-                    'url' => "",
+                    'url' => "https://www.pscp.tv/$user_id",
                     'text' => __td('Transmisión'),
                     // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
                 );
