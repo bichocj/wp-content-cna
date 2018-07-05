@@ -59,6 +59,11 @@ if (td_util::get_option('tds_footer_column_1') != 'no') {
 
     $buffy .= '<div class="footer-social-wrap td-social-style-2">';
     if(td_util::get_option('tds_footer_social') != 'no') {
+        // only for tis icon
+        $imgWeb = get_template_directory_uri();
+        echo '<span class="td-social-icon-wrap">
+            <img class="icon_website" src="'. $imgWeb.'/images/custom/ico-webcna.png" title="CNA.pe"/>
+        </span>'
         //get the socials that are set by user
         $td_get_social_network = td_util::get_option('td_social_networks');
 
