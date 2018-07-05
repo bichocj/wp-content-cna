@@ -30216,7 +30216,7 @@ p {
 .td-footer-wrapper img {
   display: block;
   margin: 0 auto;
-  width: 15%;
+  width: 17.5%;
   height: auto;
 }
 .footer-logo-wrap {
@@ -30241,28 +30241,18 @@ p {
   border: 2px solid white;
   border-radius: 21px;
 }
-.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Facebook"] {
-  border-color: #516eab;
-}
-.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Periscope"] {
-  border-color: #3da4c3;
-}
-.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Youtube"] {
-  border-color: #bb0000;
-}
-.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Twitter"] {
-  border-color: #00aced;
-}
-.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Instagram"] {
-  border-color: #EB7BA2;
-}
-.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Whatsapp"] {
-  border-color: #009c3b;
+.td-footer-template-4 .td-social-style-2 .icon_website {
+  height: 40.5px;
+  width: auto;
 }
 .td-footer-template-4 .td-social-style-2 .td-icon-font {
   font-size: 20px;
   width: 36px;
   height: 36px;
+  /* evitar cambio de color*/
+}
+.td-footer-template-4 .td-social-style-2 .td-icon-font:hover {
+  color: white !important;
 }
 .td-footer-template-4 .td-social-style-2 .td-icon-whatsapp {
   font-size: 28px;
@@ -30274,9 +30264,6 @@ p {
   background-repeat: no-repeat;
   background-size: 73px 30px;
   background-position: -1px;
-}
-.td-footer-template-4 .td-social-style-2 .td-icon-periscope:hover {
-  background-position-x: -37.5px;
 }
 .td-footer-template-4 .td-footer-info {
   margin-bottom: 0px;
@@ -31513,6 +31500,9 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   text-align: center;
   width: 32px;
   height: 32px;
+  background-image: url(images/sprite/periscope_whatsapp_ico.png) !important;
+  background-position-x: -30px;
+  background-size: cover !important;
 }
 .td_social_periscope {
   background-color: #3da4c3;
@@ -31521,6 +31511,8 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   text-align: center;
   width: 32px;
   height: 32px;
+  background-image: url(images/sprite/periscope_whatsapp_ico.png) !important;
+  background-size: cover !important;
 }
 /* WP-POLLS */
 .wp-polls {

@@ -1329,7 +1329,7 @@ p {
 	img {
 		display: block;
 		margin: 0 auto;
-		width: 15%;
+		width: 17.5%;
 		height: auto;
 	}
 }
@@ -1353,32 +1353,41 @@ p {
 			>a {
 				border: 2px solid white;
 				border-radius: 21px;
-				&:hover {
-					&[title="Facebook"] {
-						border-color: @background_facebook;
-					}
-					&[title="Periscope"] {
-						border-color: @background_periscope;
-					}
-					&[title="Youtube"] {
-						border-color: @background_yt;
-					}
-					&[title="Twitter"] {
-						border-color: @background_twitter;
-					}
-					&[title="Instagram"] {
-						border-color: @color_instagram_2;
-					}
-					&[title="Whatsapp"] {
-						border-color: @background_whatsapp;
-					}
-				}
+				// &:hover {
+				// 	&[title="Facebook"] {
+				// 		border-color: @background_facebook;
+				// 	}
+				// 	&[title="Periscope"] {
+				// 		border-color: @background_periscope;
+				// 	}
+				// 	&[title="Youtube"] {
+				// 		border-color: @background_yt;
+				// 	}
+				// 	&[title="Twitter"] {
+				// 		border-color: @background_twitter;
+				// 	}
+				// 	&[title="Instagram"] {
+				// 		border-color: @color_instagram_2;
+				// 	}
+				// 	&[title="Whatsapp"] {
+				// 		border-color: @background_whatsapp;
+				// 	}
+				// }
 			}
+		}
+		.icon_website {
+			height: 40.5px;
+    		width: auto;
 		}
 		.td-icon-font { // i
 			font-size: 20px;
 			width: 36px;
 			height: 36px;
+
+			/* evitar cambio de color*/
+			&:hover {
+				color: white !important;
+			}
 		}
 		.td-icon-whatsapp {
 			font-size: 28px;
@@ -1390,9 +1399,9 @@ p {
 			background-repeat: no-repeat;
 			background-size: 73px 30px;
 			background-position: -1px;
-			&:hover {
-				background-position-x: -37.5px;
-			}
+			// &:hover {
+			// 	background-position-x: -37.5px;
+			// }
 		}
 	}
 	.td-footer-info {
