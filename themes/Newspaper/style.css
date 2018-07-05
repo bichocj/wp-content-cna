@@ -31448,7 +31448,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
     margin-bottom: 13px;
   }
 }
-/* Post Template CNA 2 */
+/* Post Template CNA 2 - Videos */
 .post-template-cna-2 .td-post-header {
   background-color: #F3F0F0;
   padding: 30px 30px 5px;
@@ -31482,6 +31482,9 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 }
 .post-template-cna-2 .wrapper-feature {
   margin-bottom: 26px;
+}
+.post-template-cna-2 .wrapper-feature iframe {
+  width: 100% !important;
 }
 /**********************************
 * 			WIDGETS
