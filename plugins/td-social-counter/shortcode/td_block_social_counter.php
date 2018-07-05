@@ -35,7 +35,6 @@ class td_block_social_counter extends td_block {
 
 	    foreach (td_social_icons::$td_social_icons_array as $td_social_id => $td_social_name) {
             if (!empty($atts[$td_social_id])) {
-                echo("<script>console.log('PHP: ".$td_social_id."');</script>");
 	            $access_token = '';
 	            if (array_key_exists($td_social_id . '_access_token', $atts)) {
 		            $access_token = $atts[$td_social_id . '_access_token'];
