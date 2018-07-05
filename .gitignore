@@ -9,3 +9,4 @@ plugins/wordpress-importer
 uploads
 upgrade
 .git-old
+themes/Newspaper/settings-panel-newspaper.txt
