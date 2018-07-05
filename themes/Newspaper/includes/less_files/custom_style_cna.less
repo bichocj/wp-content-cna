@@ -53,6 +53,7 @@
 @background_whatsapp: #009c3b;
 @background_facebook: #516eab;
 @background_videos: #dfd0d2;
+@background_periscope: #3da4c3;
 
 @font1:'Open Sans', arial, sans-serif;
 @font2: Verdana, Geneva, sans-serif;
@@ -1216,6 +1217,19 @@ p {
 					font-size: 16px;
 				}
 			}
+			.td-icon-periscope {
+				background-image: url('images/sprite/ico-periscope.png');
+				background-position-y: 4px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 22px;
+				margin-left: -4px;
+				margin-right: -4px;
+				&:hover {
+					background-position-x: -27px;
+				}
+			}
+
 		}
 		.td-header-sp-top-menu {
 			text-align: right;
@@ -2522,9 +2536,36 @@ div[class*="post-template-cna"] {
 		margin-bottom: 0;
 	}
 }
+.td_social_info_name {
+	@media (min-width: 768px) and (max-width: 1018px) {
+		display: none !important;
+	}
+}
+
 &.td_social_instagram {
 	background-color: @color_instagram;
 }
+// Social counter Whatsapp
+.td_social_whatsapp {
+	background-color: @background_whatsapp;
+}
+.td-sp-whatsapp {
+	text-align: center;
+	width: 32px;
+	height: 32px;
+}
+
+// Social Counter Periscope
+.td_social_periscope {
+	background-color: @background_periscope;
+}
+
+.td-sp-periscope {
+	text-align: center;
+	width: 32px;
+	height: 32px;
+}
+
 /* WP-POLLS */
 .wp-polls  {
 	margin-top: 10px;
@@ -4920,7 +4961,7 @@ div.cb-657545417432 {
 			.subtitle-main-new {
 				display: none;
 			}
-			.vc_custom_1516140720558 {
+			.vc_custom_1528403084399 {
 				-webkit-box-ordinal-group: 3;
 				    -ms-flex-order: 2;
 				        order: 2;

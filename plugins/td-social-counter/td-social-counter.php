@@ -173,6 +173,24 @@ class td_social_counter_plugin {
                     "class" => ""
                 ),
                 array(
+                    "param_name" => "whatsapp",
+                    "type" => "textfield",
+                    "value" => '',
+                    "heading" => __("Whatsapp:", TD_THEME_NAME),
+                    "description" => "",
+                    "holder" => "div",
+                    "class" => ""
+                ),
+                array(
+                    "param_name" => "periscope",
+                    "type" => "textfield",
+                    "value" => '',
+                    "heading" => __("Periscope:", TD_THEME_NAME),
+                    "description" => "",
+                    "holder" => "div",
+                    "class" => ""
+                ),
+                array(
                     "param_name" => "soundcloud",
                     "type" => "textfield",
                     "value" => '',

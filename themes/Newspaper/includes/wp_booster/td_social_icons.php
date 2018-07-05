@@ -1,7 +1,14 @@
 <?php
 
 class td_social_icons {
-    static $td_social_icons_array = array(
+    static $td_social_icons_array = array( //*Reorder client requirement
+        'facebook' => 'Facebook',
+        'periscope' => 'Periscope', //Ojo se debe agregar un icon aquí
+        'youtube' => 'Youtube',
+        'twitter' => 'Twitter', 
+        'instagram' => 'Instagram',
+        'whatsapp' => 'Whatsapp',
+        //Order client requirement
         'behance' => 'Behance',
         'blogger' => 'Blogger',
         'delicious' => 'Delicious',
@@ -9,13 +16,11 @@ class td_social_icons {
         'digg' => 'Digg',
         'dribbble' => 'Dribbble',
         'evernote' => 'Evernote',
-        'facebook' => 'Facebook',
         'flickr' => 'Flickr',
         'forrst' => 'Forrst',
         'googleplus' => 'Google+',
         'grooveshark' => 'Grooveshark',
         'html5' => 'Html5',
-        'instagram' => 'Instagram',
         'lastfm' => 'Lastfm',
         'linkedin' => 'Linkedin',
         'mail-1' => 'Mail',
@@ -35,14 +40,11 @@ class td_social_icons {
         'steam' => 'Steam',
         'stumbleupon' => 'StumbleUpon',
         'tumblr' => 'Tumblr',
-        'twitter' => 'Twitter',
         'vimeo' => 'Vimeo',
         'vk' => 'VKontakte',
         'windows' => 'Windows',
-        'whatsapp' => 'Whatsapp',
         'wordpress' => 'WordPress',
         'yahoo' => 'Yahoo',
-        'youtube' => 'Youtube'
     );
 
 

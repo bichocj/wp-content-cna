@@ -35,20 +35,39 @@ class td_block_social_counter extends td_block {
 
 	    foreach (td_social_icons::$td_social_icons_array as $td_social_id => $td_social_name) {
             if (!empty($atts[$td_social_id])) {
-
+                echo("<script>console.log('PHP: ".$td_social_id."');</script>");
 	            $access_token = '';
 	            if (array_key_exists($td_social_id . '_access_token', $atts)) {
 		            $access_token = $atts[$td_social_id . '_access_token'];
 	            }
 	            $social_network_meta = $this->get_social_network_meta($td_social_id, $atts[$td_social_id], $td_social_api, $access_token);
-
-	            $buffy .= '<div class="td_social_type td-pb-margin-side td_social_' . $td_social_id . '">';
-                $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
-                $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
-                $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
-                $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
-                    $social_network_meta['button'] . '</a></span>';
-                $buffy .= '</div>';
+                
+                if ( $td_social_id == 'whatsapp') {
+                    $buffy .= '<div class="td_social_type td-pb-margin-side td_social_' . $td_social_id . '">';
+                    $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
+                    // $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
+                    $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
+                    $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
+                        $social_network_meta['button'] . '</a></span>';
+                    $buffy .= '</div>';
+                } else if ( $td_social_id == 'periscope') {
+                  
+                    $buffy .= '<div class="td_social_type td-pb-margin-side td_social_' . $td_social_id . '">';
+                    $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
+                    // $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
+                    $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
+                    $buffy .= '<span class="td_social_button"><a>' .
+                        $social_network_meta['button'] . '</a></span>';
+                    $buffy .= '</div>';
+                } else {
+                    $buffy .= '<div class="td_social_type td-pb-margin-side td_social_' . $td_social_id . '">';
+                    $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
+                    $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
+                    $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
+                    $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
+                        $social_network_meta['button'] . '</a></span>';
+                    $buffy .= '</div>';
+                }
             }
         }
         $buffy .= '</div> <!-- ./block -->';
@@ -122,6 +141,24 @@ class td_block_social_counter extends td_block {
                 );
                 break;
 
+            case 'periscope':
+                return array(
+                    'button' => __td('Ver'),
+                    'url' => "",
+                    'text' => __td('Transmisión'),
+                    // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
+                );
+                break;
+
+            case 'whatsapp':
+                return array(
+                    'button' => __td('Contacto'),
+                    'url' => "https://api.whatsapp.com/send?phone=$user_id",
+                    'text' => __td('985339090'),
+                    // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
+                );
+                break;
+            
             case 'rss':
                 return array(
                     'button' => __td('Follow'),

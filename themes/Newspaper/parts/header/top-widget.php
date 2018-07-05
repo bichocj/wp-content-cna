@@ -10,7 +10,7 @@
 if(td_util::get_option('td_social_networks_show') == 'show') { ?>
 <div class="td-header-sp-top-widget">
     <div class="follow-us">
-        <div class="textSub">Siguenos en:</div>
+        <div class="textSub">Síguenos en:</div>
         <?php
 
             //get the socials that are set by user
