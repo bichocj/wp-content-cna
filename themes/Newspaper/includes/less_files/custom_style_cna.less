@@ -54,6 +54,8 @@
 @background_facebook: #516eab;
 @background_videos: #dfd0d2;
 @background_periscope: #3da4c3;
+@background_twitter: #00aced;
+@background_yt: #bb0000;
 
 @font1:'Open Sans', arial, sans-serif;
 @font2: Verdana, Geneva, sans-serif;
@@ -1343,11 +1345,34 @@ p {
 }
 .td-footer-template-4 {
 	.td-social-style-2  {
+		display: inline-block;
 		.td-social-icon-wrap { //span
 			margin-right: 15px;
+			display: block;
+			float: left;
 			>a {
 				border: 2px solid white;
 				border-radius: 21px;
+				&:hover {
+					&[title="Facebook"] {
+						border-color: @background_facebook;
+					}
+					&[title="Periscope"] {
+						border-color: @background_periscope;
+					}
+					&[title="Youtube"] {
+						border-color: @background_yt;
+					}
+					&[title="Twitter"] {
+						border-color: @background_twitter;
+					}
+					&[title="Instagram"] {
+						border-color: @color_instagram_2;
+					}
+					&[title="Whatsapp"] {
+						border-color: @background_whatsapp;
+					}
+				}
 			}
 		}
 		.td-icon-font { // i
@@ -1358,6 +1383,16 @@ p {
 		.td-icon-whatsapp {
 			font-size: 28px;
 			line-height: 37px;
+		}
+		.td-icon-periscope {
+			background-image: url('images/sprite/ico-periscope.png');
+			display: block;
+			background-repeat: no-repeat;
+			background-size: 73px 30px;
+			background-position: -1px;
+			&:hover {
+				background-position-x: -36.5px;
+			}
 		}
 	}
 	.td-footer-info {

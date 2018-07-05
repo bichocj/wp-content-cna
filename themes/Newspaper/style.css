@@ -30129,7 +30129,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   height: 22px;
-  margin-left: -4px;
+  margin-left: -5px;
   margin-right: -4px;
 }
 .td-header-cna .td-header-top-menu-full .td-header-sp-top-widget .td-icon-periscope:hover {
@@ -30229,12 +30229,35 @@ p {
 .footer-email-wrap a {
   color: #eaeaea !important;
 }
+.td-footer-template-4 .td-social-style-2 {
+  display: inline-block;
+}
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap {
   margin-right: 15px;
+  display: block;
+  float: left;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a {
   border: 2px solid white;
   border-radius: 21px;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Facebook"] {
+  border-color: #516eab;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Periscope"] {
+  border-color: #3da4c3;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Youtube"] {
+  border-color: #bb0000;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Twitter"] {
+  border-color: #00aced;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Instagram"] {
+  border-color: #EB7BA2;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a:hover[title="Whatsapp"] {
+  border-color: #009c3b;
 }
 .td-footer-template-4 .td-social-style-2 .td-icon-font {
   font-size: 20px;
@@ -30244,6 +30267,16 @@ p {
 .td-footer-template-4 .td-social-style-2 .td-icon-whatsapp {
   font-size: 28px;
   line-height: 37px;
+}
+.td-footer-template-4 .td-social-style-2 .td-icon-periscope {
+  background-image: url('images/sprite/ico-periscope.png');
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 73px 30px;
+  background-position: -1px;
+}
+.td-footer-template-4 .td-social-style-2 .td-icon-periscope:hover {
+  background-position-x: -36.5px;
 }
 .td-footer-template-4 .td-footer-info {
   margin-bottom: 0px;
