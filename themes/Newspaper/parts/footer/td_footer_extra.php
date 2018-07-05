@@ -63,7 +63,7 @@ if (td_util::get_option('tds_footer_column_1') != 'no') {
         $imgWeb = get_template_directory_uri();
         echo '<span class="td-social-icon-wrap">
             <img class="icon_website" src="'. $imgWeb.'/images/custom/ico-webcna.png" title="CNA.pe"/>
-        </span>'
+        </span>';
         //get the socials that are set by user
         $td_get_social_network = td_util::get_option('td_social_networks');
 
