@@ -32,7 +32,20 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
         <div>
             <a href="#sectionCnaEnVivo" class="thisCNATV" title="CNA en vivo">
                 En vivo
-                <span class="en-vivo-trending"><img src="https://cna.pe/wp-content/uploads/2018/03/en-vivo.gif" alt="en-vivo"></span>
+                <span class="en-vivo-trending"><img src="https://cna.pe/wp-content/uploads/2018/03/en-vivo.gif"></span>
+            </a>
+        </div>
+    </div>
+    <div class="CNA_header_apps">
+        <div class="textSub">
+            Descarga la aplicación
+        </div>
+        <div class="wrap_header_apps">
+            <a href="" class="" title="CNA en Play Store">    
+                <img class="imgStore" src="<?php echo get_template_directory_uri(); ?>/images/custom/android-cna-small.png" alt="Play store">
+            </a>
+            <a href="" class="" title="CNA en App Store">    
+                <img class="imgStore" src="<?php echo get_template_directory_uri(); ?>/images/custom/app-store-small.png" alt="App Store">
             </a>
         </div>
     </div>
