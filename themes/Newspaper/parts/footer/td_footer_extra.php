@@ -56,18 +56,22 @@ if (td_util::get_option('tds_footer_column_1') != 'no') {
         $buffy .= '</div>';
     }
     $buffy .= '</div>';
+    // only for web icon
+    $imgWeb = get_template_directory_uri();
+    // echo '<span class="td-social-icon-wrap">
+    //         <img class="icon_website" src="'. $imgWeb.'/images/custom/ico-webcna.png" title="CNA.pe"/>
+    //     </span>';
 
-    $buffy .= '<div class="footer-social-wrap td-social-style-2">';
+    $buffy .= '<div class="footer-social-wrap td-social-style-2"> 
+                <span class="td-social-icon-wrap">
+                    <img class="icon_website" src="'. $imgWeb.'/images/custom/ico-webcna.png" title="CNA.pe"/>
+                </span>';
+    
     if(td_util::get_option('tds_footer_social') != 'no') {
         //get the socials that are set by user
         $td_get_social_network = td_util::get_option('td_social_networks');
 
         if(!empty($td_get_social_network)) {
-            // only for this icon
-            $imgWeb = get_template_directory_uri();
-            echo '<span class="td-social-icon-wrap">
-                    <img class="icon_website" src="'. $imgWeb.'/images/custom/ico-webcna.png" title="CNA.pe"/>
-                </span>';
             foreach($td_get_social_network as $social_id => $social_link) {
                 if(!empty($social_link)) {
                     $buffy .= td_social_icons::get_icon($social_link, $social_id, 4, 16, true);
