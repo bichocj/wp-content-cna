@@ -36,6 +36,18 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
             </a>
         </div>
     </div>
+    <div class="CNA_header_radio">
+        <div class="textSub">
+            Radio en vivo
+        </div>
+        <div class="wrap_btn_radio">
+            <a href="" class="btn_header_radio" title="Radio en vivo">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/custom/icon_micro.png?>" class="icon_micro">
+                <span class="btn_text">Radio en vivo</span>
+                <div class="icon_play"></div>
+            </a>
+        </div>
+    </div>
     <div class="CNA_header_apps">
         <div class="textSub">
             Descarga la aplicación
