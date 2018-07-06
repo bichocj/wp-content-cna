@@ -25,14 +25,17 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
             }
         ?>
     </div>
-    <div class="thisCNATVWrap">
+    <div class="CNA_header_tv">
         <div class="textSub">
             Televisión en vivo
         </div>
-        <div>
-            <a href="#sectionCnaEnVivo" class="thisCNATV" title="CNA en vivo">
-                En vivo
-                <span class="en-vivo-trending"><img src="https://cna.pe/wp-content/uploads/2018/03/en-vivo.gif"></span>
+        <div class="wrap_btn_tv">
+            <a href="#sectionCnaEnVivo" class="btn_header_radio" title="CNA televisión en vivo">
+                <!-- <span class="en-vivo-trending"> -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/custom/tv.gif" class="icon_tv">
+                    <span>En vivo</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/custom/en-vivo.gif" class="icon_senal">
+                <!-- </span> -->
             </a>
         </div>
     </div>
