@@ -33508,7 +33508,12 @@ div.td_block_it837003251 > .vc_column-inner {
 }
 #cna-widget-dollar .subtitle-dollar {
   font-size: 14px;
-  line-height: 1.4;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+#cna-widget-dollar .subtitle-dollar:last-child {
+  margin-top: 10px;
 }
 #cna-widget-dollar .inlineDolar {
   width: 49%;
