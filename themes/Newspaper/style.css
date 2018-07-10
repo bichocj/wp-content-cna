@@ -33518,7 +33518,7 @@ div.td_block_it837003251 > .vc_column-inner {
   padding: 0;
   text-align: center;
   font-size: 25px;
-  background-color: #b1dbd4;
+  background-color: rgba(41, 128, 185, 0.45);
   color: #404040;
 }
 #cna-widget-dollar .inlineDolar div {
@@ -33532,7 +33532,7 @@ div.td_block_it837003251 > .vc_column-inner {
   padding: 2px;
   color: #ffffff;
   margin-bottom: 0;
-  background-color: #2a717b;
+  background-color: #2980b9;
 }
 @media screen and (max-width: 767px) {
   #cna-widget-dollar {
