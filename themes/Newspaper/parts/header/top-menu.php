@@ -3,10 +3,11 @@
 
 
 	<?php
-
+    echo ('<div class="wrap_weather">');
     echo do_shortcode('[wpc-weather id="174"/]');
     echo do_shortcode('[wpc-weather id="181"/]');
     //echo do_shortcode('[wpc-weather id="182"/]');
+    echo ('</div>');
 
 
 // // 	show the weather if needed
