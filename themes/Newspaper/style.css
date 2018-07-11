@@ -30040,7 +30040,12 @@ p {
 }
 /* Header */
 .td-header-cna .top-bar-style-2 {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   /* Widget top */
 }
 .td-header-cna .top-bar-style-2 .td-header-sp-logo .td-visual-hidden {
@@ -30166,7 +30171,7 @@ p {
   right: 0;
   left: 0;
   top: 0;
-  bottom: 5px;
+  bottom: 0;
   opacity: 0.85;
 }
 .td-header-cna .td-header-top-menu-full {
@@ -30213,6 +30218,19 @@ p {
 .td-header-cna .td-header-top-menu-full .td-header-sp-top-menu {
   text-align: right;
   padding-right: 13px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.td-header-cna .td-header-top-menu-full .td-header-sp-top-menu .wrap_weather {
+  margin-top: 10;
 }
 .td-header-cna .td-header-top-menu-full .td-header-sp-top-menu #wpc-weather.small .now > .location_name {
   display: block;
@@ -30250,6 +30268,7 @@ p {
   color: white;
   margin-bottom: 0;
   margin-top: 5px;
+  margin-bottom: 10px;
   line-height: 18px;
 }
 .td-header-cna .td-header-menu-wrap-full .td-container {

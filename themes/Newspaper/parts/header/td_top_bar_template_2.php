@@ -1,6 +1,6 @@
 <?php if (td_util::get_option('tds_top_bar') != 'hide_top_bar') { ?>
 
-    <div class="top-bar-style-2 clearfix">
+    <div class="top-bar-style-2">
         <?php locate_template('parts/header/top-widget.php', true); ?>
         <div class="td-header-sp-logo">
             <h1 class="td-logo"> 
