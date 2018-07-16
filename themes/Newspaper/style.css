@@ -30068,15 +30068,15 @@ p {
   -ms-flex-align: end;
   align-items: flex-end;
 }
-.td-header-cna .top-bar-style-2 .CNA_header_tv .wrap_btn_tv .btn_header_radio {
+.td-header-cna .top-bar-style-2 .CNA_header_tv .wrap_btn_tv .btn_header_tv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 25px;
   overflow: hidden;
+  margin-left: 10px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.15em;
@@ -30084,14 +30084,11 @@ p {
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-.td-header-cna .top-bar-style-2 .CNA_header_tv .wrap_btn_tv .btn_header_radio .icon_senal {
+.td-header-cna .top-bar-style-2 .CNA_header_tv .wrap_btn_tv .btn_header_tv .icon_senal {
   height: 22px;
-  margin-top: 4px;
 }
-.td-header-cna .top-bar-style-2 .CNA_header_tv .wrap_btn_tv .btn_header_radio .icon_tv {
-  height: 35px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+.td-header-cna .top-bar-style-2 .CNA_header_tv .wrap_btn_tv .btn_header_tv .icon_tv {
+  height: 16px;
   margin-right: 4px;
 }
 .td-header-cna .top-bar-style-2 .CNA_header_radio .wrap_btn_radio {
@@ -30103,20 +30100,19 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 25px;
   overflow: hidden;
+  margin-left: 10px;
   /* border: 1px solid #FFF; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 0px 0px 5px;
   opacity: 1;
   -webkit-transition: all 300ms ease-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .td-header-cna .top-bar-style-2 .CNA_header_radio .btn_header_radio .icon_micro {
-  height: 100%;
+  height: 16px;
   margin-right: 6px;
 }
 .td-header-cna .top-bar-style-2 .CNA_header_radio .btn_header_radio .btn_text {
@@ -32919,8 +32915,13 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 }
 .td-grid-style-1.td_block_big_grid_3 .td-medium-thumb .entry-title {
   line-height: 23px;
-  height: 43px !important;
+  height: 47px !important;
   -webkit-line-clamp: 2 !important;
+}
+@media (min-width: 1201px) {
+  .td-grid-style-1.td_block_big_grid_3 .td-medium-thumb .entry-title {
+    font-size: 23px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .td-grid-style-1.td_block_big_grid_3 .td-medium-thumb .entry-title {

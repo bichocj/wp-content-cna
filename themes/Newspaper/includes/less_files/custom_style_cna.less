@@ -1132,16 +1132,17 @@ p {
 				    -ms-flex-align: end;
 						align-items: flex-end;
 				// margin-bottom: 3px;
-				.btn_header_radio {
+				.btn_header_tv {
 					display: -webkit-box;
 					display: -ms-flexbox;
 					display: flex;
 					-webkit-box-align: center;
 					    -ms-flex-align: center;
 					        align-items: center;
-					height: 25px;
-					// background-color: red;
 					overflow: hidden;
+					margin-left: 10px;
+					// height: 25px;
+					// background-color: red;
 					// padding: 4px 5px 0px;
 					// border: 1.5px solid white;
 					// -webkit-box-shadow: 1px 2px 2px  #444;
@@ -1161,12 +1162,12 @@ p {
 					// }
 					.icon_senal {
 						height: 22px;
-						margin-top: 4px;
+						// margin-top: 4px;
 					}
 					.icon_tv {
-						height: 35px;
-						-ms-flex-item-align: end;
-							align-self: flex-end;
+						height: 16px;
+						// -ms-flex-item-align: end;
+						// 	align-self: flex-end;
 						margin-right: 4px;
 						// margin-right: 10px;
 						// margin-left: 4px;
@@ -1211,8 +1212,9 @@ p {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
-				height: 25px;
-                overflow: hidden;
+				overflow: hidden;
+				margin-left: 10px;
+				// height: 25px;
                 // background: #010101;
                 /* border: 1px solid #FFF; */
                 // -webkit-box-shadow: 1px 2px 5px #333;
@@ -1221,8 +1223,6 @@ p {
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
-				// padding: 1px 10px 1px 5px;
-				padding: 0px 0px 0px 5px;
 				opacity: 1;
 				-webkit-transition: all 300ms ease-out;
 				-webkit-transition: all 300ms ease-in-out;
@@ -1234,7 +1234,7 @@ p {
 				// 	}
 				// }
 				.icon_micro {
-					height: 100%;
+					height: 16px;
 					margin-right: 6px;
 					// margin-top: 2px;
 				}
@@ -4115,12 +4115,15 @@ div[class*="post-template-cna"] {
 				margin-bottom: 20px !important;
 			}
 			.entry-title {
+				@media (min-width: 1201px) {
+					font-size: 23px !important;
+				}
 				@media (min-width:768px) and (max-width: 1200px) {
 					height: 43px !important;
 					-webkit-line-clamp: 2 !important;
 				}
 				line-height: 23px;
-				height: 43px !important;
+				height: 47px !important;
 				-webkit-line-clamp: 2 !important;
 			}
 		}

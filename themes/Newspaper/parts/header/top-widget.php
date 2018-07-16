@@ -30,9 +30,9 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
             Televisión en vivo
         </div>
         <div class="wrap_btn_tv">
-            <a href="#sectionCnaEnVivo" class="btn_header_radio" title="CNA televisión en vivo">
+            <a href="#sectionCnaEnVivo" class="btn_header_tv" title="CNA televisión en vivo">
                 <!-- <span class="en-vivo-trending"> -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/custom/tv.gif" class="icon_tv">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/custom/ico_tv.png" class="icon_tv">
                     <!-- <span>En vivo</span> -->
                     <img src="<?php echo get_template_directory_uri(); ?>/images/custom/en-vivo.gif" class="icon_senal">
                 <!-- </span> -->
@@ -45,7 +45,7 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
         </div>
         <div class="wrap_btn_radio">
             <a href="" class="btn_header_radio" title="Radio en vivo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/custom/icon_micro.png?>" class="icon_micro">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/custom/ico_radio.png" class="icon_micro">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/custom/en-vivo.gif" class="icon_senal">
 
                 <!-- <span class="btn_text">Radio en vivo</span> -->
