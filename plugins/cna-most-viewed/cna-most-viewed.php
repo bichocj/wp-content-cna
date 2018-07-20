@@ -75,7 +75,7 @@ class most_viewed_widget extends WP_Widget {
 		} ?>
         <div class="container-widget-mostview">
             <div class="list-widget-mostview">
-                <p>Lo más visto en CNA</p>
+                <p>Lo más visto en la CNA</p>
             <ul class="lnList clearfix">
             <?php while ( $news_Query->have_posts() ) : $news_Query->the_post(); ?>
                 <li>

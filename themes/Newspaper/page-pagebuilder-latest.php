@@ -97,7 +97,7 @@ if(!empty($post->post_content)) { //show this only when we have content
 <div class="most_viewed_news td-main-content-wrap hidden-xs-600">
     <div class="td-container">
         <div class="block-title">
-            <span>Lo más visto en CNA</span>
+            <span>Lo más visto en la CNA</span>
         </div>
         <?php $news_query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 4) );
                  ?>
@@ -196,7 +196,7 @@ if(!empty($post->post_content)) { //show this only when we have content
                         <div class="td-ss-main-content">
                             <!-- CNA TV -->
                             <div class="section-cna-videos">
-                                <h4 class="block-title"><span>Videos de CNA</span></h4>                                
+                                <h4 class="block-title"><span>Videos de la CNA</span></h4>                                
                                 <!-- Videos -->
                                 <div id="CNA_videos" class="">
                                     <!-- Ultimos videos -->
