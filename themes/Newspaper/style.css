@@ -30055,7 +30055,7 @@ p {
   overflow: hidden;
 }
 .td-header-cna .top-bar-style-2 .td-header-sp-logo img {
-  height: 155px;
+  height: 160px;
 }
 .td-header-cna .top-bar-style-2 .CNA_header_tv .textSub {
   margin-bottom: 0px;
@@ -30856,6 +30856,8 @@ p {
   background-color: #DD3333;
   height: 42px;
   line-height: 30px;
+  text-transform: initial;
+  font-size: 22px;
 }
 #CNA_videos {
   margin-top: -26px;
