@@ -8,20 +8,22 @@
 	src: url("./fonts/GT-Walsheim-Pro-Medium.woff") format('woff');
 }
 // Colors 
+//@color_acento : rgb(244,0,8);#f40008
+//@color_secundario : rgb(230,29,43); #e61d2b
 @color_1: #ffffff;
 @color_2: #2b2b2b;
 @color_3: #000;
 @color_4: #404040;
 @color_5: #4a4949;
 @color_6: #7c7c7c;
-@color_7: #d33;
-@color_8: #dd3333;
+@color_7: #e61d2b;
+@color_8: #e61d2b;
 @color_9: #111111;
 @color_10: #eaeaea; //Footer
 @color_instagram: #e1306e;
 @color_instagram_2:#EB7BA2;
 // @color_video_cna: #4c3d95;
-@color_video_cna: #DD3333;
+@color_video_cna: #e61d2b;
 @font_family_1: Verdana, Geneva, sans-serif;
 @background_color_1: #ffffff;
 @background_color_2: #ba1414;
@@ -32,15 +34,15 @@
 @background_color_7: #dbdbdb;
 @background_color_8: rgba(0,0,0,.03);
 @background_color_9: #dadada;
-@background_color_10: #d33;
+@background_color_10: @color_7;
 @background_color_11: #009b3a;
-@background_color_12: #DD3333;
+@background_color_12: #e61d2b;
 @background_color_13: #b60000;
 @background_color_14: #c60000;
 @background_color_15: #ce0000;
 @background_color_16: #dc0000;
 @background_color_17: #ec0000;
-@background_color_18: #dd3333;
+@background_color_18: #e61d2b;
 @background_color_19: #CDCDCD;
 @background_color_20: #e9e9e9;
 @background_color_21: #dfd0d2; //Color Sacado de Hola.com para responsive 
@@ -1320,7 +1322,7 @@ p {
 		}
 	}
 	.td-header-top-menu-full {
-		background-color: #d33;
+		background-color: @color_7;
 		padding: 20px 0 20px;
 		margin-top: 24px; //cambio cliente
 		margin-bottom: 1px; // Separacion de la barra de navegación
@@ -1611,7 +1613,7 @@ p {
 			background-size: 50%;
 			background-color: @background_color_12;
 			background-size: 50%;
-			background-color: #DD3333;
+			background-color: #e61d2b;
 			height: 72px;
 			width: 75px;
 			position: absolute;
@@ -2058,9 +2060,9 @@ p {
 				background-color: rgba(121, 28, 28, 0.35);
 			}
 			.entry-title {
-				border-color: #d33 !important;
+				border-color: @color_7 !important;
 				> a {
-					color: #d33;
+					color: @color_7;
 				}
 			}
 		}
@@ -2630,7 +2632,7 @@ div[class*="post-template-cna"] {
 				border-color: @background_color_12;
 				background-color: @background_color_12;
 				// &:hover {
-				// 	border-color: #d33;
+				// 	border-color: @color_7;
 				// 	color: white;
 				// }
 			}
@@ -3214,7 +3216,7 @@ div[class*="post-template-cna"] {
 		> span {
 			display: inline-block;
 			padding: 10px;
-			background-color: #d33;
+			background-color: @color_7;
 			color: white;
 		}
 	}
@@ -3304,9 +3306,9 @@ div[class*="post-template-cna"] {
 	// 			height: 110%;
 	// 		}
 	 		.entry-title {
-				 border-color: #D33;
+				 border-color: @color_7;
 	 			a {
-	 				color: #D33;
+	 				color: @color_7;
 	 			}
 	 		}
 		}
@@ -4308,7 +4310,7 @@ div[class*="post-template-cna"] {
 		height: 63px;
 		line-height: 60px;
 		width: 83px;
-		background-color: #d33;
+		background-color: @color_7;
 		color: #fff;
 		font-family: inherit;
 		font-size: 20px;
@@ -4869,7 +4871,7 @@ div.td_block_it837003251 {
 		padding: 5px 15px;
 		text-align: center;
 		&:last-child {
-			border-bottom: 4px solid #d33;
+			border-bottom: 4px solid @color_7;
 		}
 	}
 }
@@ -4963,7 +4965,7 @@ div.cb-657545417432 {
 			content: '';
 			bottom: 100%;
 			left: 11px;
-			border-bottom: 12px solid #dd3333;
+			border-bottom: 12px solid #e61d2b;
 			border-left: 12px solid transparent;
 			border-right: 12px solid transparent;
 			position: absolute;

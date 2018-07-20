@@ -29344,7 +29344,7 @@ p {
   }
   .section-12-noticias .td_module_10 .item-details {
     padding: 15px 12px 12px;
-    border-top: 5px solid #DD3333;
+    border-top: 5px solid #e61d2b;
     position: initial;
   }
   .section-12-noticias .td_module_10 .entry-title {
@@ -29535,9 +29535,9 @@ p {
   margin-bottom: 0;
 }
 .section-economia-tecnologia .td_block_15 .td-next-prev-wrap a {
-  background-color: #DD3333;
+  background-color: #e61d2b;
   color: #ffffff;
-  border-color: #DD3333;
+  border-color: #e61d2b;
 }
 @media screen and (max-width: 600px) {
   .section-economia-tecnologia .td_block_15 .td-next-prev-wrap {
@@ -29581,9 +29581,9 @@ p {
   margin-bottom: 0;
 }
 .section-economia-tecnologia .td_with_ajax_pagination ~ .td_with_ajax_pagination .td-next-prev-wrap a {
-  background-color: #DD3333;
+  background-color: #e61d2b;
   color: #ffffff;
-  border-color: #DD3333;
+  border-color: #e61d2b;
 }
 @media screen and (max-width: 600px) {
   .section-economia-tecnologia .td_with_ajax_pagination ~ .td_with_ajax_pagination .td-next-prev-wrap {
@@ -30177,7 +30177,7 @@ p {
   opacity: 0.85;
 }
 .td-header-cna .td-header-top-menu-full {
-  background-color: #d33;
+  background-color: #e61d2b;
   padding: 20px 0 20px;
   margin-top: 24px;
   margin-bottom: 1px;
@@ -30403,7 +30403,7 @@ p {
 }
 .widget-most-viewed .container-widget-mostview {
   padding: 20px 25px 25px;
-  background: #DD3333;
+  background: #e61d2b;
   font-family: 'PT Serif', serif;
   position: relative;
 }
@@ -30411,7 +30411,7 @@ p {
   content: "";
   background-image: url(../../uploads/2018/03/ico_megafono.png);
   background-size: 50%;
-  background-color: #DD3333;
+  background-color: #e61d2b;
   height: 72px;
   width: 75px;
   position: absolute;
@@ -30441,7 +30441,7 @@ p {
 }
 .widget-most-viewed .list-widget-mostview > p {
   font-family: 'Gilroy-ExtraBold', sans-serif;
-  color: #dd3333;
+  color: #e61d2b;
   display: block;
   font-size: 20px;
   line-height: 21px;
@@ -30511,7 +30511,7 @@ p {
   top: 0px;
   left: 0px;
   font-size: 42px;
-  color: #dd3333;
+  color: #e61d2b;
   line-height: 0.75;
 }
 @media (min-width: 768px) and (max-width: 1018px) {
@@ -30624,7 +30624,7 @@ p {
   }
 }
 .widget-most-viewed .nTitle:hover a {
-  color: #dd3333;
+  color: #e61d2b;
   text-decoration: underline;
 }
 @media screen and (max-width: 767px) {
@@ -30838,7 +30838,7 @@ p {
 .section-cna-videos {
   background-color: #dfd0d2;
   margin-bottom: 26px;
-  border-bottom: 7px solid #dd3333;
+  border-bottom: 7px solid #e61d2b;
 }
 @media screen and (max-width: 1018px) {
   .section-cna-videos {
@@ -30846,14 +30846,14 @@ p {
   }
 }
 .section-cna-videos .block-title {
-  border-color: #DD3333;
+  border-color: #e61d2b;
   text-transform: uppercase;
   text-align: center;
   font-size: 17px;
 }
 .section-cna-videos .block-title > span {
   display: block;
-  background-color: #DD3333;
+  background-color: #e61d2b;
   height: 42px;
   line-height: 30px;
   text-transform: initial;
@@ -30907,10 +30907,10 @@ p {
   background-color: rgba(121, 28, 28, 0.35);
 }
 #CNA_videos [class*="video_module_"]:hover .entry-title {
-  border-color: #d33 !important;
+  border-color: #e61d2b !important;
 }
 #CNA_videos [class*="video_module_"]:hover .entry-title > a {
-  color: #d33;
+  color: #e61d2b;
 }
 #CNA_videos .video-grid-scroll .video_module_small {
   float: left;
@@ -30983,7 +30983,7 @@ p {
   font-size: 15px;
   line-height: 1.2;
   padding: 8px 3px 8px;
-  border-bottom: 2px solid #DD3333;
+  border-bottom: 2px solid #e61d2b;
 }
 @media screen and (max-width: 767px) {
   #CNA_videos .video-grid-scroll .video_module_small .entry-title {
@@ -31123,7 +31123,7 @@ p {
 #CNA_videos .bx-wrapper .bx-controls-direction a::before {
   font-size: 10px;
   color: #ffffff;
-  background-color: #DD3333;
+  background-color: #e61d2b;
   border: none;
   padding: 10px;
   opacity: 1;
@@ -31291,10 +31291,10 @@ p {
 }
 /* Category in Single Posts */
 .single-post .td-category a {
-  background-color: #dd3333;
+  background-color: #e61d2b;
 }
 .single-post .td-category a:hover {
-  background-color: #bd2020;
+  background-color: #bb1520;
 }
 /* Title */
 .td-post-title {
@@ -31486,8 +31486,8 @@ div[class*="post-template-cna"] .td_block_related_posts .td-next-prev-wrap {
 }
 div[class*="post-template-cna"] .td_block_related_posts .td-next-prev-wrap a {
   color: #ffffff;
-  border-color: #DD3333;
-  background-color: #DD3333;
+  border-color: #e61d2b;
+  background-color: #e61d2b;
 }
 div[class*="post-template-cna"] .td_block_related_posts .td-module-title {
   font-size: 15px;
@@ -31862,7 +31862,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   line-height: 1.3;
   color: #404040;
   padding: 15px 10px 20px;
-  border-bottom: 2px solid #dd3333;
+  border-bottom: 2px solid #e61d2b;
 }
 @media screen and (max-width: 767px) {
   #last-news-bar .td-column-3 .entry-title {
@@ -32028,7 +32028,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   #trendingNews .td-trending-now-title > span {
     display: inline-block;
     padding: 2px 10px;
-    background-color: #DD3333;
+    background-color: #e61d2b;
   }
 }
 @media (max-width: 767px) {
@@ -32069,7 +32069,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 #last-6-news .l6-title > span {
   display: inline-block;
   padding: 10px;
-  background-color: #d33;
+  background-color: #e61d2b;
   color: white;
 }
 #last-6-news .l6-row {
@@ -32116,7 +32116,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   line-height: 1.35;
   margin: 0;
   padding: 0 3px 13px;
-  border-bottom: 2px solid #dd3333;
+  border-bottom: 2px solid #e61d2b;
 }
 @media screen and (max-width: 767px) {
   #last-6-news .entry-title {
@@ -32149,10 +32149,10 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   background-color: rgba(121, 28, 28, 0.35);
 }
 #last-6-news .l6-module:hover .entry-title {
-  border-color: #D33;
+  border-color: #e61d2b;
 }
 #last-6-news .l6-module:hover .entry-title a {
-  color: #D33;
+  color: #e61d2b;
 }
 /**********************************
 * 		SHARE MODULE
@@ -32357,7 +32357,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   display: block;
 }
 .td-grid-style-1.td_block_big_grid_2 .td-big-grid-post .td-meta-info-container {
-  background-color: #dd3333;
+  background-color: #e61d2b;
   position: relative;
 }
 @media (min-width: 992px) {
@@ -32674,7 +32674,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   margin-right: 0;
   /* Responsive big custom Block */
   width: 62%;
-  background-color: #DD3333;
+  background-color: #e61d2b;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -32717,7 +32717,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   width: 100%;
 }
 .td-grid-style-1.td_block_big_grid_3 .bigCustomBlock .td-meta-info-container {
-  background-color: #DD3333;
+  background-color: #e61d2b;
   top: 0;
   bottom: auto;
   padding: 15px;
@@ -32818,7 +32818,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   padding-left: 3px;
 }
 .td-grid-style-1.td_block_big_grid_3 .td-big-grid-scroll .td-big-grid-post .td-meta-info-container {
-  background-color: #d33;
+  background-color: #e61d2b;
   top: 0;
   bottom: auto;
   z-index: 4;
@@ -33103,7 +33103,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   height: 63px;
   line-height: 60px;
   width: 83px;
-  background-color: #d33;
+  background-color: #e61d2b;
   color: #fff;
   font-family: inherit;
   font-size: 20px;
@@ -33205,7 +33205,7 @@ div.td_block_it837003251 > .vc_column-inner {
   -moz-transition: all .20s;
   -webkit-transition: all .20s;
   text-decoration: none;
-  background-color: #DD3333;
+  background-color: #e61d2b;
   margin-left: 15px;
   font-size: 14px;
 }
@@ -33376,7 +33376,7 @@ div.td_block_it837003251 > .vc_column-inner {
   -moz-transition: all .20s;
   -webkit-transition: all .20s;
   text-decoration: none;
-  background-color: #DD3333;
+  background-color: #e61d2b;
   margin-left: 15;
   font-size: 13px;
 }
@@ -33614,7 +33614,7 @@ div.td_block_it837003251 > .vc_column-inner {
   display: block;
 }
 .contID-126726137213 .subtitle {
-  background-color: #d33;
+  background-color: #e61d2b;
   font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
@@ -33622,14 +33622,14 @@ div.td_block_it837003251 > .vc_column-inner {
   padding: 5px 15px;
 }
 .contID-126726137213 .text {
-  color: #d33;
+  color: #e61d2b;
   background-color: #ffffff;
   font-size: 20.5px;
   padding: 5px 15px;
   text-align: center;
 }
 .contID-126726137213 .text:last-child {
-  border-bottom: 4px solid #d33;
+  border-bottom: 4px solid #e61d2b;
 }
 .whatsappBlock-2343242642 {
   background-color: #009b3a;
@@ -33711,7 +33711,7 @@ div.cb-657545417432 {
 }
 .screenWeb-342342425 .tvcna-label {
   padding: 4px 15px;
-  background-color: #dd3333;
+  background-color: #e61d2b;
   color: #ffffff;
   position: relative;
   margin-top: -7px;
@@ -33722,7 +33722,7 @@ div.cb-657545417432 {
   content: '';
   bottom: 100%;
   left: 11px;
-  border-bottom: 12px solid #dd3333;
+  border-bottom: 12px solid #e61d2b;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   position: absolute;
@@ -33744,7 +33744,7 @@ div.cb-657545417432 {
 }
 /**/
 .cNewslist h3 > a {
-  color: #dd3333;
+  color: #e61d2b;
 }
 .cNewslist h3 > a:hover {
   color: #111111;
@@ -33859,7 +33859,7 @@ div.cb-657545417432 {
     -webkit-box-direction: normal;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    background-color: #DD3333;
+    background-color: #e61d2b;
     margin-right: -10px;
     margin-left: -10px;
   }
@@ -34064,7 +34064,7 @@ div.cb-657545417432 {
   margin-left: 0px;
 }
 .pollsarchive .pollTitle {
-  background-color: #DD3333;
+  background-color: #e61d2b;
   color: #ffffff;
   padding: 10px 20px;
 }
@@ -34114,7 +34114,7 @@ div.cb-657545417432 {
   font-size: 16px;
 }
 .pollsarchive .wpcna-pollsarchive-btn button {
-  background-color: #DD3333;
+  background-color: #e61d2b;
   border: medium none;
   padding: 10px 20px;
   margin-left: 6px;
@@ -34127,7 +34127,7 @@ div.cb-657545417432 {
 }
 .pollsarchive .wpcna-pollsarchive-btn button:hover {
   cursor: pointer;
-  background-color: #bd2020;
+  background-color: #bb1520;
 }
 @media screen and (max-width: 767px) {
   .pollsarchive .wpcna-pollsarchive-btn {
@@ -34247,7 +34247,7 @@ div.cb-657545417432 {
   margin-bottom: -13px;
 }
 .wpcna-back-button button {
-  background-color: #DD3333;
+  background-color: #e61d2b;
   border: medium none;
   padding: 10px 20px;
   margin-left: 6px;
@@ -34260,7 +34260,7 @@ div.cb-657545417432 {
 }
 .wpcna-back-button button:hover {
   cursor: pointer;
-  background-color: #bd2020;
+  background-color: #bb1520;
 }
 @media screen and (max-width: 767px) {
   .wrapper-cnaenvivo {
