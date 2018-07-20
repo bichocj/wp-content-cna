@@ -30131,6 +30131,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 10px;
 }
 .td-header-cna .top-bar-style-2 .CNA_header_apps .wrap_header_apps > a {
   display: inline-block;
@@ -30141,7 +30142,8 @@ p {
 }
 .td-header-cna .top-bar-style-2 .CNA_header_apps .wrap_header_apps .imgStore {
   display: block;
-  height: 22px;
+  height: 23px;
+  border: 1px solid white;
 }
 .td-header-cna .top-bar-style-2 .CNA_header_apps .wrap_header_apps::after {
   display: -webkit-box;
