@@ -8,7 +8,7 @@
 	src: url("./fonts/GT-Walsheim-Pro-Medium.woff") format('woff');
 }
 // Colors 
-//@color_acento : rgb(244,0,8);#f40008
+@color_acento : rgb(244,0,8);//#f40008
 //@color_secundario : rgb(230,29,43); #e61d2b
 @color_1: #ffffff;
 @color_2: #2b2b2b;
@@ -1513,6 +1513,7 @@ p {
 			float: left;
 			>a {
 				border: 2px solid white;
+				background-color: @color_acento;
 				border-radius: 21px;
 				height: 40px;
 				width: 40px;
@@ -1520,22 +1521,22 @@ p {
 				background-size: auto 40px;
 				background-position-y: center;
 				&[title="Facebook"]{
-					background-position-x: 0px;
+					background-position-x: -2px;
 				}
 				&[title="Periscope"]{
-					background-position-x: -40px;
+					background-position-x: -42px;
 				}
 				&[title="Youtube"] {
-					border-color: @background_yt;
+					background-position-x: -82px;
 				}
 				&[title="Twitter"] {
-					background-position-x: -80px;
+					background-position-x: -122px;
 				}
 				&[title="Instagram"] {
-					background-position-x: -100px;
+					background-position-x: -162px;
 				}
 				&[title="Whatsapp"] {
-					background-position-x: -120px;
+					background-position-x: -202px;
 				}
 				
 			}

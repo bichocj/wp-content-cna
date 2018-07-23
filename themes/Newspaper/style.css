@@ -30346,6 +30346,7 @@ p {
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a {
   border: 2px solid white;
+  background-color: #f40008;
   border-radius: 21px;
   height: 40px;
   width: 40px;
@@ -30354,22 +30355,22 @@ p {
   background-position-y: center;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Facebook"] {
-  background-position-x: 0px;
+  background-position-x: -2px;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Periscope"] {
-  background-position-x: -40px;
+  background-position-x: -42px;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Youtube"] {
-  border-color: #bb0000;
+  background-position-x: -82px;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Twitter"] {
-  background-position-x: -80px;
+  background-position-x: -122px;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Instagram"] {
-  background-position-x: -100px;
+  background-position-x: -162px;
 }
 .td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Whatsapp"] {
-  background-position-x: -120px;
+  background-position-x: -202px;
 }
 .td-footer-template-4 .td-social-style-2 .icon_website {
   height: 40.5px;
