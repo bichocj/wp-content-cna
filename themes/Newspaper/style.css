@@ -1233,20 +1233,11 @@ Headers style
 }
 /* responsive portrait phone */
 @media (max-width: 767px) {
-  .td-header-wrap .td-header-menu-wrap-full,
-  .td-header-wrap .td-header-menu-wrap,
-  .td-header-wrap .td-header-main-menu {
-    background-color: #dd3333 !important;
-    height: 54px !important;
-  }
   .td-header-header {
     padding: 0;
   }
   .header-search-wrap .td-icon-search {
     color: #fff !important;
-  }
-  body .td-header-wrap .td-header-menu-wrap-full {
-    height: 100px !important;
   }
   .td-details-weather {
     position: absolute;
@@ -2293,8 +2284,7 @@ Headers style
 @media (max-width: 767px) {
   .td-header-style-6 .td-main-menu-logo img {
     max-height: initial;
-    max-width: 180px;
-    margin-top: 16px;
+    max-width: 140px;
   }
   .td-header-menu-wrap.td-affix {
     transform: none !important;
@@ -2309,10 +2299,6 @@ Headers style
   }
 }
 @media (max-width: 420px) {
-  .td-header-style-6 .td-main-menu-logo img {
-    max-width: 135px;
-    margin-top: 24px;
-  }
   .td-header-sp-top-menu .wpc-weather-id:first-child {
     display: none;
   }
@@ -2403,14 +2389,6 @@ Headers style
 }
 .td-header-style-6 .td-mega-menu ul {
   border-top: none;
-}
-@media (max-width: 767px) {
-  .td-header-style-6 #td-header-menu {
-    min-height: 54px;
-  }
-  .td-header-style-6 .td-header-main-menu {
-    height: 54px;
-  }
 }
 .td-header-style-6 .td-affix {
   background-color: #161616;
@@ -5332,7 +5310,6 @@ ul.sf-js-enabled > li > a > i.td-icon-menu-down:before {
   #td-top-mobile-toggle {
     display: inline-block;
     position: relative;
-    margin-top: 22px;
   }
 }
 #td-top-mobile-toggle a {
@@ -6133,17 +6110,6 @@ figure.aligncenter {
   body .td-appenvivo-area-button-54564316,
   body .td-tvenvivo-area-button-54564316 {
     margin-bottom: 20px;
-  }
-  body .td-header-wrap div.td-header-menu-wrap-full {
-    height: 48px !important;
-  }
-  .td-header-style-6 .td-main-menu-logo img {
-    max-width: 140px;
-    margin-top: 2px;
-  }
-  body .td-header-wrap .td-header-menu-wrap-full,
-  body #td-top-mobile-toggle {
-    margin-top: 0;
   }
   body .td-details-weather .thisCNATVWrap {
     margin-right: 15px;
@@ -31726,6 +31692,29 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 .td-header-cna + .td-main-content-wrap {
   padding-top: 0;
 }
+@media (max-width: 767px) {
+  .td-header-cna #td-header-menu {
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .td-header-cna .td-main-menu-logo {
+    height: auto;
+  }
+}
+/*Subtitle header CNA*/
+.wrap_header_subtitle {
+  border-top: 0.5px solid white;
+  padding: 10px;
+  margin-top: 5px;
+}
+.wrap_header_subtitle .header_subtitle {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+}
 /* Header Block Top - Last News Trending and Bar */
 .headerBlockTop {
   margin-top: 26px;
@@ -31737,7 +31726,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 }
 @media screen and (max-width: 767px) {
   .headerBlockTop {
-    margin-top: 8px;
+    margin-top: 2px;
   }
 }
 /* Last News Bar */
@@ -31993,9 +31982,9 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 @media screen and (max-width: 767px) {
   .td-trending-now-wrapper .td-trending-now-display-area {
     display: block;
-    height: 26px;
+    height: auto;
     position: relative;
-    top: 10px;
+    top: 5px;
   }
 }
 .td-trending-now-wrapper .td-trending-now-post {
@@ -32007,6 +31996,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 @media screen and (max-width: 767px) {
   .td-trending-now-wrapper .td-trending-now-post {
     width: 100%;
+    height: auto;
     padding: 0 15px;
     text-align: center;
   }
