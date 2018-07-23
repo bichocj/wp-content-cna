@@ -40,12 +40,12 @@ class td_block_social_counter extends td_block {
 		            $access_token = $atts[$td_social_id . '_access_token'];
 	            }
 	            $social_network_meta = $this->get_social_network_meta($td_social_id, $atts[$td_social_id], $td_social_api, $access_token);
-                
+               
                 if ( $td_social_id == 'whatsapp') {
                     $buffy .= '<div class="td_social_type td-pb-margin-side td_social_' . $td_social_id . '">';
                     $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
                     // $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
-                    $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
+                    $buffy .= '<span class="td_social_info td_social_info_name" id="socialWhatsapp">' . $social_network_meta['text'] . '</span>';
                     $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
                         $social_network_meta['button'] . '</a></span>';
                     $buffy .= '</div>';
@@ -53,7 +53,7 @@ class td_block_social_counter extends td_block {
                   
                     $buffy .= '<div class="td_social_type td-pb-margin-side td_social_' . $td_social_id . '">';
                     $buffy .= '<div class="td-sp td-sp-' . $td_social_id . '"></div>';
-                    // $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
+                    $buffy .= '<span class="td_social_info">' . number_format($social_network_meta['api']) . '</span>';
                     $buffy .= '<span class="td_social_info td_social_info_name">' . $social_network_meta['text'] . '</span>';
                     $buffy .= '<span class="td_social_button"><a href="' . $social_network_meta['url'] . '"' . $td_target . '>' .
                         $social_network_meta['button'] . '</a></span>';
@@ -145,15 +145,16 @@ class td_block_social_counter extends td_block {
                     'button' => __td('Ver'),
                     'url' => "https://www.pscp.tv/$user_id",
                     'text' => __td('Transmisión'),
-                    // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
+                    'api' => $td_social_api->get_social_counter('twitter', 'CNA_PE', false, $access_token),    
                 );
                 break;
 
             case 'whatsapp':
                 return array(
-                    'button' => __td('Contacto'),
+                    'button' => __td('Contactar'),
                     'url' => "https://api.whatsapp.com/send?phone=$user_id",
-                    'text' => __td('985339090'),
+                    // 'text' =>  __td($user_id),
+                    'text' => __td('985 33 90 90')
                     // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
                 );
                 break;

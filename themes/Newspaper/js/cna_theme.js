@@ -18,6 +18,7 @@ jQuery(document).ready(function () {
     displayIframe();
     addIdApps();
     addIdPolls();
+    changePhoneFormat();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -174,6 +175,15 @@ function launchFullScreen(element) {
     } else if(element.webkitRequestFullScreen) {
       element.webkitRequestFullScreen();
     }
+}
+
+function changePhoneFormat(){
+    let phoneNumber = document.getElementById('socialWhatsapp').textContent.slice(2);
+    let arrPhoneNumber = phoneNumber.split('');
+    arrPhoneNumber.splice( 3, 0, ' ');
+    arrPhoneNumber.splice( 6, 0, ' ');
+    arrPhoneNumber.splice( 9, 0, ' ');
+    document.getElementById('socialWhatsapp').textContent = arrPhoneNumber.join('');
 }
 
 document.addEventListener("fullscreenchange", changeHandler);
