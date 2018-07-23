@@ -1516,28 +1516,28 @@ p {
 				border-radius: 21px;
 				height: 40px;
 				width: 40px;
-				background-image: url(images/custom/rrss_footer.png);
+				background-image: url(images/custom/footer_rrss.png);
 				background-size: auto 40px;
-				// &:hover {
-				// 	&[title="Facebook"] {
-				// 		border-color: @background_facebook;
-				// 	}
-				// 	&[title="Periscope"] {
-				// 		border-color: @background_periscope;
-				// 	}
-				// 	&[title="Youtube"] {
-				// 		border-color: @background_yt;
-				// 	}
-				// 	&[title="Twitter"] {
-				// 		border-color: @background_twitter;
-				// 	}
-				// 	&[title="Instagram"] {
-				// 		border-color: @color_instagram_2;
-				// 	}
-				// 	&[title="Whatsapp"] {
-				// 		border-color: @background_whatsapp;
-				// 	}
-				// }
+				background-position-y: center;
+				&[title="Facebook"]{
+					background-position-x: 0px;
+				}
+				&[title="Periscope"]{
+					background-position-x: -40px;
+				}
+				&[title="Youtube"] {
+					border-color: @background_yt;
+				}
+				&[title="Twitter"] {
+					background-position-x: -80px;
+				}
+				&[title="Instagram"] {
+					background-position-x: -100px;
+				}
+				&[title="Whatsapp"] {
+					background-position-x: -120px;
+				}
+				
 			}
 		}
 		.icon_website {
@@ -1660,7 +1660,10 @@ p {
 			margin-bottom: 20px;
 			margin-left: 0px;
 			margin-top: 20px;
-			text-align: center;
+			text-align: 0px;
+			-webkit-text-siz
+			margin-top: 20px;
+			text-align: 0px;
 			-webkit-text-size-adjust: 100%;
 			   -moz-text-size-adjust: 100%;
 			    -ms-text-size-adjust: 100%;

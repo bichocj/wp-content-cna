@@ -30349,8 +30349,27 @@ p {
   border-radius: 21px;
   height: 40px;
   width: 40px;
-  background-image: url(images/custom/rrss_footer.png);
+  background-image: url(images/custom/footer_rrss.png);
   background-size: auto 40px;
+  background-position-y: center;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Facebook"] {
+  background-position-x: 0px;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Periscope"] {
+  background-position-x: -40px;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Youtube"] {
+  border-color: #bb0000;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Twitter"] {
+  background-position-x: -80px;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Instagram"] {
+  background-position-x: -100px;
+}
+.td-footer-template-4 .td-social-style-2 .td-social-icon-wrap > a[title="Whatsapp"] {
+  background-position-x: -120px;
 }
 .td-footer-template-4 .td-social-style-2 .icon_website {
   height: 40.5px;
@@ -30444,7 +30463,8 @@ p {
   margin-bottom: 20px;
   margin-left: 0px;
   margin-top: 20px;
-  text-align: center;
+  -webkit-text-sizmargin-top: 20px;
+  text-align: 0px;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
