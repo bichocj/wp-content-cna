@@ -19,6 +19,7 @@ jQuery(document).ready(function () {
     addIdApps();
     addIdPolls();
     changePhoneFormat();
+    setTrendingNews();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -184,6 +185,12 @@ function changePhoneFormat(){
     arrPhoneNumber.splice( 6, 0, ' ');
     arrPhoneNumber.splice( 9, 0, ' ');
     document.getElementById('socialWhatsapp').textContent = arrPhoneNumber.join('');
+}
+
+function setTrendingNews () {
+    let trending = document.getElementById('trendingNews')
+    let space = document.getElementById('trending-xs')
+    space.append(trending)
 }
 
 document.addEventListener("fullscreenchange", changeHandler);
