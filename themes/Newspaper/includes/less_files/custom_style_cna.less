@@ -303,6 +303,15 @@ p {
 // Visible solo en dispositivos mobiles < 768px
 
 .section-12-noticias {
+	.td-block-span12 {
+		&:first-child {
+			@media (max-width: 767px) {
+				.td-module-thumb{
+					height: 265px;
+				}
+			}
+		}
+	}
 	.td_module_10{
 		@media (max-width: 767px) {
 			background-color: @background_color_21;
