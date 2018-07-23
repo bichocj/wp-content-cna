@@ -2736,6 +2736,27 @@ div[class*="post-template-cna"] {
 /**********************************
 * 			WIDGETS
 ********************************** /
+/* Radio en vivo*/
+.widget_cna_radio{
+	background-color: #000000;
+	display: block;
+	padding: 8px 10px;
+	border-radius: 4px;
+	// color: white;
+	// text-transform: uppercase;
+	// font-weight: bold;
+	text-decoration: none;
+	transition: 250ms all ease;
+	&:hover{
+		opacity: 0.8;
+	}
+	.img_radio_cna {
+		display: block;
+		width: auto !important;
+		height: 45px;
+		margin: 3px auto 0px;
+	}
+}
 
 /* SOCIAL NETWORK */
 .td-social-icon-wrap i.td-icon-instagram:hover {
@@ -5145,7 +5166,7 @@ div.cb-657545417432 {
 			.td-main-sidebar {
 				.td-ss-main-sidebar {
 					>div {
-						&:nth-of-type(5) {
+						&:nth-of-type(6) {
 							.block-title {
 								border-color: @background_whatsapp;
 								&:nth-child(1) {
@@ -5155,7 +5176,7 @@ div.cb-657545417432 {
 								}
 							}
 						}
-						&:nth-of-type(6) {
+						&:nth-of-type(5) {
 							.block-title {
 								border-color: @background_facebook;
 								&:nth-child(1) {
