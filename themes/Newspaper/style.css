@@ -31594,6 +31594,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 }
 .widget_cna_radio .img_radio_cna {
   display: block;
+  width: auto !important;
   height: 45px;
   margin: 3px auto 0px;
 }
