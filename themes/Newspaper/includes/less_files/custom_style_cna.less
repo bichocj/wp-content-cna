@@ -3186,6 +3186,7 @@ div[class*="post-template-cna"] {
 #trendingNews {
 	@media screen and (max-width: 767px) {
 		position: relative;
+		// display: none;
 	}
 	.trending-now-header {
 		@media screen and (max-width: 767px) {
@@ -3219,6 +3220,12 @@ div[class*="post-template-cna"] {
 			text-align: center;
 		}
 	}
+}
+
+#trending-xs {
+	min-height: 95px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 /***** Single Top Bar - 6 Last News *****/
@@ -5216,7 +5223,8 @@ div.cb-657545417432 {
 }
 @media (max-width: 767px) {
 	.wpcna-first-new { //reswpcna
-		margin-top: 105px;
+		// margin-top: 105px;
+		margin-top: 5px;
 		margin-bottom: @space_grid;
 		.wpb_wrapper {
 			&:first-child {
