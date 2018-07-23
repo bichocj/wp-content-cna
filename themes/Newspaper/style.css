@@ -31580,7 +31580,23 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 /**********************************
 * 			WIDGETS
 ********************************** /
-
+/* Radio en vivo*/
+.widget_cna_radio {
+  background-color: #000000;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 250ms all ease;
+}
+.widget_cna_radio:hover {
+  opacity: 0.8;
+}
+.widget_cna_radio .img_radio_cna {
+  display: block;
+  height: 45px;
+  margin: 3px auto 0px;
+}
 /* SOCIAL NETWORK */
 .td-social-icon-wrap i.td-icon-instagram:hover {
   color: #EB7BA2 !important;
