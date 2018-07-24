@@ -11,15 +11,13 @@
 
 
 jQuery(document).ready(function () {
+    changePhoneFormat();
+    setTrendingNews();
     // Delete Hours
     deleteHours(document.getElementsByClassName("wpcna-polls-dates"), 'Resultados: No Expiry', "@", "Encuesta Vigente");
-    // addIframe();
-    // addIframeNews();
     displayIframe();
     addIdApps();
     addIdPolls();
-    changePhoneFormat();
-    setTrendingNews();
     // Resize plugin de Facebook
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
