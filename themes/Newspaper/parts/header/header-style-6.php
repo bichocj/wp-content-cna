@@ -24,9 +24,13 @@ Header style 6 - CNA
             <div class="td-container td-header-row td-header-main-menu black-menu">
                 <?php locate_template('parts/header/header-menu.php', true);?>
             </div>
+            <div class="wrap_header_subtitle visible-xs">
+                <h3 class="header_subtitle">televisión, en todo el mundo</h3>
+            </div>
         </div>
     </div>
     <!-- <hr class="menu-separator"> -->
+    
 
     
 
