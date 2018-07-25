@@ -65,7 +65,7 @@ if (td_util::get_option('tds_footer_column_1') != 'no') {
     $buffy .= '<div class="footer-social-wrap td-social-style-2"> 
                 <span class="td-social-icon-wrap">
                     <img class="icon_website" src="'. $imgWeb.'/images/custom/ico-webcna.png" title="CNA.pe"/>
-                </span>';
+                </span> <br class="visible-xs">';
     
     if(td_util::get_option('tds_footer_social') != 'no') {
         //get the socials that are set by user

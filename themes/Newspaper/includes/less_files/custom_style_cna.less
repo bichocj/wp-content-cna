@@ -1480,6 +1480,9 @@ p {
 .td-footer-wrapper {
 	padding: 40px 0 0;
 	margin: 0 auto;
+	@media (max-width: 767px) {
+		padding-top: 25;
+	}
 	a {
 		color: @color_1;
 		text-decoration: none;
@@ -1492,6 +1495,9 @@ p {
 		margin: 0 auto;
 		width: 17.5%;
 		height: auto;
+		@media (max-width: 767px) {
+			width: 120px;
+		}
 	}
 }
 .footer-logo-wrap {
@@ -1507,10 +1513,19 @@ p {
 .td-footer-template-4 {
 	.td-social-style-2  {
 		display: inline-block;
+		text-align: center;
 		.td-social-icon-wrap { //span
 			margin-right: 15px;
 			display: block;
 			float: left;
+			@media (max-width: 767px) {
+				float: none;
+				display: inline-block;
+				margin-right: 12px;
+			}
+			@media (max-width: 480px) {
+				margin-right: 10px;
+			}
 			>a {
 				border: 2px solid white;
 				background-color: @color_acento;
