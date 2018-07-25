@@ -898,6 +898,12 @@ p {
 		}
 	}
 }
+// CNA En vivo en mobile
+.cna-en-vivo-mobile {
+	.wpb_content_element {
+		margin-bottom: 13px;
+	}
+}
 /* Sección Magazine*/
 .section-magazine {
 	.td_block_text_with_title {
@@ -1668,16 +1674,15 @@ p {
 	.list-widget-mostview {
 		background: @background_color_1;
 		>p {
+			display: block;
 			font-family: @font5;
 			color: @color_8;
-			display: block;
 			font-size: 20px;
 			line-height: 21px;
 			margin-bottom: 20px;
 			margin-left: 0px;
 			margin-top: 20px;
-			text-align: 0px;
-			-webkit-text-siz
+			text-align: center;
 			margin-top: 20px;
 			text-align: 0px;
 			-webkit-text-size-adjust: 100%;
@@ -2848,6 +2853,9 @@ div[class*="post-template-cna"] {
 	.app_info {
 		margin-top: -5px;
 		margin-bottom: 20px;
+		@media (max-width:767px) {
+			margin-top: 0px;
+		}
 	}
 	.wrapper_app_img {
 		display: block;
@@ -2946,7 +2954,7 @@ div[class*="post-template-cna"] {
 	@media (min-width:768px) and (max-width: 1018px) {
 		margin-top: @space_2;
 	}
-	@media screen and (max-width: 767px) { //reswpcna
+	@media (max-width:767px) and (max-width: 767px) { //reswpcnamargin-top: 0px;
 		margin-top: 2px
 	}
 }
@@ -3971,7 +3979,8 @@ div[class*="post-template-cna"] {
 	&.td_block_big_grid_3 {
 		.td-big-grid-post{
 			@media screen and (max-width:767px) {
-				margin-bottom: @space_2 !important;
+				// margin-bottom: @space_2 !important;
+				margin-bottom: 3px !important;
 			}
 			&:hover {
 				.td-post-category {
@@ -5106,7 +5115,7 @@ div.cb-657545417432 {
 }
 .td-ss-row {
 	.td-pb-span4 {
-		.wpb_raw_code.wpb_content_element.wpb_raw_html {
+		.wpb_content_element.wpb_content_element.wpb_raw_html {
 			margin-bottom: 0;
 		}
 	}
@@ -5934,7 +5943,7 @@ div.cb-657545417432 {
 		margin-left: -10px;
 		margin-right: -20px;
 	}
-	&,iframe {
+	&.iframe {
 		@media (min-width: 1360px) {
 			height: 213px;
 		}
