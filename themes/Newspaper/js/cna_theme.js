@@ -11,7 +11,6 @@
 
 
 jQuery(document).ready(function () {
-    changePhoneFormat();
     setTrendingNews();
     // Delete Hours
     deleteHours(document.getElementsByClassName("wpcna-polls-dates"), 'Resultados: No Expiry', "@", "Encuesta Vigente");

@@ -153,8 +153,8 @@ class td_block_social_counter extends td_block {
                 return array(
                     'button' => __td('Contactar'),
                     'url' => "https://api.whatsapp.com/send?phone=$user_id",
-                    'text' =>  __td($user_id),
-                    // 'text' => __td('985 33 90 90')
+                    // 'text' =>  __td($user_id),
+                    'text' => __td('985 33 90 90')
                     // 'api' => $td_social_api->get_social_counter($service_id, $user_id, false, $access_token),    
                 );
                 break;
