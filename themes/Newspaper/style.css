@@ -31738,11 +31738,17 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 @media (max-width: 767px) {
   .td-header-cna .td-main-menu-logo img {
     margin-left: auto !important;
+    margin-top: auto !important;
   }
 }
 @media (min-width: 768px) {
   .td-header-cna .td-affix .td-main-menu-logo img {
     height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .td-header-cna .td-affix .td-main-menu-logo img {
+    margin-top: auto !important;
   }
 }
 /*Subtitle header CNA*/
