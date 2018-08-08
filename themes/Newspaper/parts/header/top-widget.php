@@ -55,7 +55,7 @@ if(td_util::get_option('td_social_networks_show') == 'show') { ?>
     </div>
     <div class="CNA_header_apps">
         <div class="textSub">
-            Descarga la aplicación
+            Descarga nuestra aplicación
         </div>
         <div class="wrap_header_apps">
             <a href="" class="" title="CNA en Play Store">    
