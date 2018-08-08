@@ -2776,6 +2776,7 @@ div[class*="post-template-cna"] {
 	// text-transform: uppercase;
 	// font-weight: bold;
 	text-decoration: none;
+	-webkit-transition: 250ms all ease;
 	transition: 250ms all ease;
 	&:hover{
 		opacity: 0.8;
@@ -2932,6 +2933,11 @@ div[class*="post-template-cna"] {
 	.td-main-menu-logo{
 		@media (max-width:767px){
 			height: auto;
+		}
+		img {
+			@media (max-width:767px){
+				margin-left: auto !important;
+			}		
 		}
 	}
 	.td-affix{

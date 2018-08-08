@@ -31597,6 +31597,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
   padding: 8px 10px;
   border-radius: 4px;
   text-decoration: none;
+  -webkit-transition: 250ms all ease;
   transition: 250ms all ease;
 }
 .widget_cna_radio:hover {
@@ -31732,6 +31733,11 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
 @media (max-width: 767px) {
   .td-header-cna .td-main-menu-logo {
     height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .td-header-cna .td-main-menu-logo img {
+    margin-left: auto !important;
   }
 }
 @media (min-width: 768px) {
