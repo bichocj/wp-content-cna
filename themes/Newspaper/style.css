@@ -31734,7 +31734,7 @@ div[class*="post-template-cna"] .td_block_related_posts .td-module-thumb .entry-
     height: auto;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .td-header-cna .td-affix .td-main-menu-logo img {
     height: 40px;
   }
