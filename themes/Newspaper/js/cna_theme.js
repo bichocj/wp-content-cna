@@ -40,7 +40,17 @@ jQuery(document).ready(function () {
     });
 });
 
-
+jQuery('.open_popup').on('click',function(e) { 
+    console.log("new tab"); 
+    e.preventDefault(); 
+    var tab = window.open('https://cna.pe/cna-radio-en-vivo/', 'mywin', 'toolbar=0 , location=0 , status=0 , menubar=0 , scrollbars=0 , resizable=0, width=400px,height=380px'); 
+    if(tab){ 
+        tab.focus();//ir a la pestaña 
+    } else { 
+        alert('Pestañas bloqueadas, activa las ventanas emergentes (Popups) ');
+        return false; 
+    }
+});
 function deleteHours(dates, element, point, replace) {
     var dates = dates;
     var text = "";
